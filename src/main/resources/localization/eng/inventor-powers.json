@@ -1,0 +1,20 @@
+{
+  "Fuel": {
+    "NAME": "Fuel",
+    "DESCRIPTIONS": [
+      "Fuel is used to power your cards."
+    ]
+  },
+  "Pumpjack": {
+    "NAME": "Pumpjack",
+    "DESCRIPTIONS": [
+      "At the start of your turn gain #b"," #yFuel"
+    ]
+  },
+  "Generator": {
+    "NAME": "Generator",
+    "DESCRIPTIONS": [
+      "At the start of your turn spend #b"," #yFuel to gain #b"," energy"
+    ]
+  }
+}

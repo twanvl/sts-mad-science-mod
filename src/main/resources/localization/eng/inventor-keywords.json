@@ -1,0 +1,22 @@
+{
+	"FUEL": {
+		"NAMES":[
+			"fuel",
+			"UNUSED_RESERVE",
+			"UNUSED_RESERVE",
+			"UNUSED_RESERVE",
+			"UNUSED_RESERVE"
+		],
+		"DESCRIPTION": "Fuel is used to power your cards."
+	},
+	"CARTRIDGE": {
+		"NAMES":[
+			"cartridge",
+			"cartridges",
+			"UNUSED_RESERVE",
+			"UNUSED_RESERVE",
+			"UNUSED_RESERVE"
+		],
+		"DESCRIPTION": "Catridges are #b0 cost cards which Exhaust."
+	}
+}

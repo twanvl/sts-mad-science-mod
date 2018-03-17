@@ -1,0 +1,32 @@
+{
+  "Strike_Bronze": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+	"Defend_Bronze": {
+		"NAME": "Defend",
+		"DESCRIPTION": "Gain !B! Block."
+	},
+  "Powered Strike": {
+    "NAME": "Powered Strike",
+    "DESCRIPTION": "Spend 1 Fuel. Deal !D! damage."
+  },
+	"Powered Defend": {
+		"NAME": "Powered Defend",
+		"DESCRIPTION": "Spend 1 Fuel. Gain !B! Block."
+	},
+	"Machine Gun": {
+	  "NAME": "Machine Gun",
+	  "DESCRIPTION": "Deal !D! damage for each Fuel you have."
+	},
+	"Portable Pumpjack": {
+	  "NAME": "Portable Pumpjack",
+  	"DESCRIPTION": "At the start of your turn gain !M! Fuel."
+	},
+	"Generator": {
+	  "DESCRIPTION": "At the start of your turn, spend 1 Fuel to gain [R]."
+	},
+	"Refuel": {
+	  "DESCRIPTION": "Gain !M! Fuel."
+	}
+}

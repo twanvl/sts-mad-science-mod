@@ -1,0 +1,10 @@
+dependency-reduced-pom.xml
+.classpath
+.project
+.settings
+.vscode
+notsrc
+target
+
+src/main/resources/images/characters/hybrid/orb/red
+src/main/resources/images/characters/hybrid/orb/green

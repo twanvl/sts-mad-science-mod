@@ -1,0 +1,9 @@
+{
+  "Fuel Tank": {
+    "NAME": "Fuel Tank",
+    "FLAVOR": "Taken from an old motorcycle, it now stores fuel for all kinds of nifty tools.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, gain #b"," Fuel."
+    ]
+  }
+}
