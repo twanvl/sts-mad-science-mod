@@ -65,7 +65,4 @@ public class FuelPower extends AbstractPower {
         AbstractPower power = p.getPower(POWER_ID);
         return power == null ? 0 : power.amount;
     }
-    public static boolean  haveEnough(AbstractPlayer p, int amount) {
-        return currentAmount(p) >= amount;
-    }
 }
