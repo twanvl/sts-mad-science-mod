@@ -39,7 +39,12 @@ public class PoweredDefend extends CustomCard {
 
     @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        return super.canUse(p,m) && FuelPower.haveEnough(p,FUEL_COST);
+        if (!super.canUse(p,m)) return false;
+        if (FuelPower.currentAmount(p) < FUEL_COST) {
+            this.cantUseMessage = FuelPower.NOT_ENOUGH_FUEL_MESSAGE;
+            return false;
+        }
+        return true;
     }
 
     @Override

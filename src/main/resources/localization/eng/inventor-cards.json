@@ -24,9 +24,11 @@
   	"DESCRIPTION": "At the start of your turn gain !M! Fuel."
 	},
 	"Generator": {
+		"NAME": "Generator",
 	  "DESCRIPTION": "At the start of your turn, spend 1 Fuel to gain [R]."
 	},
 	"Refuel": {
+		"NAME": "Refuel",
 	  "DESCRIPTION": "Gain !M! Fuel."
 	}
 }

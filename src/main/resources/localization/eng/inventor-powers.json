@@ -2,7 +2,8 @@
   "Fuel": {
     "NAME": "Fuel",
     "DESCRIPTIONS": [
-      "Fuel is used to power your cards."
+      "Fuel is used to power your cards.",
+      "Not enough #rFuel."
     ]
   },
   "Pumpjack": {
