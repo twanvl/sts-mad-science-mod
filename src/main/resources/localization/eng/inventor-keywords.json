@@ -1,22 +1,32 @@
 {
-	"FUEL": {
-		"NAMES":[
-			"fuel",
-			"UNUSED_RESERVE",
-			"UNUSED_RESERVE",
-			"UNUSED_RESERVE",
-			"UNUSED_RESERVE"
-		],
-		"DESCRIPTION": "Fuel is used to power your cards."
-	},
-	"CARTRIDGE": {
-		"NAMES":[
-			"cartridge",
-			"cartridges",
-			"UNUSED_RESERVE",
-			"UNUSED_RESERVE",
-			"UNUSED_RESERVE"
-		],
-		"DESCRIPTION": "Catridges are #b0 cost cards which Exhaust."
-	}
+  "FUEL": {
+    "NAMES":[
+      "fuel",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE"
+    ],
+    "DESCRIPTION": "Fuel is used to power your cards."
+  },
+  "TRINKET": {
+    "NAMES":[
+      "trinket",
+      "trinkets",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE"
+    ],
+    "DESCRIPTION": "Trinkets are #b0 cost cards that Exhaust."
+  },
+  "CHOOSE": {
+    "NAMES":[
+      "choose",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE"
+    ],
+    "DESCRIPTION": "Choose one of the options when playing the card."
+  }
 }

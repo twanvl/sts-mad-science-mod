@@ -11,13 +11,13 @@ import inventormod.cards.Strike_Bronze;
 
 @SpirePatch(cls="com.megacrit.cardcrawl.events.thecity.Vampires", method="replaceAttacks")
 public class VampiresPatch {
-	@SpireInsertPatch(rloc=8)
-	public static void Insert(Object __obj_instance) {
-		for (Iterator<AbstractCard> i = AbstractDungeon.player.masterDeck.group.iterator(); i.hasNext();) {
-			AbstractCard e = (AbstractCard) i.next();
-			if (e instanceof Strike_Bronze) {
-				i.remove();
-			}
-		}
-	}
+    @SpireInsertPatch(rloc=8)
+    public static void Insert(Object __obj_instance) {
+        for (Iterator<AbstractCard> i = AbstractDungeon.player.masterDeck.group.iterator(); i.hasNext();) {
+            AbstractCard e = (AbstractCard) i.next();
+            if (e instanceof Strike_Bronze) {
+                i.remove();
+            }
+        }
+    }
 }

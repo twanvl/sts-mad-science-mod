@@ -2,21 +2,21 @@ package inventormod.relics;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 import basemod.abstracts.CustomRelic;
-import inventormod.powers.FuelPower;
+import inventormod.InventorMod;
+import inventormod.actions.common.GainFuelAction;
 
 public class FuelTank extends CustomRelic {
-    public static final String ID = "Fuel Tank";
-    public static final String IMAGE = "img/relics/FuelTank.png";
+    public static final String ID = "FuelTank";
+    private static final String IMAGE = InventorMod.relicImage(ID);
     private static final int FUEL = 2;
 
     public FuelTank() {
-        super(ID, new Texture(Gdx.files.internal(IMAGE)), AbstractRelic.RelicTier.STARTER, AbstractRelic.LandingSound.FLAT);
+        super(ID, new Texture(Gdx.files.internal(IMAGE)), RelicTier.STARTER, LandingSound.FLAT);
     }
 
     @Override
@@ -28,7 +28,7 @@ public class FuelTank extends CustomRelic {
     public void atBattleStart() {
         this.flash();
         AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new FuelPower(AbstractDungeon.player, FUEL), FUEL));
+        AbstractDungeon.actionManager.addToTop(new GainFuelAction(FUEL));
     }
 
     @Override

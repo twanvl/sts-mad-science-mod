@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0">
   <modelVersion>4.0.0</modelVersion>
-  
+
   <groupId>inventormod</groupId>
   <artifactId>InventorMod</artifactId>
   <version>0.1.0</version>
@@ -19,7 +19,7 @@
     <dependency>
       <groupId>basemod</groupId>
       <artifactId>BaseMod</artifactId>
-      <version>1.6.4</version>
+      <version>1.6.5</version>
       <scope>system</scope>
       <systemPath>${basedir}/../_ModTheSpire/mods/BaseMod.jar</systemPath>
     </dependency>
@@ -52,7 +52,12 @@
           <excludes>
             <exclude>**/*.xcf</exclude>
             <exclude>**/*.pl</exclude>
+            <exclude>**/Makefile</exclude>
             <exclude>**/.goutputstream</exclude>
+            <exclude>img/cards/large/*</exclude>
+            <exclude>img/cards/large</exclude>
+            <exclude>img/powers/large/*</exclude>
+            <exclude>img/powers/large</exclude>
           </excludes>
         </configuration>
       </plugin>

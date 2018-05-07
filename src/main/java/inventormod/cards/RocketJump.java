@@ -1,22 +1,17 @@
 package inventormod.cards;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import basemod.abstracts.CustomCard;
-import inventormod.patches.CardColorEnum;
-import inventormod.powers.FuelPower;
+import inventormod.actions.common.SpendFuelAction;
 
-public class PoweredDefend extends CustomCard {
-    public static final String ID = "Powered Defend";
-    public static final String IMAGE = "img/cards/PoweredDefend.png";
+public class RocketJump extends AbstractInventorCard {
+    public static final String ID = "RocketJump";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -24,32 +19,27 @@ public class PoweredDefend extends CustomCard {
     private static final int FUEL_COST = 1;
     private static final int BLOCK_AMT = 9;
     private static final int UPGRADE_BLOCK_AMT = 4;
-    private static final int POOL = 0;
+    private static final CardType TYPE = CardType.SKILL;
+    private static final CardRarity RARITY = CardRarity.BASIC;
 
-    public PoweredDefend() {
-        super(ID, NAME, IMAGE, COST, DESCRIPTION, AbstractCard.CardType.SKILL, CardColorEnum.BRONZE, AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.SELF, POOL);
+    public RocketJump() {
+        super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, CardTarget.SELF, 0);
         this.baseBlock = BLOCK_AMT;
+        this.fuelCost = FUEL_COST;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new FuelPower(p, -FUEL_COST)));
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
-    }
-
-    @Override
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        if (!super.canUse(p,m)) return false;
-        if (FuelPower.currentAmount(p) < FUEL_COST) {
-            this.cantUseMessage = FuelPower.NOT_ENOUGH_FUEL_MESSAGE;
-            return false;
-        }
-        return true;
+        //AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new FuelPower(p, -FUEL_COST)));
+        //AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(p, p, FuelPower.POWER_ID, FUEL_COST));
+        //AbstractDungeon.actionManager.addToBottom(new SpendFuelAction(fuelCost, () -> {
+            AbstractDungeon.actionManager.addToTop(new GainBlockAction(p, p, this.block));
+        //}));
     }
 
     @Override
     public AbstractCard makeCopy() {
-        return new PoweredDefend();
+        return new RocketJump();
     }
 
     @Override

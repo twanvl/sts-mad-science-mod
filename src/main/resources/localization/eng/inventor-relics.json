@@ -1,9 +1,44 @@
 {
-  "Fuel Tank": {
+  "FuelTank": {
     "NAME": "Fuel Tank",
     "FLAVOR": "Taken from an old motorcycle, it now stores fuel for all kinds of nifty tools.",
     "DESCRIPTIONS": [
       "At the start of each combat, gain #b"," Fuel."
+    ]
+  },
+  "SignalFlag": {
+    "NAME": "Signal Flag",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "Whenever you play 3 attacks in a turn, gain 1 Fuel."
+    ]
+  },
+  "Funnel": {
+    "NAME": "Funnel",
+    "FLAVOR": "Refuel your tools without spilling a single drop.",
+    "DESCRIPTIONS": [
+      "Whenever you gain Fuel, gain 1 additional Fuel."
+    ]
+  },
+  "ExhaustVents": {
+    "NAME": "Exhaust Vents",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "Whenever you spend Fuel, apply 3 Poison to ALL enemies."
+    ]
+  },
+  "PolishingWheel": {
+    "NAME": "Polishing Wheel",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "Your Trinkets are upgraded."
+    ]
+  },
+  "MagnifyingGlass": {
+    "NAME": "Magnifying Glass",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "Cards can be upgraded any number of times during combat, improving damage and block by 20% after the first upgrade."
     ]
   }
 }

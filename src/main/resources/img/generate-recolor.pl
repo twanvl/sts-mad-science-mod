@@ -17,9 +17,10 @@ if (0) {
 }
 
 # Recolor options
-my $lightness  = 100+10;
-my $saturation = 100+50;
-my $hue        = 100+30;
+#my $lightness = 100+10; my $saturation = 100+50; my $hue = 100+30; # Yellow
+#my $lightness = 100-20; my $saturation = 100-70; my $hue = 100-100; # gray-teal
+my $lightness = 100-5; my $saturation = 100+5; my $hue = 100+20; # brown
+#my $lightness = 100-10; my $saturation = 100-10; my $hue = 100-100; # teal
 
 # make output dirs
 mkdir 'cardui/1024';

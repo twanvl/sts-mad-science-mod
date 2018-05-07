@@ -9,22 +9,20 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import basemod.abstracts.CustomCard;
-import inventormod.patches.CardColorEnum;
-
-public class Defend_Bronze extends CustomCard {
-	public static final String ID = "Defend_Bronze";
-	private static final String IMAGE = "img/cards/Defend_Bronze.png";
+public class Defend_Bronze extends AbstractInventorCard {
+    public static final String ID = "Defend_Bronze";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
     private static final int BLOCK_AMT = 5;
     private static final int UPGRADE_BLOCK_AMT = 3;
-    private static final int POOL = 0;
+    private static final CardType TYPE = CardType.SKILL;
+    private static final CardRarity RARITY = CardRarity.BASIC;
+    private static final CardTarget TARGET = CardTarget.SELF;
 
     public Defend_Bronze() {
-        super(ID, NAME, IMAGE, COST, DESCRIPTION, AbstractCard.CardType.SKILL, CardColorEnum.BRONZE, AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.SELF, POOL);
+        super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
         this.baseBlock = BLOCK_AMT;
     }
 

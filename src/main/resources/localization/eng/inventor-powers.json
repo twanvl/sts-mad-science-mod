@@ -1,4 +1,30 @@
 {
+  "AssemblyLine": {
+    "NAME": "Assembly Line",
+    "DESCRIPTIONS": [
+      "At the start of your turn choose and shuffle a Trinket into your draw pile.",
+      "At the start of your turn choose and shuffle up to #b"," Trinkets into your draw pile."
+    ]
+  },
+  "Automate": {
+    "NAME": "Automate",
+    "DESCRIPTIONS": [
+      "Whenever you play a card, spend 1 Fuel to play it twice."
+    ]
+  },
+  "BandageBot": {
+    "NAME": "Bandage Bot",
+    "DESCRIPTIONS": [
+      "Whenever you take damage, shuffle a Tasty Trinket into your draw pile.",
+      "Whenever you take damage, shuffle #b"," Tasty Trinkets into your draw pile."
+    ]
+  },
+  "Bomb": {
+    "NAME": "Bomb",
+    "DESCRIPTIONS": [
+      "Deals #b"," damage in "," turn."," turns."
+    ]
+  },
   "Fuel": {
     "NAME": "Fuel",
     "DESCRIPTIONS": [
@@ -6,16 +32,111 @@
       "Not enough #rFuel."
     ]
   },
-  "Pumpjack": {
-    "NAME": "Pumpjack",
+  "CaptureMomentum": {
+    "NAME": "Capture Momentum",
     "DESCRIPTIONS": [
-      "At the start of your turn gain #b"," #yFuel"
+      "Whenever an attack would deal damage, instead apply a Bomb that deals #b"," times that damage in 3 turns."
+    ]
+  },
+  "ClockworkAssistant": {
+    "NAME": "Clockwork Assistant",
+    "DESCRIPTIONS": [
+      "At the start of your turn play the top card of your draw pile.",
+      "At the start of your turn play the top #b"," cards of your draw pile."
+    ]
+  },
+  "CloneVats": {
+    "NAME": "Clone Vats",
+    "DESCRIPTIONS": [
+      "At the start of your turn, you may copy a card in your hand.",
+      "At the start of your turn, you may copy up to #b"," cards in your hand.",
+      "Choose a card to duplicate."
+    ]
+  },
+  "DataRecorder": {
+    "NAME": "Data Recorder",
+    "DESCRIPTIONS": [
+      "Whenever an enemy gains Strength, gain #b"," Strength."
+    ]
+  },
+  "ExhaustVents": {
+    "NAME": "Exhaust Vents",
+    "DESCRIPTIONS": [
+      "Whenever you spend Fuel, apply #b"," Poison to ALL enemies."
+    ]
+  },
+  "ExtractOil": {
+    "NAME": "Extracting Oil",
+    "DESCRIPTIONS": [
+      "Whenever you play an Attack, gain #b"," Fuel."
+    ]
+  },
+  "FumeHood": {
+    "NAME": "Fume Hood",
+    "DESCRIPTIONS": [
+      "Whenever you Exhaust a card, gain #b"," Fuel."
+    ]
+  },
+  "GarbageDisposalCannon": {
+    "NAME": "Garbage Disposal Cannon",
+    "DESCRIPTIONS": [
+      "Whenever you Exhaust a card, deal #b"," damage to a random enemy."
     ]
   },
   "Generator": {
     "NAME": "Generator",
     "DESCRIPTIONS": [
-      "At the start of your turn spend #b"," #yFuel to gain #b"," energy"
+      "At the start of your turn spend #b"," #yFuel to gain #b"," Energy."
+    ]
+  },
+  "Jetpack": {
+    "NAME": "Powered Flight",
+    "DESCRIPTIONS": [
+      "Reduce attack damage by 50%. At the start of your turn spend 1 Fuel."
+    ]
+  },
+  "LightOnFire": {
+    "NAME": "On Fire",
+    "DESCRIPTIONS": [
+      "Whenever you spend Fuel, takes #b"," damage."
+    ]
+  },
+  "PortablePumpjack": {
+    "NAME": "Portable Pumpjack",
+    "DESCRIPTIONS": [
+      "At the start of your turn gain #b"," #yFuel."
+    ]
+  },
+  "PowerArmor": {
+    "NAME": "Power Armor",
+    "DESCRIPTIONS": [
+      "At the end of your turn, gain #b"," Block for each Fuel you have."
+    ]
+  },
+  "Reconstitute": {
+    "NAME": "Reconstitute",
+    "DESCRIPTIONS": [
+      "At the end of your turn gain #b"," Fuel for each Fuel spent this turn ("," spent)"
+    ]
+  },
+  "RecyclingStation": {
+    "NAME": "Recycling Station",
+    "DESCRIPTIONS": [
+      "Whenever you draw a Trinket, draw a card.",
+      "Whenever you draw a Trinket, draw #b"," cards."
+    ]
+  },
+  "ShrinkRay": {
+    "NAME": "Shrink Ray",
+    "DESCRIPTIONS": [
+      "Each turn regain 1 Strength."
+    ]
+  },
+  "SoftenUp": {
+    "NAME": "Softening Up",
+    "DESCRIPTIONS": [
+      "Your next attack this turn deals double damage.",
+      "Your next #b"," attacks this turn deal double damage."
     ]
   }
 }

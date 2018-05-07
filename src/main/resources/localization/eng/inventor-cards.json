@@ -1,34 +1,412 @@
 {
+  "AcidSpray": {
+    "NAME": "Acid Spray",
+    "DESCRIPTION": "Choose: Deal !D! damage to a random enemy; or deal !M! damage to ALL enemies.",
+    "EXTENDED_DESCRIPTION": [
+      "Choose",
+      "Focused Nozzle", "Deal !D! damage to a random enemy.",
+      "Wide Nozzle", "Deal !M! damage to all enemies."
+    ]
+  },
+  "AntimatterBomb": {
+    "NAME": "Antimatter Bomb",
+    "DESCRIPTION": "Apply a Bomb that deals !M! damage in 3 turns."
+  },
+  "ArtilleryShot": {
+    "NAME": "Artillery Shot",
+    "DESCRIPTION": "Spend !M! Fuel. NL Deal !D! damage."
+  },
+  "AssemblyLine": {
+    "NAME": "Assembly Line",
+    "DESCRIPTION": "At the start of your turn choose and shuffle a Trinket into your draw pile."
+  },
+  "AutoStrike": {
+    "NAME": "Auto-Strike",
+    "DESCRIPTION": "Deal !D! damage. NL When drawn, deal !M! damage to ALL enemies."
+  },
+  "Automate": {
+    "NAME": "Automate",
+    "DESCRIPTION": "This turn, whenever you play a card, spend 1 Fuel to play it twice."
+  },
+  "Bayonet": {
+    "NAME": "Bayonet",
+    "DESCRIPTION": "Choose: Deal !D! damage; or spend 2 Fuel to deal !D! damage !M! times.",
+    "EXTENDED_DESCRIPTION": [
+      "Choose",
+      "Slash", "Deal !D! damage.",
+      "Shoot", "Spend 2 Fuel, deal !D! damage !M! times."
+    ]
+  },
+  "BandageBot": {
+    "NAME": "Bandage Bot",
+    "DESCRIPTION": "Whenever you take attack damage, shuffle a Tasty Trinket into your draw pile."
+  },
+  "Bombardment": {
+    "NAME": "Bombardment",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies and apply a Bomb that deals !M! damage in 3 turns. Exhaust."
+  },
+  "Booster": {
+    "NAME": "Booster",
+    "DESCRIPTION": "Gain !D! Fuel. Draw 2 cards. Exhaust."
+  },
+  "BoxOfScraps": {
+    "NAME": "Box of Scraps",
+    "DESCRIPTION": "Shuffle !M! trinkets into your draw pile. Draw !M! cards."
+  },
+  "CaptureMomentum": {
+    "NAME": "Capture Momentum",
+    "DESCRIPTION": "This turn, whenever an attack would deal damage, instead apply a Bomb that deals double that damage in 3 turns.",
+    "UPGRADE_DESCRIPTION": "This turn, whenever an attack would deal damage, instead apply a Bomb that deals triple that damage in 3 turns."
+  },
+  "DEPRECATED_ChargeUp": {
+    "NAME": "Charge Up",
+    "DESCRIPTION": "Spend !M! Fuel to gain 2 Strength and 2 Dexterity."
+  },
+  "ClockworkAssistant": {
+    "NAME": "Clockwork Assistant",
+    "DESCRIPTION": "At the start of your turn, draw a card and play it."
+  },
+  "CloneVats": {
+    "NAME": "Clone Vats",
+    "DESCRIPTION": "At the start of your turn, you may copy a card in your hand."
+  },
+  "ComputeTrajectory": {
+    "NAME": "Compute Trajectory",
+    "DESCRIPTION": "Move any number of cards from your draw pile to your discard pile.",
+    "EXTENDED_DESCRIPTION": [
+      "Choose cards to discard."
+    ]
+  },
+  "CondenseVapors": {
+    "NAME": "Condense Vapors",
+    "DESCRIPTION": "Obtain !M! Gold."
+  },
+  "DataRecorder": {
+    "NAME": "Data Recorder",
+    "DESCRIPTION": "Whenever an enemy gains Strength, gain 1 Strength."
+  },
+  "Defend_Bronze": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "Detonate": {
+    "NAME": "Detonate",
+    "DESCRIPTION": "Deal !D! damage. NL Detonate enemy's Bombs.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal damage equal to the enemy's Bombs."
+  },
+  "DEPRECATED_EmergencyRepair": {
+    "NAME": "Emergency Repair",
+    "DESCRIPTION": "Restore all HP lost last turn. Exhaust."
+  },
+  "ExhaustVents": {
+    "NAME": "Exhaust Vents",
+    "DESCRIPTION": "Whenever you spend Fuel, apply !M! Poison to ALL enemies."
+  },
+  "ExploreOptions": {
+    "NAME": "Explore Options",
+    "DESCRIPTION": "Draw !M! cards. When drawn gain !B! Block."
+  },
+  "ExtractOil": {
+    "NAME": "Extract Oil",
+    "DESCRIPTION": "Apply !M! Weak. This turn, when you play an Attack, gain 1 Fuel."
+  },
+  "FlamableWall": {
+    "NAME": "Flamable Wall",
+    "DESCRIPTION": "Choose: Spend 1 Fuel to gain !B! Block; or gain !M! Fuel.",
+    "EXTENDED_DESCRIPTION": [
+      "Choose",
+      "Block", "Spend 1 Fuel, gain !B! Block.",
+      "Fuel", "Gain !M! Fuel."
+    ]
+  },
+  "FlameCannon": {
+    "NAME": "Flame Cannon",
+    "DESCRIPTION": "Spend 1 Fuel. NL Deal !D! damage to ALL enemies."
+  },
+  "FlameThrower": {
+    "NAME": "Flame Thrower",
+    "DESCRIPTION": "Spend all Fuel. NL Deal !D! damage for each Fuel spent."
+  },
+  "FlexibleSpear": {
+    "NAME": "Flexible Spear",
+    "DESCRIPTION": "Choose: Deal !D! damage, apply !M! Weak; or deal !D! damage, apply !M! Vulnerable.",
+    "EXTENDED_DESCRIPTION": [
+      "Choose",
+      "Weaken", "Deal !D! damage, apply !M! Weak.",
+      "Vulnerable", "Deal !D! damage, apply !M! Vulnerable."
+    ]
+  },
+  "FragmentationGrenade": {
+    "NAME": "Fragmentation Grenade",
+    "DESCRIPTION": "Deal !D! damage twice. This turn, whenever you play a card, shuffle a random Trinket into your draw pile."
+  },
+  "FumeBlast": {
+    "NAME": "Fume Blast",
+    "DESCRIPTION": "Deal !D! damage twice. Costs 1 less for each Fuel spent this combat."
+  },
+  "FumeHood": {
+    "NAME": "Fume Hood",
+    "DESCRIPTION": "Whenever you Exhaust a card, gain 1 Fuel."
+  },
+  "DEPRECATED_GarbageDisposalCannon": {
+    "NAME": "Garbage Disposal",
+    "DESCRIPTION": "Whenever you Exhaust a card deal !M! damage to a random enemy."
+  },
+  "GatherParts": {
+    "NAME": "Gather Parts",
+    "DESCRIPTION": "Place all Trinkets from your draw pile into your hand. NL Shuffle !M! random Trinkets into your draw pile. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Place all Trinkets from your draw pile into your hand. NL Shuffle !M! random Trinkets into your draw pile."
+  },
+  "Generator": {
+    "NAME": "Generator",
+    "DESCRIPTION": "At the start of your turn, spend 1 Fuel to gain [R]."
+  },
+  "GattlingGun": {
+    "NAME": "Machine Gun",
+    "DESCRIPTION": "Deal !D! damage for each Fuel you have."
+  },
+  "GlassCannon": {
+    "NAME": "Glass Cannon",
+    "DESCRIPTION": "Deal !D! damage twice. Exhaust."
+  },
+  "GoldenGun": {
+    "NAME": "Golden Gun",
+    "DESCRIPTION": "Spend !M! gold. Deal !D! damage to ALL enemies."
+  },
+  "Grind": {
+    "NAME": "Grind",
+    "DESCRIPTION": "Deal !D! damage. Gain !M! Artifact."
+  },
+  "HideBehindJunk": {
+    "NAME": "Hide Behind Junk",
+    "DESCRIPTION": "Gain !B! Block. When drawn, shuffle a random Trinket into your draw pile."
+  },
+  "ImposingConstruct": {
+    "NAME": "Imposing Construct",
+    "DESCRIPTION": "Gain !B! Block. When drawn apply !M! Weak to all enemies."
+  },
+  "Inflate": {
+    "NAME": "Inflate",
+    "DESCRIPTION": "Gain !B! Block. Lose 1 Dexterity."
+  },
+  "Jetpack": {
+    "NAME": "Jetpack",
+    "DESCRIPTION": "Spent 1 fuel at the start of your turn. Reduce incomming damage by 50%."
+  },
+  "JunkLaser": {
+    "NAME": "Junk Laser",
+    "DESCRIPTION": "Deal !D! damage, deals an additional +!M! damage for ALL of your 0 cost cards."
+  },
+  "LabAccident": {
+    "NAME": "Lab Accident",
+    "DESCRIPTION": "Exhaust all cards in your hand and replace them by random cards. They cost 0 this turn. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Exhaust all cards in your hand and replace them by random upgraded cards. They cost 0 this turn. Exhaust."
+  },
+  "LightOnFire": {
+    "NAME": "LightOnFire",
+    "DESCRIPTION": "Deal !D! damage. This turn, whenever you spend Fuel deal !M! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. This and next turn, whenever you spend Fuel deal !M! damage."
+  },
+  "Lightbulb": {
+    "NAME": "Lightbulb",
+    "DESCRIPTION": "Spend !M! fuel, gain !M! energy."
+  },
+  "MechanicalClaw": {
+    "NAME": "Mechanical Claw",
+    "DESCRIPTION": "Spend 1 fuel. Deal !D! damage. Draw a card."
+  },
+  "Mechanize": {
+    "NAME": "Mechanize",
+    "DESCRIPTION": "Gain !M! Fuel. Cards in your hand cost Fuel instead of energy this turn until played."
+  },
+  "MindControlBeam": {
+    "NAME": "Mind Control Beam",
+    "DESCRIPTION": "Apply !M! Weak. Enemy changes their intent."
+  },
+  "NowOrNever": {
+    "NAME": "Now or Never",
+    "DESCRIPTION": "Choose: Gain !B! Block; or gain !M! Block next turn.",
+    "EXTENDED_DESCRIPTION": [
+      "Choose",
+      "Now", "Gain !B! Block.",
+      "Later", "Gain !M! Block next turn."
+    ]
+  },
+  "OilDrum": {
+    "NAME": "Oil Drum",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Fuel."
+  },
+  "Overdrive": {
+    "NAME": "Overdrive",
+    "DESCRIPTION": "Exhaust any number of cards from your hand, gain !M! Fuel for each card exhausted. Exhaust."
+  },
+  "ParticleBeam": {
+    "NAME": "Particle Beam",
+    "DESCRIPTION": "Deal !D! damage twice. Draw !M! cards."
+  },
+  "Browse": {
+    "NAME": "Browse",
+    "DESCRIPTION": "Spend 1 Fuel. Draw !M! cards. NL Can be upgraded any number of times."
+  },
+  "SpamFilter": {
+    "NAME": "Spam Filter",
+    "DESCRIPTION": "At the end of your turn, put up to !M! cards from your draw pile into your discard pile."
+  },
+  "PneumaticHammer": {
+    "NAME": "PneumaticHammer",
+    "DESCRIPTION": "Deal damage equal to your Fuel X times. Gain X Fuel.",
+    "UPGRADE_DESCRIPTION": "Deal damage equal to your Fuel X+1 times. Gain X+1 Fuel."
+  },
+  "Poke": {
+    "NAME": "Poke",
+    "DESCRIPTION": "Deal !D! damage. Draw cards until you draw a 0 cost card, discard the others."
+  },
+  "PortablePumpjack": {
+    "NAME": "Portable Pumpjack",
+    "DESCRIPTION": "At the start of your turn gain !M! Fuel."
+  },
+  "Postpone": {
+    "NAME": "Postpone",
+    "DESCRIPTION": "Place a card from your hand on top of your draw pile. NL When drawn, draw a card."
+  },
+  "PowerArmor": {
+    "NAME": "Power Armor",
+    "DESCRIPTION": "At the end of your turn, gain 1 Block for each Fuel you have."
+  },
+  "DEPRECATED_PoweredStrike": {
+    "NAME": "Powered Strike",
+    "DESCRIPTION": "Spend 1 Fuel. NL Deal !D! damage."
+  },
+  "Probe": {
+    "NAME": "Probe",
+    "DESCRIPTION": "Deal !D! damage. Look at the top !M! cards of your draw pile. You may discard and upgrade any of them.",
+    "UPGRADE_DESCRIPTION": "Choose cards to discard and upgrade."
+  },
+  "Reconstitute": {
+    "NAME": "Reconstitute",
+    "DESCRIPTION": "At the end of your turn gain !M! Fuel for each Fuel spent this turn."
+  },
+  "RecyclingStation": {
+    "NAME": "Recycling Station",
+    "DESCRIPTION": "Whenever you draw a Trinket, draw a card.",
+    "UPGRADE_DESCRIPTION": "Shuffle !M! random Trinkets into your draw pile. NL Whenever you draw a Trinket, draw a card."
+  },
+  "Redesign": {
+    "NAME": "Redesign",
+    "DESCRIPTION": "Upgrade all cards in your hand and discard them. Draw !M! cards."
+  },
+  "RocketJump": {
+    "NAME": "Nitro Boost",
+    "DESCRIPTION": "Spend 1 Fuel. NL Gain !B! Block."
+  },
+  "Refine": {
+    "NAME": "Refine",
+    "DESCRIPTION": "Double your Fuel. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Double your Fuel."
+  },
+  "Refuel": {
+    "NAME": "Refuel",
+    "DESCRIPTION": "Gain !M! Fuel. NL Can be upgraded any number of times."
+  },
+  "SelfDestruct": {
+    "NAME": "Self Destruct",
+    "DESCRIPTION": "Deal !M! damage to yourself, deal !D! damage to ALL enemies. Exhaust."
+  },
+  "ShrinkRay": {
+    "NAME": "Shrink Ray",
+    "DESCRIPTION": "Enemy loses !M! Strength, it regains 1 Strength per turn. Exhaust."
+  },
+  "SoftenUp": {
+    "NAME": "Soften Up",
+    "DESCRIPTION": "Spend 1 Fuel. Deal !D! damage. Your next attack this turn deals double damage."
+  },
+  "Sprocket": {
+    "NAME": "Sprocket",
+    "DESCRIPTION": "Gain !M! Artifact. Exhaust. NL Can be upgraded any number of times."
+  },
+  "StickSharpener": {
+    "NAME": "Stick Sharpener",
+    "DESCRIPTION": "Whenever you draw, if you have drawn more than 5, deal !M! damage to ALL enemies."
+  },
+  "Strafe": {
+    "NAME": "Strafe",
+    "DESCRIPTION": "Spend 1 Fuel. NL Deal !D! damage. NL Gain !B! block."
+  },
   "Strike_Bronze": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
   },
-	"Defend_Bronze": {
-		"NAME": "Defend",
-		"DESCRIPTION": "Gain !B! Block."
-	},
-  "Powered Strike": {
-    "NAME": "Powered Strike",
-    "DESCRIPTION": "Spend 1 Fuel. Deal !D! damage."
+  "TargetingLaser": {
+    "NAME": "Targeting Laser",
+    "DESCRIPTION": "Deal !D! damage, apply !M! Vulnerable."
   },
-	"Powered Defend": {
-		"NAME": "Powered Defend",
-		"DESCRIPTION": "Spend 1 Fuel. Gain !B! Block."
-	},
-	"Machine Gun": {
-	  "NAME": "Machine Gun",
-	  "DESCRIPTION": "Deal !D! damage for each Fuel you have."
-	},
-	"Portable Pumpjack": {
-	  "NAME": "Portable Pumpjack",
-  	"DESCRIPTION": "At the start of your turn gain !M! Fuel."
-	},
-	"Generator": {
-		"NAME": "Generator",
-	  "DESCRIPTION": "At the start of your turn, spend 1 Fuel to gain [R]."
-	},
-	"Refuel": {
-		"NAME": "Refuel",
-	  "DESCRIPTION": "Gain !M! Fuel."
-	}
+  "ThrowScraps": {
+    "NAME": "Throw Scraps",
+    "DESCRIPTION": "Deal !D! damage, shuffle a random Trinket into your draw pile."
+  },
+  "TimeDilationField": {
+    "NAME": "Time Dilation Field",
+    "DESCRIPTION": "Apply Slow. Exhaust."
+  },
+  "Tinker": {
+    "NAME": "Tinker",
+    "DESCRIPTION": "Draw a card and upgrade it.",
+    "UPGRADE_DESCRIPTION": "Draw a card and upgrade it. NL It costs 1 less this turn."
+  },
+  "Tune": {
+    "NAME": "Tune",
+    "DESCRIPTION": "Choose: Gain !M! Strength and lose !M! Dexterity; or gain !M! Dexterity and lose !M! Strength.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Choose: Gain !M! Strength and lose !M! Dexterity; or gain !M! Dexterity and lose !M! Strength.",
+    "EXTENDED_DESCRIPTION": [
+      "Choose",
+      "Strength",  "Gain !M! Strength and lose !M! Dexterity.",
+      "Dexterity", "Gain !M! Dexterity and lose !M! Strength."
+    ]
+  },
+  "Virus": {
+    "NAME": "Virus",
+    "DESCRIPTION": "Deal damage equal to the number of Virus cards in your deck. Add a copy of this to your discard pile.",
+    "UPGRADE_DESCRIPTION": "Deal damage equal to the number of Virus cards in your deck. Add !M! copies of this to your discard pile."
+  },
+  "WoodenSword": {
+    "NAME": "Wooden Sword",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Fuel."
+  },
+
+  "AbstractTrinket": {
+    "EXTENDED_DESCRIPTION": [
+      "Choose a Trinket to shuffle into your draw pile.",
+      "Choose up to "," Trinkets to shuffle into your draw pile."
+    ]
+  },
+  "DecorativeTrinket": {
+    "NAME": "Decorative Trinket",
+    "DESCRIPTION": "Gain !M! Artifact. NL Exhaust."
+  },
+  "FoamTrinket": {
+    "NAME": "Foam Trinket",
+    "DESCRIPTION": "Gain !M! Dexterity. NL Exhaust."
+  },
+  "FlamableTrinket": {
+    "NAME": "Flamable Trinket",
+    "DESCRIPTION": "Gain !M! Fuel. NL Exhaust."
+  },
+  "RecycledTrinket": {
+    "NAME": "Recycled Trinket",
+    "DESCRIPTION": "Return the top card from your discard pile into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Return a card from your discard pile into your hand. NL Exhaust."
+  },
+  "ShinyTrinket": {
+    "NAME": "Shiny Trinket",
+    "DESCRIPTION": "Gain [R]. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain [R] [R]. NL Exhaust."
+  },
+  "SpikyTrinket": {
+    "NAME": "Spiky Trinket",
+    "DESCRIPTION": "Gain !M! Strength. NL Exhaust."
+  },
+  "TastyTrinket": {
+    "NAME": "Tasty Trinket",
+    "DESCRIPTION": "Heal !M! HP. NL Exhaust."
+  }
 }

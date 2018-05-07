@@ -5,23 +5,25 @@ import java.util.ArrayList;
 import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
-import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
 import basemod.abstracts.CustomPlayer;
+import inventormod.cards.Defend_Bronze;
+import inventormod.cards.RocketJump;
+import inventormod.cards.Strike_Bronze;
+import inventormod.cards.ThrowScraps;
 import inventormod.patches.PlayerClassEnum;
 
 public class Inventor extends CustomPlayer {
-    private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString("Inventor");
-    public static final String[] NAMES = characterStrings.NAMES;
-    public static final String[] TEXT = characterStrings.TEXT;
+    //private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString("Inventor");
+    //public static final String[] NAMES = characterStrings.NAMES;
+    //public static final String[] TEXT = characterStrings.TEXT;
     // Note: Using getCharacterString here doesn't work, because they are loaded after character creation by basemod
-    //public static final String[] NAMES = {"The Inventor."};
-    //public static final String[] TEXT = {"This tinkerer relies on his many machines and devices to aid him."};
-    public static final int START_HP = 70 / 2;
+    public static final String[] NAMES = {"The Inventor","The Inventor"};
+    public static final String[] TEXT = {"This tinkerer relies on his many machines and devices to aid him."};
+    public static final int START_HP = 70;
     public static final int CARD_DRAW = 5;
     public static final int ENERGY = 3;
     public static final int START_GOLD = 99;
@@ -41,7 +43,7 @@ public class Inventor extends CustomPlayer {
     };
 
     public Inventor(String name, AbstractPlayer.PlayerClass setClass) {
-        super(name, setClass, orbTextures, "img/characters/inventor/orb/vfx.png", null, null);
+        super(name, setClass, orbTextures, "img/characters/inventor/orb/vfx.png", (String)null, null);
         this.initializeClass(null,
             "img/characters/inventor/shoulder2.png",
             "img/characters/inventor/shoulder.png",
@@ -54,25 +56,23 @@ public class Inventor extends CustomPlayer {
 
     public static ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<String>();
-        retVal.add("Strike_Bronze");
-        retVal.add("Strike_Bronze");
-        retVal.add("Strike_Bronze");
-        retVal.add("Strike_Bronze");
-        retVal.add("Strike_Bronze");
-        retVal.add("Defend_Bronze");
-        retVal.add("Defend_Bronze");
-        retVal.add("Defend_Bronze");
-        retVal.add("Defend_Bronze");
-        retVal.add("Defend_Bronze");
-        retVal.add("Powered Strike");
-        retVal.add("Powered Defend");
+        retVal.add(Strike_Bronze.ID);
+        retVal.add(Strike_Bronze.ID);
+        retVal.add(Strike_Bronze.ID);
+        retVal.add(Strike_Bronze.ID);
+        retVal.add(Defend_Bronze.ID);
+        retVal.add(Defend_Bronze.ID);
+        retVal.add(Defend_Bronze.ID);
+        retVal.add(Defend_Bronze.ID);
+        retVal.add(RocketJump.ID);
+        retVal.add(ThrowScraps.ID);
         return retVal;
     }
 
     public static ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<String>();
-        retVal.add("Fuel Tank");
-        UnlockTracker.markRelicAsSeen("Fuel Tank");
+        retVal.add("FuelTank");
+        UnlockTracker.markRelicAsSeen("FuelTank");
         return retVal;
     }
 
