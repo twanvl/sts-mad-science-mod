@@ -22,16 +22,14 @@ public class BombPower extends AbstractPower {
     public static final int TURNS = 3;
 
     public int amounts[];
-    public int minturns, maxturns;
 
     public BombPower(AbstractCreature owner, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
-        this.amount = amount; // needed for stackAmount to work, but later on we want to display minturns
-        this.amounts = new int[TURNS+1];
-        this.amounts[TURNS] = amount;
-        this.minturns = this.maxturns = TURNS;
+        this.amount = amount; // displayed amount is total amount of bomb damage
+        this.amounts = new int[TURNS];
+        this.amounts[TURNS-1] = amount;
         this.type = AbstractPower.PowerType.DEBUFF;
         this.isTurnBased = true;
         this.updateDescription();
@@ -41,29 +39,24 @@ public class BombPower extends AbstractPower {
     @Override
     public void updateDescription() {
         this.description = "";
-        for (int i = 0; i<TURNS+1; ++i) {
+        for (int i = 0; i < amounts.length; i++) {
             if (amounts[i] > 0) {
-                if (i > minturns) this.description += " ";
-                this.description += DESCRIPTIONS[0] + amounts[i] + DESCRIPTIONS[1] + i + (i == 1 ? DESCRIPTIONS[2] : DESCRIPTIONS[3]);
+                if (!this.description.isEmpty()) this.description += " ";
+                int turns = i+1;
+                this.description += DESCRIPTIONS[0] + amounts[i] + DESCRIPTIONS[1] + turns + (turns == 1 ? DESCRIPTIONS[2] : DESCRIPTIONS[3]);
             }
         }
     }
 
     @Override
-    public void renderAmount(SpriteBatch sb, float x, float y, Color c) {
-        // render number of turns
-        this.amount = minturns;
-        super.renderAmount(sb,x,y,c);
-    }
-
-    @Override
     public void stackPower(int stackAmount) {
-        amounts[TURNS] += stackAmount;
+        amounts[TURNS-1] += stackAmount;
+        amount = totalAmount();
     }
 
     public int totalAmount() {
         int total = 0;
-        for (int i = 0 ; i < amounts.length ; i++) {
+        for (int i = 0; i < amounts.length; i++) {
             total += amounts[i];
         }
         return total;
@@ -73,25 +66,17 @@ public class BombPower extends AbstractPower {
     public void atStartOfTurn() {
         if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && !AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             this.flashWithoutSound();
+            if (amounts[0] > 0) {
+                AbstractDungeon.actionManager.addToBottom(new BombExplodeAction(this.owner, this.owner, amounts[0]));
+            }
+            // shift one over
             for (int i = 1; i < amounts.length; ++i) {
                 amounts[i-1] = amounts[i];
             }
             amounts[amounts.length-1] = 0;
-            if (amounts[0] > 0) {
-                AbstractDungeon.actionManager.addToBottom(new BombExplodeAction(this.owner, this.owner, amounts[0]));
-                amounts[0] = 0;
-            }
-            // smallest and largest turn with nonzero amount
-            minturns = TURNS+1;
-            maxturns = 0;
-            for (int i = 0; i < amounts.length; ++i) {
-                if (amounts[i] > 0) {
-                    minturns = Math.min(minturns, i);
-                    maxturns = Math.max(maxturns, i);
-                }
-            }
-            this.amount = minturns; // turns remaining
-            if (maxturns == 0) {
+            // total amount to display
+            this.amount = totalAmount();
+            if (this.amount == 0) {
                 AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
             } else {
                 this.updateDescription();
