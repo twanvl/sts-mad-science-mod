@@ -32,7 +32,7 @@ public class Tune extends AbstractInventorCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        ChooseAction choice = new ChooseAction(this, EXTENDED_DESCRIPTION[0]);
+        ChooseAction choice = new ChooseAction(this, m, EXTENDED_DESCRIPTION[0]);
         choice.add(EXTENDED_DESCRIPTION[1], EXTENDED_DESCRIPTION[2], () -> {
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber), this.magicNumber));
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DexterityPower(p, -this.magicNumber), -this.magicNumber));

@@ -28,5 +28,15 @@
       "UNUSED_RESERVE"
     ],
     "DESCRIPTION": "Choose one of the options when playing the card."
+  },
+  "SLOW": {
+    "NAMES":[
+      "slow",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE"
+    ],
+    "DESCRIPTION": "For each card played this turn, enemy takes 10% more damage from Attacks."
   }
 }

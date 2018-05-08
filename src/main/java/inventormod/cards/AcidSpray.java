@@ -36,7 +36,7 @@ public class AcidSpray extends AbstractInventorCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        ChooseAction choice = new ChooseAction(this, EXTENDED_DESCRIPTION[0]);
+        ChooseAction choice = new ChooseAction(this, m, EXTENDED_DESCRIPTION[0]);
         choice.add(EXTENDED_DESCRIPTION[1], EXTENDED_DESCRIPTION[2], () -> {
             if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.getMonsters().getRandomMonster(true), new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.POISON));

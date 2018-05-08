@@ -7,17 +7,19 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.InventorMod;
 
 // Show a screen to let the player pick from several actions, displayed as cards
 public class ChooseAction extends AbstractGameAction {
     AbstractCard baseCard;
+    AbstractMonster target;
     CardGroup choices = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
     ArrayList<Runnable> actions = new ArrayList<>();
     String message;
 
-    public ChooseAction(AbstractCard baseCard, String message) {
+    public ChooseAction(AbstractCard baseCard, AbstractMonster target, String message) {
         this.setValues(AbstractDungeon.player, AbstractDungeon.player, 1);
         this.actionType = AbstractGameAction.ActionType.CARD_MANIPULATION;
         this.baseCard = baseCard;
@@ -30,6 +32,7 @@ public class ChooseAction extends AbstractGameAction {
         choice.name = name;
         choice.rawDescription = description;
         choice.initializeDescription();
+        choice.calculateCardDamage(target);
         choices.addToTop(choice);
         actions.add(action);
     }

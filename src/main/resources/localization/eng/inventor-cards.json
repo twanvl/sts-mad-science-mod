@@ -108,7 +108,7 @@
   },
   "ExtractOil": {
     "NAME": "Extract Oil",
-    "DESCRIPTION": "Apply !M! Weak. This turn, when you play an Attack, gain 1 Fuel."
+    "DESCRIPTION": "Deal !D! damage. This turn, when you play an Attack, gain 1 Fuel."
   },
   "FlamableWall": {
     "NAME": "Flamable Wall",
@@ -192,7 +192,7 @@
   },
   "Jetpack": {
     "NAME": "Jetpack",
-    "DESCRIPTION": "Spent 1 fuel at the start of your turn. Reduce incomming damage by 50%."
+    "DESCRIPTION": "Spent 1 fuel at the start of each turn. Reduce incomming damage by 50%."
   },
   "JunkLaser": {
     "NAME": "Junk Laser",
@@ -269,7 +269,7 @@
   "Postpone": {
     "NAME": "Postpone",
     "DESCRIPTION": "Place a card from your hand on top of your draw pile. NL When drawn, draw a card.",
-    "UPGRADE_DESCRIPTION": "Place any number of cards from your hand on top of your draw pile. NL When drawn, draw a card.",
+    "UPGRADE_DESCRIPTION": "Place a card from your hand on top of your draw pile. NL When drawn, draw !M! cards.",
     "EXTENDED_DESCRIPTION": ["Choose cards to place on top of your draw pile."]
   },
   "PowerArmor": {

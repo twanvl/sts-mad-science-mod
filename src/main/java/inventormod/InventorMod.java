@@ -125,6 +125,9 @@ public class InventorMod implements
     @Override
     public void receiveEditRelics() {
         BaseMod.addRelicToCustomPool(new FuelTank(), CardColorEnum.BRONZE.toString());
+        BaseMod.addRelicToCustomPool(new Funnel(), CardColorEnum.BRONZE.toString());
+        BaseMod.addRelicToCustomPool(new PolishingWheel(), CardColorEnum.BRONZE.toString());
+        BaseMod.addRelicToCustomPool(new SignalFlag(), CardColorEnum.BRONZE.toString());
     }
 
     @Override

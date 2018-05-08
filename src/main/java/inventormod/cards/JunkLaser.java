@@ -28,7 +28,7 @@ public class JunkLaser extends AbstractInventorCard {
     public JunkLaser() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
         this.baseDamage = DAMAGE;
-        this.magicNumber = EXTRA_DAMAGE;
+        this.magicNumber = this.baseMagicNumber = EXTRA_DAMAGE;
     }
 
     @Override

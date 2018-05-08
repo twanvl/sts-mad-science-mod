@@ -19,7 +19,7 @@ public class AntimatterBomb extends AbstractInventorCard {
     private static final int BOMB_AMT = 15;
     private static final int UPGRADE_BOMB_AMT = 5;
     private static final CardType TYPE = CardType.SKILL;
-    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
     public AntimatterBomb() {

@@ -34,18 +34,45 @@ public class ShuffleTrinketAction extends AbstractGameAction {
     @Override
     public void update() {
         if (this.duration == startingDuration) {
-            // see MakeTempCardInDrawPileAction
-            ArrayList<AbstractCard> cards = selectTrinkets(this.amount, this.random);
-            boolean randomSpot = true;
-            for (AbstractCard c : cards) {
-                if (cards.size() < 6) {
-                    AbstractDungeon.effectList.add(new ShowCardAndAddToDrawPileEffect(c, (float)Settings.WIDTH / 2.0f, (float)Settings.HEIGHT / 2.0f, randomSpot, cardOffset));
-                } else {
-                    AbstractDungeon.effectList.add(new ShowCardAndAddToDrawPileEffect(c, randomSpot));
+            amount = Math.min(amount, allTrinkets.size());
+            if (random) {
+                // random without replacement
+                ArrayList<AbstractCard> cards = new ArrayList<>();
+                while(cards.size() < amount) {
+                    AbstractCard card = allTrinketsToUse().getRandomCard(false);
+                    if (!cards.contains(card)) {
+                        cards.add(card);
+                    }
                 }
+                shuffleTrinkets(cards);
+                isDone = true;
+                return;
+            } else {
+                // Show a screen to select a number of cards
+                String message = amount == 1 ? AbstractTrinket.EXTENDED_DESCRIPTION[0] : AbstractTrinket.EXTENDED_DESCRIPTION[1] + amount + AbstractTrinket.EXTENDED_DESCRIPTION[2];
+                AbstractDungeon.gridSelectScreen.open(allTrinketsToUse(), amount, message, false, false, true, false);
+                this.tickDuration();
+                return;
             }
         }
+        if (AbstractDungeon.gridSelectScreen.selectedCards.size() != 0) {
+            shuffleTrinkets(AbstractDungeon.gridSelectScreen.selectedCards);
+            AbstractDungeon.gridSelectScreen.selectedCards.clear();
+        }
         this.tickDuration();
+    }
+
+    private void shuffleTrinkets(ArrayList<AbstractCard> cards) {
+        // see MakeTempCardInDrawPileAction
+        boolean randomSpot = true;
+        for (AbstractCard c : cards) {
+            c.unhover();
+            if (cards.size() < 6) {
+                AbstractDungeon.effectList.add(new ShowCardAndAddToDrawPileEffect(c, (float)Settings.WIDTH / 2.0f, (float)Settings.HEIGHT / 2.0f, randomSpot, cardOffset));
+            } else {
+                AbstractDungeon.effectList.add(new ShowCardAndAddToDrawPileEffect(c, randomSpot));
+            }
+        }
     }
 
     private static CardGroup allTrinkets;
@@ -73,28 +100,6 @@ public class ShuffleTrinketAction extends AbstractGameAction {
             return allUpgradedTrinkets;
         } else {
             return allTrinkets;
-        }
-    }
-
-    // Show a screen to select a number of cards, or pick them at random
-    private static ArrayList<AbstractCard> selectTrinkets(int number, boolean random) {
-        number = Math.min(number, allTrinkets.size());
-        if (random) {
-            // random without replacement
-            ArrayList<AbstractCard> cards = new ArrayList<>();
-            while(cards.size() < number) {
-                AbstractCard card = allTrinketsToUse().getRandomCard(false);
-                if (!cards.contains(card)) {
-                    cards.add(card);
-                }
-            }
-            return cards;
-        } else {
-            String message = number == 1 ? AbstractTrinket.EXTENDED_DESCRIPTION[0] : AbstractTrinket.EXTENDED_DESCRIPTION[1] + number + AbstractTrinket.EXTENDED_DESCRIPTION[2];
-            AbstractDungeon.gridSelectScreen.open(allTrinketsToUse(), number, message, false, false, true, false);
-            ArrayList<AbstractCard> cards = new ArrayList<>(AbstractDungeon.gridSelectScreen.selectedCards);
-            AbstractDungeon.gridSelectScreen.selectedCards.clear();
-            return cards;
         }
     }
 }

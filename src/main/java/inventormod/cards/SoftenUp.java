@@ -20,10 +20,10 @@ public class SoftenUp extends AbstractInventorCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
     private static final int FUEL_COST = 1;
-    private static final int ATTACK_DMG = 6;
+    private static final int ATTACK_DMG = 4;
     private static final int UPGRADE_DMG = 3;
     private static final CardType TYPE = CardType.ATTACK;
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
     public SoftenUp() {

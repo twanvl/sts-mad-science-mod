@@ -23,7 +23,7 @@ public class RecyclingStation extends AbstractInventorCard {
     private static final int TRINKET_AMT = 0;
     private static final int UPGRADE_TRINKET_AMT = 2;
     private static final CardType TYPE = CardType.POWER;
-    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
 
     public RecyclingStation() {

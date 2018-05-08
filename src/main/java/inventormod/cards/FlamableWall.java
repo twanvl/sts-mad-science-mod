@@ -37,7 +37,7 @@ public class FlamableWall extends AbstractInventorCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         // Two options
-        ChooseAction choice = new ChooseAction(this, EXTENDED_DESCRIPTION[0]);
+        ChooseAction choice = new ChooseAction(this, m, EXTENDED_DESCRIPTION[0]);
         if (FuelPower.currentAmount(p) >= FUEL_COST) {
             choice.add(EXTENDED_DESCRIPTION[1], EXTENDED_DESCRIPTION[2], () -> {
                 FuelPower.spendFuel(FUEL_COST);

@@ -58,6 +58,8 @@
             <exclude>img/cards/large</exclude>
             <exclude>img/powers/large/*</exclude>
             <exclude>img/powers/large</exclude>
+            <exclude>img/cards/large/*/*</exclude>
+            <exclude>img/relics/large/*/*</exclude>
           </excludes>
         </configuration>
       </plugin>

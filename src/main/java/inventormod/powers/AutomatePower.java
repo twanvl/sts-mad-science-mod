@@ -27,7 +27,6 @@ public class AutomatePower extends AbstractPower {
         this.ID = POWER_ID;
         this.owner = owner;
         this.amount = amount;
-        this.type = AbstractPower.PowerType.DEBUFF;
         this.isTurnBased = true;
         this.updateDescription();
         this.img = ImageMaster.loadImage(InventorMod.powerImage(POWER_ID));
