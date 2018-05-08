@@ -17,26 +17,23 @@ public class HideBehindJunk extends AbstractInventorCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 1;
-    private static final int BLOCK = 8;
+    private static final int BLOCK = 6;
     private static final int UPGRADE_BLOCK = 3;
     private static final int TRINKETS = 1;
+    private static final int UPGRADE_TRINKETS = 1;
     private static final CardType TYPE = CardType.SKILL;
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.BASIC;
     private static final CardTarget TARGET = CardTarget.SELF;
 
     public HideBehindJunk() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
         this.baseBlock = BLOCK;
-        this.magicNumber = TRINKETS;
+        this.magicNumber = this.baseMagicNumber= TRINKETS;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
-    }
-
-    @Override
-    public void triggerWhenDrawn() {
         AbstractDungeon.actionManager.addToBottom(new ShuffleTrinketAction(this.magicNumber, true, false));
     }
 
@@ -50,6 +47,9 @@ public class HideBehindJunk extends AbstractInventorCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeBlock(UPGRADE_BLOCK);
+            this.upgradeMagicNumber(UPGRADE_TRINKETS);
+            this.rawDescription = UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 }

@@ -11,9 +11,9 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
 import basemod.abstracts.CustomPlayer;
 import inventormod.cards.Defend_Bronze;
-import inventormod.cards.RocketJump;
+import inventormod.cards.HideBehindJunk;
+import inventormod.cards.PoweredStrike;
 import inventormod.cards.Strike_Bronze;
-import inventormod.cards.ThrowScraps;
 import inventormod.patches.PlayerClassEnum;
 
 public class Inventor extends CustomPlayer {
@@ -64,8 +64,8 @@ public class Inventor extends CustomPlayer {
         retVal.add(Defend_Bronze.ID);
         retVal.add(Defend_Bronze.ID);
         retVal.add(Defend_Bronze.ID);
-        retVal.add(RocketJump.ID);
-        retVal.add(ThrowScraps.ID);
+        retVal.add(PoweredStrike.ID);
+        retVal.add(HideBehindJunk.ID);
         return retVal;
     }
 
