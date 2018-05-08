@@ -1,14 +1,18 @@
 package inventormod.powers;
 
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.PoisonPower;
 
 import inventormod.InventorMod;
 
-public class ExhaustVentsPower extends AbstractPower {
+public class ExhaustVentsPower extends AbstractPower implements FuelPower.Listener {
     public static final String POWER_ID = "ExhaustVents";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
@@ -28,5 +32,16 @@ public class ExhaustVentsPower extends AbstractPower {
         this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
 
-    // TODO: implement
+    @Override
+    public void onFuelChange(int amount) {
+        if (amount < 0) {
+            if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+                this.flash();
+                for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
+                    if (m.isDead || m.isDying) continue;
+                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this.owner, new PoisonPower(m, this.owner, this.amount), this.amount));
+                }
+            }
+        }
+    }
 }

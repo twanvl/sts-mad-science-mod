@@ -20,12 +20,12 @@ public class Detonate extends AbstractInventorCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
-    private static final int COST = 2;
+    private static final int COST = 1;
     private static final int ATTACK_DMG = 8;
     private static final int UPGRADE_ATTACK_DMG = 0;
     private static final CardType TYPE = CardType.ATTACK;
-    private static final CardRarity RARITY = CardRarity.RARE;
-    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
+    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
 
     public Detonate() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);

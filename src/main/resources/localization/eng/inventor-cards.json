@@ -196,7 +196,7 @@
   },
   "JunkLaser": {
     "NAME": "Junk Laser",
-    "DESCRIPTION": "Deal !D! damage, deals an additional +!M! damage for ALL of your 0 cost cards."
+    "DESCRIPTION": "Deal !D! damage, deals an additional !M! damage for ALL of your 0 cost cards."
   },
   "LabAccident": {
     "NAME": "Lab Accident",

@@ -1,7 +1,7 @@
 package inventormod.cards;
 
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.RollMoveAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -29,16 +29,15 @@ public class MindControlBeam extends AbstractInventorCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        //AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new WeakPower(m, this.magicNumber, false), this.magicNumber));
-        //AbstractDungeon.actionManager.addToBottom(new RollMoveAction(m));
-        AbstractDungeon.actionManager.addToBottom(new AbstractGameAction(){
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new WeakPower(m, this.magicNumber, false), this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new AbstractGameAction() {
             @Override
             public void update() {
                 m.rollMove();
                 AbstractDungeon.getMonsters().showIntent();
                 this.isDone = true;
             }
-        }));
+        });
     }
 
     @Override

@@ -18,7 +18,7 @@ public class HideBehindJunk extends AbstractInventorCard {
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 1;
     private static final int BLOCK = 6;
-    private static final int UPGRADE_BLOCK = 3;
+    private static final int UPGRADE_BLOCK = 2;
     private static final int TRINKETS = 1;
     private static final int UPGRADE_TRINKETS = 1;
     private static final CardType TYPE = CardType.SKILL;

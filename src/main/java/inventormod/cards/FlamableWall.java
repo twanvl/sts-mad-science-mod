@@ -23,7 +23,7 @@ public class FlamableWall extends AbstractInventorCard {
     private static final int FUEL_AMT = 3;
     private static final int UPGRADE_FUEL_AMT = 1;
     private static final int BLOCK_AMT = 15;
-    private static final int UPGRADE_BLOCK_AMT = 20;
+    private static final int UPGRADE_BLOCK_AMT = 3;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
