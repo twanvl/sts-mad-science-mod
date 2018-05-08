@@ -55,6 +55,9 @@ public class InventorMod implements
     public static String relicImage(String id) {
         return "img/relics/" + id + ".png";
     }
+    public static String relicOutline(String id) {
+        return "img/relics/outline/" + id + ".png";
+    }
     public static String powerImage(String id) {
         return "img/powers/32/" + id + ".png";
     }

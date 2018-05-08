@@ -1,18 +1,12 @@
 package inventormod.relics;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
-import basemod.abstracts.CustomRelic;
-import inventormod.InventorMod;
-
-public class PolishingWheel extends CustomRelic {
+public class PolishingWheel extends AbstractInventorRelic {
     public static final String ID = "PolishingWheel";
-    private static final String IMAGE = InventorMod.relicImage(ID);
 
     public PolishingWheel() {
-        super(ID, new Texture(Gdx.files.internal(IMAGE)), RelicTier.UNCOMMON, LandingSound.SOLID);
+        super(ID, RelicTier.UNCOMMON, LandingSound.SOLID);
     }
 
     @Override

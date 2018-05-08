@@ -1,7 +1,5 @@
 package inventormod.relics;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
@@ -9,16 +7,13 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
-import basemod.abstracts.CustomRelic;
-import inventormod.InventorMod;
 import inventormod.powers.FuelPower;
 
-public class SignalFlag extends CustomRelic {
+public class SignalFlag extends AbstractInventorRelic {
     public static final String ID = "SignalFlag";
-    private static final String IMAGE = InventorMod.relicImage(ID);
 
     public SignalFlag() {
-        super(ID, new Texture(Gdx.files.internal(IMAGE)), RelicTier.UNCOMMON, LandingSound.CLINK);
+        super(ID, RelicTier.UNCOMMON, LandingSound.CLINK);
     }
 
     @Override
