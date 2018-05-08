@@ -187,7 +187,7 @@ public class InventorMod implements
             BaseMod.addCard(new PortablePumpjack());
             BaseMod.addCard(new Postpone());
             BaseMod.addCard(new PowerArmor());
-            //BaseMod.addCard(new DEPRECATED_PoweredStrike());
+            BaseMod.addCard(new PoweredStrike());
             BaseMod.addCard(new Probe());
             BaseMod.addCard(new Reconstitute());
             BaseMod.addCard(new RecyclingStation());

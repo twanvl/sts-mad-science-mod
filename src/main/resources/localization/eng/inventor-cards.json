@@ -273,7 +273,7 @@
     "NAME": "Power Armor",
     "DESCRIPTION": "At the end of your turn, gain 1 Block for each Fuel you have."
   },
-  "DEPRECATED_PoweredStrike": {
+  "PoweredStrike": {
     "NAME": "Powered Strike",
     "DESCRIPTION": "Spend 1 Fuel. NL Deal !D! damage."
   },

@@ -10,8 +10,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class DEPRECATED_PoweredStrike extends AbstractInventorCard {
-    public static final String ID = "DEPRECATED_PoweredStrike";
+public class PoweredStrike extends AbstractInventorCard {
+    public static final String ID = "PoweredStrike";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -22,8 +22,8 @@ public class DEPRECATED_PoweredStrike extends AbstractInventorCard {
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardRarity RARITY = CardRarity.BASIC;
 
-    public DEPRECATED_PoweredStrike() {
-        super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, CardTarget.ENEMY, 0);
+    public PoweredStrike() {
+        super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, CardTarget.ENEMY);
         this.baseDamage = ATTACK_DMG;
         this.fuelCost = FUEL_COST;
     }
@@ -35,7 +35,7 @@ public class DEPRECATED_PoweredStrike extends AbstractInventorCard {
 
     @Override
     public AbstractCard makeCopy() {
-        return new DEPRECATED_PoweredStrike();
+        return new PoweredStrike();
     }
 
     @Override
