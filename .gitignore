@@ -6,5 +6,8 @@ dependency-reduced-pom.xml
 notsrc
 target
 
-src/main/resources/images/characters/hybrid/orb/red
-src/main/resources/images/characters/hybrid/orb/green
+src/main/resources/img/cards/*.png
+src/main/resources/img/relics/*.png
+src/main/resources/img/powers/32
+src/main/resources/img/powers/64
+
