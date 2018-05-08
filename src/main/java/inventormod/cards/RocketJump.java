@@ -23,7 +23,7 @@ public class RocketJump extends AbstractInventorCard {
     private static final CardRarity RARITY = CardRarity.BASIC;
 
     public RocketJump() {
-        super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, CardTarget.SELF, 0);
+        super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, CardTarget.SELF);
         this.baseBlock = BLOCK_AMT;
         this.fuelCost = FUEL_COST;
     }
