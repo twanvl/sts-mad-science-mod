@@ -267,7 +267,9 @@
   },
   "Postpone": {
     "NAME": "Postpone",
-    "DESCRIPTION": "Place a card from your hand on top of your draw pile. NL When drawn, draw a card."
+    "DESCRIPTION": "Place a card from your hand on top of your draw pile. NL When drawn, draw a card.",
+    "UPGRADE_DESCRIPTION": "Place any number of cards from your hand on top of your draw pile. NL When drawn, draw a card.",
+    "EXTENDED_DESCRIPTION": ["Choose cards to place on top of your draw pile."]
   },
   "PowerArmor": {
     "NAME": "Power Armor",
