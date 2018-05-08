@@ -22,7 +22,6 @@ public class WoodenSword extends AbstractInventorCard {
     private static final int FUEL_AMT = 1;
     private static final int ATTACK_DMG = 8;
     private static final int UPGRADE_ATTACK_DMG = 3;
-    private static final int POOL = 1;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
