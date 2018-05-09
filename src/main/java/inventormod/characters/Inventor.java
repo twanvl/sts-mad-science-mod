@@ -15,6 +15,7 @@ import inventormod.cards.HideBehindJunk;
 import inventormod.cards.PoweredStrike;
 import inventormod.cards.Strike_Bronze;
 import inventormod.patches.PlayerClassEnum;
+import inventormod.relics.FuelTank;
 
 public class Inventor extends CustomPlayer {
     //private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString("Inventor");
@@ -23,7 +24,7 @@ public class Inventor extends CustomPlayer {
     // Note: Using getCharacterString here doesn't work, because they are loaded after character creation by basemod
     public static final String[] NAMES = {"The Inventor","The Inventor"};
     public static final String[] TEXT = {"This tinkerer relies on his many machines and devices to aid him."};
-    public static final int START_HP = 70;
+    public static final int START_HP = 75;
     public static final int CARD_DRAW = 5;
     public static final int ENERGY = 3;
     public static final int START_GOLD = 99;
@@ -71,8 +72,8 @@ public class Inventor extends CustomPlayer {
 
     public static ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<String>();
-        retVal.add("FuelTank");
-        UnlockTracker.markRelicAsSeen("FuelTank");
+        retVal.add(FuelTank.ID);
+        UnlockTracker.markRelicAsSeen(FuelTank.ID);
         return retVal;
     }
 
