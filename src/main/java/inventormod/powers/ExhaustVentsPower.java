@@ -33,8 +33,8 @@ public class ExhaustVentsPower extends AbstractPower implements FuelPower.Listen
     }
 
     @Override
-    public void onFuelChange(int amount) {
-        if (amount < 0) {
+    public void onFuelChange(int change) {
+        if (change < 0) {
             if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
                 this.flash();
                 for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
