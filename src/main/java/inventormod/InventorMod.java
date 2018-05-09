@@ -124,9 +124,11 @@ public class InventorMod implements
 
     @Override
     public void receiveEditRelics() {
+        BaseMod.addRelicToCustomPool(new inventormod.relics.ExhaustVents(), CardColorEnum.BRONZE.toString());
         BaseMod.addRelicToCustomPool(new FuelTank(), CardColorEnum.BRONZE.toString());
         BaseMod.addRelicToCustomPool(new Funnel(), CardColorEnum.BRONZE.toString());
         BaseMod.addRelicToCustomPool(new PolishingWheel(), CardColorEnum.BRONZE.toString());
+        BaseMod.addRelicToCustomPool(new inventormod.relics.PortablePumpjack(), CardColorEnum.BRONZE.toString());
         BaseMod.addRelicToCustomPool(new SignalFlag(), CardColorEnum.BRONZE.toString());
     }
 
@@ -155,7 +157,7 @@ public class InventorMod implements
             BaseMod.addCard(new Defend_Bronze());
             BaseMod.addCard(new Detonate());
             //BaseMod.addCard(new DEPRECATED_EmergencyRepair());
-            BaseMod.addCard(new ExhaustVents());
+            //BaseMod.addCard(new inventormod.cards.ExhaustVents());
             BaseMod.addCard(new ExploreOptions());
             BaseMod.addCard(new ExtractOil());
             BaseMod.addCard(new FlamableWall());
@@ -190,7 +192,7 @@ public class InventorMod implements
             BaseMod.addCard(new SoftenUp());
             BaseMod.addCard(new Sprocket());
             BaseMod.addCard(new PneumaticHammer());
-            BaseMod.addCard(new PortablePumpjack());
+            //BaseMod.addCard(new inventormod.cards.PortablePumpjack());
             BaseMod.addCard(new Postpone());
             BaseMod.addCard(new PowerArmor());
             BaseMod.addCard(new PoweredStrike());
@@ -211,6 +213,7 @@ public class InventorMod implements
             BaseMod.addCard(new ThrowScraps());
             BaseMod.addCard(new TimeDilationField());
             BaseMod.addCard(new Tinker());
+            BaseMod.addCard(new Tune());
             //BaseMod.addCard(new Virus());
             BaseMod.addCard(new WoodenSword());
 
