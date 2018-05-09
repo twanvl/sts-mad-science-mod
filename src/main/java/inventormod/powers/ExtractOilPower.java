@@ -1,6 +1,5 @@
 package inventormod.powers;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -13,6 +12,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import inventormod.InventorMod;
+import inventormod.actions.common.GainFuelAction;
 
 public class ExtractOilPower extends AbstractPower {
     public static final String POWER_ID = "ExtractOil";
@@ -44,7 +44,7 @@ public class ExtractOilPower extends AbstractPower {
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.type == CardType.ATTACK) {
             this.flash();
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner, new FuelPower(owner, amount), amount));
+            AbstractDungeon.actionManager.addToBottom(new GainFuelAction(amount));
         }
     }
 }

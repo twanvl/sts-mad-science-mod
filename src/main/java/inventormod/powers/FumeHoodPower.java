@@ -1,6 +1,5 @@
 package inventormod.powers;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -10,6 +9,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import inventormod.InventorMod;
+import inventormod.actions.common.GainFuelAction;
 
 public class FumeHoodPower extends AbstractPower {
     public static final String POWER_ID = "FumeHood";
@@ -35,7 +35,7 @@ public class FumeHoodPower extends AbstractPower {
     public void onExhaust(AbstractCard card) {
         if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             this.flash();
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, this.owner, new FuelPower(this.owner, this.amount), this.amount));
+            AbstractDungeon.actionManager.addToBottom(new GainFuelAction(this.amount));
         }
     }
 }

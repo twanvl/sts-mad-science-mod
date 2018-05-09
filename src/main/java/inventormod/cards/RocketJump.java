@@ -8,8 +8,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import inventormod.actions.common.SpendFuelAction;
-
 public class RocketJump extends AbstractInventorCard {
     public static final String ID = "RocketJump";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -30,11 +28,7 @@ public class RocketJump extends AbstractInventorCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        //AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new FuelPower(p, -FUEL_COST)));
-        //AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(p, p, FuelPower.POWER_ID, FUEL_COST));
-        //AbstractDungeon.actionManager.addToBottom(new SpendFuelAction(fuelCost, () -> {
-            AbstractDungeon.actionManager.addToTop(new GainBlockAction(p, p, this.block));
-        //}));
+        AbstractDungeon.actionManager.addToTop(new GainBlockAction(p, p, this.block));
     }
 
     @Override

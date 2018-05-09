@@ -1,6 +1,5 @@
 package inventormod.cards;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -10,6 +9,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.actions.common.ChooseAction;
+import inventormod.actions.common.GainFuelAction;
 import inventormod.powers.FuelPower;
 
 public class FlamableWall extends AbstractInventorCard {
@@ -45,7 +45,7 @@ public class FlamableWall extends AbstractInventorCard {
             });
         }
         choice.add(EXTENDED_DESCRIPTION[3], EXTENDED_DESCRIPTION[4], () -> {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new FuelPower(p, this.magicNumber), this.magicNumber));
+            AbstractDungeon.actionManager.addToBottom(new GainFuelAction(this.magicNumber));
         });
         AbstractDungeon.actionManager.addToBottom(choice);
     }

@@ -1,6 +1,5 @@
 package inventormod.cards;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -8,8 +7,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import inventormod.actions.common.GainFuelAction;
 import inventormod.actions.unique.MechanizeAction;
-import inventormod.powers.FuelPower;
 
 public class Mechanize extends AbstractInventorCard {
     public static final String ID = "Mechanize";
@@ -30,7 +29,7 @@ public class Mechanize extends AbstractInventorCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new FuelPower(p, this.magicNumber), this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new GainFuelAction(this.magicNumber));
         AbstractDungeon.actionManager.addToBottom(new MechanizeAction());
     }
 

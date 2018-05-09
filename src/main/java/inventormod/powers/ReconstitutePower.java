@@ -1,6 +1,5 @@
 package inventormod.powers;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -10,7 +9,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import inventormod.InventorMod;
-import inventormod.powers.FuelPower;
+import inventormod.actions.common.GainFuelAction;
 
 public class ReconstitutePower extends AbstractPower implements FuelPower.Listener {
     public static final String POWER_ID = "Reconstitute";
@@ -38,7 +37,7 @@ public class ReconstitutePower extends AbstractPower implements FuelPower.Listen
         if (FuelPower.fuelSpentThisTurn > 0) {
             this.flash();
             int gain = FuelPower.fuelSpentThisTurn * amount;
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, this.owner, new FuelPower(this.owner, gain), gain));
+            AbstractDungeon.actionManager.addToBottom(new GainFuelAction(gain));
         }
         AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
     }

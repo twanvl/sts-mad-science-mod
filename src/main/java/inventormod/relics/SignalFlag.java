@@ -1,13 +1,12 @@
 package inventormod.relics;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
-import inventormod.powers.FuelPower;
+import inventormod.actions.common.GainFuelAction;
 
 public class SignalFlag extends AbstractInventorRelic {
     public static final String ID = "SignalFlag";
@@ -34,7 +33,7 @@ public class SignalFlag extends AbstractInventorRelic {
                 this.counter = 0;
                 this.flash();
                 AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new FuelPower(AbstractDungeon.player, 1), 1));
+                AbstractDungeon.actionManager.addToBottom(new GainFuelAction(1));
             }
         }
     }

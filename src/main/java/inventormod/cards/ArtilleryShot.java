@@ -31,11 +31,7 @@ public class ArtilleryShot extends AbstractInventorCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        //AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new FuelPower(p, -FUEL_COST)));
-        //AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(p, p, FuelPower.POWER_ID, FUEL_COST));
-        //AbstractDungeon.actionManager.addToBottom(new SpendFuelAction(fuelCost, () -> {
-            AbstractDungeon.actionManager.addToBottom(new DamageAction(m,new DamageInfo(p, this.damage, this.damageTypeForTurn),AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-        //}));
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m,new DamageInfo(p, this.damage, this.damageTypeForTurn),AbstractGameAction.AttackEffect.BLUNT_HEAVY));
     }
 
     @Override
