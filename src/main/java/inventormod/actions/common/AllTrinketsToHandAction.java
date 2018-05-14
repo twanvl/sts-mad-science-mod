@@ -5,6 +5,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
+import inventormod.cards.AbstractTrinket;
+
 public class AllTrinketsToHandAction extends AbstractGameAction {
     private AbstractPlayer p = AbstractDungeon.player;
 
@@ -16,7 +18,9 @@ public class AllTrinketsToHandAction extends AbstractGameAction {
     @Override
     public void update() {
         for (AbstractCard card : this.p.drawPile.group) {
-            AbstractDungeon.actionManager.addToBottom(new DrawPileToHandAction(card));
+            if (card instanceof AbstractTrinket) {
+                AbstractDungeon.actionManager.addToBottom(new DrawPileToHandAction(card));
+            }
         }
         this.tickDuration();
         this.isDone = true;
