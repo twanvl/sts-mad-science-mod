@@ -21,10 +21,10 @@
     ]
   },
   "ExhaustVents": {
-    "NAME": "Exhaust Vents",
+    "NAME": "Exhaust Vent",
     "FLAVOR": "",
     "DESCRIPTIONS": [
-      "Whenever you spend Fuel, apply 3 Poison to ALL enemies."
+      "Whenever you spend Fuel, apply "," Poison to ALL enemies."
     ]
   },
   "PolishingWheel": {
@@ -34,8 +34,15 @@
       "Your Trinkets are upgraded."
     ]
   },
-  "MagnifyingGlass": {
-    "NAME": "Magnifying Glass",
+  "PortablePumpjack": {
+    "NAME": "Portable Pumpjack",
+    "FLAVOR": "Stolen from an oil field.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain "," Fuel."
+    ]
+  },
+  "InfiniteJournal": {
+    "NAME": "Infinite Journal",
     "FLAVOR": "",
     "DESCRIPTIONS": [
       "Cards can be upgraded any number of times during combat, improving damage and block by 20% after the first upgrade."

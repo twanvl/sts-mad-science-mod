@@ -4,13 +4,14 @@ import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInsertPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.red.Strike_Red;
-import com.megacrit.cardcrawl.cards.green.Defend_Green;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardBrieflyEffect;
-import inventormod.patches.PlayerClassEnum;
+
+import inventormod.cards.Defend_Bronze;
+import inventormod.cards.Strike_Bronze;
+import inventormod.relics.InfiniteJournal;
 
 @SpirePatch(cls = "com.megacrit.cardcrawl.events.thecity.BackToBasics", method = "buttonEffect")
 public class BackToBasicsPatch {
@@ -20,8 +21,8 @@ public class BackToBasicsPatch {
         AbstractPlayer.PlayerClass selection = AbstractDungeon.player.chosenClass;
         if (selection == PlayerClassEnum.INVENTOR) {
             for (AbstractCard c : AbstractDungeon.player.masterDeck.group) {
-                if ((c instanceof Strike_Red || c instanceof Defend_Green) && c.canUpgrade()) {
-                    c.upgrade();
+                if ((c instanceof Strike_Bronze || c instanceof Defend_Bronze) && InfiniteJournal.canUpgradeCard(c)) {
+                    InfiniteJournal.upgradeCard(c);
                     AbstractDungeon.player.bottledCardUpgradeCheck(c);
                     AbstractDungeon.effectList.add(
                             new ShowCardBrieflyEffect(c.makeStatEquivalentCopy(), MathUtils.random(0.1F, 0.9F) * Settings.WIDTH,
