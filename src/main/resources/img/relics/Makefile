@@ -1,6 +1,6 @@
 # Resize power images
 IMAGES:=$(notdir $(wildcard large/*.png))
-NOT_RELICS:=
+NOT_RELICS:=AbstractInventorRelic
 RELICS:=$(basename $(notdir $(wildcard ../../../java/inventormod/relics/*.java)))
 MISSING_IMAGES:=$(filter-out $(NOT_RELICS) $(basename $(IMAGES)), $(RELICS))
 EXTRA_IMAGES:=$(filter-out $(RELICS),$(basename $(IMAGES)))
