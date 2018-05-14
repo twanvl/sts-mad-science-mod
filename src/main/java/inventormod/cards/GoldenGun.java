@@ -32,11 +32,12 @@ public class GoldenGun extends AbstractInventorCard {
     public GoldenGun() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
         this.baseDamage = ATTACK_DMG;
+        this.magicNumber = this.baseMagicNumber = GOLD_COST;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new SpendGoldAction(GOLD_COST, () -> {
+        AbstractDungeon.actionManager.addToBottom(new SpendGoldAction(this.magicNumber, () -> {
             if (m != null) {
                 AbstractDungeon.actionManager.addToBottom(new VFXAction(new WeightyImpactEffect(m.hb.cX, m.hb.cY)));
             }
@@ -48,7 +49,7 @@ public class GoldenGun extends AbstractInventorCard {
     @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
         if (!super.canUse(p,m)) return false;
-        if (p.gold < GOLD_COST) {
+        if (p.gold < this.magicNumber) {
             this.cantUseMessage = EXTENDED_DESCRIPTION[0];
             return false;
         }
