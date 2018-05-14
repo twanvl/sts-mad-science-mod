@@ -11,7 +11,7 @@ public class Funnel extends AbstractInventorRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return this.DESCRIPTIONS[0] + 1 + this.DESCRIPTIONS[1];
+        return this.DESCRIPTIONS[0];
     }
 
     @Override
