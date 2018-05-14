@@ -26,6 +26,7 @@ public class Inventor extends CustomPlayer {
     public static final String[] TEXT = {"This tinkerer relies on his many machines and devices to aid him."};
     public static final int START_HP = 75;
     public static final int CARD_DRAW = 5;
+    public static final int MAX_ORBS = 0;
     public static final int ENERGY = 3;
     public static final int START_GOLD = 99;
 
@@ -78,7 +79,7 @@ public class Inventor extends CustomPlayer {
     }
 
     public static CharSelectInfo getLoadout() {
-        return new CharSelectInfo(NAMES[0], TEXT[0], START_HP, START_HP, START_GOLD, CARD_DRAW, PlayerClassEnum.INVENTOR, getStartingRelics(), getStartingDeck(), false);
+        return new CharSelectInfo(NAMES[0], TEXT[0], START_HP, START_HP, MAX_ORBS, START_GOLD, CARD_DRAW, PlayerClassEnum.INVENTOR, getStartingRelics(), getStartingDeck(), false);
     }
 }
 
