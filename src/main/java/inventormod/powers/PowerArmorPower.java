@@ -34,6 +34,9 @@ public class PowerArmorPower extends AbstractPower {
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         int amount = FuelPower.currentAmount(this.owner);
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(this.owner, this.owner, this.amount * amount));
+        if (amount > 0) {
+            this.flash();
+            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(this.owner, this.owner, this.amount * amount));
+        }
     }
 }
