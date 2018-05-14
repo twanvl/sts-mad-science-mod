@@ -23,7 +23,7 @@ public class Tune extends AbstractInventorCard {
     private static final int AMOUNT = 2;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardTarget TARGET = CardTarget.SELF;
 
     public Tune() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
