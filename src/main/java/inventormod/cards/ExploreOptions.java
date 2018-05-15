@@ -36,6 +36,7 @@ public class ExploreOptions extends AbstractInventorCard {
 
     @Override
     public void triggerWhenDrawn() {
+        this.applyPowers();
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, this.block));
     }
 
