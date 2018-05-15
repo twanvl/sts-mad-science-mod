@@ -17,6 +17,7 @@ import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.localization.Keyword;
+import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import basemod.BaseMod;
@@ -29,6 +30,7 @@ import inventormod.patches.CardColorEnum;
 import inventormod.characters.*;
 import inventormod.cards.*;
 import inventormod.relics.*;
+import inventormod.potions.*;
 
 @SpireInitializer
 public class InventorMod implements
@@ -120,10 +122,12 @@ public class InventorMod implements
             "img/charSelect/inventorPortrait.jpg",
             PlayerClassEnum.INVENTOR.toString());
         logger.info("done editing characters");
+        receiveEditPotions();
     }
 
     @Override
     public void receiveEditRelics() {
+        logger.info("begin editing relics");
         BaseMod.addRelicToCustomPool(new inventormod.relics.ExhaustVents(), CardColorEnum.BRONZE.toString());
         BaseMod.addRelicToCustomPool(new FuelTank(), CardColorEnum.BRONZE.toString());
         BaseMod.addRelicToCustomPool(new Funnel(), CardColorEnum.BRONZE.toString());
@@ -131,6 +135,7 @@ public class InventorMod implements
         BaseMod.addRelicToCustomPool(new PolishingWheel(), CardColorEnum.BRONZE.toString());
         BaseMod.addRelicToCustomPool(new inventormod.relics.PortablePumpjack(), CardColorEnum.BRONZE.toString());
         BaseMod.addRelicToCustomPool(new SignalFlag(), CardColorEnum.BRONZE.toString());
+        logger.info("end editing relics");
     }
 
     @Override
@@ -231,6 +236,12 @@ public class InventorMod implements
         logger.info("done editing cards");
     }
 
+    public void receiveEditPotions() {
+        logger.info("begin editing potions");
+        BaseMod.addPotion(FuelPotion.class, new Color(0.3f,0.3f,0.3f,1.0f), new Color(0.1f,0.1f,0.1f,1.0f), new Color(0.5f,0.5f,0.5f,1.0f), FuelPotion.POTION_ID);
+        logger.info("end editing potions");
+    }
+
     @Override
     public void receiveEditKeywords() {
         logger.info("begin editing keywords");
@@ -254,6 +265,7 @@ public class InventorMod implements
         BaseMod.loadCustomStrings(RelicStrings.class, loadJson("localization/eng/inventor-relics.json"));
         BaseMod.loadCustomStrings(CardStrings.class, loadJson("localization/eng/inventor-cards.json"));
         BaseMod.loadCustomStrings(PowerStrings.class, loadJson("localization/eng/inventor-powers.json"));
+        BaseMod.loadCustomStrings(PotionStrings.class, loadJson("localization/eng/inventor-potions.json"));
         logger.info("done editing strings");
     }
     private static String loadJson(String jsonPath) {
