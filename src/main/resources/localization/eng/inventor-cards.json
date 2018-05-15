@@ -167,7 +167,7 @@
   },
   "GlassCannon": {
     "NAME": "Glass Cannon",
-    "DESCRIPTION": "Deal !D! damage twice. Exhaust."
+    "DESCRIPTION": "Deal !D! damage !M! times. When drawn increase this card's number of attacks. Exhaust."
   },
   "GoldenGun": {
     "NAME": "Golden Gun",
@@ -247,7 +247,7 @@
   },
   "Browse": {
     "NAME": "Browse",
-    "DESCRIPTION": "Spend 1 Fuel. Draw !M! cards. NL Can be upgraded any number of times."
+    "DESCRIPTION": "Spend 1 Fuel. NL Draw !M! cards. NL Can be upgraded any number of times."
   },
   "SpamFilter": {
     "NAME": "Spam Filter",

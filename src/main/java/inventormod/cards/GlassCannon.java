@@ -18,7 +18,8 @@ public class GlassCannon extends AbstractInventorCard {
     private static final int COST = 1;
     private static final int ATTACK_DMG = 9;
     private static final int UPGRADE_DMG = 3;
-    private static final int ATTACK_TIMES = 2;
+    private static final int ATTACK_TIMES = 1;
+    private static final int ATTACK_TIMES_INCREASE = 1;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;
@@ -26,6 +27,7 @@ public class GlassCannon extends AbstractInventorCard {
     public GlassCannon() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
         this.baseDamage = ATTACK_DMG;
+        this.magicNumber = this.baseMagicNumber = ATTACK_TIMES;
         this.exhaust = true;
     }
 
@@ -34,6 +36,13 @@ public class GlassCannon extends AbstractInventorCard {
         for (int i = 0; i < ATTACK_TIMES; i++) {
             AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         }
+    }
+
+    @Override
+    public void triggerWhenDrawn() {
+        this.baseMagicNumber += ATTACK_TIMES_INCREASE;
+        this.magicNumber = this.baseMagicNumber;
+        this.isMagicNumberModified = true;
     }
 
     @Override
