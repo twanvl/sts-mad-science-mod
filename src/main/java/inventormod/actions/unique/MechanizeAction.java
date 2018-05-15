@@ -21,7 +21,6 @@ public class MechanizeAction extends AbstractGameAction {
             for (AbstractCard c : AbstractDungeon.player.hand.group) {
                 if (c instanceof AbstractInventorCard) {
                     AbstractInventorCard ci = (AbstractInventorCard)c;
-                    ci.setCostForTurn(-9);
                     ci.costsFuelThisTurn = true;
                 }
                 // TODO: somehow set fuel cost of non-mod cards
