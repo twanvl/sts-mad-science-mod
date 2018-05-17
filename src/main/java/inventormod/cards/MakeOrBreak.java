@@ -15,8 +15,8 @@ import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 
 import inventormod.actions.common.ChooseAction;
 
-public class ParticleBeam extends AbstractInventorCard {
-    public static final String ID = "ParticleBeam";
+public class MakeOrBreak extends AbstractInventorCard {
+    public static final String ID = "MakeOrBreak";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -29,7 +29,7 @@ public class ParticleBeam extends AbstractInventorCard {
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
 
-    public ParticleBeam() {
+    public MakeOrBreak() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, CardTarget.ENEMY);
         this.baseDamage = DAMAGE;
         this.magicNumber = this.baseMagicNumber = DRAW;
@@ -55,7 +55,7 @@ public class ParticleBeam extends AbstractInventorCard {
 
     @Override
     public AbstractCard makeCopy() {
-        return new ParticleBeam();
+        return new MakeOrBreak();
     }
 
     @Override

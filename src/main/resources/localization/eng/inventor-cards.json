@@ -221,6 +221,15 @@
     "NAME": "Liquify",
     "DESCRIPTION": "Choose and Exhaust up to !M! cards in your hand, gain 1 Fuel for each card exhausted. NL Exhaust."
   },
+  "MakeOrBreak": {
+    "NAME": "Make or Break",
+    "DESCRIPTION": "Deal !D! damage twice. Choose: Draw !M! cards; or draw !M! cards next turn.",
+    "EXTENDED_DESCRIPTION": [
+      "Choose",
+      "Draw Now", "Deal !D! damage twice. Draw !M! cards.",
+      "Draw Later", "Deal !D! damage twice. Draw !M! cards next turn."
+    ]
+  },
   "MechanicalClaw": {
     "NAME": "Mechanical Claw",
     "DESCRIPTION": "Spend 1 fuel. Deal !D! damage. Draw a card."
@@ -248,12 +257,7 @@
   },
   "ParticleBeam": {
     "NAME": "Particle Beam",
-    "DESCRIPTION": "Deal !D! damage twice. Choose: Draw !M! cards; or draw !M! cards next turn.",
-    "EXTENDED_DESCRIPTION": [
-      "Choose",
-      "Now", "Deal !D! damage twice. Draw !M! cards.",
-      "Later", "Deal !D! damage twice. Draw !M! cards next turn."
-    ]
+    "DESCRIPTION": "Deal !D! damage. NL When drawn, reduce this card's cost by 1 for this combat."
   },
   "Browse": {
     "NAME": "Browse",
