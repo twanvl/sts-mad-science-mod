@@ -47,11 +47,11 @@
   },
   "Booster": {
     "NAME": "Booster",
-    "DESCRIPTION": "Gain !D! Fuel. Draw 2 cards. Exhaust."
+    "DESCRIPTION": "Gain !M! Fuel. Draw 2 cards. Exhaust."
   },
   "BoxOfScraps": {
     "NAME": "Box of Scraps",
-    "DESCRIPTION": "Shuffle !M! trinkets into your draw pile. Draw !M! cards."
+    "DESCRIPTION": "Shuffle up to !M! trinkets into your draw pile. Draw !M! cards."
   },
   "CaptureMomentum": {
     "NAME": "Capture Momentum",
@@ -138,7 +138,7 @@
   },
   "FragmentationGrenade": {
     "NAME": "Fragmentation Grenade",
-    "DESCRIPTION": "Deal !D! damage twice. This turn, whenever you play a card, shuffle a random Trinket into your draw pile."
+    "DESCRIPTION": "Deal !D! damage twice. Shuffle up to !M! Trinkets into your draw pile."
   },
   "FumeBlast": {
     "NAME": "Fume Blast",
@@ -171,7 +171,7 @@
   },
   "GoldenGun": {
     "NAME": "Golden Gun",
-    "DESCRIPTION": "Spend !M! gold. Deal !D! damage to ALL enemies."
+    "DESCRIPTION": "Spend !M! gold. NL Deal !D! damage to ALL enemies."
   },
   "Grind": {
     "NAME": "Grind",
@@ -196,12 +196,12 @@
   },
   "JunkLaser": {
     "NAME": "Junk Laser",
-    "DESCRIPTION": "Deal !D! damage, deals an additional !M! damage for ALL of your 0 cost cards."
+    "DESCRIPTION": "Deal !D! damage. NL Deals an additional !M! damage for ALL of your 0 cost cards."
   },
   "LabAccident": {
     "NAME": "Lab Accident",
-    "DESCRIPTION": "Exhaust all cards in your hand and replace them by random cards. They cost 0 this turn. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Exhaust all cards in your hand and replace them by random upgraded cards. They cost 0 this turn. Exhaust."
+    "DESCRIPTION": "Exhaust all cards in your hand. Add !M! random cards to your hand. They cost 0 this turn. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Exhaust all cards in your hand. Add !M! random upgraded cards to your hand. They cost 0 this turn. Exhaust."
   },
   "LightOnFire": {
     "NAME": "LightOnFire",
@@ -268,8 +268,8 @@
   },
   "Postpone": {
     "NAME": "Postpone",
-    "DESCRIPTION": "Place a card from your hand on top of your draw pile. NL When drawn, draw a card.",
-    "UPGRADE_DESCRIPTION": "Place a card from your hand on top of your draw pile. NL When drawn, draw !M! cards.",
+    "DESCRIPTION": "Place this and any cards from your hand on top of your draw pile. NL When drawn, draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Place this and any cards from your hand on top of your draw pile. NL When drawn, draw !M! cards.",
     "EXTENDED_DESCRIPTION": ["Choose cards to place on top of your draw pile."]
   },
   "PowerArmor": {
@@ -389,6 +389,11 @@
   "FoamTrinket": {
     "NAME": "Foam Trinket",
     "DESCRIPTION": "Gain !M! Dexterity. NL Exhaust."
+  },
+  "FoldedTrinket": {
+    "NAME": "Folded Trinket",
+    "DESCRIPTION": "Draw !M! cards, discard one of them.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards, discard all but one of them."
   },
   "FlamableTrinket": {
     "NAME": "Flamable Trinket",
