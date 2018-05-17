@@ -151,7 +151,7 @@ public class InventorMod implements
             BaseMod.addCard(new BandageBot());
             BaseMod.addCard(new Bayonet());
             BaseMod.addCard(new Bombardment());
-            //BaseMod.addCard(new Booster());
+            BaseMod.addCard(new Booster());
             BaseMod.addCard(new BoxOfScraps());
             BaseMod.addCard(new Browse());
             BaseMod.addCard(new CaptureMomentum());
@@ -160,7 +160,7 @@ public class InventorMod implements
             BaseMod.addCard(new CloneVats());
             //BaseMod.addCard(new DEPRECATED_ComputeTrajectory());
             BaseMod.addCard(new CondenseVapors());
-            BaseMod.addCard(new DataRecorder());
+            //BaseMod.addCard(new DataRecorder());
             BaseMod.addCard(new Defend_Bronze());
             BaseMod.addCard(new Detonate());
             //BaseMod.addCard(new DEPRECATED_EmergencyRepair());
