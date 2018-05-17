@@ -1,6 +1,5 @@
 package inventormod.cards;
 
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -29,9 +28,6 @@ public class ShinyTrinket extends AbstractTrinket {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(this.magicNumber));
-        if (this.upgraded) {
-            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, 1));
-        }
     }
 
     @Override
