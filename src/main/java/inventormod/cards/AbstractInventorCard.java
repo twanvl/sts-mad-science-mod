@@ -15,11 +15,11 @@ public abstract class AbstractInventorCard extends CustomCard {
     public int hackNotToPayCost; // see UseCardPatch
 
     public AbstractInventorCard(String id, String name, int cost, String description, CardType type, CardRarity rarity, CardTarget target) {
-        super(id, name, InventorMod.cardImage(id), cost, description, type, CardColorEnum.BRONZE, rarity, target, 1);
+        super(id, name, InventorMod.cardImage(id), cost, description, type, CardColorEnum.BRONZE, rarity, target);
     }
 
-    public AbstractInventorCard(String id, String name, int cost, String description, CardType type, CardColor color, CardRarity rarity, CardTarget target, int pool) {
-        super(id, name, InventorMod.cardImage(id), cost, description, type, color, rarity, target, pool);
+    public AbstractInventorCard(String id, String name, int cost, String description, CardType type, CardColor color, CardRarity rarity, CardTarget target) {
+        super(id, name, InventorMod.cardImage(id), cost, description, type, color, rarity, target);
     }
 
     public int fuelCostForTurn() {
