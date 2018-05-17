@@ -217,7 +217,7 @@ public class InventorMod implements
             BaseMod.addCard(new Strafe());
             BaseMod.addCard(new Strike_Bronze());
             //BaseMod.addCard(new DEPRECATED_TargetingLaser());
-            BaseMod.addCard(new ThrowScraps());
+            //BaseMod.addCard(new ThrowScraps());
             BaseMod.addCard(new TimeDilationField());
             BaseMod.addCard(new Tinker());
             BaseMod.addCard(new Tune());
