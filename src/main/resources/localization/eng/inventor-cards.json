@@ -43,7 +43,7 @@
   },
   "Bombardment": {
     "NAME": "Bombardment",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies and apply a Bomb that deals !M! damage in 3 turns. Exhaust."
+    "DESCRIPTION": "Apply a Bomb to ALL enemies that deals !M! damage in 3 turns, and again in 6 turns. Exhaust."
   },
   "Booster": {
     "NAME": "Booster",
@@ -212,6 +212,10 @@
     "NAME": "Lightbulb",
     "DESCRIPTION": "Spend !M! fuel, gain !M! energy."
   },
+  "Liquify": {
+    "NAME": "Liquify",
+    "DESCRIPTION": "Choose and Exhaust up to !M! cards in your hand, gain 1 Fuel for each card exhausted. NL Exhaust."
+  },
   "MechanicalClaw": {
     "NAME": "Mechanical Claw",
     "DESCRIPTION": "Spend 1 fuel. Deal !D! damage. Draw a card."
@@ -236,10 +240,6 @@
   "OilDrum": {
     "NAME": "Oil Drum",
     "DESCRIPTION": "Gain !B! Block. NL Gain !M! Fuel."
-  },
-  "Overdrive": {
-    "NAME": "Overdrive",
-    "DESCRIPTION": "Exhaust any number of cards from your hand, gain !M! Fuel for each card exhausted. Exhaust."
   },
   "ParticleBeam": {
     "NAME": "Particle Beam",

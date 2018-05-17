@@ -151,6 +151,7 @@ public class InventorMod implements
             BaseMod.addCard(new BandageBot());
             BaseMod.addCard(new Bayonet());
             BaseMod.addCard(new Bombardment());
+            //BaseMod.addCard(new Booster());
             BaseMod.addCard(new BoxOfScraps());
             BaseMod.addCard(new Browse());
             BaseMod.addCard(new CaptureMomentum());
@@ -170,7 +171,7 @@ public class InventorMod implements
             BaseMod.addCard(new FlameCannon());
             BaseMod.addCard(new FlameThrower());
             BaseMod.addCard(new FlexibleSpear());
-            //BaseMod.addCard(new FramentationGrenade());
+            BaseMod.addCard(new FragmentationGrenade());
             BaseMod.addCard(new FumeBlast());
             BaseMod.addCard(new FumeHood());
             //BaseMod.addCard(new DEPRECATED_GarbageDisposalCannon());
@@ -188,15 +189,13 @@ public class InventorMod implements
             BaseMod.addCard(new LabAccident());
             BaseMod.addCard(new LightOnFire());
             BaseMod.addCard(new Lightbulb());
-            BaseMod.addCard(new Mechanize());
+            BaseMod.addCard(new Liquify());
             BaseMod.addCard(new MechanicalClaw());
+            BaseMod.addCard(new Mechanize());
             BaseMod.addCard(new MindControlBeam());
             BaseMod.addCard(new NowOrNever());
             BaseMod.addCard(new OilDrum());
-            //BaseMod.addCard(new Overdrive());
             //BaseMod.addCard(new ParticleCannon());
-            BaseMod.addCard(new SoftenUp());
-            BaseMod.addCard(new Sprocket());
             BaseMod.addCard(new PneumaticHammer());
             //BaseMod.addCard(new inventormod.cards.PortablePumpjack());
             BaseMod.addCard(new Poke());
@@ -212,6 +211,7 @@ public class InventorMod implements
             BaseMod.addCard(new RocketJump());
             BaseMod.addCard(new SelfDestruct());
             BaseMod.addCard(new ShrinkRay());
+            BaseMod.addCard(new SoftenUp());
             BaseMod.addCard(new Sprocket());
             //BaseMod.addCard(new StickSharpener());
             BaseMod.addCard(new Strafe());
@@ -221,7 +221,7 @@ public class InventorMod implements
             BaseMod.addCard(new TimeDilationField());
             BaseMod.addCard(new Tinker());
             BaseMod.addCard(new Tune());
-            //BaseMod.addCard(new Virus());
+            BaseMod.addCard(new Virus());
             BaseMod.addCard(new WoodenSword());
 
             // Trinkets
