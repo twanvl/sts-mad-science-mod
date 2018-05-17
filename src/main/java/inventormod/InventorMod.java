@@ -145,6 +145,7 @@ public class InventorMod implements
             BaseMod.addCard(new AcidSpray());
             BaseMod.addCard(new AntimatterBomb());
             BaseMod.addCard(new ArtilleryShot());
+            BaseMod.addCard(new Assemble());
             BaseMod.addCard(new AssemblyLine());
             BaseMod.addCard(new Automate());
             BaseMod.addCard(new AutoStrike());

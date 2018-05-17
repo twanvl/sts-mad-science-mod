@@ -16,6 +16,10 @@
     "NAME": "Artillery Shot",
     "DESCRIPTION": "Spend !M! Fuel. NL Deal !D! damage."
   },
+  "Assemble": {
+    "NAME": "Assemble",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! additional Block for each Fuel you have."
+  },
   "AssemblyLine": {
     "NAME": "Assembly Line",
     "DESCRIPTION": "At the start of your turn choose and shuffle a Trinket into your draw pile."
