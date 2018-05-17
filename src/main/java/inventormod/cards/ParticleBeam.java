@@ -31,7 +31,7 @@ public class ParticleBeam extends AbstractInventorCard {
 
     public ParticleBeam() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, CardTarget.ENEMY);
-        this.damage = DAMAGE;
+        this.baseDamage = DAMAGE;
         this.magicNumber = this.baseMagicNumber = DRAW;
     }
 
