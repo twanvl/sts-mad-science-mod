@@ -199,7 +199,7 @@ public class InventorMod implements
             BaseMod.addCard(new Sprocket());
             BaseMod.addCard(new PneumaticHammer());
             //BaseMod.addCard(new inventormod.cards.PortablePumpjack());
-            //BaseMod.addCard(new Poke());
+            BaseMod.addCard(new Poke());
             BaseMod.addCard(new Postpone());
             BaseMod.addCard(new PowerArmor());
             BaseMod.addCard(new PoweredStrike());
