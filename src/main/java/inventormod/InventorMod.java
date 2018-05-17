@@ -199,6 +199,7 @@ public class InventorMod implements
             BaseMod.addCard(new Sprocket());
             BaseMod.addCard(new PneumaticHammer());
             //BaseMod.addCard(new inventormod.cards.PortablePumpjack());
+            //BaseMod.addCard(new Poke());
             BaseMod.addCard(new Postpone());
             BaseMod.addCard(new PowerArmor());
             BaseMod.addCard(new PoweredStrike());
@@ -224,7 +225,9 @@ public class InventorMod implements
             BaseMod.addCard(new WoodenSword());
 
             // Trinkets
+            //BaseMod.addCard(new DocrativeTrinket());
             BaseMod.addCard(new FlamableTrinket());
+            BaseMod.addCard(new FoldedTrinket());
             BaseMod.addCard(new FoamTrinket());
             BaseMod.addCard(new RecycledTrinket());
             BaseMod.addCard(new ShinyTrinket());
