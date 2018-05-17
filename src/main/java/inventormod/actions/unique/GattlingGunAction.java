@@ -8,8 +8,6 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import inventormod.powers.FuelPower;
-
 public class GattlingGunAction extends AbstractGameAction {
     private float startingDuration;
     private AbstractPlayer p;
