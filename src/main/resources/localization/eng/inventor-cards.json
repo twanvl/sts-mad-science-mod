@@ -171,7 +171,8 @@
   },
   "GoldenGun": {
     "NAME": "Golden Gun",
-    "DESCRIPTION": "Spend !M! gold. NL Deal !D! damage to ALL enemies."
+    "DESCRIPTION": "Spend !M! gold. NL Deal !D! damage to ALL enemies.",
+    "EXTENDED_DESCRIPTION": ["Not enough #rGold."]
   },
   "Grind": {
     "NAME": "Grind",
