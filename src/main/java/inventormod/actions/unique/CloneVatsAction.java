@@ -31,7 +31,7 @@ public class CloneVatsAction extends AbstractGameAction {
                 this.tickDuration();
                 return;
             }
-            AbstractDungeon.handCardSelectScreen.open(CloneVatsPower.DESCRIPTIONS[3], this.amount, false, true, false, true);
+            AbstractDungeon.handCardSelectScreen.open(CloneVatsPower.DESCRIPTIONS[3], this.amount, false, true, false, false, true);
             this.tickDuration();
             return;
         }
