@@ -18,7 +18,7 @@ public class TimeDilationField extends AbstractInventorCard {
     private static final int UPGRADED_COST = 0;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
     public TimeDilationField() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
@@ -27,7 +27,9 @@ public class TimeDilationField extends AbstractInventorCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new SlowPower(m, 0), 0));
+        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new SlowPower(mo, 0), 0));
+        }
     }
 
     @Override
