@@ -19,6 +19,7 @@ import inventormod.InventorMod;
 import inventormod.cards.AbstractTrinket;
 import inventormod.cards.FlamableTrinket;
 import inventormod.cards.FoamTrinket;
+import inventormod.cards.FoldedTrinket;
 import inventormod.cards.RecycledTrinket;
 import inventormod.cards.ShinyTrinket;
 import inventormod.cards.SpikyTrinket;
@@ -138,6 +139,7 @@ public class ShuffleTrinketAction extends AbstractGameAction {
     {
         allTrinkets = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         allTrinkets.addToTop(new FoamTrinket());
+        allTrinkets.addToTop(new FoldedTrinket());
         allTrinkets.addToTop(new FlamableTrinket());
         allTrinkets.addToTop(new RecycledTrinket());
         allTrinkets.addToTop(new SpikyTrinket());
