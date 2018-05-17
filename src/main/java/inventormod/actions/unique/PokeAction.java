@@ -30,9 +30,10 @@ public class PokeAction extends AbstractGameAction {
         if (SoulGroup.isActive()) {
             return;
         }
+        boolean found = !drawnCards.isEmpty() && drawnCards.get(drawnCards.size()-1).cost == 0;
         int deckSize = AbstractDungeon.player.drawPile.size();
         int discardSize = AbstractDungeon.player.discardPile.size();
-        if (deckSize == 0 && discardSize > 0 && !(!drawnCards.isEmpty() && drawnCards.get(drawnCards.size()-1).cost == 0)) {
+        if (deckSize == 0 && discardSize > 0 && !found) {
             // continue after shuffle
             AbstractDungeon.actionManager.addToTop(new PokeAction(drawnCards));
             AbstractDungeon.actionManager.addToTop(new EmptyDeckShuffleAction());
@@ -41,9 +42,13 @@ public class PokeAction extends AbstractGameAction {
         }
         this.duration -= Gdx.graphics.getDeltaTime();
         if (this.duration < 0.0f) {
-            if ((!drawnCards.isEmpty() && drawnCards.get(drawnCards.size()-1).cost == 0) || AbstractDungeon.player.drawPile.isEmpty()) {
+            if (found || AbstractDungeon.player.drawPile.isEmpty() || AbstractDungeon.player.hand.size() == 10) {
                 // found a 0 cost card, or no more cards to draw
-                if (drawnCards.size() > 0) drawnCards.remove(drawnCards.size()-1);
+                if (found) {
+                    drawnCards.remove(drawnCards.size()-1);
+                } else if (AbstractDungeon.player.hand.size() == 10) {
+                    AbstractDungeon.player.createHandIsFullDialog();
+                }
                 for (AbstractCard c : drawnCards) {
                     AbstractDungeon.player.hand.moveToDiscardPile(c);
                     c.triggerOnManualDiscard();

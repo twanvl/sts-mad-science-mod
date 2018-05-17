@@ -50,7 +50,7 @@ public class DrawAndDiscardAllButOneAction extends AbstractGameAction {
         }
         this.duration -= Gdx.graphics.getDeltaTime();
         if (this.duration < 0.0f) {
-            if (drawnCards.size() >= amount || AbstractDungeon.player.drawPile.isEmpty()) {
+            if (drawnCards.size() >= amount || AbstractDungeon.player.drawPile.isEmpty() || AbstractDungeon.player.hand.size() == 10) {
                 // found a 0 cost card, or no more cards to draw
                 if (actualHand == null) {
                     if (drawnCards.size() <= 1) {
