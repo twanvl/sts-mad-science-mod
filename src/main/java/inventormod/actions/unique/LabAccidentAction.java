@@ -11,8 +11,9 @@ public class LabAccidentAction extends AbstractGameAction {
     private float startingDuration;
     private boolean upgraded;
 
-    public LabAccidentAction(boolean upgraded) {
+    public LabAccidentAction(boolean upgraded, int amount) {
         this.upgraded = upgraded;
+        this.amount = amount;
         this.actionType = AbstractGameAction.ActionType.WAIT;
         this.duration = this.startingDuration = Settings.ACTION_DUR_FAST;
     }
@@ -20,9 +21,7 @@ public class LabAccidentAction extends AbstractGameAction {
     @Override
     public void update() {
         if (this.duration == this.startingDuration) {
-            int i;
-            int count = AbstractDungeon.player.hand.size();
-            for (i = 0; i < count; ++i) {
+            for (int i = 0; i < amount; ++i) {
                 AbstractCard c = AbstractDungeon.returnTrulyRandomCard().makeCopy();
                 if (this.upgraded) {
                     c.upgrade();
@@ -30,7 +29,8 @@ public class LabAccidentAction extends AbstractGameAction {
                 c.setCostForTurn(-9);
                 AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c, 1));
             }
-            for (i = 0; i < count; ++i) {
+            int count = AbstractDungeon.player.hand.size();
+            for (int i = 0; i < count; ++i) {
                 AbstractDungeon.actionManager.addToTop(new ExhaustAction(AbstractDungeon.player, AbstractDungeon.player, 1, true, true));
             }
         }
