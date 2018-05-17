@@ -17,7 +17,7 @@ public class CondenseVapors extends AbstractInventorCard {
     private static final int COST = 1;
     private static final int UPGRADED_COST = 0;
     private static final int FUEL_COST = 1;
-    private static final int GOLD_AMT = 25;
+    private static final int GOLD_AMT = 20;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
