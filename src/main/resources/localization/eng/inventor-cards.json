@@ -47,7 +47,7 @@
   },
   "Booster": {
     "NAME": "Booster",
-    "DESCRIPTION": "Gain !M! Fuel. Draw 2 cards. Exhaust."
+    "DESCRIPTION": "Gain !M! Fuel. NL Draw 2 cards. NL Exhaust."
   },
   "BoxOfScraps": {
     "NAME": "Box of Scraps",
@@ -104,7 +104,7 @@
   },
   "ExploreOptions": {
     "NAME": "Explore Options",
-    "DESCRIPTION": "Draw !M! cards. When drawn gain !B! Block."
+    "DESCRIPTION": "Draw !M! cards. NL When drawn gain !B! Block."
   },
   "ExtractOil": {
     "NAME": "Extract Oil",
