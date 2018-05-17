@@ -49,7 +49,7 @@ public class GoldenGun extends AbstractInventorCard {
     @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
         if (!super.canUse(p,m)) return false;
-        if (p.gold < this.magicNumber) {
+        if (AbstractDungeon.player.gold < this.magicNumber) {
             this.cantUseMessage = EXTENDED_DESCRIPTION[0];
             return false;
         }
