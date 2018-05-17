@@ -18,7 +18,7 @@ public class Browse extends AbstractInventorCard {
     private static final int CARDS = 3;
     private static final int UPGRADE_CARDS = 1;
     private static final CardType TYPE = CardType.SKILL;
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
 
     public Browse() {
