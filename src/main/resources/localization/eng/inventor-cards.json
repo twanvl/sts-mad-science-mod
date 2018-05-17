@@ -316,6 +316,10 @@
     "NAME": "Redesign",
     "DESCRIPTION": "Upgrade all cards in your hand and discard them. Draw !M! cards."
   },
+  "Retarget": {
+    "NAME": "Retarget",
+    "DESCRIPTION": "Lose 1 Strength. Gain !M! Thorns for each Attack card in your hand."
+  },
   "RocketJump": {
     "NAME": "Nitro Boost",
     "DESCRIPTION": "Spend 1 Fuel. NL Gain !B! Block."

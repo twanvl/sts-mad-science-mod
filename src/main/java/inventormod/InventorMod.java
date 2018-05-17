@@ -209,6 +209,7 @@ public class InventorMod implements
             BaseMod.addCard(new Reconstitute());
             BaseMod.addCard(new RecyclingStation());
             BaseMod.addCard(new Redesign());
+            BaseMod.addCard(new Retarget());
             BaseMod.addCard(new Refine());
             BaseMod.addCard(new Refuel());
             BaseMod.addCard(new RocketJump());
