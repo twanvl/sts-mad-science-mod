@@ -50,7 +50,7 @@
     "DESCRIPTIONS": [
       "At the start of your turn, you may copy a card in your hand.",
       "At the start of your turn, you may copy up to #b"," cards in your hand.",
-      "Choose a card to duplicate."
+      "duplicate"
     ]
   },
   "DataRecorder": {
