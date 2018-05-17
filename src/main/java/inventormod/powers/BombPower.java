@@ -17,17 +17,17 @@ public class BombPower extends AbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    public static final int TURNS = 3;
+    public static final int MAX_TURNS = 6;
 
     public int amounts[];
 
-    public BombPower(AbstractCreature owner, int amount) {
+    public BombPower(AbstractCreature owner, int amount, int turns) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.amount = amount; // displayed amount is total amount of bomb damage
-        this.amounts = new int[TURNS];
-        this.amounts[TURNS-1] = amount;
+        this.amounts = new int[MAX_TURNS+1];
+        this.amounts[turns] = amount;
         this.type = AbstractPower.PowerType.DEBUFF;
         this.isTurnBased = true;
         this.updateDescription();
@@ -40,15 +40,18 @@ public class BombPower extends AbstractPower {
         for (int i = 0; i < amounts.length; i++) {
             if (amounts[i] > 0) {
                 if (!this.description.isEmpty()) this.description += " ";
-                int turns = i+1;
-                this.description += DESCRIPTIONS[0] + amounts[i] + DESCRIPTIONS[1] + turns + (turns == 1 ? DESCRIPTIONS[2] : DESCRIPTIONS[3]);
+                int turns = i;
+                this.description += DESCRIPTIONS[0] + amounts[i] + (turns == 0 ? DESCRIPTIONS[1] : DESCRIPTIONS[2] + turns + (turns == 1 ? DESCRIPTIONS[3] : DESCRIPTIONS[4]));
             }
         }
     }
 
     @Override
     public void stackPower(int stackAmount) {
-        amounts[TURNS-1] += stackAmount;
+        stackPower(stackAmount, MAX_TURNS);
+    }
+    public void stackPower(int stackAmount, int turns) {
+        amounts[turns] += stackAmount;
         amount = totalAmount();
     }
 

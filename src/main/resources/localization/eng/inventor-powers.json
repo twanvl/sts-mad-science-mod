@@ -22,7 +22,7 @@
   "Bomb": {
     "NAME": "Bomb",
     "DESCRIPTIONS": [
-      "Deals #b"," damage in "," turn."," turns."
+      "Deals #b"," damage this turn."," damage in "," turn."," turns."
     ]
   },
   "Fuel": {

@@ -1,8 +1,5 @@
 package inventormod.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -10,7 +7,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import inventormod.powers.BombPower;
+import inventormod.actions.common.ApplyBombAction;
 
 public class Bombardment extends AbstractInventorCard {
     public static final String ID = "Bombardment";
@@ -19,11 +16,12 @@ public class Bombardment extends AbstractInventorCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 2;
     private static final int ATTACK_DMG = 10;
-    private static final int UPGRADE_ATTACK_DMG = 0;
     private static final int BOMB_AMT = 15;
     private static final int UPGRADE_BOMB_AMT = 5;
+    private static final int TURNS = 3;
+    private static final int TURNS2 = 6;
     private static final CardType TYPE = CardType.ATTACK;
-    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
     public Bombardment() {
@@ -36,9 +34,9 @@ public class Bombardment extends AbstractInventorCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new BombPower(mo, this.magicNumber), this.magicNumber));
+            AbstractDungeon.actionManager.addToBottom(new ApplyBombAction(mo, p, this.magicNumber, TURNS));
+            AbstractDungeon.actionManager.addToBottom(new ApplyBombAction(mo, p, this.magicNumber, TURNS2));
         }
     }
 
@@ -51,7 +49,6 @@ public class Bombardment extends AbstractInventorCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(UPGRADE_ATTACK_DMG);
             this.upgradeMagicNumber(UPGRADE_BOMB_AMT);
         }
     }

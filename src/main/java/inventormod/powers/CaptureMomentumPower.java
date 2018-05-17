@@ -1,6 +1,5 @@
 package inventormod.powers;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -12,12 +11,14 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import inventormod.InventorMod;
+import inventormod.actions.common.ApplyBombAction;
 
 public class CaptureMomentumPower extends AbstractPower {
     public static final String POWER_ID = "CaptureMomentum";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+    public static final int TURNS = 3;
 
     public CaptureMomentumPower(AbstractCreature owner, int amount) {
         this.name = NAME;
@@ -42,7 +43,7 @@ public class CaptureMomentumPower extends AbstractPower {
         if (info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner instanceof AbstractPlayer) {
             this.flash();
             damageAmount *= this.amount;
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, info.owner, new BombPower(this.owner, damageAmount), damageAmount));
+            AbstractDungeon.actionManager.addToBottom(new ApplyBombAction(this.owner, info.owner, damageAmount, TURNS));
             return 0;
         }
         return damageAmount;
