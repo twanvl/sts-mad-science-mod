@@ -25,10 +25,13 @@ public class LightOnFire extends AbstractInventorCard {
     private static final int FIRE_DMG = 10;
     private static final int TURNS = 1;
     private static final int UPGRADE_TURNS = 1;
+    private static final CardType TYPE = CardType.ATTACK;
+    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
     public int turns = TURNS;
 
     public LightOnFire() {
-        super(ID, NAME, COST, DESCRIPTION, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
         this.baseDamage = ATTACK_DMG;
         this.magicNumber = this.baseMagicNumber = FIRE_DMG;
     }
