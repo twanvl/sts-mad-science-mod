@@ -94,6 +94,10 @@
     "DESCRIPTION": "Deal !D! damage. NL Detonate enemy's Bombs.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal damage equal to the enemy's Bombs."
   },
+  "DiscountBin": {
+    "NAME": "Discount Bin",
+    "DESCRIPTION": "Whenever you play !M! cards in a turn, draw a card."
+  },
   "DEPRECATED_EmergencyRepair": {
     "NAME": "Emergency Repair",
     "DESCRIPTION": "Restore all HP lost last turn. Exhaust."

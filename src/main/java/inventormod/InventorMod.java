@@ -163,6 +163,7 @@ public class InventorMod implements
             //BaseMod.addCard(new DataRecorder());
             BaseMod.addCard(new Defend_Bronze());
             BaseMod.addCard(new Detonate());
+            BaseMod.addCard(new DiscountBin());
             //BaseMod.addCard(new DEPRECATED_EmergencyRepair());
             //BaseMod.addCard(new inventormod.cards.ExhaustVents());
             BaseMod.addCard(new ExploreOptions());

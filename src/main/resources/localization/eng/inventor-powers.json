@@ -59,6 +59,16 @@
       "Whenever an enemy gains Strength, gain #b"," Strength."
     ]
   },
+  "DiscountBin": {
+    "NAME": "Discount Bin",
+    "DESCRIPTIONS": [
+      "If you play #b",
+      " more card this turn, draw #b",
+      " more cards this turn, deal #b",
+      " card.",
+      " cards."
+    ]
+  },
   "ExhaustVents": {
     "NAME": "Exhaust Vents",
     "DESCRIPTIONS": [
