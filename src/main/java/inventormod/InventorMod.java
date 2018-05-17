@@ -228,7 +228,7 @@ public class InventorMod implements
             BaseMod.addCard(new WoodenSword());
 
             // Trinkets
-            //BaseMod.addCard(new DocrativeTrinket());
+            BaseMod.addCard(new DecorativeTrinket());
             BaseMod.addCard(new FlamableTrinket());
             BaseMod.addCard(new FoldedTrinket());
             BaseMod.addCard(new FoamTrinket());
