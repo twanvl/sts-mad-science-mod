@@ -20,7 +20,7 @@ public class Bombardment extends AbstractInventorCard {
     private static final int UPGRADE_BOMB_AMT = 5;
     private static final int TURNS = 3;
     private static final int TURNS2 = 6;
-    private static final CardType TYPE = CardType.ATTACK;
+    private static final CardType TYPE = CardType.SKILL;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
