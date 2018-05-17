@@ -32,7 +32,11 @@ public class ChooseAction extends AbstractGameAction {
         choice.name = name;
         choice.rawDescription = description;
         choice.initializeDescription();
-        choice.calculateCardDamage(target);
+        if (target != null) {
+            choice.calculateCardDamage(target);
+        } else {
+            choice.applyPowers();
+        }
         choices.addToTop(choice);
         actions.add(action);
     }
