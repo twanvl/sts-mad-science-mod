@@ -230,6 +230,7 @@ public class InventorMod implements
 
             // Trinkets
             BaseMod.addCard(new DecorativeTrinket());
+            BaseMod.addCard(new ExplosiveTrinket());
             BaseMod.addCard(new FlamableTrinket());
             BaseMod.addCard(new FoldedTrinket());
             BaseMod.addCard(new FoamTrinket());

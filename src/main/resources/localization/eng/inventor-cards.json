@@ -408,6 +408,10 @@
     "NAME": "Decorative Trinket",
     "DESCRIPTION": "Gain !M! Artifact. NL Exhaust."
   },
+  "ExplosiveTrinket": {
+    "NAME": "Explosive Trinket",
+    "DESCRIPTION": "Apply a Bomb that deals !M! damage in 3 turns. NL Exhaust."
+  },
   "FoamTrinket": {
     "NAME": "Foam Trinket",
     "DESCRIPTION": "Gain !M! Dexterity. NL Exhaust."
