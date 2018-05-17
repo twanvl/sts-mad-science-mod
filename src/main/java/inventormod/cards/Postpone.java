@@ -17,7 +17,7 @@ public class Postpone extends AbstractInventorCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
-    private static final int COST = 0;
+    private static final int COST = 1;
     private static final int DRAW = 1;
     private static final int UPGRADE_DRAW = 1;
     private static final CardType TYPE = CardType.SKILL;
@@ -31,7 +31,7 @@ public class Postpone extends AbstractInventorCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new HandToTopOfDrawPileAction(1, 1, false));
+        AbstractDungeon.actionManager.addToBottom(new HandToTopOfDrawPileAction(0, 10, false));
     }
 
     @Override
