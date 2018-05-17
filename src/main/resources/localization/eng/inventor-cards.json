@@ -244,7 +244,12 @@
   },
   "ParticleBeam": {
     "NAME": "Particle Beam",
-    "DESCRIPTION": "Deal !D! damage twice. Draw !M! cards."
+    "DESCRIPTION": "Deal !D! damage twice. Choose: Draw !M! cards; or draw !M! cards next turn.",
+    "EXTENDED_DESCRIPTION": [
+      "Choose",
+      "Now", "Deal !D! damage twice. Draw !M! cards.",
+      "Later", "Deal !D! damage twice. Draw !M! cards next turn."
+    ]
   },
   "Browse": {
     "NAME": "Browse",

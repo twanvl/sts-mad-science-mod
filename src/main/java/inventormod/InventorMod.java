@@ -195,7 +195,7 @@ public class InventorMod implements
             BaseMod.addCard(new MindControlBeam());
             BaseMod.addCard(new NowOrNever());
             BaseMod.addCard(new OilDrum());
-            //BaseMod.addCard(new ParticleCannon());
+            BaseMod.addCard(new ParticleBeam());
             BaseMod.addCard(new PneumaticHammer());
             //BaseMod.addCard(new inventormod.cards.PortablePumpjack());
             BaseMod.addCard(new Poke());
