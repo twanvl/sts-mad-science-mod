@@ -15,10 +15,9 @@ public class JunkLaser extends AbstractInventorCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+    public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
     private static final int COST = 2;
     private static final int DAMAGE = 14;
-    private static final int UPGRADE_DAMAGE = 0;
     private static final int EXTRA_DAMAGE = 2;
     private static final int UPGRADE_EXTRA_DAMAGE = 1;
     private static final CardType TYPE = CardType.ATTACK;
@@ -33,12 +32,21 @@ public class JunkLaser extends AbstractInventorCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int totalDamage = this.damage + this.magicNumber * countCards();
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, totalDamage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        this.initializeDescription();
     }
 
-    // TODO: maybe an indicator of the actual damage?
-    // TODO: correctly apply powers after calculating damage.
+    @Override
+    public void applyPowers() {
+        this.baseDamage = DAMAGE + this.magicNumber * countCards();
+        super.applyPowers();
+    }
+
+    @Override
+    public void calculateCardDamage(AbstractMonster mo) {
+        this.baseDamage = DAMAGE + this.magicNumber * countCards();
+        super.calculateCardDamage(mo);
+    }
 
     public static int countCards() {
         int count = 0;
@@ -66,7 +74,6 @@ public class JunkLaser extends AbstractInventorCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(UPGRADE_DAMAGE);
             this.upgradeMagicNumber(UPGRADE_EXTRA_DAMAGE);
         }
     }
