@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 import inventormod.cards.Probe;
+import inventormod.relics.InfiniteJournal;
 
 public class ProbeAction extends AbstractGameAction {
     public static final String[] TEXT = Probe.EXTENDED_DESCRIPTION;
@@ -29,15 +30,13 @@ public class ProbeAction extends AbstractGameAction {
             for (int i = 0; i < Math.min(this.amount, AbstractDungeon.player.drawPile.size()); ++i) {
                 tmpGroup.addToTop(AbstractDungeon.player.drawPile.group.get(AbstractDungeon.player.drawPile.size() - i - 1));
             }
-            // TODO: gridSelectScreen has "any number" functionality in new game version
-            //AbstractDungeon.gridSelectScreen.open(tmpGroup, this.amount, true, TEXT[0]);
+            AbstractDungeon.gridSelectScreen.open(tmpGroup, this.amount, true, TEXT[0]);
         } else if (!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
             for (AbstractCard c : AbstractDungeon.gridSelectScreen.selectedCards) {
                 AbstractDungeon.player.drawPile.moveToDiscardPile(c);
-                if (c.canUpgrade()) {
-                    c.upgrade();
+                if (InfiniteJournal.canUpgradeCard(c)) {
+                    InfiniteJournal.upgradeCard(c);
                 }
-                // TODO: improve relic
             }
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
         }
