@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -45,13 +44,13 @@ public class Virus extends AbstractInventorCard {
     public static int virusCount() {
         int count = 0;
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if (!isVirus(c)) ++count;
+            if (isVirus(c)) ++count;
         }
         for (AbstractCard c : AbstractDungeon.player.drawPile.group) {
-            if (!isVirus(c)) ++count;
+            if (isVirus(c)) ++count;
         }
         for (AbstractCard c : AbstractDungeon.player.discardPile.group) {
-            if (!isVirus(c)) ++count;
+            if (isVirus(c)) ++count;
         }
         return count;
     }
