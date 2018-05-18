@@ -27,7 +27,6 @@ public class Assemble extends AbstractInventorCard {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
         this.baseBlock = BLOCK;
         this.baseMagicNumber = this.magicNumber = BLOCK_PER_FUEL;
-        this.exhaust = true;
     }
 
     @Override
