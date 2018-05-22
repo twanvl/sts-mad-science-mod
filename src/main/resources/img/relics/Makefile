@@ -1,7 +1,7 @@
 # Resize power images
 IMAGES:=$(notdir $(wildcard large/*.png))
 NOT_RELICS:=AbstractMadScienceRelic
-RELICS:=$(basename $(notdir $(wildcard ../../../java/inventormod/relics/*.java)))
+RELICS:=$(basename $(notdir $(wildcard ../../../java/madsciencemod/relics/*.java)))
 MISSING_IMAGES:=$(filter-out $(NOT_RELICS) $(basename $(IMAGES)), $(RELICS))
 EXTRA_IMAGES:=$(filter-out $(RELICS),$(basename $(IMAGES)))
 OUTLINE_IMAGES:=$(addprefix outline/,$(IMAGES))

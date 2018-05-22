@@ -1,0 +1,66 @@
+package madsciencemod.cards;
+
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+
+import madsciencemod.actions.common.ChooseAction;
+import madsciencemod.powers.FuelPower;
+
+public class Bayonet extends AbstractMadScienceCard {
+    public static final String ID = "Bayonet";
+    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final String NAME = cardStrings.NAME;
+    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
+    private static final int COST = 1;
+    private static final int CHOICE_FUEL_COST = 2;
+    private static final int ATTACK_DMG = 8;
+    private static final int UPGRADE_ATTACK_DMG = 2;
+    private static final int ATTACK_TIMES = 3;
+    private static final CardType TYPE = CardType.ATTACK;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
+
+    public Bayonet() {
+        super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
+        this.baseDamage = ATTACK_DMG;
+        this.magicNumber = this.baseMagicNumber = ATTACK_TIMES;
+    }
+
+    @Override
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        ChooseAction choice = new ChooseAction(this, m, EXTENDED_DESCRIPTION[0]);
+        choice.add(EXTENDED_DESCRIPTION[1], EXTENDED_DESCRIPTION[2], () -> {
+            AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+        });
+        if (FuelPower.currentAmount() >= CHOICE_FUEL_COST) {
+            choice.add(EXTENDED_DESCRIPTION[3], EXTENDED_DESCRIPTION[4], () -> {
+                FuelPower.spendFuel(CHOICE_FUEL_COST);
+                for (int i = 0 ; i < this.magicNumber ; ++i) {
+                    AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+                }
+            });
+        }
+        AbstractDungeon.actionManager.addToBottom(choice);
+    }
+
+    @Override
+    public AbstractCard makeCopy() {
+        return new Bayonet();
+    }
+
+    @Override
+    public void upgrade() {
+        if (!this.upgraded) {
+            upgradeName();
+            upgradeDamage(UPGRADE_ATTACK_DMG);
+        }
+    }
+}
