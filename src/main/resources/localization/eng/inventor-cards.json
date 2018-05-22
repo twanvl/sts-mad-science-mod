@@ -238,6 +238,10 @@
     "NAME": "Mechanical Claw",
     "DESCRIPTION": "Spend 1 fuel. Deal !D! damage. Draw a card."
   },
+  "MechanicalSnecko": {
+    "NAME": "Mechanical Snecko",
+    "DESCRIPTION": "Whenever you play 2 cards in a turn, draw a card and randomize the cost of cards in your hand for this turn."
+  },
   "Mechanize": {
     "NAME": "Mechanize",
     "DESCRIPTION": "Gain !M! Fuel. Cards in your hand cost Fuel instead of energy this turn until played."

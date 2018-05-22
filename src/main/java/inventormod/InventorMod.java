@@ -192,6 +192,7 @@ public class InventorMod implements
             BaseMod.addCard(new Liquify());
             BaseMod.addCard(new MakeOrBreak());
             BaseMod.addCard(new MechanicalClaw());
+            BaseMod.addCard(new MechanicalSnecko());
             BaseMod.addCard(new Mechanize());
             BaseMod.addCard(new MindControlBeam());
             BaseMod.addCard(new NowOrNever());

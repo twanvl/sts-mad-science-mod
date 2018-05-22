@@ -111,6 +111,12 @@
       "Whenever you spend Fuel, takes #b"," damage."
     ]
   },
+  "MechanicalSnecko": {
+    "NAME": "Mechanical Snecko",
+    "DESCRIPTIONS": [
+      "Whenever you play "," card","cards"," in a turn, draw"," card"," cards"," and randomize the cost of cards in your hand for this turn."
+    ]
+  },
   "PortablePumpjack": {
     "NAME": "Portable Pumpjack",
     "DESCRIPTIONS": [
