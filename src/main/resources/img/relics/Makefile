@@ -1,4 +1,4 @@
-# Resize power images
+# Resize relic images
 IMAGES:=$(notdir $(wildcard large/*.png))
 NOT_RELICS:=AbstractMadScienceRelic
 RELICS:=$(basename $(notdir $(wildcard ../../../java/madsciencemod/relics/*.java)))
@@ -28,6 +28,6 @@ verify:
 	@$(foreach c,$(EXTRA_IMAGES),$(call WARN,no relic for image $(c)))
 
 clean:
-	rm $(IMAGES)
-	rm $(OUTLINE_IMAGES)
+	rm -f *.png
+	rm -f outline/*.png
 	rmdir outline

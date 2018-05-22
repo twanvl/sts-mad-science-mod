@@ -31,5 +31,5 @@ verify:
 	@$(foreach c,$(EXTRA_IMAGES),$(call WARN,no power for image $(c)))
 
 clean:
-	rm $(IMAGES32)
+	rm -f 32/*.png
 	rmdir 32

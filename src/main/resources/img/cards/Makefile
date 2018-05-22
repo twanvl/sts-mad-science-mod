@@ -25,4 +25,4 @@ verify:
 	@$(foreach c,$(EXTRA_IMAGES),$(call WARN,no card for image $(c)))
 
 clean:
-	rm $(IMAGES)
+	rm -f *.png
