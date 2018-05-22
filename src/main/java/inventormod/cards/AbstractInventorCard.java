@@ -54,7 +54,7 @@ public abstract class AbstractInventorCard extends CustomCard {
         }
         // enough energy?
         if (!super.hasEnoughEnergy()) return false;
-        if (FuelPower.currentAmount() < fuelCost) {
+        if (!freeToPlayOnce && FuelPower.currentAmount() < fuelCost) {
             this.cantUseMessage = FuelPower.NOT_ENOUGH_FUEL_MESSAGE;
             return false;
         }
