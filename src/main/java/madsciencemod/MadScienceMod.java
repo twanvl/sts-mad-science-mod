@@ -83,7 +83,7 @@ public class MadScienceMod implements
     public void receivePostInitialize() {
         logger.info("initialize mod badge");
         // Mod badge
-        Texture badgeTexture = new Texture("img/InventorModBadge.png");
+        Texture badgeTexture = new Texture("img/MadScienceModBadge.png");
         ModPanel settingsPanel = new ModPanel();
         settingsPanel.addLabel("This mod does not have any settings.", 400.0f, 700.0f, (me) -> {});
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
@@ -109,15 +109,15 @@ public class MadScienceMod implements
     @Override
     public void receiveEditCharacters() {
         logger.info("begin editing characters");
-        BaseMod.loadCustomStrings(CharacterStrings.class, loadJson("localization/eng/inventor-character.json"));
+        BaseMod.loadCustomStrings(CharacterStrings.class, loadJson("localization/eng/madscience-characters.json"));
         BaseMod.addCharacter(
             MadScientist.class,
             MadScientist.NAMES[1],
             "MadScientist class string",
             CardColorEnum.BRONZE.toString(),
             MadScientist.NAMES[0],
-            "img/charSelect/inventorButton.png",
-            "img/charSelect/inventorPortrait.jpg",
+            "img/charSelect/MadScientistButton.png",
+            "img/charSelect/MadScientistPortrait.jpg",
             PlayerClassEnum.MAD_SCIENTIST.toString());
         logger.info("done editing characters");
         receiveEditPotions();
@@ -256,7 +256,7 @@ public class MadScienceMod implements
         // use a custom class instead
         Type typeToken = new TypeToken<Map<String, Keyword>>(){}.getType();
         Gson gson = new Gson();
-        String strings = loadJson("localization/eng/inventor-keywords.json");
+        String strings = loadJson("localization/eng/madscience-keywords.json");
         @SuppressWarnings("unchecked")
         Map<String,Keyword> keywords = (Map<String,Keyword>)gson.fromJson(strings, typeToken);
         for (Keyword kw : keywords.values()) {
@@ -269,10 +269,10 @@ public class MadScienceMod implements
     public void receiveEditStrings() {
         logger.info("begin editing strings");
         // Note: it seems that naming the files localization/eng/relics.json crashes slay the spire on startup
-        BaseMod.loadCustomStrings(RelicStrings.class, loadJson("localization/eng/inventor-relics.json"));
-        BaseMod.loadCustomStrings(CardStrings.class, loadJson("localization/eng/inventor-cards.json"));
-        BaseMod.loadCustomStrings(PowerStrings.class, loadJson("localization/eng/inventor-powers.json"));
-        BaseMod.loadCustomStrings(PotionStrings.class, loadJson("localization/eng/inventor-potions.json"));
+        BaseMod.loadCustomStrings(RelicStrings.class, loadJson("localization/eng/madscience-relics.json"));
+        BaseMod.loadCustomStrings(CardStrings.class, loadJson("localization/eng/madscience-cards.json"));
+        BaseMod.loadCustomStrings(PowerStrings.class, loadJson("localization/eng/madscience-powers.json"));
+        BaseMod.loadCustomStrings(PotionStrings.class, loadJson("localization/eng/madscience-potions.json"));
         logger.info("done editing strings");
     }
     private static String loadJson(String jsonPath) {

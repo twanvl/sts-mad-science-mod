@@ -1,5 +1,6 @@
 dependency-reduced-pom.xml
 .classpath
+.factorypath
 .project
 .settings
 .vscode
@@ -14,5 +15,5 @@ src/main/resources/img/powers/64
 src/main/resources/img/cardui/1024
 src/main/resources/img/cardui/512
 src/main/resources/img/cardui/images
-src/main/resources/img/characters/inventor/orb/*d.png
+src/main/resources/img/characters/MadScientist/orb/*d.png
 
