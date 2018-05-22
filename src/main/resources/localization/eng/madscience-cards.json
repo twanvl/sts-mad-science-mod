@@ -307,6 +307,10 @@
     "DESCRIPTION": "Deal !D! damage. Look at the top !M! cards of your draw pile. You may discard and upgrade any of them.",
     "EXTENDED_DESCRIPTION": ["Choose cards to discard and upgrade."]
   },
+  "RadioactiveSword": {
+    "NAME": "Radioactive Sword",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Fuel."
+  },
   "Reconstitute": {
     "NAME": "Reconstitute",
     "DESCRIPTION": "At the end of your turn gain !M! Fuel for each Fuel spent this turn."
@@ -396,10 +400,6 @@
     "NAME": "Virus",
     "DESCRIPTION": "Deal damage equal to the number of Virus cards in your deck. Add a copy of this to your discard pile.",
     "UPGRADE_DESCRIPTION": "Deal damage equal to the number of Virus cards in your deck. Add !M! copies of this to your discard pile."
-  },
-  "WoodenSword": {
-    "NAME": "Wooden Sword",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Fuel."
   },
 
   "AbstractTrinket": {

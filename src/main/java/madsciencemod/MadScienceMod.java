@@ -205,6 +205,7 @@ public class MadScienceMod implements
             BaseMod.addCard(new PowerArmor());
             BaseMod.addCard(new PoweredStrike());
             BaseMod.addCard(new Probe());
+            BaseMod.addCard(new RadioactiveSword());
             BaseMod.addCard(new Reconstitute());
             BaseMod.addCard(new RecyclingStation());
             BaseMod.addCard(new Redesign());
@@ -225,7 +226,6 @@ public class MadScienceMod implements
             BaseMod.addCard(new Tinker());
             BaseMod.addCard(new Tune());
             BaseMod.addCard(new Virus());
-            BaseMod.addCard(new WoodenSword());
 
             // Trinkets
             BaseMod.addCard(new DecorativeTrinket());

@@ -12,8 +12,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import madsciencemod.actions.common.GainFuelAction;
 
-public class WoodenSword extends AbstractMadScienceCard {
-    public static final String ID = "WoodenSword";
+public class RadioactiveSword extends AbstractMadScienceCard {
+    public static final String ID = "RadioactiveSword";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -25,7 +25,7 @@ public class WoodenSword extends AbstractMadScienceCard {
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
-    public WoodenSword() {
+    public RadioactiveSword() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
         this.baseDamage = ATTACK_DMG;
         this.magicNumber = this.baseMagicNumber = FUEL_AMT;
@@ -39,7 +39,7 @@ public class WoodenSword extends AbstractMadScienceCard {
 
     @Override
     public AbstractCard makeCopy() {
-        return new WoodenSword();
+        return new RadioactiveSword();
     }
 
     @Override
