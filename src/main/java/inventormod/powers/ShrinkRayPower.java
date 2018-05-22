@@ -5,14 +5,10 @@ import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
-import inventormod.InventorMod;
-
-public class ShrinkRayPower extends AbstractPower {
+public class ShrinkRayPower extends AbstractMadSciencePower {
     public static final String POWER_ID = "ShrinkRay";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
@@ -20,13 +16,9 @@ public class ShrinkRayPower extends AbstractPower {
     private static final int REGAIN = 1;
 
     public ShrinkRayPower(AbstractCreature owner, int amount) {
-        this.name = NAME;
-        this.ID = POWER_ID;
-        this.owner = owner;
-        this.amount = amount;
+        super(POWER_ID, NAME, owner, amount);
         this.updateDescription();
         this.isTurnBased = true;
-        this.img = ImageMaster.loadImage(InventorMod.powerImage(POWER_ID));
     }
 
     @Override

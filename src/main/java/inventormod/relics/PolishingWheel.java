@@ -2,7 +2,7 @@ package inventormod.relics;
 
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
-public class PolishingWheel extends AbstractInventorRelic {
+public class PolishingWheel extends AbstractMadScienceRelic {
     public static final String ID = "PolishingWheel";
 
     public PolishingWheel() {

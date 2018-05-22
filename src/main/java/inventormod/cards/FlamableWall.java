@@ -12,7 +12,7 @@ import inventormod.actions.common.ChooseAction;
 import inventormod.actions.common.GainFuelAction;
 import inventormod.powers.FuelPower;
 
-public class FlamableWall extends AbstractInventorCard {
+public class FlamableWall extends AbstractMadScienceCard {
     public static final String ID = "FlamableWall";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

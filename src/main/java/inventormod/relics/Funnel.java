@@ -2,7 +2,7 @@ package inventormod.relics;
 
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
-public class Funnel extends AbstractInventorRelic {
+public class Funnel extends AbstractMadScienceRelic {
     public static final String ID = "Funnel";
 
     public Funnel() {

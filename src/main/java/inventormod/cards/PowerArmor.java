@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.powers.PowerArmorPower;
 
-public class PowerArmor extends AbstractInventorCard {
+public class PowerArmor extends AbstractMadScienceCard {
     public static final String ID = "PowerArmor";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

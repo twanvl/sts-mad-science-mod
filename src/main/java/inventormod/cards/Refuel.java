@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.actions.common.GainFuelAction;
 
-public class Refuel extends AbstractInventorCard {
+public class Refuel extends AbstractMadScienceCard {
     public static final String ID = "Refuel";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

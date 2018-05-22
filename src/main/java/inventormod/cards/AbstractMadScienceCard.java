@@ -5,21 +5,21 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 import basemod.abstracts.CustomCard;
-import inventormod.InventorMod;
+import inventormod.MadScienceMod;
 import inventormod.patches.CardColorEnum;
 import inventormod.powers.FuelPower;
 
-public abstract class AbstractInventorCard extends CustomCard {
+public abstract class AbstractMadScienceCard extends CustomCard {
     public int fuelCost = 0;
     public boolean costsFuelThisTurn = false;
     public int hackNotToPayCost; // see UseCardPatch
 
-    public AbstractInventorCard(String id, String name, int cost, String description, CardType type, CardRarity rarity, CardTarget target) {
-        super(id, name, InventorMod.cardImage(id), cost, description, type, CardColorEnum.BRONZE, rarity, target);
+    public AbstractMadScienceCard(String id, String name, int cost, String description, CardType type, CardRarity rarity, CardTarget target) {
+        super(id, name, MadScienceMod.cardImage(id), cost, description, type, CardColorEnum.BRONZE, rarity, target);
     }
 
-    public AbstractInventorCard(String id, String name, int cost, String description, CardType type, CardColor color, CardRarity rarity, CardTarget target) {
-        super(id, name, InventorMod.cardImage(id), cost, description, type, color, rarity, target);
+    public AbstractMadScienceCard(String id, String name, int cost, String description, CardType type, CardColor color, CardRarity rarity, CardTarget target) {
+        super(id, name, MadScienceMod.cardImage(id), cost, description, type, color, rarity, target);
     }
 
     public int fuelCostForTurn() {

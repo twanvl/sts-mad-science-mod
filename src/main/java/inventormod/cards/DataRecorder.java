@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.powers.DataRecorderPower;
 
-public class DataRecorder extends AbstractInventorCard {
+public class DataRecorder extends AbstractMadScienceCard {
     public static final String ID = "DataRecorder";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

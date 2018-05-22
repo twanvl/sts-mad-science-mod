@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
 
 import inventormod.actions.common.SpendGoldAction;
 
-public class GoldenGun extends AbstractInventorCard {
+public class GoldenGun extends AbstractMadScienceCard {
     public static final String ID = "GoldenGun";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.actions.unique.LabAccidentAction;
 
-public class LabAccident extends AbstractInventorCard {
+public class LabAccident extends AbstractMadScienceCard {
     public static final String ID = "LabAccident";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

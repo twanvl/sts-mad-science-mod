@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.powers.ExhaustVentsPower;
 
-public class ExhaustVents extends AbstractInventorCard {
+public class ExhaustVents extends AbstractMadScienceCard {
     public static final String ID = "ExhaustVents";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

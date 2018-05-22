@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 import inventormod.actions.common.GainFuelAction;
 
-public class PortablePumpjack extends AbstractInventorRelic {
+public class PortablePumpjack extends AbstractMadScienceRelic {
     public static final String ID = "PortablePumpjack";
     public static final int AMOUNT = 1;
 

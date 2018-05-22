@@ -1,6 +1,6 @@
 # Generate card images
 IMAGES:=$(notdir $(wildcard large/*.png))
-NOT_CARDS:=AbstractInventorCard AbstractTrinket
+NOT_CARDS:=AbstractMadScienceCard AbstractTrinket
 CARDS:=$(basename $(notdir $(wildcard ../../../java/inventormod/cards/*.java)))
 MISSING_IMAGES:=$(filter-out $(NOT_CARDS) $(basename $(IMAGES)), $(CARDS))
 EXTRA_IMAGES:=$(filter-out $(CARDS),$(basename $(IMAGES)))

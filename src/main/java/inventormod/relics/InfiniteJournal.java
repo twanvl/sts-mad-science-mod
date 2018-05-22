@@ -6,10 +6,12 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
-import inventormod.InventorMod;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-public class InfiniteJournal extends AbstractInventorRelic {
+public class InfiniteJournal extends AbstractMadScienceRelic {
     public static final String ID = "InfiniteJournal";
+    public static final Logger logger = LogManager.getLogger(InfiniteJournal.class.getName());
 
     public InfiniteJournal() {
         super(ID, RelicTier.RARE, LandingSound.FLAT);
@@ -81,7 +83,7 @@ public class InfiniteJournal extends AbstractInventorRelic {
             method.setAccessible(true);
             method.invoke(card);
          } catch (Exception ex) {
-            InventorMod.logger.error("Exception occured when calling initializeCard", ex);
+            logger.error("Exception occured when calling initializeCard", ex);
          }
     }
 

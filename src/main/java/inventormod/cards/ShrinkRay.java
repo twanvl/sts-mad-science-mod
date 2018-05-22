@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 
 import inventormod.powers.ShrinkRayPower;
 
-public class ShrinkRay extends AbstractInventorCard {
+public class ShrinkRay extends AbstractMadScienceCard {
     public static final String ID = "ShrinkRay";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

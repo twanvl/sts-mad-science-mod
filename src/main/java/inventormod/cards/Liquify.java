@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.actions.common.ExhaustForFuelAction;
 
-public class Liquify extends AbstractInventorCard {
+public class Liquify extends AbstractMadScienceCard {
     public static final String ID = "Liquify";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

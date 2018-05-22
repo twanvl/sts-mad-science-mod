@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.powers.PortablePumpjackPower;
 
-public class PortablePumpjack extends AbstractInventorCard {
+public class PortablePumpjack extends AbstractMadScienceCard {
     public static final String ID = "PortablePumpjack";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

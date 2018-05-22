@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.actions.common.ChooseAction;
 
-public class AcidSpray extends AbstractInventorCard {
+public class AcidSpray extends AbstractMadScienceCard {
     public static final String ID = "AcidSpray";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

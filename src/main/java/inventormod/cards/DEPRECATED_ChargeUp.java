@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 
 import inventormod.powers.FuelPower;
 
-public class DEPRECATED_ChargeUp extends AbstractInventorCard {
+public class DEPRECATED_ChargeUp extends AbstractMadScienceCard {
     public static final String ID = "DEPRECATED_ChargeUp";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

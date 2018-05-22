@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.powers.GarbageDisposalCannonPower;
 
-public class DEPRECATED_GarbageDisposalCannon extends AbstractInventorCard {
+public class DEPRECATED_GarbageDisposalCannon extends AbstractMadScienceCard {
     public static final String ID = "DEPRECATED_GarbageDisposalCannon";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

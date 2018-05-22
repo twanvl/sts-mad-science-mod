@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import inventormod.actions.common.ChooseAction;
 import inventormod.powers.FuelPower;
 
-public class Bayonet extends AbstractInventorCard {
+public class Bayonet extends AbstractMadScienceCard {
     public static final String ID = "Bayonet";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

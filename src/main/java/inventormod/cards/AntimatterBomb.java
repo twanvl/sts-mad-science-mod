@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.actions.common.ApplyBombAction;
 
-public class AntimatterBomb extends AbstractInventorCard {
+public class AntimatterBomb extends AbstractMadScienceCard {
     public static final String ID = "AntimatterBomb";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.powers.FuelPower;
 
-public class FumeBlast extends AbstractInventorCard implements FuelPower.Listener {
+public class FumeBlast extends AbstractMadScienceCard implements FuelPower.Listener {
     public static final String ID = "FumeBlast";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

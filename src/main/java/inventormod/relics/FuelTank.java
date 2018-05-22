@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 import inventormod.actions.common.GainFuelAction;
 
-public class FuelTank extends AbstractInventorRelic {
+public class FuelTank extends AbstractMadScienceRelic {
     public static final String ID = "FuelTank";
     private static final int FUEL = 2;
 

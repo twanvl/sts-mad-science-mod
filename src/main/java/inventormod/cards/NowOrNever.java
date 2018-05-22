@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.powers.NextTurnBlockPower;
 
 import inventormod.actions.common.ChooseAction;
 
-public class NowOrNever extends AbstractInventorCard {
+public class NowOrNever extends AbstractMadScienceCard {
     public static final String ID = "NowOrNever";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

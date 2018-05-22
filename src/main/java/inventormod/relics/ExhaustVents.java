@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 import inventormod.powers.FuelPower;
 
-public class ExhaustVents extends AbstractInventorRelic implements FuelPower.Listener {
+public class ExhaustVents extends AbstractMadScienceRelic implements FuelPower.Listener {
     public static final String ID = "ExhaustVents";
     public static final int AMOUNT = 2;
 

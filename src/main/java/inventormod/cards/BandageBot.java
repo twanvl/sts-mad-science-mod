@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.powers.BandageBotPower;
 
-public class BandageBot extends AbstractInventorCard {
+public class BandageBot extends AbstractMadScienceCard {
     public static final String ID = "BandageBot";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

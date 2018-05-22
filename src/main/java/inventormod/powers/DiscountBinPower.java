@@ -6,13 +6,9 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 
-import inventormod.InventorMod;
-
-public class DiscountBinPower extends AbstractPower {
+public class DiscountBinPower extends AbstractMadSciencePower {
     public static final String POWER_ID = "DiscountBin";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
@@ -21,13 +17,10 @@ public class DiscountBinPower extends AbstractPower {
     public static final int INTERVAL = 3;
 
     public DiscountBinPower(AbstractCreature owner, int draw) {
-        this.name = NAME;
-        this.ID = POWER_ID;
-        this.owner = owner;
+        super(POWER_ID, NAME, owner);
         this.draw = draw;
         this.amount = INTERVAL;
         this.updateDescription();
-        this.img = ImageMaster.loadImage(InventorMod.powerImage(POWER_ID));
     }
 
     @Override

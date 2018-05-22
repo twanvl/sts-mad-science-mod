@@ -33,7 +33,7 @@ import inventormod.relics.*;
 import inventormod.potions.*;
 
 @SpireInitializer
-public class InventorMod implements
+public class MadScienceMod implements
         PostInitializeSubscriber,
         EditRelicsSubscriber,
         EditCharactersSubscriber,
@@ -49,7 +49,7 @@ public class InventorMod implements
     //private static final Color BRONZE = new Color(0.1f, 0.1f, 0.7f, 1.0f);
     private static final Color BRONZE = new Color(0.7f, 0.6f, 0.1f, 1.0f);
 
-    public static final Logger logger = LogManager.getLogger(InventorMod.class.getName());
+    public static final Logger logger = LogManager.getLogger(MadScienceMod.class.getName());
 
     public static String cardImage(String id) {
         return "img/cards/" + id + ".png";
@@ -64,7 +64,7 @@ public class InventorMod implements
         return "img/powers/32/" + id + ".png";
     }
 
-    public InventorMod() {
+    public MadScienceMod() {
         BaseMod.subscribeToPostInitialize(this);
         BaseMod.subscribeToEditStrings(this);
         BaseMod.subscribeToEditCharacters(this);
@@ -76,7 +76,7 @@ public class InventorMod implements
     }
 
     public static void initialize() {
-        new InventorMod();
+        new MadScienceMod();
     }
 
     @Override

@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 
 import inventormod.actions.common.ChooseAction;
 
-public class MakeOrBreak extends AbstractInventorCard {
+public class MakeOrBreak extends AbstractMadScienceCard {
     public static final String ID = "MakeOrBreak";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

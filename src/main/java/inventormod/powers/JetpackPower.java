@@ -17,8 +17,8 @@ public class JetpackPower extends AbstractPower {
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
     public JetpackPower(AbstractCreature owner, int amount) {
-        this.name = NAME;
         this.ID = POWER_ID;
+        this.name = NAME;
         this.owner = owner;
         this.amount = amount;
         this.isTurnBased = true;

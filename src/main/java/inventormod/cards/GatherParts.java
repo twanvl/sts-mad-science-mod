@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import inventormod.actions.common.AllTrinketsToHandAction;
 import inventormod.actions.common.ShuffleTrinketAction;
 
-public class GatherParts extends AbstractInventorCard {
+public class GatherParts extends AbstractMadScienceCard {
     public static final String ID = "GatherParts";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

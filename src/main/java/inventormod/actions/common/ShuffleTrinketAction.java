@@ -14,8 +14,10 @@ import com.megacrit.cardcrawl.ui.buttons.SkipCardButton;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDrawPileEffect;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import basemod.ReflectionHacks;
-import inventormod.InventorMod;
 import inventormod.cards.AbstractTrinket;
 import inventormod.cards.DecorativeTrinket;
 import inventormod.cards.ExplosiveTrinket;
@@ -28,6 +30,8 @@ import inventormod.cards.SpikyTrinket;
 import inventormod.relics.PolishingWheel;
 
 public class ShuffleTrinketAction extends AbstractGameAction {
+    public static final Logger logger = LogManager.getLogger(ShuffleTrinketAction.class.getName());
+
     private static final float startingDuration = 0.5f;
     private boolean random;
     private static final boolean ALLOW_DUPLICATES = false;
@@ -115,7 +119,7 @@ public class ShuffleTrinketAction extends AbstractGameAction {
             method.setAccessible(true);
             method.invoke(crs, (float)Settings.WIDTH / 2.0f, CARD_TARGET_Y);
          } catch (Exception ex) {
-            InventorMod.logger.error("Exception occured when calling placeCards", ex);
+            logger.error("Exception occured when calling placeCards", ex);
          }
         for (AbstractCard c : derp) {
             UnlockTracker.markCardAsSeen(c.cardID);

@@ -9,10 +9,13 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import inventormod.InventorMod;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 // Show a screen to let the player pick from several actions, displayed as cards
 public class ChooseAction extends AbstractGameAction {
+    public static final Logger logger = LogManager.getLogger(ShuffleTrinketAction.class.getName());
+
     AbstractCard baseCard;
     AbstractMonster target;
     CardGroup choices = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
@@ -64,7 +67,7 @@ public class ChooseAction extends AbstractGameAction {
             AbstractCard pick = AbstractDungeon.gridSelectScreen.selectedCards.get(0);
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
             int i = choices.group.indexOf(pick);
-            InventorMod.logger.info("Picked option: " + i);
+            logger.info("Picked option: " + i);
             actions.get(i).run();
         }
         this.tickDuration();

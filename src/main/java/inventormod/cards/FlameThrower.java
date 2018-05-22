@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.actions.unique.FlameThrowerAction;
 
-public class FlameThrower extends AbstractInventorCard {
+public class FlameThrower extends AbstractMadScienceCard {
     public static final String ID = "FlameThrower";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

@@ -4,15 +4,13 @@ import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
-import inventormod.InventorMod;
 import inventormod.actions.unique.BombExplodeAction;
 
-public class BombPower extends AbstractPower {
+public class BombPower extends AbstractMadSciencePower {
     public static final String POWER_ID = "Bomb";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
@@ -22,16 +20,13 @@ public class BombPower extends AbstractPower {
     public int amounts[];
 
     public BombPower(AbstractCreature owner, int amount, int turns) {
-        this.name = NAME;
-        this.ID = POWER_ID;
-        this.owner = owner;
+        super(POWER_ID, NAME, owner);
         this.amount = amount; // displayed amount is total amount of bomb damage
         this.amounts = new int[MAX_TURNS+1];
         this.amounts[turns] = amount;
         this.type = AbstractPower.PowerType.DEBUFF;
         this.isTurnBased = true;
         this.updateDescription();
-        this.img = ImageMaster.loadImage(InventorMod.powerImage(POWER_ID));
     }
 
     @Override

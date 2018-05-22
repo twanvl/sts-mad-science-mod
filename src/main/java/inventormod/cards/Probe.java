@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.actions.unique.ProbeAction;
 
-public class Probe extends AbstractInventorCard {
+public class Probe extends AbstractMadScienceCard {
     public static final String ID = "Probe";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

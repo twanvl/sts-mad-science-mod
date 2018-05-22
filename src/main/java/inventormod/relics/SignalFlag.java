@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 import inventormod.actions.common.GainFuelAction;
 
-public class SignalFlag extends AbstractInventorRelic {
+public class SignalFlag extends AbstractMadScienceRelic {
     public static final String ID = "SignalFlag";
 
     public SignalFlag() {

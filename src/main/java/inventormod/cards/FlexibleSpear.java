@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.powers.WeakPower;
 
 import inventormod.actions.common.ChooseAction;
 
-public class FlexibleSpear extends AbstractInventorCard {
+public class FlexibleSpear extends AbstractMadScienceCard {
     public static final String ID = "FlexibleSpear";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

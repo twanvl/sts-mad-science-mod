@@ -2,15 +2,15 @@ package inventormod.patches;
 
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 
-import inventormod.cards.AbstractInventorCard;
+import inventormod.cards.AbstractMadScienceCard;
 import inventormod.powers.FuelPower;
 
 @SpirePatch(cls="com.megacrit.cardcrawl.characters.AbstractPlayer", method="useCard")
 public class UseCardPatch {
     //public static IdentityHashMap<AbstactCard> cardsThatCostFuelUntilPlayed;
     public static void Prefix(Object _self, Object _c, Object _monster, int energyOnUse) {
-        if (_c instanceof AbstractInventorCard) {
-            AbstractInventorCard c = (AbstractInventorCard)_c;
+        if (_c instanceof AbstractMadScienceCard) {
+            AbstractMadScienceCard c = (AbstractMadScienceCard)_c;
             if (!c.freeToPlayOnce && c.fuelCostForTurn() > 0) {
                 FuelPower.spendFuel(c.fuelCostForTurn());
             }
@@ -22,8 +22,8 @@ public class UseCardPatch {
         }
     }
     public static void Postfix(Object _self, Object _c, Object _monster, int energyOnUse) {
-        if (_c instanceof AbstractInventorCard) {
-            AbstractInventorCard c = (AbstractInventorCard)_c;
+        if (_c instanceof AbstractMadScienceCard) {
+            AbstractMadScienceCard c = (AbstractMadScienceCard)_c;
             if (c.costsFuelThisTurn) {
                 c.costForTurn = c.hackNotToPayCost;
                 c.costsFuelThisTurn = false; // Only once

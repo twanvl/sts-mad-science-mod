@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.powers.MechanicalSneckoPower;
 
-public class MechanicalSnecko extends AbstractInventorCard {
+public class MechanicalSnecko extends AbstractMadScienceCard {
     public static final String ID = "MechanicalSnecko";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

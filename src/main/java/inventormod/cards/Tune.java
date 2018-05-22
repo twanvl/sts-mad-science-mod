@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 
 import inventormod.actions.common.ChooseAction;
 
-public class Tune extends AbstractInventorCard {
+public class Tune extends AbstractMadScienceCard {
     public static final String ID = "Tune";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

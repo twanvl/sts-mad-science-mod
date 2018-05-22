@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.powers.LightOnFirePower;
 
-public class LightOnFire extends AbstractInventorCard {
+public class LightOnFire extends AbstractMadScienceCard {
     public static final String ID = "LightOnFire";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

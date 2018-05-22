@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.powers.DiscountBinPower;
 
-public class DiscountBin extends AbstractInventorCard {
+public class DiscountBin extends AbstractMadScienceCard {
     public static final String ID = "DiscountBin";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

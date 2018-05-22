@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.actions.unique.RedesignAction;
 
-public class Redesign extends AbstractInventorCard {
+public class Redesign extends AbstractMadScienceCard {
     public static final String ID = "Redesign";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.powers.ExtractOilPower;
 
-public class ExtractOil extends AbstractInventorCard {
+public class ExtractOil extends AbstractMadScienceCard {
     public static final String ID = "ExtractOil";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

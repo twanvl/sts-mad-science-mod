@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-import inventormod.cards.AbstractInventorCard;
+import inventormod.cards.AbstractMadScienceCard;
 
 public class MechanizeAction extends AbstractGameAction {
     private float startingDuration;
@@ -19,8 +19,8 @@ public class MechanizeAction extends AbstractGameAction {
     public void update() {
         if (this.duration == this.startingDuration) {
             for (AbstractCard c : AbstractDungeon.player.hand.group) {
-                if (c instanceof AbstractInventorCard) {
-                    AbstractInventorCard ci = (AbstractInventorCard)c;
+                if (c instanceof AbstractMadScienceCard) {
+                    AbstractMadScienceCard ci = (AbstractMadScienceCard)c;
                     ci.costsFuelThisTurn = true;
                 }
                 // TODO: somehow set fuel cost of non-mod cards

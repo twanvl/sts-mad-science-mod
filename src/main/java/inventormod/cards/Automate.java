@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.powers.AutomatePower;
 
-public class Automate extends AbstractInventorCard {
+public class Automate extends AbstractMadScienceCard {
     public static final String ID = "Automate";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

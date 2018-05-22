@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import inventormod.powers.CaptureMomentumPower;
 
-public class CaptureMomentum extends AbstractInventorCard {
+public class CaptureMomentum extends AbstractMadScienceCard {
     public static final String ID = "CaptureMomentum";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

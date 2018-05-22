@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import inventormod.powers.RecyclingStationPower;
 
-public abstract class AbstractTrinket extends AbstractInventorCard {
+public abstract class AbstractTrinket extends AbstractMadScienceCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("AbstractTrinket"); // used for ShuffleTrinketAction
     public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
 
