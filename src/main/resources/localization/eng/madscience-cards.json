@@ -170,7 +170,7 @@
     "DESCRIPTION": "At the start of your turn, spend 1 Fuel to gain [R]."
   },
   "GattlingGun": {
-    "NAME": "Machine Gun",
+    "NAME": "Plasma Rifle",
     "DESCRIPTION": "Deal !D! damage for each Fuel you have."
   },
   "GlassCannon": {
@@ -183,7 +183,7 @@
     "EXTENDED_DESCRIPTION": ["Not enough #rGold."]
   },
   "Grind": {
-    "NAME": "Grind",
+    "NAME": "Grind Specimen",
     "DESCRIPTION": "Deal !D! damage. Gain !M! Artifact."
   },
   "HideBehindJunk": {
@@ -235,7 +235,7 @@
     ]
   },
   "MechanicalClaw": {
-    "NAME": "Mechanical Claw",
+    "NAME": "Prosthetic Claw",
     "DESCRIPTION": "Spend 1 fuel. Deal !D! damage. Draw a card."
   },
   "MechanicalSnecko": {
