@@ -1,10 +1,10 @@
 {
-  "modid": "InventorMod",
-  "name": "The Inventor",
+  "modid": "MadScienceMod",
+  "name": "MadScienceMod",
   "author_list": ["twanvl"],
-  "description": "Adds a new character, The Inventor",
+  "description": "Adds a new character, the Mad Scientist",
   "version": "0.1.0",
-  "sts_version": "05-12-2018",
+  "sts_version": "05-12-2018v2",
   "mts_version": "2.6.0",
-  "update_json": "https://api.github.com/repos/twanvl/sts-inventor-character/releases/latest"
+  "update_json": "https://api.github.com/repos/twanvl/sts-mad-science-mod/releases/latest"
 }

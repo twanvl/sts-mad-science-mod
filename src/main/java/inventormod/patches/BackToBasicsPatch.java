@@ -19,7 +19,7 @@ public class BackToBasicsPatch {
     @SpireInsertPatch(rloc = 30)
     public static void Insert(Object __obj_instance, int buttonPressed) {
         AbstractPlayer.PlayerClass selection = AbstractDungeon.player.chosenClass;
-        if (selection == PlayerClassEnum.INVENTOR) {
+        if (selection == PlayerClassEnum.MAD_SCIENTIST) {
             for (AbstractCard c : AbstractDungeon.player.masterDeck.group) {
                 if ((c instanceof Strike_Bronze || c instanceof Defend_Bronze) && InfiniteJournal.canUpgradeCard(c)) {
                     InfiniteJournal.upgradeCard(c);

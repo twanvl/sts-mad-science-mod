@@ -17,13 +17,13 @@ import inventormod.cards.Strike_Bronze;
 import inventormod.patches.PlayerClassEnum;
 import inventormod.relics.FuelTank;
 
-public class Inventor extends CustomPlayer {
-    //private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString("Inventor");
+public class MadScientist extends CustomPlayer {
+    //private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString("MadScientist");
     //public static final String[] NAMES = characterStrings.NAMES;
     //public static final String[] TEXT = characterStrings.TEXT;
     // Note: Using getCharacterString here doesn't work, because they are loaded after character creation by basemod
-    public static final String[] NAMES = {"The Inventor","The Inventor"};
-    public static final String[] TEXT = {"This tinkerer relies on his many machines and devices to aid him."};
+    public static final String[] NAMES = {"Mad Scientist","The Mad Scientist"};
+    public static final String[] TEXT = {"You have to be mad to climb this spire while relying on\nexperimental gadgets and unstable explosives. And he certainly is that."};
     public static final int START_HP = 75;
     public static final int CARD_DRAW = 5;
     public static final int MAX_ORBS = 0;
@@ -44,7 +44,7 @@ public class Inventor extends CustomPlayer {
         "img/characters/inventor/orb/layer5d.png",
     };
 
-    public Inventor(String name, AbstractPlayer.PlayerClass setClass) {
+    public MadScientist(String name, AbstractPlayer.PlayerClass setClass) {
         super(name, setClass, orbTextures, "img/characters/inventor/orb/vfx.png", (String)null, null);
         this.initializeClass(null,
             "img/characters/inventor/shoulder2.png",
@@ -79,7 +79,7 @@ public class Inventor extends CustomPlayer {
     }
 
     public static CharSelectInfo getLoadout() {
-        return new CharSelectInfo(NAMES[0], TEXT[0], START_HP, START_HP, MAX_ORBS, START_GOLD, CARD_DRAW, PlayerClassEnum.INVENTOR, getStartingRelics(), getStartingDeck(), false);
+        return new CharSelectInfo(NAMES[0], TEXT[0], START_HP, START_HP, MAX_ORBS, START_GOLD, CARD_DRAW, PlayerClassEnum.MAD_SCIENTIST, getStartingRelics(), getStartingDeck(), false);
     }
 }
 

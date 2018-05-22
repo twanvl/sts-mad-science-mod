@@ -41,9 +41,9 @@ public class InventorMod implements
         EditKeywordsSubscriber,
         EditCardsSubscriber,
         PostBattleSubscriber {
-    public static final String MODNAME = "Artificer/Inventor Character";
+    public static final String MODNAME = "MadScienceMod";
     public static final String AUTHOR = "twanvl";
-    public static final String DESCRIPTION = "v0.1.0\nAdds a new character: The Artificer.";
+    public static final String DESCRIPTION = "v0.1.0\nAdds a new character: the Mad Scientist.";
 
     // card trail effect
     //private static final Color BRONZE = new Color(0.1f, 0.1f, 0.7f, 1.0f);
@@ -110,17 +110,15 @@ public class InventorMod implements
     public void receiveEditCharacters() {
         logger.info("begin editing characters");
         BaseMod.loadCustomStrings(CharacterStrings.class, loadJson("localization/eng/inventor-character.json"));
-        logger.info("?" + Inventor.NAMES == null);
-        logger.info("?" + Inventor.NAMES.length);
         BaseMod.addCharacter(
-            Inventor.class,
-            Inventor.NAMES[1],
-            "Inventor class string",
+            MadScientist.class,
+            MadScientist.NAMES[1],
+            "MadScientist class string",
             CardColorEnum.BRONZE.toString(),
-            Inventor.NAMES[0],
+            MadScientist.NAMES[0],
             "img/charSelect/inventorButton.png",
             "img/charSelect/inventorPortrait.jpg",
-            PlayerClassEnum.INVENTOR.toString());
+            PlayerClassEnum.MAD_SCIENTIST.toString());
         logger.info("done editing characters");
         receiveEditPotions();
     }

@@ -1,11 +1,11 @@
 {
-  "Inventor": {
+  "MadScientist": {
     "NAMES": [
-      "The Inventor",
-      "The Inventor"
-    ], 
+      "Mad Scientist",
+      "The Mad Scientist"
+    ],
     "TEXT": [
-      "This tinkerer relies on his many machines and devices to aid him."
+      "You have to be mad to climb this spire while relying on experimental gadgets and unstable explosives. And he certainly is that."
     ]
   }
 }
