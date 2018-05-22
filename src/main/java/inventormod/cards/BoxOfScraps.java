@@ -16,6 +16,7 @@ public class BoxOfScraps extends AbstractInventorCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
+    private static final int DRAW = 2;
     private static final int AMT = 2;
     private static final int UPGRADE_AMT = 1;
     private static final CardType TYPE = CardType.SKILL;
@@ -30,7 +31,7 @@ public class BoxOfScraps extends AbstractInventorCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new ShuffleTrinketAction(this.magicNumber, false, true));
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, DRAW));
     }
 
     @Override
