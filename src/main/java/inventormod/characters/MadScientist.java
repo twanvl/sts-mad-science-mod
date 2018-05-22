@@ -23,7 +23,7 @@ public class MadScientist extends CustomPlayer {
     //public static final String[] TEXT = characterStrings.TEXT;
     // Note: Using getCharacterString here doesn't work, because they are loaded after character creation by basemod
     public static final String[] NAMES = {"Mad Scientist","The Mad Scientist"};
-    public static final String[] TEXT = {"You have to be mad to climb this spire while relying on\nexperimental gadgets and unstable explosives. And he certainly is that."};
+    public static final String[] TEXT = {"You have to be mad to climb this spire while relying on NL experimental gadgets and unstable explosives. And he certainly is that."};
     public static final int START_HP = 75;
     public static final int CARD_DRAW = 5;
     public static final int MAX_ORBS = 0;
