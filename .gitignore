@@ -8,10 +8,12 @@ notsrc
 target
 
 src/main/resources/img/cards/*.png
+src/main/resources/img/cards/large/old
 src/main/resources/img/relics/*.png
 src/main/resources/img/relics/outline
 src/main/resources/img/powers/32
 src/main/resources/img/powers/64
+src/main/resources/img/powers/large/old
 src/main/resources/img/cardui/1024
 src/main/resources/img/cardui/512
 src/main/resources/img/cardui/images

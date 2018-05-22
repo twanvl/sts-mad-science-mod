@@ -52,13 +52,16 @@
           <excludes>
             <exclude>**/*.xcf</exclude>
             <exclude>**/*.pl</exclude>
+            <exclude>**/*.svg</exclude>
             <exclude>**/Makefile</exclude>
             <exclude>**/.goutputstream</exclude>
-            <exclude>img/cards/large/*</exclude>
             <exclude>img/cards/large</exclude>
-            <exclude>img/powers/large/*</exclude>
-            <exclude>img/powers/large</exclude>
+            <exclude>img/cards/large/*</exclude>
             <exclude>img/cards/large/*/*</exclude>
+            <exclude>img/powers/large</exclude>
+            <exclude>img/powers/large/*</exclude>
+            <exclude>img/relics/large</exclude>
+            <exclude>img/relics/large/*</exclude>
             <exclude>img/relics/large/*/*</exclude>
           </excludes>
         </configuration>
