@@ -57,6 +57,7 @@ public class DrawAndDiscardAllButOneAction extends AbstractGameAction {
                         this.isDone = true;
                         return;
                     }
+                    // show HandCardSelectScreen for the drawn cards
                     actualHand = AbstractDungeon.player.hand;
                     AbstractDungeon.player.hand = new CardGroup(CardGroupType.HAND);
                     AbstractDungeon.player.hand.group = drawnCards;
