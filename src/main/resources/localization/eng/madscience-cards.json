@@ -423,7 +423,7 @@
   "FoldedTrinket": {
     "NAME": "Folded Trinket",
     "DESCRIPTION": "Draw !M! cards, discard one of them.",
-    "UPGRADE_DESCRIPTION": "Draw !M! cards, discard all but one of them."
+    "UPGRADE_DESCRIPTION": "Draw !M! cards, discard all but one of them. NL Exhaust."
   },
   "FlamableTrinket": {
     "NAME": "Flamable Trinket",
