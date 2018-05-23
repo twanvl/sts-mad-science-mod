@@ -43,14 +43,7 @@ public class AcidSpray extends AbstractMadScienceCard {
             }
         });
         choice.add(EXTENDED_DESCRIPTION[3], EXTENDED_DESCRIPTION[4], () -> {
-            //this.isMultiDamage = true;
-            //this.baseDamage = this.magicNumber;
-            //this.calculateCardDamage(m);
             AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.POISON));
-            //this.isMultiDamage = false;
-            //this.baseDamage = ATTACK_DMG + (this.upgraded ? UPGRADE_ATTACK_DMG : 0);
-            //this.calculateCardDamage(m);
-            // TODO: cleanup
         });
         AbstractDungeon.actionManager.addToBottom(choice);
     }
