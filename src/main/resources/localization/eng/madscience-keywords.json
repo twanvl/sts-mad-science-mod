@@ -19,16 +19,6 @@
     ],
     "DESCRIPTION": "Trinkets are #b0 cost cards that Exhaust."
   },
-  "CHOOSE": {
-    "NAMES":[
-      "choose",
-      "UNUSED_RESERVE",
-      "UNUSED_RESERVE",
-      "UNUSED_RESERVE",
-      "UNUSED_RESERVE"
-    ],
-    "DESCRIPTION": "Choose one of the options when playing the card."
-  },
   "SLOW": {
     "NAMES":[
       "slow",
