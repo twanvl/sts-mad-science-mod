@@ -10,8 +10,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import madsciencemod.powers.FuelPower;
 
-public class Assemble extends AbstractMadScienceCard {
-    public static final String ID = "Assemble";
+public class EnergyBarrier extends AbstractMadScienceCard {
+    public static final String ID = "EnergyBarrier";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -23,7 +23,7 @@ public class Assemble extends AbstractMadScienceCard {
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
 
-    public Assemble() {
+    public EnergyBarrier() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
         this.baseBlock = BLOCK;
         this.baseMagicNumber = this.magicNumber = BLOCK_PER_FUEL;
@@ -42,7 +42,7 @@ public class Assemble extends AbstractMadScienceCard {
 
     @Override
     public AbstractCard makeCopy() {
-        return new Assemble();
+        return new EnergyBarrier();
     }
 
     @Override

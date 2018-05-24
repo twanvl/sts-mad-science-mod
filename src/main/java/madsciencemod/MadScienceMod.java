@@ -143,7 +143,6 @@ public class MadScienceMod implements
             BaseMod.addCard(new AcidSpray());
             BaseMod.addCard(new AntimatterBomb());
             BaseMod.addCard(new ArtilleryShot());
-            BaseMod.addCard(new Assemble());
             BaseMod.addCard(new AssemblyLine());
             BaseMod.addCard(new Automate());
             BaseMod.addCard(new AutoStrike());
@@ -164,6 +163,7 @@ public class MadScienceMod implements
             BaseMod.addCard(new Detonate());
             //BaseMod.addCard(new DiscountBin());
             //BaseMod.addCard(new DEPRECATED_EmergencyRepair());
+            BaseMod.addCard(new EnergyBarrier());
             //BaseMod.addCard(new madsciencemod.cards.ExhaustVents());
             BaseMod.addCard(new ExploreOptions());
             BaseMod.addCard(new ExtractOil());
