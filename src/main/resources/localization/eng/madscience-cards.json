@@ -219,7 +219,7 @@
   },
   "Lightbulb": {
     "NAME": "Lightbulb",
-    "DESCRIPTION": "Spend !M! fuel, gain !M! energy."
+    "DESCRIPTION": "Spend !M! fuel. NL Gain [R] [R]."
   },
   "Liquify": {
     "NAME": "Liquify",
@@ -326,7 +326,7 @@
   },
   "Retarget": {
     "NAME": "Retarget",
-    "DESCRIPTION": "Lose 1 Strength. Gain !M! Thorns for each Attack card in your hand."
+    "DESCRIPTION": "Lose 1 Strength. NL Gain !M! Thorns for each Attack card in your hand."
   },
   "RocketJump": {
     "NAME": "Nitro Boost",
