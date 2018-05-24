@@ -19,8 +19,9 @@ public class Tune extends AbstractMadScienceCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final int AMOUNT = 2;
+    private static final int UPGRADE_AMOUNT = 1;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -28,6 +29,7 @@ public class Tune extends AbstractMadScienceCard {
     public Tune() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
         this.magicNumber = this.baseMagicNumber = AMOUNT;
+        this.exhaust = true;
     }
 
     @Override
@@ -53,9 +55,7 @@ public class Tune extends AbstractMadScienceCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.isInnate = true;
-            this.rawDescription = UPGRADE_DESCRIPTION;
-            this.initializeDescription();
+            this.upgradeMagicNumber(UPGRADE_AMOUNT);
         }
     }
 }
