@@ -49,33 +49,31 @@ public class DrawAndDiscardAllButOneAction extends AbstractGameAction {
         }
         this.duration -= Gdx.graphics.getDeltaTime();
         if (this.duration < 0.0f) {
-            if (drawnCards.size() >= amount || AbstractDungeon.player.drawPile.isEmpty() || AbstractDungeon.player.hand.size() == 10) {
-                // found a 0 cost card, or no more cards to draw
-                if (actualHand == null) {
-                    if (drawnCards.size() <= 1) {
-                        // no discard
-                        this.isDone = true;
-                        return;
-                    }
-                    // show HandCardSelectScreen for the drawn cards
-                    actualHand = AbstractDungeon.player.hand;
-                    AbstractDungeon.player.hand = new CardGroup(CardGroupType.HAND);
-                    AbstractDungeon.player.hand.group = drawnCards;
-                    AbstractDungeon.handCardSelectScreen.open(TEXT[0], drawnCards.size() - 1, false);
-                    AbstractDungeon.player.hand.applyPowers();
-                } else {
-                    if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {
-                        AbstractDungeon.player.hand = actualHand;
-                        for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
-                            AbstractDungeon.player.hand.moveToDiscardPile(c);
-                            c.triggerOnManualDiscard();
-                            GameActionManager.incrementDiscard(false);
-                        }
-                        AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;
-                    }
-                    this.isDone = true;
+            if (actualHand != null) {
+                // hand select screen was opened
+                AbstractDungeon.player.hand = actualHand;
+                for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
+                    AbstractDungeon.player.hand.moveToDiscardPile(c);
+                    c.triggerOnManualDiscard();
+                    GameActionManager.incrementDiscard(false);
                 }
+                AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;
+                this.isDone = true;
+            } else if (drawnCards.size() >= amount || AbstractDungeon.player.drawPile.isEmpty() || AbstractDungeon.player.hand.size() == 10) {
+                // found a 0 cost card, or no more cards to draw
+                if (drawnCards.size() <= 1) {
+                    // no discard
+                    this.isDone = true;
+                    return;
+                }
+                // show HandCardSelectScreen for the drawn cards
+                actualHand = AbstractDungeon.player.hand;
+                AbstractDungeon.player.hand = new CardGroup(CardGroupType.HAND);
+                AbstractDungeon.player.hand.group = drawnCards;
+                AbstractDungeon.handCardSelectScreen.open(TEXT[0], drawnCards.size() - 1, false);
+                AbstractDungeon.player.hand.applyPowers();
             } else {
+                // draw one, remember the drawn card
                 drawnCards.add(AbstractDungeon.player.drawPile.getTopCard());
                 AbstractDungeon.player.draw();
                 AbstractDungeon.player.hand.refreshHandLayout();
