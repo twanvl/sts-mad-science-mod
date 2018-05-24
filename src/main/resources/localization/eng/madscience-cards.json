@@ -55,7 +55,7 @@
   },
   "BoxOfScraps": {
     "NAME": "Box of Scraps",
-    "DESCRIPTION": "Shuffle up to !M! trinkets into your draw pile. Draw 2 cards."
+    "DESCRIPTION": "Shuffle up to !M! Trinkets into your draw pile. Draw 2 cards."
   },
   "CaptureMomentum": {
     "NAME": "Capture Momentum",
@@ -146,7 +146,7 @@
   },
   "FragmentationGrenade": {
     "NAME": "Fragmentation Grenade",
-    "DESCRIPTION": "Deal !D! damage twice. Shuffle up to !M! Trinkets into your draw pile."
+    "DESCRIPTION": "Deal !D! damage twice. Shuffle !M! random Trinkets into your draw pile."
   },
   "FumeBlast": {
     "NAME": "Fume Blast",

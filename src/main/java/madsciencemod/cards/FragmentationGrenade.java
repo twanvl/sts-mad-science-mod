@@ -38,7 +38,7 @@ public class FragmentationGrenade extends AbstractMadScienceCard {
         for (int i = 0; i < ATTACK_TIMES; i++) {
             AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         }
-        AbstractDungeon.actionManager.addToBottom(new ShuffleTrinketAction(this.magicNumber, false, true));
+        AbstractDungeon.actionManager.addToBottom(new ShuffleTrinketAction(this.magicNumber, true, true));
     }
 
     @Override
