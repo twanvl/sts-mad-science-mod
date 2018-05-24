@@ -43,7 +43,8 @@
   },
   "BandageBot": {
     "NAME": "Bandage Bot",
-    "DESCRIPTION": "Whenever you take attack damage, shuffle a Tasty Trinket into your draw pile."
+    "DESCRIPTION": "Whenever you take attack damage, shuffle a Tasty Trinket into your draw pile.",
+    "EXTENDED_DESCRIPTION": ["Tasty Trinket","Tasty Trinkets heal 3 HP"]
   },
   "Bombardment": {
     "NAME": "Bombardment",
