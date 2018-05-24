@@ -18,7 +18,7 @@ public class RecycledTrinket extends AbstractTrinket {
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 0;
     private static final CardType TYPE = CardType.SKILL;
-    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardTarget TARGET = CardTarget.NONE;
 
     public RecycledTrinket() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, TARGET);

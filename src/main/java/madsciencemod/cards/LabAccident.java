@@ -21,7 +21,7 @@ public class LabAccident extends AbstractMadScienceCard {
     private static final CardRarity RARITY = CardRarity.RARE;
 
     public LabAccident() {
-        super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, CardTarget.SELF);
+        super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, CardTarget.NONE);
         this.exhaust = true;
         this.magicNumber = this.baseMagicNumber = AMOUNT;
     }

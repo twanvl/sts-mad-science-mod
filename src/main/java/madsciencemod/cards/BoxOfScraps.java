@@ -21,7 +21,7 @@ public class BoxOfScraps extends AbstractMadScienceCard {
     private static final int UPGRADE_AMT = 1;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardTarget TARGET = CardTarget.NONE;
 
     public BoxOfScraps() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);

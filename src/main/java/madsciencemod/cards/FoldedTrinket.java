@@ -18,7 +18,7 @@ public class FoldedTrinket extends AbstractTrinket {
     private static final int DRAW_AMT = 2;
     private static final int UPGRADE_AMT = 1;
     private static final CardType TYPE = CardType.SKILL;
-    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardTarget TARGET = CardTarget.NONE;
 
     public FoldedTrinket() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, TARGET);

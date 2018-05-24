@@ -20,7 +20,7 @@ public class GatherParts extends AbstractMadScienceCard {
     private static final int TRINKETS = 3;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardRarity RARITY = CardRarity.RARE;
-    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardTarget TARGET = CardTarget.NONE;
 
     public GatherParts() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);

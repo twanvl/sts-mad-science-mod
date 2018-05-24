@@ -22,7 +22,7 @@ public class Postpone extends AbstractMadScienceCard {
     private static final int UPGRADE_DRAW = 1;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardRarity RARITY = CardRarity.RARE;
-    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardTarget TARGET = CardTarget.NONE;
 
     public Postpone() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);

@@ -20,7 +20,7 @@ public class Tinker extends AbstractMadScienceCard {
     private static final int COST = 0;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardRarity RARITY = CardRarity.RARE;
-    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardTarget TARGET = CardTarget.NONE;
 
     public Tinker() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);

@@ -18,7 +18,7 @@ public class ShinyTrinket extends AbstractTrinket {
     private static final int ENERGY = 1;
     private static final int UPGRADE_ENERGY = 1;
     private static final CardType TYPE = CardType.SKILL;
-    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardTarget TARGET = CardTarget.NONE;
 
     public ShinyTrinket() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, TARGET);

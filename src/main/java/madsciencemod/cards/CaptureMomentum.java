@@ -21,7 +21,7 @@ public class CaptureMomentum extends AbstractMadScienceCard {
     private static final int UPGRADE_MULTIPLY = 1;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
     public CaptureMomentum() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
