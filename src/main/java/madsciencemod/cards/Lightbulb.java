@@ -19,7 +19,7 @@ public class Lightbulb extends AbstractMadScienceCard {
     private static final int UPGRADE_FUEL_COST = -1;
     private static final int ENERGY_AMT = 2;
     private static final CardType TYPE = CardType.SKILL;
-    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
 
     public Lightbulb() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, CardTarget.SELF);
