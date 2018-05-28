@@ -1,6 +1,5 @@
 package madsciencemod.actions.common;
 
-import java.lang.reflect.Method;
 import java.util.ArrayList;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -8,16 +7,9 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.screens.CardRewardScreen;
-import com.megacrit.cardcrawl.ui.buttons.SingingBowlButton;
-import com.megacrit.cardcrawl.ui.buttons.SkipCardButton;
-import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDrawPileEffect;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import basemod.ReflectionHacks;
+import madsciencemod.Utils;
 import madsciencemod.cards.AbstractTrinket;
 import madsciencemod.cards.DecorativeTrinket;
 import madsciencemod.cards.ExplosiveTrinket;
@@ -30,8 +22,6 @@ import madsciencemod.cards.SpikyTrinket;
 import madsciencemod.relics.PolishingWheel;
 
 public class ShuffleTrinketAction extends AbstractGameAction {
-    public static final Logger logger = LogManager.getLogger(ShuffleTrinketAction.class.getName());
-
     private static final float startingDuration = 0.5f;
     private boolean random;
     private static final boolean ALLOW_DUPLICATES = false;
@@ -52,13 +42,7 @@ public class ShuffleTrinketAction extends AbstractGameAction {
         if (this.duration == startingDuration) {
             if (random) {
                 // random without replacement
-                while(cardsToShuffle.size() < amount) {
-                    int tries = 0;
-                    AbstractCard card = getRandomTrinket();
-                    if (ALLOW_DUPLICATES || !cardsToShuffle.contains(card) || tries++ > 10) {
-                        cardsToShuffle.add(card);
-                    }
-                }
+                cardsToShuffle = getRandomTrinkets(amount, ALLOW_DUPLICATES);
                 shuffleTrinkets();
             } else if (CHOOSE_FROM_ALL) {
                 // Show a screen to select a number of cards
@@ -80,7 +64,7 @@ public class ShuffleTrinketAction extends AbstractGameAction {
                 }
                 if (amount > 0) {
                     amount--;
-                    openTrinketRewardsScreen();
+                    Utils.openCardRewardsScreen(getRandomTrinkets(3,false), true);
                     return; // don't tickDuration, so we can open the screen again
                 } else {
                     shuffleTrinkets();
@@ -88,42 +72,6 @@ public class ShuffleTrinketAction extends AbstractGameAction {
             }
         }
         this.tickDuration();
-    }
-
-    private static void openTrinketRewardsScreen() {
-        // Based on CardRewardScreen.codexOpen
-        CardRewardScreen crs = AbstractDungeon.cardRewardScreen;
-        crs.rItem = null;
-        ReflectionHacks.setPrivate(crs, CardRewardScreen.class, "codex", true);
-        ReflectionHacks.setPrivate(crs, CardRewardScreen.class, "draft", false);
-        crs.codexCard = null;
-        ((SingingBowlButton)ReflectionHacks.getPrivate(crs, CardRewardScreen.class, "bowlButton")).hide();
-        ((SkipCardButton)   ReflectionHacks.getPrivate(crs, CardRewardScreen.class, "skipButton")).show();
-        crs.onCardSelect = true;
-        AbstractDungeon.topPanel.unhoverHitboxes();
-        ArrayList<AbstractCard> derp = new ArrayList<AbstractCard>();
-        while (derp.size() != 3) {
-            AbstractCard card = getRandomTrinket();
-            if (!derp.contains(card)) {
-                derp.add(card);
-            }
-        }
-        crs.rewardGroup = derp;
-        AbstractDungeon.isScreenUp = true;
-        AbstractDungeon.screen = AbstractDungeon.CurrentScreen.CARD_REWARD;
-        AbstractDungeon.dynamicBanner.appear(AbstractTrinket.EXTENDED_DESCRIPTION[0]);
-        AbstractDungeon.overlayMenu.showBlackScreen();
-        final float CARD_TARGET_Y = (float)Settings.HEIGHT * 0.45f;
-        try {
-            Method method = CardRewardScreen.class.getDeclaredMethod("placeCards", float.class, float.class);
-            method.setAccessible(true);
-            method.invoke(crs, (float)Settings.WIDTH / 2.0f, CARD_TARGET_Y);
-         } catch (Exception ex) {
-            logger.error("Exception occured when calling placeCards", ex);
-         }
-        for (AbstractCard c : derp) {
-            UnlockTracker.markCardAsSeen(c.cardID);
-        }
     }
 
     private void shuffleTrinkets() {
@@ -173,5 +121,17 @@ public class ShuffleTrinketAction extends AbstractGameAction {
 
     private static AbstractCard getRandomTrinket() {
         return allTrinketsToUse().getRandomCard(false);
+    }
+
+    private static ArrayList<AbstractCard> getRandomTrinkets(int amount, boolean allowDuplicates) {
+        ArrayList<AbstractCard> cards = new ArrayList<>();
+        while(cards.size() < amount) {
+            int tries = 0;
+            AbstractCard card = getRandomTrinket();
+            if (allowDuplicates || !cards.contains(card) || tries++ > 10) {
+                cards.add(card);
+            }
+        }
+        return cards;
     }
 }
