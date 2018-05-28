@@ -168,8 +168,8 @@
   },
   "GatherParts": {
     "NAME": "Gather Parts",
-    "DESCRIPTION": "Place all Trinkets from your draw pile into your hand. NL Shuffle up to !M! Trinkets into your draw pile. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Place all Trinkets from your draw pile into your hand. NL Shuffle up to !M! Trinkets into your draw pile."
+    "DESCRIPTION": "Draw all Trinkets from your draw pile. NL Shuffle up to !M! Trinkets into your draw pile. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Draw all Trinkets from your draw pile. NL Shuffle up to !M! Trinkets into your draw pile."
   },
   "Generator": {
     "NAME": "Generator",
