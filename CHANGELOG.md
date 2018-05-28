@@ -6,6 +6,8 @@
 * Changed FragmentationGrenade: shuffles random trinkets
 * Changed GatherParts: shuffles chosen trinkets
 * Renamed Assemble to EnergyBarrier
+* Added card: Assemble
+* Removed card: Grind (Grind Specimen)
 
 ### v0.1.0
 * Initial release

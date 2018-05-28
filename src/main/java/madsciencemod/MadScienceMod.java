@@ -181,7 +181,7 @@ public class MadScienceMod implements
             BaseMod.addCard(new Generator());
             BaseMod.addCard(new GlassCannon());
             BaseMod.addCard(new GoldenGun());
-            BaseMod.addCard(new Grind());
+            //BaseMod.addCard(new Grind());
             BaseMod.addCard(new HideBehindJunk());
             BaseMod.addCard(new ImposingConstruct());
             BaseMod.addCard(new Inflate());
