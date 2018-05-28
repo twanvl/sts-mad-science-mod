@@ -22,6 +22,10 @@ public abstract class AbstractMadScienceCard extends CustomCard {
         super(id, name, MadScienceMod.cardImage(id), cost, description, type, color, rarity, target);
     }
 
+    public AbstractMadScienceCard(String id, String name, String image, int cost, String description, CardType type, CardColor color, CardRarity rarity, CardTarget target) {
+        super(id, name, image, cost, description, type, color, rarity, target);
+    }
+
     public int fuelCostForTurn() {
         return fuelCost + (costsFuelThisTurn ? costForTurn : 0);
     }

@@ -143,6 +143,7 @@ public class MadScienceMod implements
             BaseMod.addCard(new AcidSpray());
             BaseMod.addCard(new AntimatterBomb());
             BaseMod.addCard(new ArtilleryShot());
+            BaseMod.addCard(new Assemble());
             BaseMod.addCard(new AssemblyLine());
             BaseMod.addCard(new Automate());
             BaseMod.addCard(new AutoStrike());
@@ -237,6 +238,7 @@ public class MadScienceMod implements
             BaseMod.addCard(new ShinyTrinket());
             BaseMod.addCard(new SpikyTrinket());
             BaseMod.addCard(new TastyTrinket());
+            BaseMod.addCard(new FusedTrinket(false));
         } catch (Exception e) {
             logger.error("Error while adding cards",e);
         }

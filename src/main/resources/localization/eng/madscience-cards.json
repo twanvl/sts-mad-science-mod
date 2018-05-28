@@ -16,6 +16,11 @@
     "NAME": "Artillery Shot",
     "DESCRIPTION": "Spend !M! Fuel. NL Deal !D! damage."
   },
+  "Assemble": {
+    "NAME": "Assemble",
+    "DESCRIPTION": "Assemble a Trinket out of !M! parts. NL Shuffle X copies of it into your draw pile.",
+    "EXTENDED_DESCRIPTION": ["Assemble","Select trinket parts to fuse together into a single card."]
+  },
   "AssemblyLine": {
     "NAME": "Assembly Line",
     "DESCRIPTION": "At the start of your turn choose and shuffle a Trinket into your draw pile."
@@ -429,6 +434,16 @@
   "FlamableTrinket": {
     "NAME": "Flamable Trinket",
     "DESCRIPTION": "Gain !M! Fuel. NL Exhaust."
+  },
+  "FusedTrinket": {
+    "NAME": "Fused Trinket",
+    "EXTENDED_DESCRIPTION": [
+      "Gain ",".",
+      "Gain "," Fuel.",
+      "Gain !B! Block.",
+      "Draw "," card."," cards.",
+      "Deal !D! damage."
+    ]
   },
   "RecycledTrinket": {
     "NAME": "Recycled Trinket",

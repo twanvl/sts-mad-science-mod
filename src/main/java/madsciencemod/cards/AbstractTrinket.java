@@ -13,6 +13,11 @@ public abstract class AbstractTrinket extends AbstractMadScienceCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("AbstractTrinket"); // used for ShuffleTrinketAction
     public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
 
+    public AbstractTrinket(String id, String name, String image, int cost, String rawDescription, CardType type, AbstractCard.CardTarget target) {
+        super(id, name, image, cost, rawDescription, type, CardColor.COLORLESS, CardRarity.SPECIAL, target);
+        this.exhaust = true;
+    }
+
     public AbstractTrinket(String id, String name, int cost, String rawDescription, CardType type, AbstractCard.CardTarget target) {
         super(id, name, cost, rawDescription, type, CardColor.COLORLESS, CardRarity.SPECIAL, target);
         this.exhaust = true;
