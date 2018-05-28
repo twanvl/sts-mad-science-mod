@@ -34,7 +34,19 @@ public class DrawAndDiscardAllButOneAction extends AbstractGameAction {
 
     @Override
     public void update() {
-        // Draw cards, keep track of drawn cards, when enough are drawn
+        if (actualHand != null) {
+            // hand select screen was opened, cards were selected
+            AbstractDungeon.player.hand = actualHand;
+            for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
+                AbstractDungeon.player.hand.moveToDiscardPile(c);
+                c.triggerOnManualDiscard();
+                GameActionManager.incrementDiscard(false);
+            }
+            AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;
+            this.isDone = true;
+            return;
+        }
+        // Shuffle deck?
         if (SoulGroup.isActive()) {
             return;
         }
@@ -49,18 +61,8 @@ public class DrawAndDiscardAllButOneAction extends AbstractGameAction {
         }
         this.duration -= Gdx.graphics.getDeltaTime();
         if (this.duration < 0.0f) {
-            if (actualHand != null) {
-                // hand select screen was opened
-                AbstractDungeon.player.hand = actualHand;
-                for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
-                    AbstractDungeon.player.hand.moveToDiscardPile(c);
-                    c.triggerOnManualDiscard();
-                    GameActionManager.incrementDiscard(false);
-                }
-                AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;
-                this.isDone = true;
-            } else if (drawnCards.size() >= amount || AbstractDungeon.player.drawPile.isEmpty() || AbstractDungeon.player.hand.size() == 10) {
-                // found a 0 cost card, or no more cards to draw
+            if (drawnCards.size() >= amount || AbstractDungeon.player.drawPile.isEmpty() || AbstractDungeon.player.hand.size() == 10) {
+                // no more cards to draw
                 if (drawnCards.size() <= 1) {
                     // no discard
                     this.isDone = true;
