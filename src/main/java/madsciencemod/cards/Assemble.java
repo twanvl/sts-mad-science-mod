@@ -36,7 +36,7 @@ public class Assemble extends AbstractMadScienceCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         int amount = EnergyPanel.totalCount;
-        AbstractDungeon.actionManager.addToBottom(new AssembleAction(PARTS, amount, !this.freeToPlayOnce));
+        AbstractDungeon.actionManager.addToBottom(new AssembleAction(this.magicNumber, amount, !this.freeToPlayOnce));
     }
 
     @Override
