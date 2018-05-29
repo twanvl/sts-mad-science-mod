@@ -10,6 +10,7 @@
 * Added card: Assemble
 * Added card: OmniHammer
 * Removed card: Grind (Grind Specimen)
+* Removed card: PneumaticHammer
 
 ### v0.1.0
 * Initial release
