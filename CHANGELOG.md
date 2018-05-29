@@ -5,6 +5,7 @@
 * Changed MechanicalSnecko: costs 3(2) instead of 2(1)
 * Changed FragmentationGrenade: shuffles random trinkets
 * Changed GatherParts: shuffles chosen trinkets
+* Changed FlameThrower: deals 7(10) damage instead of 10(13) per fuel spent
 * Renamed Assemble to EnergyBarrier
 * Added card: Assemble
 * Removed card: Grind (Grind Specimen)
