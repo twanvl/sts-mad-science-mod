@@ -57,6 +57,7 @@ public class InfiniteJournal extends AbstractMadScienceRelic {
             // normal upgrade path
             c.upgrade();
         } else if (AbstractDungeon.player.hasRelic(ID) && canUpgradeCardAgain(c)) {
+            AbstractDungeon.player.getRelic(ID).flash();
             upgradeCardAgain(c);
         }
     }
