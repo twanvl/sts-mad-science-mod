@@ -99,8 +99,8 @@ public class FusedTrinket extends AbstractTrinket {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            if (energy > 0) this.energy++;
-            if (draw > 0) this.draw++;
+            if (baseDamage > 0) this.baseDamage += 2;
+            if (baseBlock > 0) this.baseBlock += 2;
             initializeDescription();
         }
     }
