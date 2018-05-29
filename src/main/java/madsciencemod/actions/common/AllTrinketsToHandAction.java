@@ -19,7 +19,7 @@ public class AllTrinketsToHandAction extends AbstractGameAction {
     public void update() {
         for (AbstractCard card : this.p.drawPile.group) {
             if (card instanceof AbstractTrinket) {
-                AbstractDungeon.actionManager.addToBottom(new DrawPileToHandAction(card, true));
+                AbstractDungeon.actionManager.addToTop(new DrawPileToHandAction(card, true));
             }
         }
         this.tickDuration();
