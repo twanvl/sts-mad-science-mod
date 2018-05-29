@@ -64,7 +64,9 @@ public class FusedTrinket extends AbstractTrinket {
     public void initializeDescription() {
         StringBuilder desc = new StringBuilder();
         if (energy > 0) {
-            desc.append(EXTENDED_DESCRIPTION[0] + " [R]" + EXTENDED_DESCRIPTION[1]);
+            desc.append(EXTENDED_DESCRIPTION[0]);
+            for (int i = 0; i < energy; ++i) desc.append(" [E]");
+            desc.append(EXTENDED_DESCRIPTION[1]);
         }
         if (fuel > 0) {
             if (desc.length() > 0) desc.append(" NL ");
@@ -82,6 +84,8 @@ public class FusedTrinket extends AbstractTrinket {
             if (desc.length() > 0) desc.append(" NL ");
             desc.append(EXTENDED_DESCRIPTION[8]);
         }
+        if (desc.length() > 0) desc.append(" NL ");
+        desc.append(EXTENDED_DESCRIPTION[9]);
         rawDescription = desc.toString();
         super.initializeDescription();
     }

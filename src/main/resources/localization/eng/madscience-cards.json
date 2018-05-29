@@ -451,7 +451,8 @@
       "Gain "," Fuel.",
       "Gain !B! Block.",
       "Draw "," card."," cards.",
-      "Deal !D! damage."
+      "Deal !D! damage.",
+      "Exhaust."
     ]
   },
   "RecycledTrinket": {
