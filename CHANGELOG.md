@@ -1,6 +1,7 @@
 ### v0.1.1
 * Fixed some card text issues
 * Fixed FoldedTrinket discarding whole hand in rare cases
+* Fixed Ancient Writing event (Back to Basics) upgrading cards regardless of chosen option
 * Changed BoxOfScraps: now uncommon
 * Changed Lightbulb: now uncommon
 * Changed MechanicalSnecko: costs 3(2) instead of 2(1)
