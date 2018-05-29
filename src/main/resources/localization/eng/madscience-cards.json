@@ -271,7 +271,7 @@
   },
   "OmniHammer": {
     "NAME": "Omni-Hammer",
-    "DESCRIPTION": "Choose: Deal !D! damage to a random enemy X times; or gain !B! Block X times;",
+    "DESCRIPTION": "Choose: Deal !D! damage to a random enemy X times; or gain !B! Block X times.",
     "EXTENDED_DESCRIPTION": [
       "Choose",
       "Offence", "Deal !D! damage to a random enemy X times.",
