@@ -269,6 +269,15 @@
     "NAME": "Oil Drum",
     "DESCRIPTION": "Gain !B! Block. NL Gain !M! Fuel."
   },
+  "OmniHammer": {
+    "NAME": "Omni-Hammer",
+    "DESCRIPTION": "Choose: Deal !D! damage to a random enemy X times; or gain !B! Block X times;",
+    "EXTENDED_DESCRIPTION": [
+      "Choose",
+      "Offence", "Deal !D! damage to a random enemy X times.",
+      "Defence", "Gain !B! Block X times."
+    ]
+  },
   "ParticleBeam": {
     "NAME": "Particle Beam",
     "DESCRIPTION": "Deal !D! damage. NL When drawn, reduce this card's cost by 1 for this combat."

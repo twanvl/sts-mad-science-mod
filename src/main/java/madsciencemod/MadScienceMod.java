@@ -198,6 +198,7 @@ public class MadScienceMod implements
             BaseMod.addCard(new MindControlBeam());
             BaseMod.addCard(new NowOrNever());
             BaseMod.addCard(new OilDrum());
+            BaseMod.addCard(new OmniHammer());
             BaseMod.addCard(new ParticleBeam());
             BaseMod.addCard(new PneumaticHammer());
             //BaseMod.addCard(new madsciencemod.cards.PortablePumpjack());

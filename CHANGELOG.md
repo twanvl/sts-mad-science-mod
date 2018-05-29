@@ -8,6 +8,7 @@
 * Changed FlameThrower: deals 7(10) damage instead of 10(13) per fuel spent
 * Renamed Assemble to EnergyBarrier
 * Added card: Assemble
+* Added card: OmniHammer
 * Removed card: Grind (Grind Specimen)
 
 ### v0.1.0
