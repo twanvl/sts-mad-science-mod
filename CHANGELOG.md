@@ -1,3 +1,6 @@
+### v0.1.2
+* Fixed CondenseVapors text
+
 ### v0.1.1
 * Fixed some card text issues
 * Fixed FoldedTrinket discarding whole hand in rare cases

@@ -85,7 +85,7 @@
   },
   "CondenseVapors": {
     "NAME": "Condense Vapors",
-    "DESCRIPTION": "Spend 1 Fuel. NL Obtain !M! Gold."
+    "DESCRIPTION": "Spend 1 Fuel. NL Obtain !M! Gold. NL Exhaust."
   },
   "DataRecorder": {
     "NAME": "Data Recorder",
