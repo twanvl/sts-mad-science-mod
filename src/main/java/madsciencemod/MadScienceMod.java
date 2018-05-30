@@ -214,7 +214,7 @@ public class MadScienceMod implements
             BaseMod.addCard(new Retarget());
             BaseMod.addCard(new Refine());
             BaseMod.addCard(new Refuel());
-            BaseMod.addCard(new RocketJump());
+            //BaseMod.addCard(new RocketJump());
             BaseMod.addCard(new SelfDestruct());
             BaseMod.addCard(new ShrinkRay());
             BaseMod.addCard(new SoftenUp());
