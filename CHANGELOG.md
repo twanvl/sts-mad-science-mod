@@ -7,6 +7,7 @@
 * Changed Generator: now costs 1(0), instead of 2(1)
 * Changed Now or Never: gives 11(14) block next turn instead of 12(16)
 * Changed Box of Scraps: draws before shuffling trinkets
+* Changed Probe: look at 2(3) cards instead of 2(4) cards
 * Removed Nitro Boost, it was never a collectible card to begin with
 
 ### v0.1.1
