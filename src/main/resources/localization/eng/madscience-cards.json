@@ -124,8 +124,8 @@
     "NAME": "Extract Oil",
     "DESCRIPTION": "Deal !D! damage. This turn, when you play an Attack, gain 1 Fuel."
   },
-  "FlamableWall": {
-    "NAME": "Flamable Wall",
+  "FlammableWall": {
+    "NAME": "Flammable Wall",
     "DESCRIPTION": "Choose: Spend 1 Fuel to gain !B! Block; or gain !M! Fuel.",
     "EXTENDED_DESCRIPTION": [
       "Choose",
@@ -440,8 +440,8 @@
     "DESCRIPTION": "Draw !M! cards, discard one of them. NL Exhaust",
     "UPGRADE_DESCRIPTION": "Draw !M! cards, discard all but one of them. NL Exhaust."
   },
-  "FlamableTrinket": {
-    "NAME": "Flamable Trinket",
+  "FlammableTrinket": {
+    "NAME": "Flammable Trinket",
     "DESCRIPTION": "Gain !M! Fuel. NL Exhaust."
   },
   "FusedTrinket": {

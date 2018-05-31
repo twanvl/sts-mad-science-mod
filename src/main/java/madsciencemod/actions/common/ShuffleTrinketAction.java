@@ -13,7 +13,7 @@ import madsciencemod.Utils;
 import madsciencemod.cards.AbstractTrinket;
 import madsciencemod.cards.DecorativeTrinket;
 import madsciencemod.cards.ExplosiveTrinket;
-import madsciencemod.cards.FlamableTrinket;
+import madsciencemod.cards.FlammableTrinket;
 import madsciencemod.cards.FoamTrinket;
 import madsciencemod.cards.FoldedTrinket;
 import madsciencemod.cards.RecycledTrinket;
@@ -96,7 +96,7 @@ public class ShuffleTrinketAction extends AbstractGameAction {
         allTrinkets.addToTop(new ExplosiveTrinket());
         allTrinkets.addToTop(new FoamTrinket());
         allTrinkets.addToTop(new FoldedTrinket());
-        allTrinkets.addToTop(new FlamableTrinket());
+        allTrinkets.addToTop(new FlammableTrinket());
         allTrinkets.addToTop(new RecycledTrinket());
         allTrinkets.addToTop(new SpikyTrinket());
         allTrinkets.addToTop(new ShinyTrinket());

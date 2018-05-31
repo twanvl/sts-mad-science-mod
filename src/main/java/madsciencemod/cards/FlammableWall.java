@@ -12,8 +12,8 @@ import madsciencemod.actions.common.ChooseAction;
 import madsciencemod.actions.common.GainFuelAction;
 import madsciencemod.powers.FuelPower;
 
-public class FlamableWall extends AbstractMadScienceCard {
-    public static final String ID = "FlamableWall";
+public class FlammableWall extends AbstractMadScienceCard {
+    public static final String ID = "FlammableWall";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -28,7 +28,7 @@ public class FlamableWall extends AbstractMadScienceCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
 
-    public FlamableWall() {
+    public FlammableWall() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
         this.magicNumber = this.baseMagicNumber = FUEL_AMT;
         this.baseBlock = this.block = BLOCK_AMT;
@@ -52,7 +52,7 @@ public class FlamableWall extends AbstractMadScienceCard {
 
     @Override
     public AbstractCard makeCopy() {
-        return new FlamableWall();
+        return new FlammableWall();
     }
 
     @Override

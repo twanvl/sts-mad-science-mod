@@ -168,7 +168,7 @@ public class MadScienceMod implements
             //BaseMod.addCard(new madsciencemod.cards.ExhaustVents());
             BaseMod.addCard(new ExploreOptions());
             BaseMod.addCard(new ExtractOil());
-            BaseMod.addCard(new FlamableWall());
+            BaseMod.addCard(new FlammableWall());
             BaseMod.addCard(new FlameCannon());
             BaseMod.addCard(new FlameThrower());
             BaseMod.addCard(new FlexibleSpear());
@@ -232,7 +232,7 @@ public class MadScienceMod implements
             // Trinkets
             BaseMod.addCard(new DecorativeTrinket());
             BaseMod.addCard(new ExplosiveTrinket());
-            BaseMod.addCard(new FlamableTrinket());
+            BaseMod.addCard(new FlammableTrinket());
             BaseMod.addCard(new FoldedTrinket());
             BaseMod.addCard(new FoamTrinket());
             BaseMod.addCard(new RecycledTrinket());

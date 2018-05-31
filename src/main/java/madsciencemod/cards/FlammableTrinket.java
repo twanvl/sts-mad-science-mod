@@ -9,8 +9,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import madsciencemod.actions.common.GainFuelAction;
 
-public class FlamableTrinket extends AbstractTrinket {
-    public static final String ID = "FlamableTrinket";
+public class FlammableTrinket extends AbstractTrinket {
+    public static final String ID = "FlammableTrinket";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -20,7 +20,7 @@ public class FlamableTrinket extends AbstractTrinket {
     private static final CardType TYPE = CardType.SKILL;
     private static final CardTarget TARGET = CardTarget.SELF;
 
-    public FlamableTrinket() {
+    public FlammableTrinket() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, TARGET);
         this.magicNumber = this.baseMagicNumber = FUEL_AMT;
     }
@@ -32,7 +32,7 @@ public class FlamableTrinket extends AbstractTrinket {
 
     @Override
     public AbstractCard makeCopy() {
-        return new FlamableTrinket();
+        return new FlammableTrinket();
     }
 
     @Override
