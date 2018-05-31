@@ -21,8 +21,8 @@ public class NowOrNever extends AbstractMadScienceCard {
     private static final int COST = 1;
     private static final int BLOCK_AMT = 7;
     private static final int UPGRADE_BLOCK_AMT = 3;
-    private static final int LATER_BLOCK_AMT = 12;
-    private static final int UPGRADE_LATER_BLOCK_AMT = 4;
+    private static final int LATER_BLOCK_AMT = 11;
+    private static final int UPGRADE_LATER_BLOCK_AMT = 3;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
