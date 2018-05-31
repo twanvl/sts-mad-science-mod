@@ -6,6 +6,7 @@
 * Fixed: BandageBot and Assemble will create upgraded trinkets if you have Polishing Wheel
 * Changed Generator: now costs 1(0), instead of 2(1)
 * Changed Now or Never: gives 11(14) block next turn instead of 12(16)
+* Changed Box of Scraps: draws before shuffling trinkets
 * Removed Nitro Boost, it was never a collectible card to begin with
 
 ### v0.1.1

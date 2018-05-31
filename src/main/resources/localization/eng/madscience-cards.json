@@ -57,7 +57,7 @@
   },
   "BoxOfScraps": {
     "NAME": "Box of Scraps",
-    "DESCRIPTION": "Shuffle up to !M! Trinkets into your draw pile. Draw 2 cards."
+    "DESCRIPTION": "Draw 2 cards. NL Shuffle up to !M! Trinkets into your draw pile."
   },
   "CaptureMomentum": {
     "NAME": "Capture Momentum",

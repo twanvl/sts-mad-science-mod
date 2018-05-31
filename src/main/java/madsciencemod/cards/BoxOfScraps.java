@@ -30,8 +30,8 @@ public class BoxOfScraps extends AbstractMadScienceCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ShuffleTrinketAction(this.magicNumber, false, true));
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, DRAW));
+        AbstractDungeon.actionManager.addToBottom(new ShuffleTrinketAction(this.magicNumber, false, true));
     }
 
     @Override
