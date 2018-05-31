@@ -1,5 +1,8 @@
 ### v0.1.2
 * Fixed CondenseVapors text
+* Fixed BandageBot: now stacks correctly
+* Changed Generator: now costs 1(0), instead of 2(1)
+* Removed Nitro Boost, it was never a collectible card to begin with
 
 ### v0.1.1
 * Fixed some card text issues
