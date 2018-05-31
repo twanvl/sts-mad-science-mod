@@ -19,6 +19,26 @@
     ],
     "DESCRIPTION": "Trinkets are #b0 cost cards that Exhaust."
   },
+  "BOMB": {
+    "NAMES":[
+      "bomb",
+      "bombs",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE"
+    ],
+    "DESCRIPTION": "Bombs detonate after a certain number of turns, dealing damage."
+  },
+  "DETONATE": {
+    "NAMES":[
+      "detonate",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE"
+    ],
+    "DESCRIPTION": "Detonate a bomb deals its damage and removes it."
+  },
   "SLOW": {
     "NAMES":[
       "slow",
