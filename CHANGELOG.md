@@ -9,6 +9,7 @@
 * Changed Box of Scraps: draws before shuffling trinkets
 * Changed Probe: look at 2(3) cards instead of 2(4) cards
 * Changed Redesign: draw 4(5) cards instead of 4(6) cards
+* Changed Refine: upgrade still exhuasts, but triples fuel
 * Removed Nitro Boost, it was never a collectible card to begin with
 
 ### v0.1.1

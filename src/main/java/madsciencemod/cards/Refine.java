@@ -17,7 +17,7 @@ public class Refine extends AbstractMadScienceCard {
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 1;
     private static final int MULTIPLIER = 2;
-    private static final int UPGRADE_MULTIPLIER = 0;
+    private static final int UPGRADE_MULTIPLIER = 1;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -43,11 +43,8 @@ public class Refine extends AbstractMadScienceCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(UPGRADE_MULTIPLIER);
-            this.exhaust = false;
             this.rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }
     }
-    // Alternative:
-    // "UPGRADE_DESCRIPTION": "Triple your Fuel. Exhaust."
 }
