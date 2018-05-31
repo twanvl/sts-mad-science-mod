@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 import madsciencemod.Utils;
 import madsciencemod.cards.FusedTrinket;
+import madsciencemod.relics.PolishingWheel;
 
 public class AssembleAction extends AbstractGameAction {
     private float startingDuration;
@@ -53,28 +54,39 @@ public class AssembleAction extends AbstractGameAction {
                 int r = MathUtils.random(4); // note: range is inclusive
                 if (seen.contains(r)) continue;
                 seen.add(r);
+                AbstractCard card;
                 switch (r) {
                     case 0:
-                        choices.add(new FusedTrinket(1,0,0,0,0));
+                        card = new FusedTrinket(1,0,0,0,0);
                         break;
                     case 1:
-                        choices.add(new FusedTrinket(0,1,0,0,0));
+                        card = new FusedTrinket(0,1,0,0,0);
                         break;
                     case 2:
-                        choices.add(new FusedTrinket(0,0,1,0,0));
+                        card = new FusedTrinket(0,0,1,0,0);
                         break;
                     case 3:
-                        choices.add(new FusedTrinket(0,0,0,4,0));
+                        card = new FusedTrinket(0,0,0,4,0);
                         break;
                     case 4:
-                        choices.add(new FusedTrinket(0,0,0,0,5));
+                        card = new FusedTrinket(0,0,0,0,5);
                         break;
+                    default:
+                        card = new FusedTrinket(0,0,0,0,0);
                 }
+                if (AbstractDungeon.player.hasRelic(PolishingWheel.ID)) {
+                    card.upgrade();
+                }
+                choices.add(card);
             }
             Utils.openCardRewardsScreen(choices, false);
             return;
         } else {
-            AbstractCard card = new FusedTrinket(energy,draw,fuel,block,damage);
+            FusedTrinket card = new FusedTrinket(energy,draw,fuel,block,damage);
+            if (AbstractDungeon.player.hasRelic(PolishingWheel.ID)) {
+                // only upgrade name, effects were already upgraded before assembling
+                card.upgradeNameOnly();
+            }
             AbstractDungeon.actionManager.addToTop(new MakeTempCardInDrawPileAction(null, null, card, amount, true, true));
             if (spendAllEnergy) {
                 AbstractDungeon.player.energy.use(EnergyPanel.totalCount);

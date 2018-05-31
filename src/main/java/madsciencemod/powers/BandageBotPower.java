@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 
 import madsciencemod.cards.TastyTrinket;
+import madsciencemod.relics.PolishingWheel;
 
 public class BandageBotPower extends AbstractMadSciencePower {
     public static final String POWER_ID = "BandageBot";
@@ -33,7 +34,11 @@ public class BandageBotPower extends AbstractMadSciencePower {
     public int onAttacked(DamageInfo info, int damageAmount) {
         if (info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != null && info.owner != this.owner && damageAmount > 0) {
             this.flash();
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(AbstractDungeon.player, AbstractDungeon.player, new TastyTrinket(), this.amount, true, false));
+            TastyTrinket card = new TastyTrinket();
+            if (AbstractDungeon.player.hasRelic(PolishingWheel.ID)) {
+                card.upgrade();
+            }
+            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(AbstractDungeon.player, AbstractDungeon.player, card, this.amount, true, false));
         }
         return damageAmount;
     }

@@ -104,4 +104,10 @@ public class FusedTrinket extends AbstractTrinket {
             initializeDescription();
         }
     }
+
+    public void upgradeNameOnly() {
+        if (!this.upgraded) {
+            upgradeName();
+        }
+    }
 }
