@@ -33,7 +33,7 @@ public class BandageBotPower extends AbstractMadSciencePower {
     public int onAttacked(DamageInfo info, int damageAmount) {
         if (info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != null && info.owner != this.owner && damageAmount > 0) {
             this.flash();
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(AbstractDungeon.player, AbstractDungeon.player, new TastyTrinket(), 1, true, false));
+            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(AbstractDungeon.player, AbstractDungeon.player, new TastyTrinket(), this.amount, true, false));
         }
         return damageAmount;
     }
