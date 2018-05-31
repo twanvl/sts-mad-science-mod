@@ -1,5 +1,6 @@
 ### v0.1.2
 * Fixed CondenseVapors text
+* Fixed FoldedTrinket+ text
 * Fixed BandageBot: now stacks correctly
 * Fixed typos: FlamableWall -> FlammableWall; FlamableTrinket -> FlammableTrinket
 * Changed Generator: now costs 1(0), instead of 2(1)
