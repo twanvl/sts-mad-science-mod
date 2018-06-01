@@ -55,7 +55,7 @@ public class UpgradePatches {
     public static class CardGroup_hasUpgradableCards {
         public static ExprEditor Instrument() { return patch; }
     }
-    @SpirePatch(cls="com.megacrit.cardcrawl.helpers.CardLibrary", method="getCopy", paramtypes={"String","int","int"})
+    @SpirePatch(cls="com.megacrit.cardcrawl.helpers.CardLibrary", method="getCopy", paramtypes={"java.lang.String","int","int"})
     public static class CardLibrary_buttonEffect {
         public static ExprEditor Instrument() { return patch; }
     }
