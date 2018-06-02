@@ -26,10 +26,12 @@ public class RecycledTrinket extends AbstractTrinket {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (upgraded) {
-            AbstractDungeon.actionManager.addToBottom(new DiscardPileToHandAction(1));
-        } else {
-            AbstractDungeon.actionManager.addToBottom(new TopOfDiscardPileToHandAction());
+        if (AbstractDungeon.player.discardPile.size() > 0) {
+            if (upgraded) {
+                AbstractDungeon.actionManager.addToBottom(new DiscardPileToHandAction(1));
+            } else {
+                AbstractDungeon.actionManager.addToBottom(new TopOfDiscardPileToHandAction());
+            }
         }
     }
 

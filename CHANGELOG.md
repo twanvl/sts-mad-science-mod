@@ -1,3 +1,6 @@
+### v0.1.3
+* Fixed: Recycled Trinket+, when played on an empty discard pile softlocks the fight
+
 ### v0.1.2
 * Fixed CondenseVapors text
 * Fixed FoldedTrinket+ text
