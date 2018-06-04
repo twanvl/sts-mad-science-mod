@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class FuelPower extends AbstractMadSciencePower {
     public static final String POWER_ID = "Fuel";
@@ -83,6 +84,11 @@ public class FuelPower extends AbstractMadSciencePower {
             }
         }
         if (AbstractDungeon.player != null) {
+            for (AbstractRelic r : AbstractDungeon.player.relics) {
+                if (r instanceof Listener) {
+                    ((Listener)r).onFuelChange(gainAmount);
+                }
+            }
             for (AbstractCard c : AbstractDungeon.player.hand.group) {
                 if (c instanceof Listener) ((Listener)c).onFuelChange(gainAmount);
             }
