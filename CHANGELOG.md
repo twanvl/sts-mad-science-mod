@@ -1,5 +1,6 @@
 ### v0.1.3
 * Fixed: Recycled Trinket+, when played on an empty discard pile softlocks the fight
+* Changed (fixed) Omni Hammer upgrade. now upgrades to 8 block / 9 damage.
 
 ### v0.1.2
 * Fixed CondenseVapors text

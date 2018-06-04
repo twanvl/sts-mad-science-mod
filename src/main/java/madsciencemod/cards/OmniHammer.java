@@ -21,7 +21,7 @@ public class OmniHammer extends AbstractMadScienceCard {
     private static final int BLOCK = 6;
     private static final int UPGRADE_BLOCK = 2;
     private static final int DAMAGE = 7;
-    private static final int UPGRADE_DAMAGE = 7;
+    private static final int UPGRADE_DAMAGE = 2;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.NONE;
@@ -53,7 +53,7 @@ public class OmniHammer extends AbstractMadScienceCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeDamage(UPGRADE_BLOCK);
+            this.upgradeBlock(UPGRADE_BLOCK);
             this.upgradeDamage(UPGRADE_DAMAGE);
         }
     }
