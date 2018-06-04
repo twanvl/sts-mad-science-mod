@@ -43,7 +43,7 @@ public class MadScienceMod implements
         PostBattleSubscriber {
     public static final String MODNAME = "MadScienceMod";
     public static final String AUTHOR = "twanvl";
-    public static final String DESCRIPTION = "v0.1.2\nAdds a new character: the Mad Scientist.";
+    public static final String DESCRIPTION = "v0.1.3\nAdds a new character: the Mad Scientist.";
 
     // card trail effect
     //private static final Color BRONZE = new Color(0.1f, 0.1f, 0.7f, 1.0f);
