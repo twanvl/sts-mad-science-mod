@@ -207,7 +207,7 @@
   },
   "Jetpack": {
     "NAME": "Jetpack",
-    "DESCRIPTION": "Spent 1 fuel at the start of each turn. Reduce incomming damage by 50%."
+    "DESCRIPTION": "Spent 1 Fuel at the start of each turn. Reduce incomming damage by 50%."
   },
   "JunkLaser": {
     "NAME": "Junk Laser",
@@ -225,7 +225,7 @@
   },
   "Lightbulb": {
     "NAME": "Lightbulb",
-    "DESCRIPTION": "Spend !M! fuel. NL Gain [R] [R]."
+    "DESCRIPTION": "Spend !M! Fuel. NL Gain [R] [R]."
   },
   "Liquify": {
     "NAME": "Liquify",
