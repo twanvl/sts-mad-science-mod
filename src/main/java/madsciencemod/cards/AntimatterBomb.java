@@ -34,7 +34,7 @@ public class AntimatterBomb extends AbstractMadScienceCard {
 
     @Override
     public AbstractCard makeCopy() {
-        return new ArtilleryShot();
+        return new AntimatterBomb();
     }
 
     @Override
