@@ -1,3 +1,6 @@
+### v0.1.4
+* Changed Oil Drum: now gives 7(10) block instead of 5(8). This is in line with Conserve Battery
+
 ### v0.1.3
 * Fixed: Recycled Trinket+, when played on an empty discard pile softlocks the fight
 * Fixed: Exhaust Vents now actually triggers.
