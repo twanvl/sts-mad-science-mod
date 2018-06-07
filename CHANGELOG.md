@@ -1,5 +1,6 @@
 ### v0.1.5
 * Changed Generator: now costs 0, upgrade is innate
+* Changed Lightbulb: now gains 2(3) energy for 1 Fuel
 
 ### v0.1.4
 * Changed Oil Drum: now gives 7(10) block instead of 5(8). This is in line with Conserve Battery

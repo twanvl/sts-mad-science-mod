@@ -226,7 +226,8 @@
   },
   "Lightbulb": {
     "NAME": "Lightbulb",
-    "DESCRIPTION": "Spend !M! Fuel. NL Gain [R] [R]."
+    "DESCRIPTION": "Spend 1 Fuel. NL Gain [R] [R].",
+    "UPGRADE_DESCRIPTION": "Spend 1 Fuel. NL Gain [R] [R] [R]."
   },
   "Liquify": {
     "NAME": "Liquify",
