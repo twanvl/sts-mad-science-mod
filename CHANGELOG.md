@@ -1,3 +1,6 @@
+### v0.1.5
+* Changed Generator: now costs 0, upgrade is innate
+
 ### v0.1.4
 * Changed Oil Drum: now gives 7(10) block instead of 5(8). This is in line with Conserve Battery
 * Fixed: Artillery Shot could appear twice.
