@@ -28,6 +28,8 @@ public class AcidSpray extends AbstractMadScienceCard {
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
+    private int [] aoeMultiDamage = null;
+
     public AcidSpray() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
         this.baseDamage = ATTACK_DMG;
@@ -43,7 +45,7 @@ public class AcidSpray extends AbstractMadScienceCard {
             }
         });
         choice.add(EXTENDED_DESCRIPTION[3], EXTENDED_DESCRIPTION[4], () -> {
-            AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.POISON));
+            AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, aoeMultiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.POISON));
         });
         AbstractDungeon.actionManager.addToBottom(choice);
     }
@@ -56,6 +58,7 @@ public class AcidSpray extends AbstractMadScienceCard {
         super.calculateCardDamage(mo);
         this.magicNumber = this.damage;
         this.isMagicNumberModified = this.isDamageModified;
+        aoeMultiDamage = this.multiDamage;
         // For non-AOE
         this.baseDamage = realBaseDamage;
         this.isMultiDamage = false;
