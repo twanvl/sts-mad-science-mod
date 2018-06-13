@@ -421,6 +421,7 @@
   "Weaponize": {
     "NAME": "Weaponize",
     "DESCRIPTION": "Turn a Skill card in your hand into an Attack that deals !M! damage in addition to its other effects.",
+    "UPGRADE_DESCRIPTION": "Turn ALL Skill cards in your hand into Attacks that deal !M! damage in addition to their other effects.",
     "EXTENDED_DESCRIPTION": ["weaponize"]
   },
   "Weaponized": {

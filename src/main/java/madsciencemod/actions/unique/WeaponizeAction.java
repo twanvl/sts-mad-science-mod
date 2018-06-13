@@ -15,20 +15,36 @@ import madsciencemod.cards.Weaponized;
 public class WeaponizeAction extends AbstractGameAction {
     private float startingDuration;
     private int baseDamage;
+    private boolean all;
     private AbstractPlayer p;
     private ArrayList<AbstractCard> cannotWeaponize = new ArrayList<>();
 
-    public WeaponizeAction(int baseDamage) {
+    public WeaponizeAction(int baseDamage, boolean all) {
         this.duration = 0.0f;
         this.actionType = AbstractGameAction.ActionType.CARD_MANIPULATION;
         this.duration = this.startingDuration = Settings.ACTION_DUR_FAST;
         this.baseDamage = baseDamage;
+        this.all = all;
         this.p = AbstractDungeon.player;
     }
 
     @Override
     public void update() {
         if (this.duration == this.startingDuration) {
+            if (all) {
+                ArrayList<AbstractCard> cardsToWeaponize = new ArrayList<>();
+                for (AbstractCard c : this.p.hand.group) {
+                    if (isWeaponizable(c)) {
+                        cardsToWeaponize.add(c);
+                    }
+                }
+                this.p.hand.group.removeAll(cardsToWeaponize);
+                for (AbstractCard c : cardsToWeaponize) {
+                    AbstractDungeon.actionManager.addToTop(new MakeTempCardInHandAction(new Weaponized(c,baseDamage)));
+                }
+                this.isDone = true;
+                return;
+            }
             for (AbstractCard c : this.p.hand.group) {
                 if (!isWeaponizable(c)) {
                     cannotWeaponize.add(c);
