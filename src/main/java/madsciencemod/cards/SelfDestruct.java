@@ -17,7 +17,7 @@ public class SelfDestruct extends AbstractMadScienceCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
-    private static final int SELF_DMG = 10;
+    private static final int SELF_DMG = 6;
     private static final int ATTACK_DMG = 20;
     private static final int UPGRADE_ATTACK_DMG = 5;
     private static final CardType TYPE = CardType.SKILL;

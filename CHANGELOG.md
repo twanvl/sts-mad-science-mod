@@ -3,6 +3,7 @@
 * Changed Lightbulb: now gains 2(3) energy for 1 Fuel
 * Changed Tune: upgraded card no longer exhuasts but still only tunes for 2
 * Changed Fragmentation Grenade: now common instead of uncommon
+* Changed Self Destruct: deals less damage to self
 * Added card: Weaponize
 * Fixed: Acid Spray with wide nozzle deals 10(13) damage instead of 7(10).
 
