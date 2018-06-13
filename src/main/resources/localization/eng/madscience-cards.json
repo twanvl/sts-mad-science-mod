@@ -406,7 +406,7 @@
   "Tune": {
     "NAME": "Tune",
     "DESCRIPTION": "Choose: Gain !M! Strength and lose !M! Dexterity; or gain !M! Dexterity and lose !M! Strength. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Choose: Gain !M! Strength and lose !M! Dexterity; or gain !M! Dexterity and lose !M! Strength. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose: Gain !M! Strength and lose !M! Dexterity; or gain !M! Dexterity and lose !M! Strength.",
     "EXTENDED_DESCRIPTION": [
       "Choose",
       "Strength",  "Gain !M! Strength and lose !M! Dexterity.",
