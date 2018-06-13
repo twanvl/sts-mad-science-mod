@@ -24,7 +24,7 @@ public class FragmentationGrenade extends AbstractMadScienceCard {
     private static final int ATTACK_TIMES = 2;
     private static final int TRINKETS = 2;
     private static final CardType TYPE = CardType.ATTACK;
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
     public FragmentationGrenade() {
