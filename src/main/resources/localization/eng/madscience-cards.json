@@ -418,6 +418,17 @@
     "DESCRIPTION": "Deal damage equal to the number of Virus cards in your deck. Add a copy of this to your discard pile.",
     "UPGRADE_DESCRIPTION": "Deal damage equal to the number of Virus cards in your deck. Add !M! copies of this to your discard pile."
   },
+  "Weaponize": {
+    "NAME": "Weaponize",
+    "DESCRIPTION": "Turn a Skill card in your hand into an Attack that deals !M! damage in addition to its other effects.",
+    "EXTENDED_DESCRIPTION": ["weaponize"]
+  },
+  "Weaponized": {
+    "EXTENDED_DESCRIPTION": [
+      "","",
+      ""," NL Deal !D! damage."
+    ]
+  },
 
   "AbstractTrinket": {
     "EXTENDED_DESCRIPTION": [

@@ -228,6 +228,7 @@ public class MadScienceMod implements
             BaseMod.addCard(new Tinker());
             BaseMod.addCard(new Tune());
             BaseMod.addCard(new Virus());
+            BaseMod.addCard(new Weaponize());
 
             // Trinkets
             BaseMod.addCard(new DecorativeTrinket());
