@@ -3,7 +3,7 @@
 
   <groupId>madsciencemod</groupId>
   <artifactId>MadScienceMod</artifactId>
-  <version>0.1.5</version>
+  <version>0.1.6</version>
 
   <name>MadScienceMod</name>
   <description>Adds a new character, The Mad Scientist</description>

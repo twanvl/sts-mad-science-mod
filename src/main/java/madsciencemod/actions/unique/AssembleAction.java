@@ -81,13 +81,13 @@ public class AssembleAction extends AbstractGameAction {
             }
             Utils.openCardRewardsScreen(choices, false);
             return;
-        } else {
+        } else if (this.duration == this.startingDuration) {
             FusedTrinket card = new FusedTrinket(energy,draw,fuel,block,damage);
             if (AbstractDungeon.player.hasRelic(PolishingWheel.ID)) {
                 // only upgrade name, effects were already upgraded before assembling
                 card.upgradeNameOnly();
             }
-            AbstractDungeon.actionManager.addToTop(new MakeTempCardInDrawPileAction(null, null, card, amount, true, true));
+            AbstractDungeon.actionManager.addToTop(new MakeTempCardInDrawPileAction(card, amount, true, true));
             if (spendAllEnergy) {
                 AbstractDungeon.player.energy.use(EnergyPanel.totalCount);
             }

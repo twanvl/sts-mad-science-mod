@@ -38,7 +38,7 @@ public class BandageBotPower extends AbstractMadSciencePower {
             if (AbstractDungeon.player.hasRelic(PolishingWheel.ID)) {
                 card.upgrade();
             }
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(AbstractDungeon.player, AbstractDungeon.player, card, this.amount, true, false));
+            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(card, this.amount, true, false));
         }
         return damageAmount;
     }

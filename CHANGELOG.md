@@ -1,3 +1,6 @@
+### v0.1.6
+* Fixed: compatability with week 30 patch
+
 ### v0.1.5
 * Changed Generator: now costs 0, upgrade is innate
 * Changed Lightbulb: now gains 2(3) energy for 1 Fuel
