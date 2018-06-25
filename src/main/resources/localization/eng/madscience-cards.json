@@ -244,7 +244,7 @@
   },
   "MechanicalClaw": {
     "NAME": "Prosthetic Claw",
-    "DESCRIPTION": "Spend 1 fuel. Deal !D! damage. Draw a card."
+    "DESCRIPTION": "Spend 1 Fuel. Deal !D! damage. Draw a card."
   },
   "MechanicalSnecko": {
     "NAME": "Mechanical Snecko",
@@ -380,7 +380,7 @@
   },
   "Strafe": {
     "NAME": "Strafe",
-    "DESCRIPTION": "Spend 1 Fuel. NL Deal !D! damage. NL Gain !B! block."
+    "DESCRIPTION": "Spend 1 Fuel. NL Deal !D! damage. NL Gain !B! Block."
   },
   "Strike_Bronze": {
     "NAME": "Strike",
