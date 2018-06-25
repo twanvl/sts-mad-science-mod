@@ -29,6 +29,7 @@ public class SelfDestruct extends AbstractMadScienceCard {
         this.baseDamage = ATTACK_DMG;
         this.magicNumber = this.baseMagicNumber = SELF_DMG;
         this.isMultiDamage = true;
+        this.exhaust = true;
     }
 
     @Override
