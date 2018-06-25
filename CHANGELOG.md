@@ -2,6 +2,7 @@
 * Changed Auto-Strike: now deals 3(5) damage when drawn.
 * Changed Booster: now gains 2(3) Fuel
 * Fixed: Self Destruct now correctly exhausts
+* Fixed: Power Armor is applied after other powers (in particular after Reconstitute)
 
 ### v0.1.6
 * Fixed: compatibility with week 30 patch

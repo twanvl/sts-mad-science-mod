@@ -15,6 +15,7 @@ public class PowerArmorPower extends AbstractMadSciencePower {
     public PowerArmorPower(AbstractCreature owner, int amount) {
         super(POWER_ID, NAME, owner, amount);
         this.updateDescription();
+        this.priority = 99;
     }
 
     @Override
