@@ -1,5 +1,6 @@
 ### v0.1.7
 * Changed Auto-Strike: now deals 3(5) damage when drawn.
+* Changed Booster: now gains 2(3) Fuel
 
 ### v0.1.6
 * Fixed: compatibility with week 30 patch
