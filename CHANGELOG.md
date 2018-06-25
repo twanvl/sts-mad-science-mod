@@ -1,6 +1,7 @@
 ### v0.1.7
 * Changed Auto-Strike: now deals 3(5) damage when drawn.
 * Changed Booster: now gains 2(3) Fuel
+* Changed Junk Laser: now deals 14(16) damage, +3(4) for every 0 cost card.
 * Fixed: Self Destruct now correctly exhausts
 * Fixed: Power Armor is applied after other powers (in particular after Reconstitute)
 

@@ -1,5 +1,8 @@
 package madsciencemod.cards;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -10,6 +13,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import basemod.helpers.TooltipInfo;
+
 public class JunkLaser extends AbstractMadScienceCard {
     public static final String ID = "JunkLaser";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -18,7 +23,8 @@ public class JunkLaser extends AbstractMadScienceCard {
     public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
     private static final int COST = 2;
     private static final int DAMAGE = 14;
-    private static final int EXTRA_DAMAGE = 2;
+    private static final int UPGRADE_DAMAGE = 2;
+    private static final int EXTRA_DAMAGE = 3;
     private static final int UPGRADE_EXTRA_DAMAGE = 1;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -66,6 +72,13 @@ public class JunkLaser extends AbstractMadScienceCard {
     }
 
     @Override
+    public List<TooltipInfo> getCustomTooltips() {
+        List<TooltipInfo> tips = new ArrayList<>();
+        tips.add(new TooltipInfo(EXTENDED_DESCRIPTION[0],EXTENDED_DESCRIPTION[1]));
+        return tips;
+    }
+
+    @Override
     public AbstractCard makeCopy() {
         return new JunkLaser();
     }
@@ -75,6 +88,7 @@ public class JunkLaser extends AbstractMadScienceCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(UPGRADE_EXTRA_DAMAGE);
+            this.upgradeDamage(UPGRADE_DAMAGE);
         }
     }
 }

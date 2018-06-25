@@ -212,7 +212,8 @@
   },
   "JunkLaser": {
     "NAME": "Junk Laser",
-    "DESCRIPTION": "Deal !D! damage. NL Deals an additional !M! damage for ALL of your 0 cost cards."
+    "DESCRIPTION": "Deal !D! damage. NL Deals an additional !M! damage for ALL of your 0 cost cards.",
+    "EXTENDED_DESCRIPTION": ["Junk Laser","Counts 0 cost cards in your draw pile, discard pile and hand."]
   },
   "LabAccident": {
     "NAME": "Lab Accident",
