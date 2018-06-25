@@ -1,5 +1,8 @@
+### v0.1.7
+
+
 ### v0.1.6
-* Fixed: compatability with week 30 patch
+* Fixed: compatibility with week 30 patch
 
 ### v0.1.5
 * Changed Generator: now costs 0, upgrade is innate
