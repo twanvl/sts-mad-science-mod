@@ -1,5 +1,5 @@
 ### v0.1.7
-
+* Changed Auto-Strike: now deals 3(5) damage when drawn.
 
 ### v0.1.6
 * Fixed: compatibility with week 30 patch

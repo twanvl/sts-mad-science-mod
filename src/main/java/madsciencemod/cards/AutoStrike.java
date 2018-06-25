@@ -20,7 +20,7 @@ public class AutoStrike extends AbstractMadScienceCard {
     private static final int ATTACK_DMG = 5;
     private static final int UPGRADE_ATTACK_DMG = 3;
     private static final int DRAW_DMG = 3;
-    private static final int UPGRADE_DRAW_DMG = 1;
+    private static final int UPGRADE_DRAW_DMG = 2;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
