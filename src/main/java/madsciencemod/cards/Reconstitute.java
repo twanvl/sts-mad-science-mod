@@ -15,9 +15,9 @@ public class Reconstitute extends AbstractMadScienceCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static final int COST = 0;
+    private static final int COST = 1;
+    private static final int UPGRADED_COST = 0;
     private static final int MULTIPLIER = 1;
-    private static final int UPGRADE_MULTIPLIER = 1;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -41,7 +41,7 @@ public class Reconstitute extends AbstractMadScienceCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADE_MULTIPLIER);
+            this.upgradeBaseCost(UPGRADED_COST);
         }
     }
 }
