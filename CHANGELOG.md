@@ -6,6 +6,7 @@
 * Changed Funnel: is now rare instead of common
 * Fixed: Self Destruct now correctly exhausts
 * Fixed: Power Armor is applied after other powers (in particular after Reconstitute)
+* UI: Virus now shows its damage
 
 ### v0.1.6
 * Fixed: compatibility with week 30 patch

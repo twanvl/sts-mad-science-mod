@@ -417,7 +417,8 @@
   "Virus": {
     "NAME": "Virus",
     "DESCRIPTION": "Deal damage equal to the number of Virus cards in your deck. Add a copy of this to your discard pile.",
-    "UPGRADE_DESCRIPTION": "Deal damage equal to the number of Virus cards in your deck. Add !M! copies of this to your discard pile."
+    "UPGRADE_DESCRIPTION": "Deal damage equal to the number of Virus cards in your deck. Add !M! copies of this to your discard pile.",
+    "EXTENDED_DESCRIPTION": [" NL (Deals !D! damage)"]
   },
   "Weaponize": {
     "NAME": "Weaponize",

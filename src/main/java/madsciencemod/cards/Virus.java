@@ -17,6 +17,7 @@ public class Virus extends AbstractMadScienceCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+    public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
     private static final int COST = 0;
     private static final int COPIES = 1;
     private static final int UPGRADE_COPIES = 1;
@@ -36,9 +37,27 @@ public class Virus extends AbstractMadScienceCard {
     }
 
     @Override
+    public void applyPowers() {
+        this.baseDamage = virusCount();
+        super.applyPowers();
+        this.rawDescription = !this.upgraded ? DESCRIPTION : UPGRADE_DESCRIPTION;
+        this.rawDescription = this.rawDescription + EXTENDED_DESCRIPTION[0];
+        this.initializeDescription();
+    }
+
+    @Override
     public void calculateCardDamage(AbstractMonster m) {
         this.baseDamage = virusCount();
         super.calculateCardDamage(m);
+        this.rawDescription = !this.upgraded ? DESCRIPTION : UPGRADE_DESCRIPTION;
+        this.rawDescription = this.rawDescription + EXTENDED_DESCRIPTION[0];
+        this.initializeDescription();
+    }
+
+    @Override
+    public void onMoveToDiscard() {
+        this.rawDescription = DESCRIPTION;
+        this.initializeDescription();
     }
 
     public static int virusCount() {
