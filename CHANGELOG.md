@@ -5,6 +5,7 @@
 * Changed Junk Laser: now deals 14 damage +3(+4) for every 0 cost card instead of +2(+3)
 * Changed Reconstitute: upgrade now instantly gains 1 Fuel for each Fuel spend this turn.
 * Changed Funnel: is now rare instead of common
+* Changed Infinite Journal: is now uncommon instead of rare
 * Fixed: Self Destruct now correctly exhausts
 * Fixed: Power Armor is applied after other powers (in particular after Reconstitute)
 * UI: Virus now shows its damage

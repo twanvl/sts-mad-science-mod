@@ -14,7 +14,7 @@ public class InfiniteJournal extends AbstractMadScienceRelic {
     public static final Logger logger = LogManager.getLogger(InfiniteJournal.class.getName());
 
     public InfiniteJournal() {
-        super(ID, RelicTier.RARE, LandingSound.FLAT);
+        super(ID, RelicTier.UNCOMMON, LandingSound.FLAT);
     }
 
     @Override
