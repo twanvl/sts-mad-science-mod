@@ -6,7 +6,7 @@ public class Funnel extends AbstractMadScienceRelic {
     public static final String ID = "Funnel";
 
     public Funnel() {
-        super(ID, RelicTier.COMMON, LandingSound.FLAT);
+        super(ID, RelicTier.RARE, LandingSound.FLAT);
     }
 
     @Override
