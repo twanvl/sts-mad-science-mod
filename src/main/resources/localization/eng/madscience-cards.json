@@ -208,7 +208,7 @@
   },
   "Jetpack": {
     "NAME": "Jetpack",
-    "DESCRIPTION": "Spent 1 Fuel at the start of each turn. Reduce incomming damage by 50%."
+    "DESCRIPTION": "Spent 1 Fuel at the start of each turn. Reduce incoming damage by 50%."
   },
   "JunkLaser": {
     "NAME": "Junk Laser",
