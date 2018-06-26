@@ -331,7 +331,9 @@
   },
   "Reconstitute": {
     "NAME": "Reconstitute",
-    "DESCRIPTION": "At the end of your turn gain !M! Fuel for each Fuel spent this turn."
+    "DESCRIPTION": "At the end of your turn gain !M! Fuel for each Fuel spent this turn.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Fuel for each Fuel spent this turn.",
+    "EXTENDED_DESCRIPTION": [" NL (Gains "," Fuel)."]
   },
   "RecyclingStation": {
     "NAME": "Recycling Station",

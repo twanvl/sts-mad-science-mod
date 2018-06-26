@@ -2,7 +2,7 @@
 * Changed Auto-Strike: now deals 3(5) damage when drawn.
 * Changed Booster: now gains 2(3) Fuel
 * Changed Junk Laser: now deals 14(16) damage, +3(4) for every 0 cost card.
-* Changed Reconstitute: upgrade still gains 1 Fuel for each Fuel spend this turn, now costs 1(0).
+* Changed Reconstitute: upgrade now instantly gains 1 Fuel for each Fuel spend this turn.
 * Changed Funnel: is now rare instead of common
 * Fixed: Self Destruct now correctly exhausts
 * Fixed: Power Armor is applied after other powers (in particular after Reconstitute)
