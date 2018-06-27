@@ -1,5 +1,6 @@
 ### v0.1.8
 * Fixed: Madness didn't reduce cost of Weaponized cards
+* Fixed: Clone Vats card image
 
 ### v0.1.7
 * Changed Auto-Strike: now deals 3(5) damage when drawn, instead of 3(4).
