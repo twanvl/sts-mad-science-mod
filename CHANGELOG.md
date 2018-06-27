@@ -1,3 +1,5 @@
+### v0.1.8
+
 ### v0.1.7
 * Changed Auto-Strike: now deals 3(5) damage when drawn, instead of 3(4).
 * Changed Booster: now gains 2(3) Fuel instead of 2(4)
