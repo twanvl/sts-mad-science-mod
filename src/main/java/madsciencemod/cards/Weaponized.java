@@ -158,13 +158,25 @@ public class Weaponized extends AbstractMadScienceCard {
         }
     }
 
+    // Some actions, notably MadnessAction and EnlightnmentAction directly modify card.costForTurn or card.cost
+    // this propagates the cost to the baseCard, from which we will later copy it.
+    // We have to copy cost from the baseCard for cards that modify their own cost like Eviscerate
+    void updateBaseCost() {
+        baseCard.isCostModified = this.isCostModified;
+        baseCard.isCostModifiedForTurn = this.isCostModifiedForTurn;
+        baseCard.costForTurn = this.costForTurn;
+        baseCard.cost = this.cost;
+    }
+
     @Override
     public boolean cardPlayable(AbstractMonster m) {
+        updateBaseCost();
         return baseCard.cardPlayable(m);
     }
 
     @Override
     public boolean hasEnoughEnergy() {
+        updateBaseCost();
         return baseCard.hasEnoughEnergy();
     }
 
@@ -180,11 +192,13 @@ public class Weaponized extends AbstractMadScienceCard {
 
     @Override
     public boolean canPlay(AbstractCard card) {
+        updateBaseCost();
         return baseCard.canPlay(card);
     }
 
     @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        updateBaseCost();
         return baseCard.canUse(p,m);
     }
 
@@ -241,17 +255,20 @@ public class Weaponized extends AbstractMadScienceCard {
 
     @Override
     public void atTurnStart() {
+        updateBaseCost();
         baseCard.atTurnStart();
     }
 
     @Override
     public void triggerOnExhaust() {
+        updateBaseCost();
         baseCard.triggerOnExhaust();
     }
 
     @Override
     public void applyPowers() {
         super.applyPowers();
+        updateBaseCost();
         baseCard.applyPowers();
         initializeProperties();
     }
@@ -261,42 +278,49 @@ public class Weaponized extends AbstractMadScienceCard {
     @Override
     public void calculateCardDamage(AbstractMonster mo) {
         super.calculateCardDamage(mo);
+        updateBaseCost();
         baseCard.calculateCardDamage(mo);
         initializeProperties();
     }
 
     @Override
     public void updateCost(int amt) {
+        updateBaseCost();
         baseCard.updateCost(amt);
         initializeProperties();
     }
 
     @Override
     public void setCostForTurn(int amt) {
+        updateBaseCost();
         baseCard.setCostForTurn(amt);
         initializeProperties();
     }
 
     @Override
     public void modifyCostForTurn(int amt) {
+        updateBaseCost();
         baseCard.modifyCostForTurn(amt);
         initializeProperties();
     }
 
     @Override
     public void modifyCostForCombat(int amt) {
+        updateBaseCost();
         baseCard.modifyCostForCombat(amt);
         initializeProperties();
     }
 
     @Override
     public void resetAttributes() {
+        updateBaseCost();
         baseCard.resetAttributes();
         initializeProperties();
     }
 
     @Override
     public void clearPowers() {
+        updateBaseCost();
         baseCard.clearPowers();
         initializeProperties();
     }
@@ -310,6 +334,7 @@ public class Weaponized extends AbstractMadScienceCard {
     @Override
     public void upgrade() {
         if (!this.upgraded) {
+            updateBaseCost();
             InfiniteJournal.upgradeCard(baseCard);
             initializeProperties();
         }
