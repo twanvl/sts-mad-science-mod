@@ -16,9 +16,9 @@ public class Retarget extends AbstractMadScienceCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
-    private static final int STRENGTH_COST = 1;
+    private static final int STRENGTH_COST = 2;
+    private static final int UPGRADE_STRENGTH_COST = -1;
     private static final int THORN_AMT = 2;
-    private static final int UPGRADE_AMT = 1;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -34,8 +34,9 @@ public class Retarget extends AbstractMadScienceCard {
         for (AbstractCard c : p.hand.group) {
             if (c.type == AbstractCard.CardType.ATTACK) numAttacks++;
         }
-        int amount = this.magicNumber * numAttacks;
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new StrengthPower(p, -STRENGTH_COST), -STRENGTH_COST));
+        int amount = THORN_AMT * numAttacks;
+        int strengthCost = this.magicNumber;
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new StrengthPower(p, -strengthCost), -strengthCost));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ThornsPower(p, amount), amount));
     }
 
@@ -48,7 +49,7 @@ public class Retarget extends AbstractMadScienceCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeMagicNumber(UPGRADE_AMT);
+            this.upgradeMagicNumber(UPGRADE_STRENGTH_COST);
         }
     }
 }

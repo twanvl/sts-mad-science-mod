@@ -346,7 +346,7 @@
   },
   "Retarget": {
     "NAME": "Retarget",
-    "DESCRIPTION": "Lose 1 Strength. NL Gain !M! Thorns for each Attack card in your hand."
+    "DESCRIPTION": "Lose !M! Strength. NL Gain 2 Thorns for each Attack card in your hand."
   },
   "RocketJump": {
     "NAME": "Nitro Boost",
