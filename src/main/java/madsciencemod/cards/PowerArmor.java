@@ -19,7 +19,7 @@ public class PowerArmor extends AbstractMadScienceCard {
     private static final int UPGRADED_COST = 1;
     private static final int AMOUNT = 1;
     private static final CardType TYPE = CardType.POWER;
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
 
     public PowerArmor() {

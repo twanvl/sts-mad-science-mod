@@ -1,5 +1,6 @@
 ### v0.1.8
 * Changed Retarget: now gains 2 thorns per attack for 2(1) strengt, instead of 2(3) thorns for 1 strength.
+* Changed Power Armor: is now rare
 * Fixed: Madness didn't reduce cost of Weaponized cards
 * Fixed: Clone Vats card image
 
