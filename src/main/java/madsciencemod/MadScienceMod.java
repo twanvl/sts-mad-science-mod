@@ -101,7 +101,8 @@ public class MadScienceMod implements
             "img/cardui/1024/bg_attack_bronze.png",
             "img/cardui/1024/bg_skill_bronze.png",
             "img/cardui/1024/bg_power_bronze.png",
-            "img/cardui/1024/card_bronze_orb.png");
+            "img/cardui/1024/card_bronze_orb.png",
+            "img/cardui/small_bronze_orb.png");
         logger.info("done editing colors");
     }
 

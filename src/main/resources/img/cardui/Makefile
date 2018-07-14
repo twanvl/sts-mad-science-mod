@@ -8,7 +8,7 @@ TARGETS:=$(addprefix 512/,$(FILES)) $(addprefix 1024/,$(FILES))
 MODULATE:=95,105,120
 
 .PHONY: all clean
-all: 1024 512 $(TARGETS)
+all: 1024 512 $(TARGETS) small_bronze_orb.png
 
 1024 512:
 	mkdir -p $@
@@ -29,6 +29,9 @@ $(addprefix 1024/,$(FILES)): 1024
 
 512/card_bronze_orb.png: 1024/card_bronze_orb.png
 	convert $< -resize 50% -background transparent -splice 81x22 -extent 512x512 $@
+
+small_bronze_orb.png: small-orb.svg
+	inkscape $< --export-png=$@
 
 clean:
 	rm -f 512/*.png

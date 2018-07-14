@@ -173,8 +173,8 @@
   },
   "Generator": {
     "NAME": "Generator",
-    "DESCRIPTION": "At the start of your turn, spend 1 Fuel to gain [R].",
-    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, spend 1 Fuel to gain [R]."
+    "DESCRIPTION": "At the start of your turn, spend 1 Fuel to gain [E].",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, spend 1 Fuel to gain [E]."
   },
   "GattlingGun": {
     "NAME": "Plasma Rifle",
@@ -227,8 +227,8 @@
   },
   "Lightbulb": {
     "NAME": "Lightbulb",
-    "DESCRIPTION": "Spend 1 Fuel. NL Gain [R] [R].",
-    "UPGRADE_DESCRIPTION": "Spend 1 Fuel. NL Gain [R] [R] [R]."
+    "DESCRIPTION": "Spend 1 Fuel. NL Gain [E] [E].",
+    "UPGRADE_DESCRIPTION": "Spend 1 Fuel. NL Gain [E] [E] [E]."
   },
   "Liquify": {
     "NAME": "Liquify",
@@ -480,8 +480,8 @@
   },
   "ShinyTrinket": {
     "NAME": "Shiny Trinket",
-    "DESCRIPTION": "Gain [R]. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain [R] [R]. NL Exhaust."
+    "DESCRIPTION": "Gain [E]. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E]. NL Exhaust."
   },
   "SpikyTrinket": {
     "NAME": "Spiky Trinket",
