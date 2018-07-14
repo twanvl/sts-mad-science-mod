@@ -1,6 +1,7 @@
 ### v0.1.9
 * Fixed: Self Destruct is now an Attack
 * Fixed: Infinite Journal relic description
+* UI: Added flavor text to relics
 
 ### v0.1.8
 * Changed Retarget: now gains 2 thorns per attack for 2(1) strengt, instead of 2(3) thorns for 1 strength.

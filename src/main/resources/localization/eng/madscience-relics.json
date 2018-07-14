@@ -22,14 +22,14 @@
   },
   "ExhaustVents": {
     "NAME": "Exhaust Vent",
-    "FLAVOR": "",
+    "FLAVOR": "Point the opening in the direction of your enemies.",
     "DESCRIPTIONS": [
       "Whenever you spend Fuel, apply "," Poison to ALL enemies."
     ]
   },
   "PolishingWheel": {
     "NAME": "Polishing Wheel",
-    "FLAVOR": "",
+    "FLAVOR": "Polishes even your throw-away creations to a mirror shine.",
     "DESCRIPTIONS": [
       "Your Trinkets are upgraded."
     ]
@@ -43,7 +43,7 @@
   },
   "InfiniteJournal": {
     "NAME": "Infinite Journal",
-    "FLAVOR": "",
+    "FLAVOR": "It just goes on forever.",
     "DESCRIPTIONS": [
       "Cards can be upgraded any number of times."
     ]
