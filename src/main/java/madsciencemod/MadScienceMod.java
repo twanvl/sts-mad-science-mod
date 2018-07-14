@@ -1,5 +1,6 @@
 package madsciencemod;
 
+import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
@@ -12,6 +13,7 @@ import org.apache.logging.log4j.Logger;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.Color;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
@@ -248,8 +250,14 @@ public class MadScienceMod implements
     }
 
     public void receiveEditPotions() {
-        logger.info("begin editing potions");
-        BaseMod.addPotion(FuelPotion.class, new Color(0.3f,0.3f,0.3f,1.0f), new Color(0.1f,0.1f,0.1f,1.0f), new Color(0.5f,0.5f,0.5f,1.0f), FuelPotion.POTION_ID);
+        try {
+            Method addPotion = BaseMod.class.getDeclaredMethod("addPotion", Class.class, Color.class, Color.class, Color.class, String.class, AbstractPlayer.PlayerClass.class);
+            logger.info("begin editing potions (character specific)");
+            addPotion.invoke(null, FuelPotion.class, new Color(0.3f,0.3f,0.3f,1.0f), new Color(0.1f,0.1f,0.1f,1.0f), new Color(0.5f,0.5f,0.5f,1.0f), FuelPotion.POTION_ID, PlayerClassEnum.MAD_SCIENTIST);
+        } catch (Exception e) {
+            logger.info("begin editing potions (all characters)");
+            BaseMod.addPotion(FuelPotion.class, new Color(0.3f,0.3f,0.3f,1.0f), new Color(0.1f,0.1f,0.1f,1.0f), new Color(0.5f,0.5f,0.5f,1.0f), FuelPotion.POTION_ID);
+        }
         logger.info("end editing potions");
     }
 
