@@ -1,4 +1,5 @@
 ### v0.1.9
+* Changed Power Armor: now costs 1, is uncommon, and reads: "At the end of your turn, if you have at least 3 Fuel, gain 3(5) Block."
 * Fixed: Self Destruct is now an Attack
 * Fixed: Infinite Journal relic description
 * UI: Added flavor text to relics

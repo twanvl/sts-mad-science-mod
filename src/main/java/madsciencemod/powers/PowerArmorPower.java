@@ -11,6 +11,7 @@ public class PowerArmorPower extends AbstractMadSciencePower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+    private static final int FUEL_THRESHOLD = 3;
 
     public PowerArmorPower(AbstractCreature owner, int amount) {
         super(POWER_ID, NAME, owner, amount);
@@ -20,15 +21,14 @@ public class PowerArmorPower extends AbstractMadSciencePower {
 
     @Override
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+        this.description = DESCRIPTIONS[0] + FUEL_THRESHOLD + DESCRIPTIONS[1] + this.amount + DESCRIPTIONS[2];
     }
 
     @Override
     public void atEndOfTurn(boolean isPlayer) {
-        int amount = FuelPower.currentAmount(this.owner);
-        if (amount > 0) {
+        if (FuelPower.currentAmount(this.owner) >= FUEL_THRESHOLD) {
             this.flash();
-            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(this.owner, this.owner, this.amount * amount));
+            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(this.owner, this.owner, this.amount));
         }
     }
 }

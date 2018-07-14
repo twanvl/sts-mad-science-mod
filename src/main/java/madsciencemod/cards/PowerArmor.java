@@ -15,20 +15,21 @@ public class PowerArmor extends AbstractMadScienceCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static final int COST = 2;
-    private static final int UPGRADED_COST = 1;
-    private static final int AMOUNT = 1;
+    private static final int COST = 1;
+    private static final int AMOUNT = 3;
+    private static final int UPGRADE_AMOUNT = 2;
     private static final CardType TYPE = CardType.POWER;
-    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
 
     public PowerArmor() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
+        this.magicNumber = this.baseMagicNumber = AMOUNT;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new PowerArmorPower(p,AMOUNT), AMOUNT));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new PowerArmorPower(p,this.magicNumber), this.magicNumber));
     }
 
     @Override
@@ -40,7 +41,7 @@ public class PowerArmor extends AbstractMadScienceCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeBaseCost(UPGRADED_COST);
+            this.upgradeMagicNumber(UPGRADE_AMOUNT);
         }
     }
 }

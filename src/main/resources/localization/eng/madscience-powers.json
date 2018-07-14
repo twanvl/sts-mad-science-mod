@@ -126,7 +126,7 @@
   "PowerArmor": {
     "NAME": "Power Armor",
     "DESCRIPTIONS": [
-      "At the end of your turn, gain #b"," Block for each Fuel you have."
+      "At the end of your turn, if you have at least "," Fuel, gain #b"," Block."
     ]
   },
   "Reconstitute": {

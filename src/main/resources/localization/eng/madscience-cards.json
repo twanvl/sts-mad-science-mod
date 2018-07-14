@@ -314,7 +314,7 @@
   },
   "PowerArmor": {
     "NAME": "Power Armor",
-    "DESCRIPTION": "At the end of your turn, gain 1 Block for each Fuel you have."
+    "DESCRIPTION": "At the end of your turn, if you have at least 3 Fuel, gain !M! Block."
   },
   "PoweredStrike": {
     "NAME": "Powered Strike",
