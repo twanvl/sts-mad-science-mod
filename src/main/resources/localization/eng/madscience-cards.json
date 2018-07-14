@@ -318,7 +318,7 @@
   },
   "PoweredStrike": {
     "NAME": "Powered Strike",
-    "DESCRIPTION": "Spend 1 Fuel. NL Deal !D! damage."
+    "DESCRIPTION": "Spend 1 Fuel. NL Deal !D! damage. NL If you have no Fuel, gain 1 Fuel instead."
   },
   "Probe": {
     "NAME": "Probe",
