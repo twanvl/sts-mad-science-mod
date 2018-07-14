@@ -24,6 +24,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import basemod.BaseMod;
 import basemod.ModPanel;
+import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 
 import madsciencemod.patches.PlayerClassEnum;
@@ -131,7 +132,7 @@ public class MadScienceMod implements
         BaseMod.addRelicToCustomPool(new madsciencemod.relics.ExhaustVents(), CardColorEnum.BRONZE.toString());
         BaseMod.addRelicToCustomPool(new FuelTank(), CardColorEnum.BRONZE.toString());
         BaseMod.addRelicToCustomPool(new Funnel(), CardColorEnum.BRONZE.toString());
-        BaseMod.addRelicToCustomPool(new InfiniteJournal(), CardColorEnum.BRONZE.toString());
+        BaseMod.addRelic(new InfiniteJournal(), RelicType.SHARED);
         BaseMod.addRelicToCustomPool(new PolishingWheel(), CardColorEnum.BRONZE.toString());
         BaseMod.addRelicToCustomPool(new madsciencemod.relics.PortablePumpjack(), CardColorEnum.BRONZE.toString());
         BaseMod.addRelicToCustomPool(new SignalFlag(), CardColorEnum.BRONZE.toString());
