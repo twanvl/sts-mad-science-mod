@@ -277,8 +277,8 @@
     "DESCRIPTION": "Choose: Deal !D! damage to a random enemy X times; or gain !B! Block X times.",
     "EXTENDED_DESCRIPTION": [
       "Choose",
-      "Offence", "Deal !D! damage to a random enemy X times.",
-      "Defence", "Gain !B! Block X times."
+      "Offense", "Deal !D! damage to a random enemy X times.",
+      "Defense", "Gain !B! Block X times."
     ]
   },
   "ParticleBeam": {
