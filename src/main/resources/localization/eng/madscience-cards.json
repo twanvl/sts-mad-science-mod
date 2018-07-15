@@ -485,8 +485,8 @@
   },
   "RecycledTrinket": {
     "NAME": "Recycled Trinket",
-    "DESCRIPTION": "Return the top card from your discard pile into your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Return a card from your discard pile into your hand. NL Exhaust."
+    "DESCRIPTION": "Return the top card from your discard pile to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Return a card from your discard pile to your hand. NL Exhaust."
   },
   "ShinyTrinket": {
     "NAME": "Shiny Trinket",
