@@ -196,8 +196,8 @@
   },
   "HideBehindJunk": {
     "NAME": "Hide Behind Junk",
-    "DESCRIPTION": "Gain !B! Block. Shuffle a random Trinket into your draw pile.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. Shuffle !M! random Trinkets into your draw pile."
+    "DESCRIPTION": "Gain !B! Block. NL Choose and shuffle a Trinket into your draw pile.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Shuffle up to !M! Trinkets into your draw pile."
   },
   "ImposingConstruct": {
     "NAME": "Imposing Construct",

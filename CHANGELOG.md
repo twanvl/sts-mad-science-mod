@@ -3,6 +3,7 @@
 * Changed Powered Strike: when you have no Fuel it now gains you 1 Fuel.
 * Changed Fragmentation Grenade+: upgraded version now shuffles upgraded trinkets into your draw pile.
 * Changed Explore Options: now draws 2(3) cards instead of 2(2).
+* Changed Hide Behind Junk: now shuffles chosen Trinkets instead of random ones.
 * Bonus Change: Infinite Journal relic can now appear for other characters.
 * Added card: Minature Weapons
 * Added relic: Doomsday Device
