@@ -2,6 +2,7 @@
 * Changed Power Armor: now costs 1, is uncommon, and reads: "At the end of your turn, if you have at least 3 Fuel, gain 4(6) Block."
 * Changed Powered Strike: when you have no Fuel it now gains you 1 Fuel.
 * Changed Fragmentation Grenade+: upgraded version now shuffles upgraded trinkets into your draw pile.
+* Changed Explore Options: now draws 2(3) cards instead of 2(2).
 * Bonus Change: Infinite Journal relic can now appear for other characters.
 * Added card: Minature Weapons
 * Added relic: Doomsday Device

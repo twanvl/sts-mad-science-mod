@@ -16,7 +16,7 @@ public class ExploreOptions extends AbstractMadScienceCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
     private static final int DRAW_AMT = 2;
-    private static final int UPGRADE_DRAW_AMT = 0;
+    private static final int UPGRADE_DRAW_AMT = 1;
     private static final int BLOCK = 3;
     private static final int UPGRADE_BLOCK = 2;
     private static final CardType TYPE = CardType.SKILL;
