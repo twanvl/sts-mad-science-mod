@@ -1,6 +1,6 @@
 # Resize power images
 IMAGES:=$(notdir $(wildcard large/*.png))
-NOT_POWERS:=Jetpack
+NOT_POWERS:=Jetpack AbstractMadScience
  # Note: Jetpack uses a built in image
 POWERS:=$(patsubst %Power.java,%, $(notdir $(wildcard ../../../java/madsciencemod/powers/*.java)))
 MISSING_IMAGES:=$(filter-out $(NOT_POWERS) $(basename $(IMAGES)), $(POWERS))
