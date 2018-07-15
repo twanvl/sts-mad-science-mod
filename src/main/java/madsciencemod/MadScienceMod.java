@@ -136,6 +136,7 @@ public class MadScienceMod implements
         BaseMod.addRelicToCustomPool(new PolishingWheel(), CardColorEnum.BRONZE.toString());
         BaseMod.addRelicToCustomPool(new madsciencemod.relics.PortablePumpjack(), CardColorEnum.BRONZE.toString());
         BaseMod.addRelicToCustomPool(new SignalFlag(), CardColorEnum.BRONZE.toString());
+        BaseMod.addRelicToCustomPool(new DoomsdayDevice(), CardColorEnum.BRONZE.toString());
         logger.info("end editing relics");
     }
 

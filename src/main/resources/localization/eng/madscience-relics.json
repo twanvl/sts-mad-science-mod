@@ -47,5 +47,12 @@
     "DESCRIPTIONS": [
       "Cards can be upgraded any number of times."
     ]
+  },
+  "DoomsdayDevice": {
+    "NAME": "Doomsday Device",
+    "FLAVOR": "Failed to blow up the spire, but can be recycled for spare parts.",
+    "DESCRIPTIONS": [
+      "At the start of combat, shuffle up to "," Trinkets into your draw pile."
+    ]
   }
 }
