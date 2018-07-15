@@ -152,7 +152,8 @@
   },
   "FragmentationGrenade": {
     "NAME": "Fragmentation Grenade",
-    "DESCRIPTION": "Deal !D! damage twice. Shuffle !M! random Trinkets into your draw pile."
+    "DESCRIPTION": "Deal !D! damage twice. Shuffle !M! random Trinkets into your draw pile.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage twice. Shuffle !M! random upgraded Trinkets into your draw pile."
   },
   "FumeBlast": {
     "NAME": "Fume Blast",

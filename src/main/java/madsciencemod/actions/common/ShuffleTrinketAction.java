@@ -27,14 +27,20 @@ public class ShuffleTrinketAction extends AbstractGameAction {
     private static final boolean ALLOW_DUPLICATES = false;
     private static final boolean CHOOSE_FROM_ALL = false;
     private boolean cardOffset;
+    private boolean upgraded;
     private ArrayList<AbstractCard> cardsToShuffle = new ArrayList<>();
 
     public ShuffleTrinketAction(int amount, boolean random, boolean cardOffset) {
+        this(amount, random, cardOffset, false);
+    }
+
+    public ShuffleTrinketAction(int amount, boolean random, boolean cardOffset, boolean upgraded) {
         this.actionType = AbstractGameAction.ActionType.CARD_MANIPULATION;
         this.duration = startingDuration;
         this.amount = amount;
         this.random = random;
         this.cardOffset = cardOffset;
+        this.upgraded = upgraded;
     }
 
     @Override
@@ -111,19 +117,19 @@ public class ShuffleTrinketAction extends AbstractGameAction {
         }
     }
 
-    private static CardGroup allTrinketsToUse() {
-        if (AbstractDungeon.player.hasRelic(PolishingWheel.ID)) {
+    private CardGroup allTrinketsToUse() {
+        if (this.upgraded || AbstractDungeon.player.hasRelic(PolishingWheel.ID)) {
             return allUpgradedTrinkets;
         } else {
             return allTrinkets;
         }
     }
 
-    private static AbstractCard getRandomTrinket() {
+    private AbstractCard getRandomTrinket() {
         return allTrinketsToUse().getRandomCard(false);
     }
 
-    private static ArrayList<AbstractCard> getRandomTrinkets(int amount, boolean allowDuplicates) {
+    private ArrayList<AbstractCard> getRandomTrinkets(int amount, boolean allowDuplicates) {
         ArrayList<AbstractCard> cards = new ArrayList<>();
         while(cards.size() < amount) {
             int tries = 0;
