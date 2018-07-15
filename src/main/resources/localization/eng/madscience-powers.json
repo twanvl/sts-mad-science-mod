@@ -111,6 +111,18 @@
       "Whenever you spend Fuel, takes #b"," damage."
     ]
   },
+  "MinatureWeaponsAttack": {
+    "NAME": "Minature Weapons",
+    "DESCRIPTIONS": [
+      "Whenever you play a Trinket, deal "," damage to ALL enemies."
+    ]
+  },
+  "MinatureWeaponsBlock": {
+    "NAME": "Minature Shields",
+    "DESCRIPTIONS": [
+      "Whenever you play a Trinket, gain "," Block."
+    ]
+  },
   "MechanicalSnecko": {
     "NAME": "Mechanical Snecko",
     "DESCRIPTIONS": [

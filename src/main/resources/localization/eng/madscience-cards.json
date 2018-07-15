@@ -255,6 +255,15 @@
     "NAME": "Mechanize",
     "DESCRIPTION": "Gain !M! Fuel. Cards in your hand cost Fuel instead of energy this turn until played."
   },
+  "MinatureWeapons": {
+    "NAME": "Minature Weapons",
+    "DESCRIPTION": "Choose: Whenever you play a Trinket, deal !M! damage to ALL enemies; or whenever you play a Trinket, gain !M! Block.",
+    "EXTENDED_DESCRIPTION": [
+      "Choose",
+      "Offense", "Whenever you play a Trinket, deal !M! damage to ALL enemies.",
+      "Defense", "Whenever you play a Trinket, gain !M! Block."
+    ]
+  },
   "MindControlBeam": {
     "NAME": "Mind Control Beam",
     "DESCRIPTION": "Apply !M! Weak. Enemy changes their intent."

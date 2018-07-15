@@ -199,6 +199,7 @@ public class MadScienceMod implements
             BaseMod.addCard(new MechanicalClaw());
             BaseMod.addCard(new MechanicalSnecko());
             BaseMod.addCard(new Mechanize());
+            BaseMod.addCard(new MinatureWeapons());
             BaseMod.addCard(new MindControlBeam());
             BaseMod.addCard(new NowOrNever());
             BaseMod.addCard(new OilDrum());

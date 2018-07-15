@@ -2,6 +2,7 @@
 * Changed Power Armor: now costs 1, is uncommon, and reads: "At the end of your turn, if you have at least 3 Fuel, gain 3(5) Block."
 * Changed Powered Strike: when you have no Fuel it now gains you 1 Fuel.
 * Bonus Change: Infinite Journal relic can now appear for other characters.
+* Added card: Minature Weapons
 * Added relic: Doomsday Device
 * Fixed: Self Destruct is now an Attack
 * Fixed: Infinite Journal relic description
