@@ -9,6 +9,7 @@
 * Added relic: Doomsday Device
 * Fixed: Self Destruct is now an Attack
 * Fixed: Infinite Journal relic description
+* Fixed: Fuel Potion can now only appear for the Mad Scientist
 * UI: Added flavor text to relics
 * UI: Use custom mana symbol on cards. Requires BaseMod v2.16.0 / week 33 patch.
 
