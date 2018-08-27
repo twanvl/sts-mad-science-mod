@@ -12,7 +12,7 @@ import madsciencemod.cards.Defend_Bronze;
 import madsciencemod.cards.Strike_Bronze;
 import madsciencemod.relics.InfiniteJournal;
 
-@SpirePatch(cls = "com.megacrit.cardcrawl.events.thecity.BackToBasics", method = "upgradeStrikeAndDefends")
+@SpirePatch(clz = com.megacrit.cardcrawl.events.city.BackToBasics.class, method = "upgradeStrikeAndDefends")
 public class BackToBasicsPatch {
 
     @SpireInsertPatch(rloc = 30)

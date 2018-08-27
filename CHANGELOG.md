@@ -1,3 +1,6 @@
+### v0.2.1
+* Compatibility with ModTheSpire v3.0.0
+
 ### v0.2.0
 * Changed Power Armor: now costs 1, is uncommon, and reads: "At the end of your turn, if you have at least 3 Fuel, gain 4(6) Block."
 * Changed Powered Strike: when you have no Fuel it now gains you 1 Fuel.

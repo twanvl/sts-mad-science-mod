@@ -23,6 +23,7 @@ import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import basemod.BaseMod;
+import basemod.ModLabel;
 import basemod.ModPanel;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
@@ -67,13 +68,7 @@ public class MadScienceMod implements
     }
 
     public MadScienceMod() {
-        BaseMod.subscribeToPostInitialize(this);
-        BaseMod.subscribeToEditStrings(this);
-        BaseMod.subscribeToEditCharacters(this);
-        BaseMod.subscribeToEditRelics(this);
-        BaseMod.subscribeToEditKeywords(this);
-        BaseMod.subscribeToEditCards(this);
-        BaseMod.subscribeToPostBattle(this);
+        BaseMod.subscribe(this);
         receiveEditColors();
     }
 
@@ -87,7 +82,7 @@ public class MadScienceMod implements
         // Mod badge
         Texture badgeTexture = new Texture("img/MadScienceModBadge.png");
         ModPanel settingsPanel = new ModPanel();
-        settingsPanel.addLabel("This mod does not have any settings.", 400.0f, 700.0f, (me) -> {});
+        settingsPanel.addUIElement(new ModLabel("This mod does not have any settings.", 400.0f, 700.0f, settingsPanel, (me) -> {}));
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
         logger.info("done with mod badge");
     }
@@ -95,7 +90,7 @@ public class MadScienceMod implements
     public void receiveEditColors() {
         logger.info("begin editing colors");
         BaseMod.addColor(
-            CardColorEnum.BRONZE.toString(),
+            CardColorEnum.BRONZE,
             BRONZE, BRONZE, BRONZE, BRONZE, BRONZE, BRONZE, BRONZE,
             "img/cardui/512/bg_attack_bronze.png",
             "img/cardui/512/bg_skill_bronze.png",
@@ -117,11 +112,11 @@ public class MadScienceMod implements
             MadScientist.class,
             MadScientist.NAMES[1],
             "MadScientist class string",
-            CardColorEnum.BRONZE.toString(),
+            CardColorEnum.BRONZE,
             MadScientist.NAMES[0],
             "img/charSelect/MadScientistButton.png",
             "img/charSelect/MadScientistPortrait.jpg",
-            PlayerClassEnum.MAD_SCIENTIST.toString());
+            PlayerClassEnum.MAD_SCIENTIST);
         logger.info("done editing characters");
         receiveEditPotions();
     }
@@ -129,14 +124,14 @@ public class MadScienceMod implements
     @Override
     public void receiveEditRelics() {
         logger.info("begin editing relics");
-        BaseMod.addRelicToCustomPool(new madsciencemod.relics.ExhaustVents(), CardColorEnum.BRONZE.toString());
-        BaseMod.addRelicToCustomPool(new FuelTank(), CardColorEnum.BRONZE.toString());
-        BaseMod.addRelicToCustomPool(new Funnel(), CardColorEnum.BRONZE.toString());
+        BaseMod.addRelicToCustomPool(new madsciencemod.relics.ExhaustVents(), CardColorEnum.BRONZE);
+        BaseMod.addRelicToCustomPool(new FuelTank(), CardColorEnum.BRONZE);
+        BaseMod.addRelicToCustomPool(new Funnel(), CardColorEnum.BRONZE);
         BaseMod.addRelic(new InfiniteJournal(), RelicType.SHARED);
-        BaseMod.addRelicToCustomPool(new PolishingWheel(), CardColorEnum.BRONZE.toString());
-        BaseMod.addRelicToCustomPool(new madsciencemod.relics.PortablePumpjack(), CardColorEnum.BRONZE.toString());
-        BaseMod.addRelicToCustomPool(new SignalFlag(), CardColorEnum.BRONZE.toString());
-        BaseMod.addRelicToCustomPool(new DoomsdayDevice(), CardColorEnum.BRONZE.toString());
+        BaseMod.addRelicToCustomPool(new PolishingWheel(), CardColorEnum.BRONZE);
+        BaseMod.addRelicToCustomPool(new madsciencemod.relics.PortablePumpjack(), CardColorEnum.BRONZE);
+        BaseMod.addRelicToCustomPool(new SignalFlag(), CardColorEnum.BRONZE);
+        BaseMod.addRelicToCustomPool(new DoomsdayDevice(), CardColorEnum.BRONZE);
         logger.info("end editing relics");
     }
 
@@ -253,14 +248,8 @@ public class MadScienceMod implements
     }
 
     public void receiveEditPotions() {
-        try {
-            Method addPotion = BaseMod.class.getDeclaredMethod("addPotion", Class.class, Color.class, Color.class, Color.class, String.class, AbstractPlayer.PlayerClass.class);
-            logger.info("begin editing potions (character specific)");
-            addPotion.invoke(null, FuelPotion.class, new Color(0.3f,0.3f,0.3f,1.0f), new Color(0.1f,0.1f,0.1f,1.0f), new Color(0.5f,0.5f,0.5f,1.0f), FuelPotion.POTION_ID, PlayerClassEnum.MAD_SCIENTIST);
-        } catch (Exception e) {
-            logger.info("begin editing potions (all characters)");
-            BaseMod.addPotion(FuelPotion.class, new Color(0.3f,0.3f,0.3f,1.0f), new Color(0.1f,0.1f,0.1f,1.0f), new Color(0.5f,0.5f,0.5f,1.0f), FuelPotion.POTION_ID);
-        }
+        logger.info("begin editing potions");
+        BaseMod.addPotion(FuelPotion.class, new Color(0.3f,0.3f,0.3f,1.0f), new Color(0.1f,0.1f,0.1f,1.0f), new Color(0.5f,0.5f,0.5f,1.0f), FuelPotion.POTION_ID, PlayerClassEnum.MAD_SCIENTIST);
         logger.info("end editing potions");
     }
 

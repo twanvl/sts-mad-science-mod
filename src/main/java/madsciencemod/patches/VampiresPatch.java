@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 import madsciencemod.cards.Strike_Bronze;
 
-@SpirePatch(cls="com.megacrit.cardcrawl.events.thecity.Vampires", method="replaceAttacks")
+@SpirePatch(clz=com.megacrit.cardcrawl.events.city.Vampires.class, method="replaceAttacks")
 public class VampiresPatch {
     @SpireInsertPatch(rloc=8)
     public static void Insert(Object __obj_instance) {

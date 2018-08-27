@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.PandorasBox;
 
-@SpirePatch(cls="com.megacrit.cardcrawl.relics.PandorasBox", method="onEquip")
+@SpirePatch(clz=com.megacrit.cardcrawl.relics.PandorasBox.class, method="onEquip")
 public class PandorasBoxPatch {
     @SpireInsertPatch(rloc=12)
     public static void Insert(Object __obj_instance) {

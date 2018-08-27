@@ -5,7 +5,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import madsciencemod.cards.AbstractMadScienceCard;
 import madsciencemod.powers.FuelPower;
 
-@SpirePatch(cls="com.megacrit.cardcrawl.characters.AbstractPlayer", method="useCard")
+@SpirePatch(clz=com.megacrit.cardcrawl.characters.AbstractPlayer.class, method="useCard")
 public class UseCardPatch {
     //public static IdentityHashMap<AbstactCard> cardsThatCostFuelUntilPlayed;
     public static void Prefix(Object _self, Object _c, Object _monster, int energyOnUse) {
