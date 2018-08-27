@@ -1,5 +1,6 @@
 ### v0.2.1
 * Compatibility with ModTheSpire v3.0.0
+* Fixed naming conflict issue with The Marksman mod (#11)
 
 ### v0.2.0
 * Changed Power Armor: now costs 1, is uncommon, and reads: "At the end of your turn, if you have at least 3 Fuel, gain 4(6) Block."

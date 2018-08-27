@@ -8,8 +8,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class RocketJump extends AbstractMadScienceCard {
-    public static final String ID = "RocketJump";
+public class DEPRECATED_RocketJump extends AbstractMadScienceCard {
+    public static final String ID = "DEPRECATED_RocketJump";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -20,7 +20,7 @@ public class RocketJump extends AbstractMadScienceCard {
     private static final CardType TYPE = CardType.SKILL;
     private static final CardRarity RARITY = CardRarity.BASIC;
 
-    public RocketJump() {
+    public DEPRECATED_RocketJump() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, CardTarget.SELF);
         this.baseBlock = BLOCK_AMT;
         this.fuelCost = FUEL_COST;
@@ -33,7 +33,7 @@ public class RocketJump extends AbstractMadScienceCard {
 
     @Override
     public AbstractCard makeCopy() {
-        return new RocketJump();
+        return new DEPRECATED_RocketJump();
     }
 
     @Override

@@ -358,7 +358,7 @@
     "NAME": "Retarget",
     "DESCRIPTION": "Lose !M! Strength. NL Gain 2 Thorns for each Attack card in your hand."
   },
-  "RocketJump": {
+  "DEPRECATED_RocketJump": {
     "NAME": "Nitro Boost",
     "DESCRIPTION": "Spend 1 Fuel. NL Gain !B! Block."
   },
