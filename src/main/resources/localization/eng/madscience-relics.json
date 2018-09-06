@@ -3,42 +3,42 @@
     "NAME": "Fuel Tank",
     "FLAVOR": "Taken from an old motorcycle, it now stores fuel for all kinds of nifty tools.",
     "DESCRIPTIONS": [
-      "At the start of each combat, gain #b"," Fuel."
+      "At the start of each combat, gain #b"," #yFuel."
     ]
   },
   "SignalFlag": {
     "NAME": "Signal Flag",
     "FLAVOR": "",
     "DESCRIPTIONS": [
-      "Whenever you play 3 attacks in a turn, gain 1 Fuel."
+      "Whenever you play #b3 attacks in a turn, gain 1 #yFuel."
     ]
   },
   "Funnel": {
     "NAME": "Funnel",
     "FLAVOR": "Refuel your tools without spilling a single drop.",
     "DESCRIPTIONS": [
-      "Whenever you gain Fuel, gain 1 additional Fuel."
+      "Whenever you gain #yFuel, gain #b1 additional #yFuel."
     ]
   },
   "ExhaustVents": {
     "NAME": "Exhaust Vent",
     "FLAVOR": "Point the opening in the direction of your enemies.",
     "DESCRIPTIONS": [
-      "Whenever you spend Fuel, apply "," Poison to ALL enemies."
+      "Whenever you spend #yFuel, apply #b"," #yPoison to ALL enemies."
     ]
   },
   "PolishingWheel": {
     "NAME": "Polishing Wheel",
     "FLAVOR": "Polishes even your throw-away creations to a mirror shine.",
     "DESCRIPTIONS": [
-      "Your Trinkets are upgraded."
+      "Your #yTrinkets are upgraded."
     ]
   },
   "PortablePumpjack": {
     "NAME": "Portable Pumpjack",
     "FLAVOR": "Stolen from an oil field.",
     "DESCRIPTIONS": [
-      "At the start of your turn, gain "," Fuel."
+      "At the start of your turn, gain #b"," #yFuel."
     ]
   },
   "InfiniteJournal": {
@@ -52,7 +52,7 @@
     "NAME": "Doomsday Device",
     "FLAVOR": "Failed to blow up the spire, but can be recycled for spare parts.",
     "DESCRIPTIONS": [
-      "At the start of combat, shuffle up to "," Trinkets into your draw pile."
+      "At the start of combat, shuffle up to #b"," #yTrinkets into your draw pile."
     ]
   }
 }
