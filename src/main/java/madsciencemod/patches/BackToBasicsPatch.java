@@ -8,8 +8,8 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardBrieflyEffect;
 
-import madsciencemod.cards.Defend_Bronze;
-import madsciencemod.cards.Strike_Bronze;
+import madsciencemod.cards.Defend_MadScience;
+import madsciencemod.cards.Strike_MadScience;
 import madsciencemod.relics.InfiniteJournal;
 
 @SpirePatch(clz = com.megacrit.cardcrawl.events.city.BackToBasics.class, method = "upgradeStrikeAndDefends")
@@ -18,7 +18,7 @@ public class BackToBasicsPatch {
     @SpireInsertPatch(rloc = 30)
     public static void Insert(Object __obj_instance) {
         for (AbstractCard c : AbstractDungeon.player.masterDeck.group) {
-            if ((c instanceof Strike_Bronze || c instanceof Defend_Bronze) && InfiniteJournal.canUpgradeCard(c)) {
+            if ((c instanceof Strike_MadScience || c instanceof Defend_MadScience) && InfiniteJournal.canUpgradeCard(c)) {
                 InfiniteJournal.upgradeCard(c);
                 AbstractDungeon.player.bottledCardUpgradeCheck(c);
                 AbstractDungeon.effectList.add(

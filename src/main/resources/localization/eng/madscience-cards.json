@@ -91,7 +91,7 @@
     "NAME": "Data Recorder",
     "DESCRIPTION": "Whenever an enemy gains Strength, gain 1 Strength."
   },
-  "Defend_Bronze": {
+  "Defend_MadScience": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
@@ -395,7 +395,7 @@
     "NAME": "Strafe",
     "DESCRIPTION": "Spend 1 Fuel. NL Deal !D! damage. NL Gain !B! Block."
   },
-  "Strike_Bronze": {
+  "Strike_MadScience": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
   },

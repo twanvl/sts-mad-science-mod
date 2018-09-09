@@ -90,17 +90,17 @@ public class MadScienceMod implements
     public void receiveEditColors() {
         logger.info("begin editing colors");
         BaseMod.addColor(
-            CardColorEnum.BRONZE,
+            CardColorEnum.MAD_SCIENCE,
             BRONZE, BRONZE, BRONZE, BRONZE, BRONZE, BRONZE, BRONZE,
-            "img/cardui/512/bg_attack_bronze.png",
-            "img/cardui/512/bg_skill_bronze.png",
-            "img/cardui/512/bg_power_bronze.png",
-            "img/cardui/512/card_bronze_orb.png",
-            "img/cardui/1024/bg_attack_bronze.png",
-            "img/cardui/1024/bg_skill_bronze.png",
-            "img/cardui/1024/bg_power_bronze.png",
-            "img/cardui/1024/card_bronze_orb.png",
-            "img/cardui/small_bronze_orb.png");
+            "img/cardui/512/bg_attack_mad_science.png",
+            "img/cardui/512/bg_skill_mad_science.png",
+            "img/cardui/512/bg_power_mad_science.png",
+            "img/cardui/512/card_mad_science_orb.png",
+            "img/cardui/1024/bg_attack_mad_science.png",
+            "img/cardui/1024/bg_skill_mad_science.png",
+            "img/cardui/1024/bg_power_mad_science.png",
+            "img/cardui/1024/card_mad_science_orb.png",
+            "img/cardui/small_mad_science_orb.png");
         logger.info("done editing colors");
     }
 
@@ -112,7 +112,7 @@ public class MadScienceMod implements
             MadScientist.class,
             MadScientist.NAMES[1],
             "MadScientist class string",
-            CardColorEnum.BRONZE,
+            CardColorEnum.MAD_SCIENCE,
             MadScientist.NAMES[0],
             "img/charSelect/MadScientistButton.png",
             "img/charSelect/MadScientistPortrait.jpg",
@@ -124,14 +124,14 @@ public class MadScienceMod implements
     @Override
     public void receiveEditRelics() {
         logger.info("begin editing relics");
-        BaseMod.addRelicToCustomPool(new madsciencemod.relics.ExhaustVents(), CardColorEnum.BRONZE);
-        BaseMod.addRelicToCustomPool(new FuelTank(), CardColorEnum.BRONZE);
-        BaseMod.addRelicToCustomPool(new Funnel(), CardColorEnum.BRONZE);
+        BaseMod.addRelicToCustomPool(new madsciencemod.relics.ExhaustVents(), CardColorEnum.MAD_SCIENCE);
+        BaseMod.addRelicToCustomPool(new FuelTank(), CardColorEnum.MAD_SCIENCE);
+        BaseMod.addRelicToCustomPool(new Funnel(), CardColorEnum.MAD_SCIENCE);
         BaseMod.addRelic(new InfiniteJournal(), RelicType.SHARED);
-        BaseMod.addRelicToCustomPool(new PolishingWheel(), CardColorEnum.BRONZE);
-        BaseMod.addRelicToCustomPool(new madsciencemod.relics.PortablePumpjack(), CardColorEnum.BRONZE);
-        BaseMod.addRelicToCustomPool(new SignalFlag(), CardColorEnum.BRONZE);
-        BaseMod.addRelicToCustomPool(new DoomsdayDevice(), CardColorEnum.BRONZE);
+        BaseMod.addRelicToCustomPool(new PolishingWheel(), CardColorEnum.MAD_SCIENCE);
+        BaseMod.addRelicToCustomPool(new madsciencemod.relics.PortablePumpjack(), CardColorEnum.MAD_SCIENCE);
+        BaseMod.addRelicToCustomPool(new SignalFlag(), CardColorEnum.MAD_SCIENCE);
+        BaseMod.addRelicToCustomPool(new DoomsdayDevice(), CardColorEnum.MAD_SCIENCE);
         logger.info("end editing relics");
     }
 
@@ -159,7 +159,7 @@ public class MadScienceMod implements
             //BaseMod.addCard(new DEPRECATED_ComputeTrajectory());
             BaseMod.addCard(new CondenseVapors());
             //BaseMod.addCard(new DataRecorder());
-            BaseMod.addCard(new Defend_Bronze());
+            BaseMod.addCard(new Defend_MadScience());
             BaseMod.addCard(new Detonate());
             //BaseMod.addCard(new DiscountBin());
             //BaseMod.addCard(new DEPRECATED_EmergencyRepair());
@@ -221,7 +221,7 @@ public class MadScienceMod implements
             BaseMod.addCard(new Sprocket());
             //BaseMod.addCard(new StickSharpener());
             BaseMod.addCard(new Strafe());
-            BaseMod.addCard(new Strike_Bronze());
+            BaseMod.addCard(new Strike_MadScience());
             //BaseMod.addCard(new DEPRECATED_TargetingLaser());
             //BaseMod.addCard(new ThrowScraps());
             BaseMod.addCard(new TimeDilationField());

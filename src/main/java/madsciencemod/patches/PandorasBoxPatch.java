@@ -9,6 +9,9 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.PandorasBox;
 
+import madsciencemod.cards.Defend_MadScience;
+import madsciencemod.cards.Strike_MadScience;
+
 @SpirePatch(clz=com.megacrit.cardcrawl.relics.PandorasBox.class, method="onEquip")
 public class PandorasBoxPatch {
     @SpireInsertPatch(rloc=12)
@@ -21,7 +24,7 @@ public class PandorasBoxPatch {
 
             for (Iterator<AbstractCard> i = AbstractDungeon.player.masterDeck.group.iterator(); i.hasNext();) {
                 AbstractCard e = (AbstractCard) i.next();
-                if (e.cardID.equals("Strike_Bronze") || e.cardID.equals("Defend_Bronze")) {
+                if (e instanceof Strike_MadScience || e instanceof Defend_MadScience) {
                     i.remove();
                     count.set(box, ((Integer) count.get(box)) + 1);
                 }

@@ -7,7 +7,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-import madsciencemod.cards.Strike_Bronze;
+import madsciencemod.cards.Strike_MadScience;
 
 @SpirePatch(clz=com.megacrit.cardcrawl.events.city.Vampires.class, method="replaceAttacks")
 public class VampiresPatch {
@@ -15,7 +15,7 @@ public class VampiresPatch {
     public static void Insert(Object __obj_instance) {
         for (Iterator<AbstractCard> i = AbstractDungeon.player.masterDeck.group.iterator(); i.hasNext();) {
             AbstractCard e = (AbstractCard) i.next();
-            if (e instanceof Strike_Bronze) {
+            if (e instanceof Strike_MadScience) {
                 i.remove();
             }
         }

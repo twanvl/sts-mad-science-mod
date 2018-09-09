@@ -15,7 +15,7 @@ public abstract class AbstractMadScienceCard extends CustomCard {
     public int hackNotToPayCost; // see UseCardPatch
 
     public AbstractMadScienceCard(String id, String name, int cost, String description, CardType type, CardRarity rarity, CardTarget target) {
-        super(id, name, MadScienceMod.cardImage(id), cost, description, type, CardColorEnum.BRONZE, rarity, target);
+        super(id, name, MadScienceMod.cardImage(id), cost, description, type, CardColorEnum.MAD_SCIENCE, rarity, target);
     }
 
     public AbstractMadScienceCard(String id, String name, int cost, String description, CardType type, CardColor color, CardRarity rarity, CardTarget target) {

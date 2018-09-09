@@ -10,10 +10,10 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
 import basemod.abstracts.CustomPlayer;
-import madsciencemod.cards.Defend_Bronze;
+import madsciencemod.cards.Defend_MadScience;
 import madsciencemod.cards.HideBehindJunk;
 import madsciencemod.cards.PoweredStrike;
-import madsciencemod.cards.Strike_Bronze;
+import madsciencemod.cards.Strike_MadScience;
 import madsciencemod.patches.PlayerClassEnum;
 import madsciencemod.relics.FuelTank;
 
@@ -58,14 +58,14 @@ public class MadScientist extends CustomPlayer {
 
     public static ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<String>();
-        retVal.add(Strike_Bronze.ID);
-        retVal.add(Strike_Bronze.ID);
-        retVal.add(Strike_Bronze.ID);
-        retVal.add(Strike_Bronze.ID);
-        retVal.add(Defend_Bronze.ID);
-        retVal.add(Defend_Bronze.ID);
-        retVal.add(Defend_Bronze.ID);
-        retVal.add(Defend_Bronze.ID);
+        retVal.add(Strike_MadScience.ID);
+        retVal.add(Strike_MadScience.ID);
+        retVal.add(Strike_MadScience.ID);
+        retVal.add(Strike_MadScience.ID);
+        retVal.add(Defend_MadScience.ID);
+        retVal.add(Defend_MadScience.ID);
+        retVal.add(Defend_MadScience.ID);
+        retVal.add(Defend_MadScience.ID);
         retVal.add(PoweredStrike.ID);
         retVal.add(HideBehindJunk.ID);
         return retVal;
