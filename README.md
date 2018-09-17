@@ -3,7 +3,7 @@
 Adds a new character to the game: the Mad Scientist.
 This character uses small trinkets and attacks powered by fuel.
 
-[List of cards](https://twanvl.nl/files/sts-export/BRONZE/MadScienceCards.html)
+[List of cards and relics](https://twanvl.nl/files/sts-export/mods/MadScienceMod.html)
 
 ## Requirements ##
 * Slay the Spire
