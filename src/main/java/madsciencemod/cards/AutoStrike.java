@@ -11,6 +11,9 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import basemod.helpers.BaseModTags;
+import basemod.helpers.CardTags;
+
 public class AutoStrike extends AbstractMadScienceCard {
     public static final String ID = "AutoStrike";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -29,6 +32,7 @@ public class AutoStrike extends AbstractMadScienceCard {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
         this.baseDamage = ATTACK_DMG;
         this.magicNumber = this.baseMagicNumber = DRAW_DMG;
+        CardTags.addTags(this, BaseModTags.STRIKE);
     }
 
     @Override

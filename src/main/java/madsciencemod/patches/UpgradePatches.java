@@ -34,14 +34,20 @@ import javassist.expr.MethodCall;
 @SpirePatch(clz=com.megacrit.cardcrawl.events.shrines.UpgradeShrine.class, method="update")
 @SpirePatch(clz=com.megacrit.cardcrawl.events.exordium.LivingWall.class, method="update")
 @SpirePatch(clz=com.megacrit.cardcrawl.events.exordium.ShiningLight.class, method="upgradeCards")
+@SpirePatch(clz=com.megacrit.cardcrawl.events.city.BackToBasics.class, method="upgradeStrikeAndDefends")
 // Note: NeowReward is at start of game
-// Note: BackToBasics is patched separately.
 
 // Relics
 // Note: Don't care about eggs
 @SpirePatch(clz=com.megacrit.cardcrawl.relics.TinyHouse.class, method="onEquip")
 @SpirePatch(clz=com.megacrit.cardcrawl.relics.WarPaint.class, method="onEquip")
 @SpirePatch(clz=com.megacrit.cardcrawl.relics.Whetstone.class, method="onEquip")
+
+// BaseMod patches
+@SpirePatch(clz=basemod.DevConsole.class, method="cmdHand")
+@SpirePatch(clz=basemod.DevConsole.class, method="cmdDeck")
+@SpirePatch(clz=basemod.patches.com.megacrit.cardcrawl.events.BackToBasics.UpgradeStrikeAndDefends.class, method="Insert")
+@SpirePatch(clz=basemod.patches.com.megacrit.cardcrawl.events.NoteForYourself.MissingCard.class, method="Replace")
 
 public class UpgradePatches {
 

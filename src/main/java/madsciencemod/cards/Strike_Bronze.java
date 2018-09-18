@@ -11,6 +11,9 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import basemod.helpers.BaseModTags;
+import basemod.helpers.CardTags;
+
 public class Strike_Bronze extends AbstractMadScienceCard {
     public static final String ID = "Strike_Bronze";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -26,6 +29,7 @@ public class Strike_Bronze extends AbstractMadScienceCard {
     public Strike_Bronze() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
         this.baseDamage = ATTACK_DMG;
+        CardTags.addTags(this, BaseModTags.BASIC_STRIKE, BaseModTags.STRIKE);
     }
 
     @Override
