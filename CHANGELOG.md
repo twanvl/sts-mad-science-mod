@@ -1,3 +1,6 @@
+### v0.2.2
+* Fixed: Infinite Journal Upgrades Removed Upon Reloading (#12)
+
 ### v0.2.1
 * Compatibility with ModTheSpire v3.0.0
 * Fixed naming conflict issue with The Marksman mod (#11)

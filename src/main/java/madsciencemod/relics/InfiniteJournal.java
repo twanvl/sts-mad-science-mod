@@ -56,8 +56,10 @@ public class InfiniteJournal extends AbstractMadScienceRelic {
         if (c.canUpgrade()) {
             // normal upgrade path
             c.upgrade();
-        } else if (AbstractDungeon.player.hasRelic(ID) && canUpgradeCardAgain(c)) {
-            AbstractDungeon.player.getRelic(ID).flash();
+        } else if (canUpgradeCardAgain(c)) {
+            // Note: allow upgradeCardAgain even when we don't have the relic, because when loading save files cards are loaded before relics.
+            AbstractRelic relic = AbstractDungeon.player.getRelic(ID);
+            if (relic != null) relic.flash();
             upgradeCardAgain(c);
         }
     }

@@ -3,7 +3,7 @@
 
   <groupId>madsciencemod</groupId>
   <artifactId>MadScienceMod</artifactId>
-  <version>0.2.1</version>
+  <version>0.2.2</version>
 
   <name>MadScienceMod</name>
   <description>Adds a new character, The Mad Scientist</description>
@@ -56,13 +56,11 @@
             <exclude>**/Makefile</exclude>
             <exclude>**/.goutputstream</exclude>
             <exclude>img/cards/large</exclude>
-            <exclude>img/cards/large/*</exclude>
-            <exclude>img/cards/large/*/*</exclude>
+            <exclude>img/cards/large/**</exclude>
             <exclude>img/powers/large</exclude>
-            <exclude>img/powers/large/*</exclude>
+            <exclude>img/powers/large/**</exclude>
             <exclude>img/relics/large</exclude>
-            <exclude>img/relics/large/*</exclude>
-            <exclude>img/relics/large/*/*</exclude>
+            <exclude>img/relics/large/**</exclude>
           </excludes>
         </configuration>
       </plugin>
