@@ -88,7 +88,7 @@ public class ShuffleTrinketAction extends AbstractGameAction {
             if (cardsToShuffle.size() < 6) {
                 AbstractDungeon.effectList.add(new ShowCardAndAddToDrawPileEffect(c, (float)Settings.WIDTH / 2.0f, (float)Settings.HEIGHT / 2.0f, randomSpot, cardOffset));
             } else {
-                AbstractDungeon.effectList.add(new ShowCardAndAddToDrawPileEffect(c, randomSpot));
+                AbstractDungeon.effectList.add(new ShowCardAndAddToDrawPileEffect(c, randomSpot, false));
             }
         }
         cardsToShuffle.clear();

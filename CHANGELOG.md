@@ -1,3 +1,6 @@
+### v0.2.3
+* Upgrade to new card tag system
+
 ### v0.2.2
 * Fixed: Infinite Journal Upgrades Removed Upon Reloading (#12)
 * Fixed: Patch BaseMod upgrade code to check for InfiniteJournal when upgrading cards.

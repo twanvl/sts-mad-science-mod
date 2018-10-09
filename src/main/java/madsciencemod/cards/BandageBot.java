@@ -28,6 +28,7 @@ public class BandageBot extends AbstractMadScienceCard {
 
     public BandageBot() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
+        this.tags.add(CardTags.HEALING);
     }
 
     @Override

@@ -25,7 +25,7 @@ public class Retarget extends AbstractMadScienceCard {
 
     public Retarget() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-        this.magicNumber = this.baseMagicNumber = THORN_AMT;
+        this.magicNumber = this.baseMagicNumber = STRENGTH_COST;
     }
 
     @Override

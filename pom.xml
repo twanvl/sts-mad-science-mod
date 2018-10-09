@@ -3,10 +3,14 @@
 
   <groupId>madsciencemod</groupId>
   <artifactId>MadScienceMod</artifactId>
-  <version>0.2.2</version>
+  <version>0.2.3</version>
 
   <name>MadScienceMod</name>
   <description>Adds a new character, The Mad Scientist</description>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
 
   <dependencies>
     <dependency>

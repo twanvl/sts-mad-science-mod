@@ -45,7 +45,7 @@ public class Weaponized extends AbstractMadScienceCard {
         this.baseCard = baseCard;
         this.baseDamage = baseDamage;
         this.initializeProperties();
-        // TODO: generate attack image
+        // Generate attack image
         AtlasRegion cardImg = (AtlasRegion)ReflectionHacks.getPrivate(baseCard, AbstractCard.class, "portrait");
         cardImg = getAttackImage(cardImg);
         ReflectionHacks.setPrivate(this, AbstractCard.class, "portrait", cardImg);
