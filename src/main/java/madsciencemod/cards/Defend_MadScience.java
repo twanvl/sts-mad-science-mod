@@ -9,10 +9,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import basemod.helpers.BaseModCardTags;
-
-public class Defend_Bronze extends AbstractMadScienceCard {
-    public static final String ID = "Defend_Bronze";
+public class Defend_MadScience extends AbstractMadScienceCard {
+    public static final String ID = "Defend_MadScience";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -23,7 +21,7 @@ public class Defend_Bronze extends AbstractMadScienceCard {
     private static final CardRarity RARITY = CardRarity.BASIC;
     private static final CardTarget TARGET = CardTarget.SELF;
 
-    public Defend_Bronze() {
+    public Defend_MadScience() {
         super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
         this.baseBlock = BLOCK_AMT;
         this.tags.add(BaseModCardTags.BASIC_DEFEND);
@@ -40,7 +38,7 @@ public class Defend_Bronze extends AbstractMadScienceCard {
 
     @Override
     public AbstractCard makeCopy() {
-        return new Defend_Bronze();
+        return new Defend_MadScience();
     }
 
     @Override

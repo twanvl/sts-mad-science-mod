@@ -1,5 +1,6 @@
 ### v0.2.3
 * Upgrade to new card tag system
+* Rename card color to prevent conflicts with other mods.
 
 ### v0.2.2
 * Fixed: Infinite Journal Upgrades Removed Upon Reloading (#12)

@@ -5,5 +5,5 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 
 public class CardColorEnum {
     @SpireEnum
-    public static AbstractCard.CardColor BRONZE;
+    public static AbstractCard.CardColor MAD_SCIENCE;
 }
