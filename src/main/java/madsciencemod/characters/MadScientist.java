@@ -2,14 +2,21 @@ package madsciencemod.characters;
 
 import java.util.ArrayList;
 
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
+import com.megacrit.cardcrawl.helpers.FontHelper;
+import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
 import basemod.abstracts.CustomPlayer;
+import madsciencemod.MadScienceMod;
 import madsciencemod.cards.Defend_MadScience;
 import madsciencemod.cards.HideBehindJunk;
 import madsciencemod.cards.PoweredStrike;
@@ -30,7 +37,7 @@ public class MadScientist extends CustomPlayer {
     public static final int ENERGY = 3;
     public static final int START_GOLD = 99;
 
-	public static final String[] orbTextures = {
+    public static final String[] orbTextures = {
         "img/characters/MadScientist/orb/layer1.png",
         "img/characters/MadScientist/orb/layer2.png",
         "img/characters/MadScientist/orb/layer3.png",
@@ -44,8 +51,8 @@ public class MadScientist extends CustomPlayer {
         "img/characters/MadScientist/orb/layer5d.png",
     };
 
-    public MadScientist(String name, AbstractPlayer.PlayerClass setClass) {
-        super(name, setClass, orbTextures, "img/characters/MadScientist/orb/vfx.png", (String)null, null);
+    public MadScientist(String name) {
+        super(name, PlayerClassEnum.MAD_SCIENTIST, orbTextures, "img/characters/MadScientist/orb/vfx.png", (String)null, null);
         this.initializeClass(null,
             "img/characters/MadScientist/shoulder2.png",
             "img/characters/MadScientist/shoulder.png",
@@ -56,7 +63,54 @@ public class MadScientist extends CustomPlayer {
         e.setTime(e.getEndTime() * MathUtils.random());
     }
 
-    public static ArrayList<String> getStartingDeck() {
+    @Override
+    public String getTitle(PlayerClass playerClass) {
+        return NAMES[1];
+    }
+
+    @Override
+    public String getLocalizedCharacterName() {
+        return NAMES[0];
+    }
+
+    @Override
+    public Color getCardColor() {
+        return MadScienceMod.BRONZE;
+    }
+
+    @Override
+    public Color getCardTrailColor() {
+        return MadScienceMod.BRONZE;
+    }
+
+    @Override
+    public int getAscensionMaxHPLoss() {
+        return 4;
+    }
+
+    @Override
+    public BitmapFont getEnergyNumFont() {
+        return FontHelper.energyNumFontRed; // TODO: customize?
+    }
+
+    @Override
+    public void doCharSelectScreenSelectEffect() {
+        CardCrawlGame.sound.playA("POTION_1", MathUtils.random(-0.2f, 0.2f));
+        CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.MED, ScreenShake.ShakeDur.SHORT, true);
+    }
+
+    @Override
+    public String getCustomModeCharacterButtonSoundKey() {
+        return "POTION_1";
+    }
+
+    @Override
+    public AbstractPlayer newInstance() {
+        return new MadScientist(this.name);
+    }
+
+    @Override
+    public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<String>();
         retVal.add(Strike_MadScience.ID);
         retVal.add(Strike_MadScience.ID);
@@ -71,15 +125,22 @@ public class MadScientist extends CustomPlayer {
         return retVal;
     }
 
-    public static ArrayList<String> getStartingRelics() {
+    @Override
+    public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<String>();
         retVal.add(FuelTank.ID);
         UnlockTracker.markRelicAsSeen(FuelTank.ID);
         return retVal;
     }
 
-    public static CharSelectInfo getLoadout() {
-        return new CharSelectInfo(NAMES[0], TEXT[0], START_HP, START_HP, MAX_ORBS, START_GOLD, CARD_DRAW, PlayerClassEnum.MAD_SCIENTIST, getStartingRelics(), getStartingDeck(), false);
+    @Override
+    public AbstractCard getStartCardForEvent() {
+        return new HideBehindJunk();
+    }
+
+    @Override
+    public CharSelectInfo getLoadout() {
+        return new CharSelectInfo(NAMES[0], TEXT[0], START_HP, START_HP, MAX_ORBS, START_GOLD, CARD_DRAW, this,
+                getStartingRelics(), getStartingDeck(), false);
     }
 }
-

@@ -9,6 +9,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import basemod.helpers.BaseModCardTags;
+
 public class Defend_MadScience extends AbstractMadScienceCard {
     public static final String ID = "Defend_MadScience";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);

@@ -1,5 +1,5 @@
 ### v0.2.3
-* Upgrade to new card tag system
+* Compatibility with SlayTheSpire week 45 / BaseMod 4.0.0
 * Rename card color to prevent conflicts with other mods.
 
 ### v0.2.2

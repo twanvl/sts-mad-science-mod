@@ -13,6 +13,7 @@ import org.apache.logging.log4j.Logger;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.Color;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
@@ -49,7 +50,7 @@ public class MadScienceMod implements
     public static final String DESCRIPTION = "v0.1.9\nAdds a new character: the Mad Scientist.";
 
     // card trail effect
-    private static final Color BRONZE = new Color(0.7f, 0.6f, 0.1f, 1.0f);
+    public static final Color BRONZE = new Color(0.7f, 0.6f, 0.1f, 1.0f);
 
     public static final Logger logger = LogManager.getLogger(MadScienceMod.class.getName());
 
@@ -108,11 +109,8 @@ public class MadScienceMod implements
         logger.info("begin editing characters");
         BaseMod.loadCustomStrings(CharacterStrings.class, loadJson("localization/eng/madscience-characters.json"));
         BaseMod.addCharacter(
-            MadScientist.class,
-            MadScientist.NAMES[1],
-            "MadScientist class string",
+            new MadScientist(CardCrawlGame.playerName),
             CardColorEnum.MAD_SCIENCE,
-            MadScientist.NAMES[0],
             "img/charSelect/MadScientistButton.png",
             "img/charSelect/MadScientistPortrait.jpg",
             PlayerClassEnum.MAD_SCIENTIST);
