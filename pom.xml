@@ -61,6 +61,11 @@
             <exclude>**/.goutputstream</exclude>
             <exclude>img/cards/large</exclude>
             <exclude>img/cards/large/**</exclude>
+            <exclude>img/characters/*/orb/new</exclude>
+            <exclude>img/characters/*/orb/new/**</exclude>
+            <exclude>img/characters/*/idle/*.txt</exclude>
+            <exclude>img/characters/*/idle/images</exclude>
+            <exclude>img/characters/*/idle/images/**</exclude>
             <exclude>img/powers/large</exclude>
             <exclude>img/powers/large/**</exclude>
             <exclude>img/relics/large</exclude>
