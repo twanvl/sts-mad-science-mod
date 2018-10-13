@@ -1,10 +1,10 @@
 {
   "modid": "MadScienceMod",
-  "name": "MadScienceMod",
+  "name": "Mad Scientist",
   "author_list": ["twanvl"],
   "description": "Adds a new character, the Mad Scientist",
   "version": "0.2.3",
-  "sts_version": "10-12-2018",
+  "sts_version": "10-11-2018",
   "mts_version": "3.0.0",
   "dependencies": ["basemod"],
   "update_json": "https://api.github.com/repos/twanvl/sts-mad-science-mod/releases/latest"
