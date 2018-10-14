@@ -1,3 +1,6 @@
+### v0.2.4
+* Fixed: PoweredStrike doesn't apply powers
+
 ### v0.2.3
 * Compatibility with SlayTheSpire week 45 / BaseMod 4.0.0
 * Rename card color to prevent conflicts with other mods.
