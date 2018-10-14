@@ -33,6 +33,7 @@ public class PoweredStrike extends AbstractMadScienceCard {
 
     @Override
     public void applyPowers() {
+        super.applyPowers();
         if (FuelPower.currentAmount() >= FUEL_COST) {
             this.target = CardTarget.ENEMY;
         } else {
