@@ -11,6 +11,8 @@ import com.megacrit.cardcrawl.cards.SoulGroup;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
+import basemod.BaseMod;
+
 public class PokeAction extends AbstractGameAction {
     private float startingDuration;
     private ArrayList<AbstractCard> drawnCards;
@@ -42,7 +44,7 @@ public class PokeAction extends AbstractGameAction {
         }
         this.duration -= Gdx.graphics.getDeltaTime();
         if (this.duration < 0.0f) {
-            if (found || AbstractDungeon.player.drawPile.isEmpty() || AbstractDungeon.player.hand.size() == 10) {
+            if (found || AbstractDungeon.player.drawPile.isEmpty() || AbstractDungeon.player.hand.size() == BaseMod.MAX_HAND_SIZE) {
                 // found a 0 cost card, or no more cards to draw
                 if (found) {
                     drawnCards.remove(drawnCards.size()-1);
