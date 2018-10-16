@@ -1,5 +1,7 @@
 ### v0.2.4
 * Fixed: PoweredStrike doesn't apply powers
+* Use BaseMod.MAX_HAND_SIZE
+* Move Infinite Journal to Conspire mod
 
 ### v0.2.3
 * Compatibility with SlayTheSpire week 45 / BaseMod 4.0.0

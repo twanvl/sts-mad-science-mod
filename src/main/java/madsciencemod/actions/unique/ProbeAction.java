@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 import madsciencemod.cards.Probe;
-import madsciencemod.relics.InfiniteJournal;
 
 public class ProbeAction extends AbstractGameAction {
     public static final String[] TEXT = Probe.EXTENDED_DESCRIPTION;
@@ -34,8 +33,8 @@ public class ProbeAction extends AbstractGameAction {
         } else if (!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
             for (AbstractCard c : AbstractDungeon.gridSelectScreen.selectedCards) {
                 AbstractDungeon.player.drawPile.moveToDiscardPile(c);
-                if (InfiniteJournal.canUpgradeCard(c)) {
-                    InfiniteJournal.upgradeCard(c);
+                if (c.canUpgrade()) {
+                    c.upgrade();
                 }
             }
             AbstractDungeon.gridSelectScreen.selectedCards.clear();

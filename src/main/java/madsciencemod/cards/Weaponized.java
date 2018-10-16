@@ -24,7 +24,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.ReflectionHacks;
 import basemod.abstracts.CustomCard;
 import madsciencemod.MadScienceMod;
-import madsciencemod.relics.InfiniteJournal;
 
 public class Weaponized extends AbstractMadScienceCard {
     public static final String ID = "Weaponized";
@@ -335,7 +334,7 @@ public class Weaponized extends AbstractMadScienceCard {
     public void upgrade() {
         if (!this.upgraded) {
             updateBaseCost();
-            InfiniteJournal.upgradeCard(baseCard);
+            baseCard.upgrade();
             initializeProperties();
         }
     }

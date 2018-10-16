@@ -124,7 +124,6 @@ public class MadScienceMod implements
         BaseMod.addRelicToCustomPool(new madsciencemod.relics.ExhaustVents(), CardColorEnum.MAD_SCIENCE);
         BaseMod.addRelicToCustomPool(new FuelTank(), CardColorEnum.MAD_SCIENCE);
         BaseMod.addRelicToCustomPool(new Funnel(), CardColorEnum.MAD_SCIENCE);
-        BaseMod.addRelic(new InfiniteJournal(), RelicType.SHARED);
         BaseMod.addRelicToCustomPool(new PolishingWheel(), CardColorEnum.MAD_SCIENCE);
         BaseMod.addRelicToCustomPool(new madsciencemod.relics.PortablePumpjack(), CardColorEnum.MAD_SCIENCE);
         BaseMod.addRelicToCustomPool(new SignalFlag(), CardColorEnum.MAD_SCIENCE);

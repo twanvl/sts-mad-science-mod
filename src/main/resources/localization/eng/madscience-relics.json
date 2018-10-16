@@ -41,13 +41,6 @@
       "At the start of your turn, gain #b"," #yFuel."
     ]
   },
-  "InfiniteJournal": {
-    "NAME": "Infinite Journal",
-    "FLAVOR": "It just goes on forever.",
-    "DESCRIPTIONS": [
-      "Cards can be upgraded any number of times."
-    ]
-  },
   "DoomsdayDevice": {
     "NAME": "Doomsday Device",
     "FLAVOR": "Failed to blow up the spire, but can be recycled for spare parts.",
