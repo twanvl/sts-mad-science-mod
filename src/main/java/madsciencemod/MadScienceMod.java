@@ -25,7 +25,6 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import basemod.BaseMod;
 import basemod.ModLabel;
 import basemod.ModPanel;
-import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 
 import madsciencemod.patches.PlayerClassEnum;
@@ -45,9 +44,9 @@ public class MadScienceMod implements
         EditKeywordsSubscriber,
         EditCardsSubscriber,
         PostBattleSubscriber {
-    public static final String MODNAME = "MadScienceMod";
+    public static final String MODNAME = "Mad Scientist";
     public static final String AUTHOR = "twanvl";
-    public static final String DESCRIPTION = "v0.1.9\nAdds a new character: the Mad Scientist.";
+    public static final String DESCRIPTION = "Adds a new character: the Mad Scientist.";
 
     // card trail effect
     public static final Color BRONZE = new Color(0.7f, 0.6f, 0.1f, 1.0f);
