@@ -109,7 +109,6 @@ public class MadScienceMod implements
         BaseMod.loadCustomStrings(CharacterStrings.class, loadJson("localization/eng/madscience-characters.json"));
         BaseMod.addCharacter(
             new MadScientist(CardCrawlGame.playerName),
-            CardColorEnum.MAD_SCIENCE,
             "img/charSelect/MadScientistButton.png",
             "img/charSelect/MadScientistPortrait.jpg",
             PlayerClassEnum.MAD_SCIENTIST);

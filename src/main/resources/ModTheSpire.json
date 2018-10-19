@@ -3,8 +3,8 @@
   "name": "Mad Scientist",
   "author_list": ["twanvl"],
   "description": "Adds a new character, the Mad Scientist",
-  "version": "0.2.4",
-  "sts_version": "10-11-2018",
+  "version": "0.2.5",
+  "sts_version": "10-18-2018",
   "mts_version": "3.0.0",
   "dependencies": ["basemod"],
   "update_json": "https://api.github.com/repos/twanvl/sts-mad-science-mod/releases/latest"

@@ -1,3 +1,6 @@
+### v0.2.5
+* Update for week 46 / BaseMod 5.0.0
+
 ### v0.2.4
 * Fixed: PoweredStrike doesn't apply powers
 * Use BaseMod.MAX_HAND_SIZE

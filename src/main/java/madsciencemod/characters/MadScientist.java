@@ -6,10 +6,13 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
+import com.megacrit.cardcrawl.events.beyond.SpireHeart;
+import com.megacrit.cardcrawl.events.city.Vampires;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
@@ -21,6 +24,7 @@ import madsciencemod.cards.Defend_MadScience;
 import madsciencemod.cards.HideBehindJunk;
 import madsciencemod.cards.PoweredStrike;
 import madsciencemod.cards.Strike_MadScience;
+import madsciencemod.patches.CardColorEnum;
 import madsciencemod.patches.PlayerClassEnum;
 import madsciencemod.relics.FuelTank;
 
@@ -74,7 +78,12 @@ public class MadScientist extends CustomPlayer {
     }
 
     @Override
-    public Color getCardColor() {
+    public AbstractCard.CardColor getCardColor() {
+        return CardColorEnum.MAD_SCIENCE;
+    }
+
+    @Override
+    public Color getCardRenderColor() {
         return MadScienceMod.BRONZE;
     }
 
@@ -102,6 +111,26 @@ public class MadScientist extends CustomPlayer {
     @Override
     public String getCustomModeCharacterButtonSoundKey() {
         return "POTION_1";
+    }
+
+    @Override
+    public AbstractGameAction.AttackEffect[] getSpireHeartSlashEffect() {
+        return new AbstractGameAction.AttackEffect[]{AbstractGameAction.AttackEffect.SLASH_HEAVY, AbstractGameAction.AttackEffect.FIRE, AbstractGameAction.AttackEffect.BLUNT_HEAVY, AbstractGameAction.AttackEffect.SLASH_HEAVY, AbstractGameAction.AttackEffect.FIRE, AbstractGameAction.AttackEffect.BLUNT_HEAVY};
+    }
+
+    @Override
+    public String getSpireHeartText() {
+        return SpireHeart.DESCRIPTIONS[8];
+    }
+
+    @Override
+    public Color getSlashAttackColor() {
+        return MadScienceMod.BRONZE;
+    }
+
+    @Override
+    public String getVampireText() {
+        return Vampires.DESCRIPTIONS[0];
     }
 
     @Override
