@@ -50,6 +50,21 @@ public class AcidSpray extends AbstractMadScienceCard {
         AbstractDungeon.actionManager.addToBottom(choice);
     }
 
+    public void applyPowers() {
+        int realBaseDamage = this.baseDamage;
+        // For AOE
+        this.baseDamage = this.baseMagicNumber;
+        this.isMultiDamage = true;
+        super.applyPowers();
+        this.magicNumber = this.damage;
+        this.isMagicNumberModified = this.isDamageModified;
+        aoeMultiDamage = this.multiDamage;
+        // For non-AOE
+        this.baseDamage = realBaseDamage;
+        this.isMultiDamage = false;
+        super.applyPowers();
+    }
+
     public void calculateCardDamage(AbstractMonster mo) {
         int realBaseDamage = this.baseDamage;
         // For AOE
