@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 import madsciencemod.powers.FuelPower;
 
 public class DEPRECATED_ChargeUp extends AbstractMadScienceCard {
-    public static final String ID = "DEPRECATED_ChargeUp";
+    public static final String ID = "MadScienceMod:DEPRECATED_ChargeUp";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

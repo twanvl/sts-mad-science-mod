@@ -3,7 +3,7 @@ package madsciencemod.relics;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class PolishingWheel extends AbstractMadScienceRelic {
-    public static final String ID = "PolishingWheel";
+    public static final String ID = "MadScienceMod:PolishingWheel";
 
     public PolishingWheel() {
         super(ID, RelicTier.UNCOMMON, LandingSound.SOLID);

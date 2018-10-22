@@ -13,7 +13,7 @@ import madsciencemod.actions.common.GainFuelAction;
 import madsciencemod.powers.FuelPower;
 
 public class FlammableWall extends AbstractMadScienceCard {
-    public static final String ID = "FlammableWall";
+    public static final String ID = "MadScienceMod:FlammableWall";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

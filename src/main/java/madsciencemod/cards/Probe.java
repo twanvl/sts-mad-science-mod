@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import madsciencemod.actions.unique.ProbeAction;
 
 public class Probe extends AbstractMadScienceCard {
-    public static final String ID = "Probe";
+    public static final String ID = "MadScienceMod:Probe";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

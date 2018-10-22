@@ -1,5 +1,5 @@
 {
-  "AcidSpray": {
+  "MadScienceMod:AcidSpray": {
     "NAME": "Acid Spray",
     "DESCRIPTION": "Choose: Deal !D! damage to a random enemy; or deal !M! damage to ALL enemies.",
     "EXTENDED_DESCRIPTION": [
@@ -8,32 +8,32 @@
       "Wide Nozzle", "Deal !M! damage to all enemies."
     ]
   },
-  "AntimatterBomb": {
+  "MadScienceMod:AntimatterBomb": {
     "NAME": "Antimatter Bomb",
     "DESCRIPTION": "Apply a Bomb that deals !M! damage in 3 turns."
   },
-  "ArtilleryShot": {
+  "MadScienceMod:ArtilleryShot": {
     "NAME": "Artillery Shot",
     "DESCRIPTION": "Spend !M! Fuel. NL Deal !D! damage."
   },
-  "Assemble": {
+  "MadScienceMod:Assemble": {
     "NAME": "Assemble",
     "DESCRIPTION": "Assemble a Trinket out of !M! parts. NL Shuffle X copies of it into your draw pile. NL Exhaust.",
     "EXTENDED_DESCRIPTION": ["Assemble","Select trinket parts to fuse together into a single card."]
   },
-  "AssemblyLine": {
+  "MadScienceMod:AssemblyLine": {
     "NAME": "Assembly Line",
     "DESCRIPTION": "At the start of your turn choose and shuffle a Trinket into your draw pile."
   },
-  "AutoStrike": {
+  "MadScienceMod:AutoStrike": {
     "NAME": "Auto-Strike",
     "DESCRIPTION": "Deal !D! damage. NL When drawn, deal !M! damage to ALL enemies."
   },
-  "Automate": {
+  "MadScienceMod:Automate": {
     "NAME": "Automate",
     "DESCRIPTION": "This turn, whenever you play a card, spend 1 Fuel to play it twice."
   },
-  "Bayonet": {
+  "MadScienceMod:Bayonet": {
     "NAME": "Bayonet",
     "DESCRIPTION": "Choose: Deal !D! damage; or spend 2 Fuel to deal !D! damage !M! times.",
     "EXTENDED_DESCRIPTION": [
@@ -42,89 +42,89 @@
       "Shoot", "Spend 2 Fuel, deal !D! damage !M! times."
     ]
   },
-  "BandageBot": {
+  "MadScienceMod:BandageBot": {
     "NAME": "Bandage Bot",
     "DESCRIPTION": "Whenever you take attack damage, shuffle a Tasty Trinket into your draw pile.",
     "EXTENDED_DESCRIPTION": ["Tasty Trinket","Tasty Trinkets heal 3 HP"]
   },
-  "Bombardment": {
+  "MadScienceMod:Bombardment": {
     "NAME": "Bombardment",
     "DESCRIPTION": "Apply a Bomb to ALL enemies that deals !M! damage in 3 turns, and again in 6 turns. Exhaust."
   },
-  "Booster": {
+  "MadScienceMod:Booster": {
     "NAME": "Booster",
     "DESCRIPTION": "Gain !M! Fuel. NL Draw 2 cards. NL Exhaust."
   },
-  "BoxOfScraps": {
+  "MadScienceMod:BoxOfScraps": {
     "NAME": "Box of Scraps",
     "DESCRIPTION": "Draw 2 cards. NL Shuffle up to !M! Trinkets into your draw pile."
   },
-  "CaptureMomentum": {
+  "MadScienceMod:CaptureMomentum": {
     "NAME": "Capture Momentum",
     "DESCRIPTION": "This turn, whenever an attack would deal damage, instead apply a Bomb that deals double that damage in 3 turns.",
     "UPGRADE_DESCRIPTION": "This turn, whenever an attack would deal damage, instead apply a Bomb that deals triple that damage in 3 turns."
   },
-  "DEPRECATED_ChargeUp": {
+  "MadScienceMod:DEPRECATED_ChargeUp": {
     "NAME": "Charge Up",
     "DESCRIPTION": "Spend !M! Fuel to gain 2 Strength and 2 Dexterity."
   },
-  "ClockworkAssistant": {
+  "MadScienceMod:ClockworkAssistant": {
     "NAME": "Clockwork Assistant",
     "DESCRIPTION": "At the start of your turn, draw a card and play it."
   },
-  "CloneVats": {
+  "MadScienceMod:CloneVats": {
     "NAME": "Clone Vats",
     "DESCRIPTION": "At the start of your turn, you may copy a card in your hand."
   },
-  "ComputeTrajectory": {
+  "MadScienceMod:ComputeTrajectory": {
     "NAME": "Compute Trajectory",
     "DESCRIPTION": "Move any number of cards from your draw pile to your discard pile.",
     "EXTENDED_DESCRIPTION": [
       "Choose cards to discard."
     ]
   },
-  "CondenseVapors": {
+  "MadScienceMod:CondenseVapors": {
     "NAME": "Condense Vapors",
     "DESCRIPTION": "Spend 1 Fuel. NL Obtain !M! Gold. NL Exhaust."
   },
-  "DataRecorder": {
+  "MadScienceMod:DataRecorder": {
     "NAME": "Data Recorder",
     "DESCRIPTION": "Whenever an enemy gains Strength, gain 1 Strength."
   },
-  "Defend_MadScience": {
+  "MadScienceMod:Defend_MadScience": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
-  "Detonate": {
+  "MadScienceMod:Detonate": {
     "NAME": "Detonate",
     "DESCRIPTION": "Deal !D! damage. NL Detonate enemy's Bombs.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal damage equal to the enemy's Bombs."
   },
-  "DiscountBin": {
+  "MadScienceMod:DiscountBin": {
     "NAME": "Discount Bin",
     "DESCRIPTION": "Whenever you play !M! cards in a turn, draw a card."
   },
-  "DEPRECATED_EmergencyRepair": {
+  "MadScienceMod:DEPRECATED_EmergencyRepair": {
     "NAME": "Emergency Repair",
     "DESCRIPTION": "Restore all HP lost last turn. Exhaust."
   },
-  "EnergyBarrier": {
+  "MadScienceMod:EnergyBarrier": {
     "NAME": "Energy Barrier",
     "DESCRIPTION": "Gain !B! Block. NL Gain !M! additional Block for each Fuel you have."
   },
-  "ExhaustVents": {
+  "MadScienceMod:ExhaustVents": {
     "NAME": "Exhaust Vents",
     "DESCRIPTION": "Whenever you spend Fuel, apply !M! Poison to ALL enemies."
   },
-  "ExploreOptions": {
+  "MadScienceMod:ExploreOptions": {
     "NAME": "Explore Options",
     "DESCRIPTION": "Draw !M! cards. NL When drawn gain !B! Block."
   },
-  "ExtractOil": {
+  "MadScienceMod:ExtractOil": {
     "NAME": "Extract Oil",
     "DESCRIPTION": "Deal !D! damage. This turn, when you play an Attack, gain 1 Fuel."
   },
-  "FlammableWall": {
+  "MadScienceMod:FlammableWall": {
     "NAME": "Flammable Wall",
     "DESCRIPTION": "Choose: Spend 1 Fuel to gain !B! Block; or gain !M! Fuel.",
     "EXTENDED_DESCRIPTION": [
@@ -133,15 +133,15 @@
       "Fuel", "Gain !M! Fuel."
     ]
   },
-  "FlameCannon": {
+  "MadScienceMod:FlameCannon": {
     "NAME": "Flame Cannon",
     "DESCRIPTION": "Spend 1 Fuel. NL Deal !D! damage to ALL enemies."
   },
-  "FlameThrower": {
+  "MadScienceMod:FlameThrower": {
     "NAME": "Flame Thrower",
     "DESCRIPTION": "Spend all Fuel. NL Deal !D! damage for each Fuel spent."
   },
-  "FlexibleSpear": {
+  "MadScienceMod:FlexibleSpear": {
     "NAME": "Flexible Spear",
     "DESCRIPTION": "Choose: Deal !D! damage, apply !M! Weak; or deal !D! damage, apply !M! Vulnerable.",
     "EXTENDED_DESCRIPTION": [
@@ -150,92 +150,92 @@
       "Vulnerable", "Deal !D! damage, apply !M! Vulnerable."
     ]
   },
-  "FragmentationGrenade": {
+  "MadScienceMod:FragmentationGrenade": {
     "NAME": "Fragmentation Grenade",
     "DESCRIPTION": "Deal !D! damage twice. Shuffle !M! random Trinkets into your draw pile.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage twice. Shuffle !M! random upgraded Trinkets into your draw pile."
   },
-  "FumeBlast": {
+  "MadScienceMod:FumeBlast": {
     "NAME": "Fume Blast",
     "DESCRIPTION": "Deal !D! damage twice. Costs 1 less for each Fuel spent this combat."
   },
-  "FumeHood": {
+  "MadScienceMod:FumeHood": {
     "NAME": "Fume Hood",
     "DESCRIPTION": "Whenever you Exhaust a card, gain 1 Fuel."
   },
-  "DEPRECATED_GarbageDisposalCannon": {
+  "MadScienceMod:DEPRECATED_GarbageDisposalCannon": {
     "NAME": "Garbage Disposal",
     "DESCRIPTION": "Whenever you Exhaust a card deal !M! damage to a random enemy."
   },
-  "GatherParts": {
+  "MadScienceMod:GatherParts": {
     "NAME": "Gather Parts",
     "DESCRIPTION": "Draw all Trinkets from your draw pile. NL Shuffle up to !M! Trinkets into your draw pile. Exhaust.",
     "UPGRADE_DESCRIPTION": "Draw all Trinkets from your draw pile. NL Shuffle up to !M! Trinkets into your draw pile."
   },
-  "Generator": {
+  "MadScienceMod:Generator": {
     "NAME": "Generator",
     "DESCRIPTION": "At the start of your turn, spend 1 Fuel to gain [E].",
     "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, spend 1 Fuel to gain [E]."
   },
-  "GattlingGun": {
+  "MadScienceMod:GattlingGun": {
     "NAME": "Plasma Rifle",
     "DESCRIPTION": "Deal !D! damage for each Fuel you have."
   },
-  "GlassCannon": {
+  "MadScienceMod:GlassCannon": {
     "NAME": "Glass Cannon",
     "DESCRIPTION": "Deal !D! damage !M! times. When drawn increase this card's number of attacks. Exhaust."
   },
-  "GoldenGun": {
+  "MadScienceMod:GoldenGun": {
     "NAME": "Golden Gun",
     "DESCRIPTION": "Spend !M! gold. NL Deal !D! damage to ALL enemies.",
     "EXTENDED_DESCRIPTION": ["Not enough #rGold."]
   },
-  "Grind": {
+  "MadScienceMod:Grind": {
     "NAME": "Grind Specimen",
     "DESCRIPTION": "Deal !D! damage. Gain !M! Artifact."
   },
-  "HideBehindJunk": {
+  "MadScienceMod:HideBehindJunk": {
     "NAME": "Hide Behind Junk",
     "DESCRIPTION": "Gain !B! Block. NL Choose and shuffle a Trinket into your draw pile.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Shuffle up to !M! Trinkets into your draw pile."
   },
-  "ImposingConstruct": {
+  "MadScienceMod:ImposingConstruct": {
     "NAME": "Imposing Construct",
     "DESCRIPTION": "Gain !B! Block. When drawn apply !M! Weak to all enemies."
   },
-  "Inflate": {
+  "MadScienceMod:Inflate": {
     "NAME": "Inflate",
     "DESCRIPTION": "Gain !B! Block. Lose 1 Dexterity."
   },
-  "Jetpack": {
+  "MadScienceMod:Jetpack": {
     "NAME": "Jetpack",
     "DESCRIPTION": "Spent 1 Fuel at the start of each turn. Reduce incoming damage by 50%."
   },
-  "JunkLaser": {
+  "MadScienceMod:JunkLaser": {
     "NAME": "Junk Laser",
     "DESCRIPTION": "Deal !D! damage. NL Deals an additional !M! damage for ALL of your 0 cost cards.",
     "EXTENDED_DESCRIPTION": ["Junk Laser","Counts 0 cost cards in your draw pile, discard pile and hand."]
   },
-  "LabAccident": {
+  "MadScienceMod:LabAccident": {
     "NAME": "Lab Accident",
     "DESCRIPTION": "Exhaust all cards in your hand. Add !M! random cards to your hand. They cost 0 this turn. Exhaust.",
     "UPGRADE_DESCRIPTION": "Exhaust all cards in your hand. Add !M! random upgraded cards to your hand. They cost 0 this turn. Exhaust."
   },
-  "LightOnFire": {
+  "MadScienceMod:LightOnFire": {
     "NAME": "LightOnFire",
     "DESCRIPTION": "Deal !D! damage. This turn, whenever you spend Fuel deal !M! damage.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. This and next turn, whenever you spend Fuel deal !M! damage."
   },
-  "Lightbulb": {
+  "MadScienceMod:Lightbulb": {
     "NAME": "Lightbulb",
     "DESCRIPTION": "Spend 1 Fuel. NL Gain [E] [E].",
     "UPGRADE_DESCRIPTION": "Spend 1 Fuel. NL Gain [E] [E] [E]."
   },
-  "Liquify": {
+  "MadScienceMod:Liquify": {
     "NAME": "Liquify",
     "DESCRIPTION": "Choose and Exhaust up to !M! cards in your hand, gain 1 Fuel for each card exhausted. NL Exhaust."
   },
-  "MakeOrBreak": {
+  "MadScienceMod:MakeOrBreak": {
     "NAME": "Make or Break",
     "DESCRIPTION": "Deal !D! damage twice. Choose: Draw !M! cards; or draw !M! cards next turn.",
     "EXTENDED_DESCRIPTION": [
@@ -244,19 +244,19 @@
       "Draw Later", "Deal !D! damage twice. Draw !M! cards next turn."
     ]
   },
-  "MechanicalClaw": {
+  "MadScienceMod:MechanicalClaw": {
     "NAME": "Prosthetic Claw",
     "DESCRIPTION": "Spend 1 Fuel. Deal !D! damage. Draw a card."
   },
-  "MechanicalSnecko": {
+  "MadScienceMod:MechanicalSnecko": {
     "NAME": "Mechanical Snecko",
     "DESCRIPTION": "Whenever you play 2 cards in a turn, draw a card and randomize the cost of cards in your hand for this turn."
   },
-  "Mechanize": {
+  "MadScienceMod:Mechanize": {
     "NAME": "Mechanize",
     "DESCRIPTION": "Gain !M! Fuel. Cards in your hand cost Fuel instead of energy this turn until played."
   },
-  "MinatureWeapons": {
+  "MadScienceMod:MinatureWeapons": {
     "NAME": "Minature Weapons",
     "DESCRIPTION": "Choose: Whenever you play a Trinket, deal !M! damage to ALL enemies; or whenever you play a Trinket, gain !M! Block.",
     "EXTENDED_DESCRIPTION": [
@@ -265,11 +265,11 @@
       "Defense", "Whenever you play a Trinket, gain !M! Block."
     ]
   },
-  "MindControlBeam": {
+  "MadScienceMod:MindControlBeam": {
     "NAME": "Mind Control Beam",
     "DESCRIPTION": "Apply !M! Weak. Enemy changes their intent."
   },
-  "NowOrNever": {
+  "MadScienceMod:NowOrNever": {
     "NAME": "Now or Never",
     "DESCRIPTION": "Choose: Gain !B! Block; or gain !M! Block next turn.",
     "EXTENDED_DESCRIPTION": [
@@ -278,11 +278,11 @@
       "Later", "Gain !M! Block next turn."
     ]
   },
-  "OilDrum": {
+  "MadScienceMod:OilDrum": {
     "NAME": "Oil Drum",
     "DESCRIPTION": "Gain !B! Block. NL Gain !M! Fuel."
   },
-  "OmniHammer": {
+  "MadScienceMod:OmniHammer": {
     "NAME": "Omni-Hammer",
     "DESCRIPTION": "Choose: Deal !D! damage to a random enemy X times; or gain !B! Block X times.",
     "EXTENDED_DESCRIPTION": [
@@ -291,132 +291,132 @@
       "Defense", "Gain !B! Block X times."
     ]
   },
-  "ParticleBeam": {
+  "MadScienceMod:ParticleBeam": {
     "NAME": "Particle Beam",
     "DESCRIPTION": "Deal !D! damage. NL When drawn, reduce this card's cost by 1 for this combat."
   },
-  "Browse": {
+  "MadScienceMod:Browse": {
     "NAME": "Browse",
     "DESCRIPTION": "Spend 1 Fuel. NL Draw !M! cards. NL Can be upgraded any number of times."
   },
-  "SpamFilter": {
+  "MadScienceMod:SpamFilter": {
     "NAME": "Spam Filter",
     "DESCRIPTION": "At the end of your turn, put up to !M! cards from your draw pile into your discard pile."
   },
-  "PneumaticHammer": {
+  "MadScienceMod:PneumaticHammer": {
     "NAME": "PneumaticHammer",
     "DESCRIPTION": "Deal damage equal to your Fuel X times. Gain X Fuel.",
     "UPGRADE_DESCRIPTION": "Deal damage equal to your Fuel X+1 times. Gain X+1 Fuel."
   },
-  "Poke": {
+  "MadScienceMod:Poke": {
     "NAME": "Poke",
     "DESCRIPTION": "Deal !D! damage. Draw cards until you draw a 0 cost card, discard the others."
   },
-  "PortablePumpjack": {
+  "MadScienceMod:PortablePumpjack": {
     "NAME": "Portable Pumpjack",
     "DESCRIPTION": "At the start of your turn gain !M! Fuel."
   },
-  "Postpone": {
+  "MadScienceMod:Postpone": {
     "NAME": "Postpone",
     "DESCRIPTION": "Place this and any cards from your hand on top of your draw pile. NL When drawn, draw !M! card.",
     "UPGRADE_DESCRIPTION": "Place this and any cards from your hand on top of your draw pile. NL When drawn, draw !M! cards.",
     "EXTENDED_DESCRIPTION": ["Choose cards to place on top of your draw pile."]
   },
-  "PowerArmor": {
+  "MadScienceMod:PowerArmor": {
     "NAME": "Power Armor",
     "DESCRIPTION": "At the end of your turn, if you have at least 3 Fuel, gain !M! Block."
   },
-  "PoweredStrike": {
+  "MadScienceMod:PoweredStrike": {
     "NAME": "Powered Strike",
     "DESCRIPTION": "Spend 1 Fuel. NL Deal !D! damage. NL If you have no Fuel, gain 1 Fuel instead."
   },
-  "Probe": {
+  "MadScienceMod:Probe": {
     "NAME": "Probe",
     "DESCRIPTION": "Deal !D! damage. Look at the top !M! cards of your draw pile. You may discard and upgrade any of them.",
     "EXTENDED_DESCRIPTION": ["Choose cards to discard and upgrade."]
   },
-  "RadioactiveSword": {
+  "MadScienceMod:RadioactiveSword": {
     "NAME": "Radioactive Sword",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! Fuel."
   },
-  "Reconstitute": {
+  "MadScienceMod:Reconstitute": {
     "NAME": "Reconstitute",
     "DESCRIPTION": "At the end of your turn gain !M! Fuel for each Fuel spent this turn.",
     "UPGRADE_DESCRIPTION": "Gain !M! Fuel for each Fuel spent this turn.",
     "EXTENDED_DESCRIPTION": [" NL (Gains "," Fuel)."]
   },
-  "RecyclingStation": {
+  "MadScienceMod:RecyclingStation": {
     "NAME": "Recycling Station",
     "DESCRIPTION": "Whenever you draw a Trinket, draw a card.",
     "UPGRADE_DESCRIPTION": "Shuffle !M! random Trinkets into your draw pile. NL Whenever you draw a Trinket, draw a card."
   },
-  "Redesign": {
+  "MadScienceMod:Redesign": {
     "NAME": "Redesign",
     "DESCRIPTION": "Upgrade all cards in your hand and discard them. Draw !M! cards."
   },
-  "Retarget": {
+  "MadScienceMod:Retarget": {
     "NAME": "Retarget",
     "DESCRIPTION": "Lose !M! Strength. NL Gain 2 Thorns for each Attack card in your hand."
   },
-  "DEPRECATED_RocketJump": {
+  "MadScienceMod:DEPRECATED_RocketJump": {
     "NAME": "Nitro Boost",
     "DESCRIPTION": "Spend 1 Fuel. NL Gain !B! Block."
   },
-  "Refine": {
+  "MadScienceMod:Refine": {
     "NAME": "Refine",
     "DESCRIPTION": "Double your Fuel. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Triple your Fuel. NL Exhaust."
   },
-  "Refuel": {
+  "MadScienceMod:Refuel": {
     "NAME": "Refuel",
     "DESCRIPTION": "Gain !M! Fuel. NL Can be upgraded any number of times."
   },
-  "SelfDestruct": {
+  "MadScienceMod:SelfDestruct": {
     "NAME": "Self Destruct",
     "DESCRIPTION": "Deal !M! damage to yourself, deal !D! damage to ALL enemies. Exhaust."
   },
-  "ShrinkRay": {
+  "MadScienceMod:ShrinkRay": {
     "NAME": "Shrink Ray",
     "DESCRIPTION": "Enemy loses !M! Strength, it regains 1 Strength per turn. Exhaust."
   },
-  "SoftenUp": {
+  "MadScienceMod:SoftenUp": {
     "NAME": "Soften Up",
     "DESCRIPTION": "Spend 1 Fuel. Deal !D! damage. Your next attack this turn deals double damage."
   },
-  "Sprocket": {
+  "MadScienceMod:Sprocket": {
     "NAME": "Sprocket",
     "DESCRIPTION": "Gain !M! Artifact. Exhaust. NL Can be upgraded any number of times."
   },
-  "StickSharpener": {
+  "MadScienceMod:StickSharpener": {
     "NAME": "Stick Sharpener",
     "DESCRIPTION": "Whenever you draw, if you have drawn more than 5, deal !M! damage to ALL enemies."
   },
-  "Strafe": {
+  "MadScienceMod:Strafe": {
     "NAME": "Strafe",
     "DESCRIPTION": "Spend 1 Fuel. NL Deal !D! damage. NL Gain !B! Block."
   },
-  "Strike_MadScience": {
+  "MadScienceMod:Strike_MadScience": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
   },
-  "TargetingLaser": {
+  "MadScienceMod:TargetingLaser": {
     "NAME": "Targeting Laser",
     "DESCRIPTION": "Deal !D! damage, apply !M! Vulnerable."
   },
-  "ThrowScraps": {
+  "MadScienceMod:ThrowScraps": {
     "NAME": "Throw Scraps",
     "DESCRIPTION": "Deal !D! damage, shuffle a random Trinket into your draw pile."
   },
-  "TimeDilationField": {
+  "MadScienceMod:TimeDilationField": {
     "NAME": "Time Dilation Field",
     "DESCRIPTION": "Apply Slow to ALL enemies. Exhaust."
   },
-  "Tinker": {
+  "MadScienceMod:Tinker": {
     "NAME": "Tinker",
     "DESCRIPTION": "Draw a card and upgrade it.",
     "UPGRADE_DESCRIPTION": "Draw a card and upgrade it. NL It costs 1 less this turn."
   },
-  "Tune": {
+  "MadScienceMod:Tune": {
     "NAME": "Tune",
     "DESCRIPTION": "Choose: Gain !M! Strength and lose !M! Dexterity; or gain !M! Dexterity and lose !M! Strength. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Choose: Gain !M! Strength and lose !M! Dexterity; or gain !M! Dexterity and lose !M! Strength.",
@@ -426,53 +426,53 @@
       "Dexterity", "Gain !M! Dexterity and lose !M! Strength."
     ]
   },
-  "Virus": {
+  "MadScienceMod:Virus": {
     "NAME": "Virus",
     "DESCRIPTION": "Deal damage equal to the number of Virus cards in your deck. Add a copy of this to your discard pile.",
     "UPGRADE_DESCRIPTION": "Deal damage equal to the number of Virus cards in your deck. Add !M! copies of this to your discard pile.",
     "EXTENDED_DESCRIPTION": [" NL (Deals !D! damage)"]
   },
-  "Weaponize": {
+  "MadScienceMod:Weaponize": {
     "NAME": "Weaponize",
     "DESCRIPTION": "Turn a Skill card in your hand into an Attack that deals !M! damage in addition to its other effects.",
     "UPGRADE_DESCRIPTION": "Turn ALL Skill cards in your hand into Attacks that deal !M! damage in addition to their other effects.",
     "EXTENDED_DESCRIPTION": ["weaponize"]
   },
-  "Weaponized": {
+  "MadScienceMod:Weaponized": {
     "EXTENDED_DESCRIPTION": [
       "","",
       ""," NL Deal !D! damage."
     ]
   },
 
-  "AbstractTrinket": {
+  "MadScienceMod:AbstractTrinket": {
     "EXTENDED_DESCRIPTION": [
       "Add a Trinket",
       "Choose up to "," Trinkets to shuffle into your draw pile."
     ]
   },
-  "DecorativeTrinket": {
+  "MadScienceMod:DecorativeTrinket": {
     "NAME": "Decorative Trinket",
     "DESCRIPTION": "Gain !M! Artifact. NL Exhaust."
   },
-  "ExplosiveTrinket": {
+  "MadScienceMod:ExplosiveTrinket": {
     "NAME": "Explosive Trinket",
     "DESCRIPTION": "Apply a Bomb that deals !M! damage in 3 turns. NL Exhaust."
   },
-  "FoamTrinket": {
+  "MadScienceMod:FoamTrinket": {
     "NAME": "Foam Trinket",
     "DESCRIPTION": "Gain !M! Dexterity. NL Exhaust."
   },
-  "FoldedTrinket": {
+  "MadScienceMod:FoldedTrinket": {
     "NAME": "Folded Trinket",
     "DESCRIPTION": "Draw !M! cards, discard one of them. NL Exhaust",
     "UPGRADE_DESCRIPTION": "Draw !M! cards, discard all but one of them. NL Exhaust."
   },
-  "FlammableTrinket": {
+  "MadScienceMod:FlammableTrinket": {
     "NAME": "Flammable Trinket",
     "DESCRIPTION": "Gain !M! Fuel. NL Exhaust."
   },
-  "FusedTrinket": {
+  "MadScienceMod:FusedTrinket": {
     "NAME": "Fused Trinket",
     "EXTENDED_DESCRIPTION": [
       "Gain ",".",
@@ -483,21 +483,21 @@
       "Exhaust."
     ]
   },
-  "RecycledTrinket": {
+  "MadScienceMod:RecycledTrinket": {
     "NAME": "Recycled Trinket",
     "DESCRIPTION": "Return the top card from your discard pile to your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Return a card from your discard pile to your hand. NL Exhaust."
   },
-  "ShinyTrinket": {
+  "MadScienceMod:ShinyTrinket": {
     "NAME": "Shiny Trinket",
     "DESCRIPTION": "Gain [E]. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain [E] [E]. NL Exhaust."
   },
-  "SpikyTrinket": {
+  "MadScienceMod:SpikyTrinket": {
     "NAME": "Spiky Trinket",
     "DESCRIPTION": "Gain !M! Strength. NL Exhaust."
   },
-  "TastyTrinket": {
+  "MadScienceMod:TastyTrinket": {
     "NAME": "Tasty Trinket",
     "DESCRIPTION": "Heal !M! HP. NL Exhaust."
   }

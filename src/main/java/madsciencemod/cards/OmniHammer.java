@@ -12,7 +12,7 @@ import madsciencemod.actions.common.ChooseAction;
 import madsciencemod.actions.unique.OmniHammerAttackAction;
 
 public class OmniHammer extends AbstractMadScienceCard {
-    public static final String ID = "OmniHammer";
+    public static final String ID = "MadScienceMod:OmniHammer";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

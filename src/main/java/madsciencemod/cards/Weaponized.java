@@ -26,7 +26,7 @@ import basemod.abstracts.CustomCard;
 import madsciencemod.MadScienceMod;
 
 public class Weaponized extends AbstractMadScienceCard {
-    public static final String ID = "Weaponized";
+    public static final String ID = "MadScienceMod:Weaponized";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
 

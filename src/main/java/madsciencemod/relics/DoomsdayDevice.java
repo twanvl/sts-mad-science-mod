@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import madsciencemod.actions.common.ShuffleTrinketAction;
 
 public class DoomsdayDevice extends AbstractMadScienceRelic {
-    public static final String ID = "DoomsdayDevice";
+    public static final String ID = "MadScienceMod:DoomsdayDevice";
     private static final int AMOUNT = 3;
 
     public DoomsdayDevice() {

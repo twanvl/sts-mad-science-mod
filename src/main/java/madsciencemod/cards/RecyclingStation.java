@@ -12,7 +12,7 @@ import madsciencemod.actions.common.ShuffleTrinketAction;
 import madsciencemod.powers.RecyclingStationPower;
 
 public class RecyclingStation extends AbstractMadScienceCard {
-    public static final String ID = "RecyclingStation";
+    public static final String ID = "MadScienceMod:RecyclingStation";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

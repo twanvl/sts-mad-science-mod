@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import madsciencemod.cards.AbstractTrinket;
 
 public class MinatureWeaponsBlockPower extends AbstractMadSciencePower {
-    public static final String POWER_ID = "MinatureWeaponsBlock";
+    public static final String POWER_ID = "MadScienceMod:MinatureWeaponsBlock";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

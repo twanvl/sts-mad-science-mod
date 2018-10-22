@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import madsciencemod.actions.common.GainFuelAction;
 
 public class SignalFlag extends AbstractMadScienceRelic {
-    public static final String ID = "SignalFlag";
+    public static final String ID = "MadScienceMod:SignalFlag";
 
     public SignalFlag() {
         super(ID, RelicTier.UNCOMMON, LandingSound.CLINK);

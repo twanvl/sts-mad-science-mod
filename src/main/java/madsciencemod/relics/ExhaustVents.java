@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import madsciencemod.powers.FuelPower;
 
 public class ExhaustVents extends AbstractMadScienceRelic implements FuelPower.Listener {
-    public static final String ID = "ExhaustVents";
+    public static final String ID = "MadScienceMod:ExhaustVents";
     public static final int AMOUNT = 2;
 
     public ExhaustVents() {

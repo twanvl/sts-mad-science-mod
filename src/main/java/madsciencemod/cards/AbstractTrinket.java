@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import madsciencemod.powers.RecyclingStationPower;
 
 public abstract class AbstractTrinket extends AbstractMadScienceCard {
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("AbstractTrinket"); // used for ShuffleTrinketAction
+    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("MadScienceMod:AbstractTrinket"); // used for ShuffleTrinketAction
     public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
 
     public AbstractTrinket(String id, String name, String image, int cost, String rawDescription, CardType type, AbstractCard.CardTarget target) {

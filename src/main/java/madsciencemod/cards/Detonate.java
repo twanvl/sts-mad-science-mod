@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import madsciencemod.powers.BombPower;
 
 public class Detonate extends AbstractMadScienceCard {
-    public static final String ID = "Detonate";
+    public static final String ID = "MadScienceMod:Detonate";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

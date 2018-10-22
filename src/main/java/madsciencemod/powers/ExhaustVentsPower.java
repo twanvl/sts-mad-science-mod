@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PoisonPower;
 
 public class ExhaustVentsPower extends AbstractMadSciencePower implements FuelPower.Listener {
-    public static final String POWER_ID = "ExhaustVents";
+    public static final String POWER_ID = "MadScienceMod:ExhaustVents";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

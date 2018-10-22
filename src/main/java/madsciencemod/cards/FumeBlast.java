@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import madsciencemod.powers.FuelPower;
 
 public class FumeBlast extends AbstractMadScienceCard implements FuelPower.Listener {
-    public static final String ID = "FumeBlast";
+    public static final String ID = "MadScienceMod:FumeBlast";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

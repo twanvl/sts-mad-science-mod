@@ -16,7 +16,7 @@ import com.megacrit.cardcrawl.powers.WeakPower;
 import madsciencemod.actions.common.ChooseAction;
 
 public class FlexibleSpear extends AbstractMadScienceCard {
-    public static final String ID = "FlexibleSpear";
+    public static final String ID = "MadScienceMod:FlexibleSpear";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

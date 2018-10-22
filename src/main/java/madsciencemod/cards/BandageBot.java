@@ -15,7 +15,7 @@ import basemod.helpers.TooltipInfo;
 import madsciencemod.powers.BandageBotPower;
 
 public class BandageBot extends AbstractMadScienceCard {
-    public static final String ID = "BandageBot";
+    public static final String ID = "MadScienceMod:BandageBot";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

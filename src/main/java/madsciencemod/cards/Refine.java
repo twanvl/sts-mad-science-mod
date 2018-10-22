@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import madsciencemod.actions.common.MultiplyFuelAction;
 
 public class Refine extends AbstractMadScienceCard {
-    public static final String ID = "Refine";
+    public static final String ID = "MadScienceMod:Refine";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

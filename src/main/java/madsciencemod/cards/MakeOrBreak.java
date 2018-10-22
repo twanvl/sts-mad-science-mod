@@ -16,7 +16,7 @@ import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 import madsciencemod.actions.common.ChooseAction;
 
 public class MakeOrBreak extends AbstractMadScienceCard {
-    public static final String ID = "MakeOrBreak";
+    public static final String ID = "MadScienceMod:MakeOrBreak";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

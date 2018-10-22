@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import madsciencemod.actions.unique.CloneVatsAction;
 
 public class CloneVatsPower extends AbstractMadSciencePower {
-    public static final String POWER_ID = "CloneVats";
+    public static final String POWER_ID = "MadScienceMod:CloneVats";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

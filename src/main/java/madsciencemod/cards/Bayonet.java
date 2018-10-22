@@ -14,7 +14,7 @@ import madsciencemod.actions.common.ChooseAction;
 import madsciencemod.powers.FuelPower;
 
 public class Bayonet extends AbstractMadScienceCard {
-    public static final String ID = "Bayonet";
+    public static final String ID = "MadScienceMod:Bayonet";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

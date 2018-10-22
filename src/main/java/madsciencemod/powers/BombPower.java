@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import madsciencemod.actions.unique.BombExplodeAction;
 
 public class BombPower extends AbstractMadSciencePower {
-    public static final String POWER_ID = "Bomb";
+    public static final String POWER_ID = "MadScienceMod:Bomb";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

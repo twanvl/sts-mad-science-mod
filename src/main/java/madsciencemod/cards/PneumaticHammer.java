@@ -11,7 +11,7 @@ import madsciencemod.actions.unique.PneumaticHammerAction;
 import madsciencemod.powers.FuelPower;
 
 public class PneumaticHammer extends AbstractMadScienceCard {
-    public static final String ID = "PneumaticHammer";
+    public static final String ID = "MadScienceMod:PneumaticHammer";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

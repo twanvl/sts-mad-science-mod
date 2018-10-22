@@ -1,51 +1,51 @@
 {
-  "AssemblyLine": {
+  "MadScienceMod:AssemblyLine": {
     "NAME": "Assembly Line",
     "DESCRIPTIONS": [
       "At the start of your turn choose and shuffle a Trinket into your draw pile.",
       "At the start of your turn choose and shuffle up to #b"," Trinkets into your draw pile."
     ]
   },
-  "Automate": {
+  "MadScienceMod:Automate": {
     "NAME": "Automate",
     "DESCRIPTIONS": [
       "Whenever you play a card, spend 1 Fuel to play it twice."
     ]
   },
-  "BandageBot": {
+  "MadScienceMod:BandageBot": {
     "NAME": "Bandage Bot",
     "DESCRIPTIONS": [
       "Whenever you take damage, shuffle a Tasty Trinket into your draw pile.",
       "Whenever you take damage, shuffle #b"," Tasty Trinkets into your draw pile."
     ]
   },
-  "Bomb": {
+  "MadScienceMod:Bomb": {
     "NAME": "Bomb",
     "DESCRIPTIONS": [
       "Deals #b"," damage this turn."," damage in "," turn."," turns."
     ]
   },
-  "Fuel": {
+  "MadScienceMod:Fuel": {
     "NAME": "Fuel",
     "DESCRIPTIONS": [
       "Fuel is used to power your cards.",
       "Not enough #rFuel."
     ]
   },
-  "CaptureMomentum": {
+  "MadScienceMod:CaptureMomentum": {
     "NAME": "Capture Momentum",
     "DESCRIPTIONS": [
       "Whenever an attack would deal damage, instead apply a Bomb that deals #b"," times that damage in 3 turns."
     ]
   },
-  "ClockworkAssistant": {
+  "MadScienceMod:ClockworkAssistant": {
     "NAME": "Clockwork Assistant",
     "DESCRIPTIONS": [
       "At the start of your turn play the top card of your draw pile.",
       "At the start of your turn play the top #b"," cards of your draw pile."
     ]
   },
-  "CloneVats": {
+  "MadScienceMod:CloneVats": {
     "NAME": "Clone Vats",
     "DESCRIPTIONS": [
       "At the start of your turn, you may copy a card in your hand.",
@@ -53,13 +53,13 @@
       "duplicate"
     ]
   },
-  "DataRecorder": {
+  "MadScienceMod:DataRecorder": {
     "NAME": "Data Recorder",
     "DESCRIPTIONS": [
       "Whenever an enemy gains Strength, gain #b"," Strength."
     ]
   },
-  "DiscountBin": {
+  "MadScienceMod:DiscountBin": {
     "NAME": "Discount Bin",
     "DESCRIPTIONS": [
       "If you play #b",
@@ -69,98 +69,98 @@
       " cards."
     ]
   },
-  "ExhaustVents": {
+  "MadScienceMod:ExhaustVents": {
     "NAME": "Exhaust Vents",
     "DESCRIPTIONS": [
       "Whenever you spend Fuel, apply #b"," Poison to ALL enemies."
     ]
   },
-  "ExtractOil": {
+  "MadScienceMod:ExtractOil": {
     "NAME": "Extracting Oil",
     "DESCRIPTIONS": [
       "Whenever you play an Attack, gain #b"," Fuel."
     ]
   },
-  "FumeHood": {
+  "MadScienceMod:FumeHood": {
     "NAME": "Fume Hood",
     "DESCRIPTIONS": [
       "Whenever you Exhaust a card, gain #b"," Fuel."
     ]
   },
-  "GarbageDisposalCannon": {
+  "MadScienceMod:GarbageDisposalCannon": {
     "NAME": "Garbage Disposal Cannon",
     "DESCRIPTIONS": [
       "Whenever you Exhaust a card, deal #b"," damage to a random enemy."
     ]
   },
-  "Generator": {
+  "MadScienceMod:Generator": {
     "NAME": "Generator",
     "DESCRIPTIONS": [
       "At the start of your turn spend #b"," #yFuel to gain #b"," Energy."
     ]
   },
-  "Jetpack": {
+  "MadScienceMod:Jetpack": {
     "NAME": "Powered Flight",
     "DESCRIPTIONS": [
       "Reduce attack damage by 50%. At the start of your turn spend 1 Fuel."
     ]
   },
-  "LightOnFire": {
+  "MadScienceMod:LightOnFire": {
     "NAME": "On Fire",
     "DESCRIPTIONS": [
       "Whenever you spend Fuel, takes #b"," damage."
     ]
   },
-  "MinatureWeaponsAttack": {
+  "MadScienceMod:MinatureWeaponsAttack": {
     "NAME": "Minature Weapons",
     "DESCRIPTIONS": [
       "Whenever you play a Trinket, deal "," damage to ALL enemies."
     ]
   },
-  "MinatureWeaponsBlock": {
+  "MadScienceMod:MinatureWeaponsBlock": {
     "NAME": "Minature Shields",
     "DESCRIPTIONS": [
       "Whenever you play a Trinket, gain "," Block."
     ]
   },
-  "MechanicalSnecko": {
+  "MadScienceMod:MechanicalSnecko": {
     "NAME": "Mechanical Snecko",
     "DESCRIPTIONS": [
       "Whenever you play "," card"," cards"," in a turn, draw "," card"," cards"," and randomize the cost of cards in your hand for this turn."
     ]
   },
-  "PortablePumpjack": {
+  "MadScienceMod:PortablePumpjack": {
     "NAME": "Portable Pumpjack",
     "DESCRIPTIONS": [
       "At the start of your turn gain #b"," #yFuel."
     ]
   },
-  "PowerArmor": {
+  "MadScienceMod:PowerArmor": {
     "NAME": "Power Armor",
     "DESCRIPTIONS": [
       "At the end of your turn, if you have at least "," Fuel, gain #b"," Block."
     ]
   },
-  "Reconstitute": {
+  "MadScienceMod:Reconstitute": {
     "NAME": "Reconstitute",
     "DESCRIPTIONS": [
       "At the end of your turn gain #b"," Fuel for each Fuel spent this turn ("," spent)"
     ]
   },
-  "RecyclingStation": {
+  "MadScienceMod:RecyclingStation": {
     "NAME": "Recycling Station",
     "DESCRIPTIONS": [
       "Whenever you draw a Trinket, draw a card.",
       "Whenever you draw a Trinket, draw #b"," cards."
     ]
   },
-  "ShrinkRay": {
+  "MadScienceMod:ShrinkRay": {
     "NAME": "Shrink Ray",
     "DESCRIPTIONS": [
       "Each turn regain 1 Strength."
     ]
   },
-  "SoftenUp": {
+  "MadScienceMod:SoftenUp": {
     "NAME": "Softening Up",
     "DESCRIPTIONS": [
       "Your next attack this turn deals double damage.",

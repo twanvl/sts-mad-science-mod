@@ -17,7 +17,7 @@ import madsciencemod.MadScienceMod;
 import madsciencemod.actions.common.GainFuelAction;
 
 public class FusedTrinket extends AbstractTrinket {
-    public static final String ID = "FusedTrinket";
+    public static final String ID = "MadScienceMod:FusedTrinket";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;

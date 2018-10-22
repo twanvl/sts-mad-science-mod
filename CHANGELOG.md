@@ -1,3 +1,6 @@
+### v0.3.0
+* Prefix all cards, relics, powers and potions with ModID
+
 ### v0.2.5
 * Update for week 46 / BaseMod 5.0.0
 

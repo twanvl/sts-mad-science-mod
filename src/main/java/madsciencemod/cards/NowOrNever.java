@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.powers.NextTurnBlockPower;
 import madsciencemod.actions.common.ChooseAction;
 
 public class NowOrNever extends AbstractMadScienceCard {
-    public static final String ID = "NowOrNever";
+    public static final String ID = "MadScienceMod:NowOrNever";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

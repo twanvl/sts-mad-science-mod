@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import madsciencemod.actions.common.GainFuelAction;
 
 public class PortablePumpjack extends AbstractMadScienceRelic {
-    public static final String ID = "PortablePumpjack";
+    public static final String ID = "MadScienceMod:PortablePumpjack";
     public static final int AMOUNT = 1;
 
     public PortablePumpjack() {

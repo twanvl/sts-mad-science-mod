@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
 import madsciencemod.actions.common.SpendGoldAction;
 
 public class GoldenGun extends AbstractMadScienceCard {
-    public static final String ID = "GoldenGun";
+    public static final String ID = "MadScienceMod:GoldenGun";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

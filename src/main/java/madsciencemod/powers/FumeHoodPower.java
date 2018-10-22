@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import madsciencemod.actions.common.GainFuelAction;
 
 public class FumeHoodPower extends AbstractMadSciencePower {
-    public static final String POWER_ID = "FumeHood";
+    public static final String POWER_ID = "MadScienceMod:FumeHood";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

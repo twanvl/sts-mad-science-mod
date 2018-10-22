@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import madsciencemod.powers.MechanicalSneckoPower;
 
 public class MechanicalSnecko extends AbstractMadScienceCard {
-    public static final String ID = "MechanicalSnecko";
+    public static final String ID = "MadScienceMod:MechanicalSnecko";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

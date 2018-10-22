@@ -53,17 +53,26 @@ public class MadScienceMod implements
 
     public static final Logger logger = LogManager.getLogger(MadScienceMod.class.getName());
 
+    public static String removeModId(String id) {
+        if (id.startsWith("MadScienceMod:")) {
+            return id.substring(id.indexOf(':') + 1);
+        } else {
+            logger.warn("Missing mod id on: " + id);
+            return id;
+        }
+    }
+
     public static String cardImage(String id) {
-        return "img/cards/" + id + ".png";
+        return "img/cards/" + removeModId(id) + ".png";
     }
     public static String relicImage(String id) {
-        return "img/relics/" + id + ".png";
+        return "img/relics/" + removeModId(id) + ".png";
     }
     public static String relicOutline(String id) {
-        return "img/relics/outline/" + id + ".png";
+        return "img/relics/outline/" + removeModId(id) + ".png";
     }
     public static String powerImage(String id) {
-        return "img/powers/32/" + id + ".png";
+        return "img/powers/32/" + removeModId(id) + ".png";
     }
 
     public MadScienceMod() {

@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 import madsciencemod.actions.common.ChooseAction;
 
 public class Tune extends AbstractMadScienceCard {
-    public static final String ID = "Tune";
+    public static final String ID = "MadScienceMod:Tune";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

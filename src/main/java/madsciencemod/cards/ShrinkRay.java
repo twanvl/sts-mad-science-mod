@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 import madsciencemod.powers.ShrinkRayPower;
 
 public class ShrinkRay extends AbstractMadScienceCard {
-    public static final String ID = "ShrinkRay";
+    public static final String ID = "MadScienceMod:ShrinkRay";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

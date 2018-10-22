@@ -3,7 +3,7 @@ package madsciencemod.relics;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class Funnel extends AbstractMadScienceRelic {
-    public static final String ID = "Funnel";
+    public static final String ID = "MadScienceMod:Funnel";
 
     public Funnel() {
         super(ID, RelicTier.RARE, LandingSound.FLAT);

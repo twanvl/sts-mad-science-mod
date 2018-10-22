@@ -1,47 +1,47 @@
 {
-  "FuelTank": {
+  "MadScienceMod:FuelTank": {
     "NAME": "Fuel Tank",
     "FLAVOR": "Taken from an old motorcycle, it now stores fuel for all kinds of nifty tools.",
     "DESCRIPTIONS": [
       "At the start of each combat, gain #b"," #yFuel."
     ]
   },
-  "SignalFlag": {
+  "MadScienceMod:SignalFlag": {
     "NAME": "Signal Flag",
     "FLAVOR": "",
     "DESCRIPTIONS": [
       "Whenever you play #b3 attacks in a turn, gain 1 #yFuel."
     ]
   },
-  "Funnel": {
+  "MadScienceMod:Funnel": {
     "NAME": "Funnel",
     "FLAVOR": "Refuel your tools without spilling a single drop.",
     "DESCRIPTIONS": [
       "Whenever you gain #yFuel, gain #b1 additional #yFuel."
     ]
   },
-  "ExhaustVents": {
+  "MadScienceMod:ExhaustVents": {
     "NAME": "Exhaust Vent",
     "FLAVOR": "Point the opening in the direction of your enemies.",
     "DESCRIPTIONS": [
       "Whenever you spend #yFuel, apply #b"," #yPoison to ALL enemies."
     ]
   },
-  "PolishingWheel": {
+  "MadScienceMod:PolishingWheel": {
     "NAME": "Polishing Wheel",
     "FLAVOR": "Polishes even your throw-away creations to a mirror shine.",
     "DESCRIPTIONS": [
       "Your #yTrinkets are upgraded."
     ]
   },
-  "PortablePumpjack": {
+  "MadScienceMod:PortablePumpjack": {
     "NAME": "Portable Pumpjack",
     "FLAVOR": "Stolen from an oil field.",
     "DESCRIPTIONS": [
       "At the start of your turn, gain #b"," #yFuel."
     ]
   },
-  "DoomsdayDevice": {
+  "MadScienceMod:DoomsdayDevice": {
     "NAME": "Doomsday Device",
     "FLAVOR": "Failed to blow up the spire, but can be recycled for spare parts.",
     "DESCRIPTIONS": [

@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import madsciencemod.actions.common.GainFuelAction;
 
 public class ExtractOilPower extends AbstractMadSciencePower {
-    public static final String POWER_ID = "ExtractOil";
+    public static final String POWER_ID = "MadScienceMod:ExtractOil";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

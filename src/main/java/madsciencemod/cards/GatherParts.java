@@ -11,7 +11,7 @@ import madsciencemod.actions.common.AllTrinketsToHandAction;
 import madsciencemod.actions.common.ShuffleTrinketAction;
 
 public class GatherParts extends AbstractMadScienceCard {
-    public static final String ID = "GatherParts";
+    public static final String ID = "MadScienceMod:GatherParts";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

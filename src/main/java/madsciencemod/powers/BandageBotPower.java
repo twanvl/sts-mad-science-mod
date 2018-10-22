@@ -11,17 +11,13 @@ import madsciencemod.cards.TastyTrinket;
 import madsciencemod.relics.PolishingWheel;
 
 public class BandageBotPower extends AbstractMadSciencePower {
-    public static final String POWER_ID = "BandageBot";
+    public static final String POWER_ID = "MadScienceMod:BandageBot";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
     public BandageBotPower(AbstractCreature owner, int amount) {
         super(POWER_ID, NAME, owner, amount);
-        this.name = NAME;
-        this.ID = POWER_ID;
-        this.owner = owner;
-        this.amount = amount;
         this.updateDescription();
     }
 

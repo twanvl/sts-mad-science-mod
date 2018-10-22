@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import madsciencemod.actions.common.TopOfDiscardPileToHandAction;
 
 public class RecycledTrinket extends AbstractTrinket {
-    public static final String ID = "RecycledTrinket";
+    public static final String ID = "MadScienceMod:RecycledTrinket";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

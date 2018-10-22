@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import madsciencemod.actions.common.GainFuelAction;
 
 public class FuelTank extends AbstractMadScienceRelic {
-    public static final String ID = "FuelTank";
+    public static final String ID = "MadScienceMod:FuelTank";
     private static final int FUEL = 2;
 
     public FuelTank() {

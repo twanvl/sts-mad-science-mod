@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.potions.EnergyPotion;
 import madsciencemod.actions.common.GainFuelAction;
 
 public class FuelPotion extends AbstractPotion {
-    public static final String POTION_ID = "FuelPotion";
+    public static final String POTION_ID = "MadScienceMod:FuelPotion";
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;

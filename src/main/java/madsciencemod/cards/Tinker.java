@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import madsciencemod.actions.unique.TinkerAction;
 
 public class Tinker extends AbstractMadScienceCard {
-    public static final String ID = "Tinker";
+    public static final String ID = "MadScienceMod:Tinker";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

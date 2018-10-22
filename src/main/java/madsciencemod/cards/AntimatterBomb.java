@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import madsciencemod.actions.common.ApplyBombAction;
 
 public class AntimatterBomb extends AbstractMadScienceCard {
-    public static final String ID = "AntimatterBomb";
+    public static final String ID = "MadScienceMod:AntimatterBomb";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
