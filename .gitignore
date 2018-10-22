@@ -11,9 +11,11 @@ src/main/resources/madsciencemod/images/cards/*.png
 src/main/resources/madsciencemod/images/cards/large/old
 src/main/resources/madsciencemod/images/relics/*.png
 src/main/resources/madsciencemod/images/relics/outline
+src/main/resources/madsciencemod/images/relics/large
 src/main/resources/madsciencemod/images/powers/32
 src/main/resources/madsciencemod/images/powers/64
 src/main/resources/madsciencemod/images/powers/large/old
+src/main/resources/madsciencemod/images/powers/images
 src/main/resources/madsciencemod/images/cardui/1024
 src/main/resources/madsciencemod/images/cardui/512
 src/main/resources/madsciencemod/images/cardui/images
