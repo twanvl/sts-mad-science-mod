@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.powers.BufferPower;
 
 import madsciencemod.cards.TastyTrinket;
 import madsciencemod.relics.PolishingWheel;
@@ -28,7 +29,7 @@ public class BandageBotPower extends AbstractMadSciencePower {
 
     @Override
     public int onAttacked(DamageInfo info, int damageAmount) {
-        if (info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != null && info.owner != this.owner && damageAmount > 0) {
+        if (info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != null && info.owner != this.owner && damageAmount > 0 && !this.owner.hasPower(BufferPower.POWER_ID)) {
             this.flash();
             TastyTrinket card = new TastyTrinket();
             if (AbstractDungeon.player.hasRelic(PolishingWheel.ID)) {
