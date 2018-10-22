@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.events.beyond.SpireHeart;
 import com.megacrit.cardcrawl.events.city.Vampires;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
+import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
@@ -29,12 +30,9 @@ import madsciencemod.patches.PlayerClassEnum;
 import madsciencemod.relics.FuelTank;
 
 public class MadScientist extends CustomPlayer {
-    //private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString("MadScientist");
-    //public static final String[] NAMES = characterStrings.NAMES;
-    //public static final String[] TEXT = characterStrings.TEXT;
-    // Note: Using getCharacterString here doesn't work, because they are loaded after character creation by basemod
-    public static final String[] NAMES = {"Mad Scientist","The Mad Scientist"};
-    public static final String[] TEXT = {"You have to be mad to climb this spire while relying on NL experimental gadgets and unstable explosives. And he certainly is that."};
+    private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString("MadScienceMod:MadScientist");
+    public static final String[] NAMES = characterStrings.NAMES;
+    public static final String[] TEXT = characterStrings.TEXT;
     public static final int START_HP = 75;
     public static final int CARD_DRAW = 5;
     public static final int MAX_ORBS = 0;
@@ -42,27 +40,27 @@ public class MadScientist extends CustomPlayer {
     public static final int START_GOLD = 99;
 
     public static final String[] orbTextures = {
-        "img/characters/MadScientist/orb/layer1.png",
-        "img/characters/MadScientist/orb/layer2.png",
-        "img/characters/MadScientist/orb/layer3.png",
-        "img/characters/MadScientist/orb/layer4.png",
-        "img/characters/MadScientist/orb/layer5.png",
-        "img/characters/MadScientist/orb/layer6.png",
-        "img/characters/MadScientist/orb/layer1d.png",
-        "img/characters/MadScientist/orb/layer2d.png",
-        "img/characters/MadScientist/orb/layer3d.png",
-        "img/characters/MadScientist/orb/layer4d.png",
-        "img/characters/MadScientist/orb/layer5d.png",
+        "madsciencemod/images/characters/MadScientist/orb/layer1.png",
+        "madsciencemod/images/characters/MadScientist/orb/layer2.png",
+        "madsciencemod/images/characters/MadScientist/orb/layer3.png",
+        "madsciencemod/images/characters/MadScientist/orb/layer4.png",
+        "madsciencemod/images/characters/MadScientist/orb/layer5.png",
+        "madsciencemod/images/characters/MadScientist/orb/layer6.png",
+        "madsciencemod/images/characters/MadScientist/orb/layer1d.png",
+        "madsciencemod/images/characters/MadScientist/orb/layer2d.png",
+        "madsciencemod/images/characters/MadScientist/orb/layer3d.png",
+        "madsciencemod/images/characters/MadScientist/orb/layer4d.png",
+        "madsciencemod/images/characters/MadScientist/orb/layer5d.png",
     };
 
     public MadScientist(String name) {
-        super(name, PlayerClassEnum.MAD_SCIENTIST, orbTextures, "img/characters/MadScientist/orb/vfx.png", (String)null, null);
+        super(name, PlayerClassEnum.MAD_SCIENTIST, orbTextures, "madsciencemod/images/characters/MadScientist/orb/vfx.png", (String)null, null);
         this.initializeClass(null,
-            "img/characters/MadScientist/shoulder2.png",
-            "img/characters/MadScientist/shoulder.png",
-            "img/characters/MadScientist/corpse.png",
+            "madsciencemod/images/characters/MadScientist/shoulder2.png",
+            "madsciencemod/images/characters/MadScientist/shoulder.png",
+            "madsciencemod/images/characters/MadScientist/corpse.png",
             getLoadout(), 20.0f, -10.0f, 220.0f, 290.0f, new EnergyManager(ENERGY));
-        this.loadAnimation("img/characters/MadScientist/idle/skeleton.atlas", "img/characters/MadScientist/idle/skeleton.json", 1.0f);
+        this.loadAnimation("madsciencemod/images/characters/MadScientist/idle/skeleton.atlas", "madsciencemod/images/characters/MadScientist/idle/skeleton.json", 1.0f);
         AnimationState.TrackEntry e = this.state.setAnimation(0, "animation", true);
         e.setTime(e.getEndTime() * MathUtils.random());
     }

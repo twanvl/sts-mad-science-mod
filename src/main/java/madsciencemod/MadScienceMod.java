@@ -63,16 +63,16 @@ public class MadScienceMod implements
     }
 
     public static String cardImage(String id) {
-        return "img/cards/" + removeModId(id) + ".png";
+        return "madsciencemod/images/cards/" + removeModId(id) + ".png";
     }
     public static String relicImage(String id) {
-        return "img/relics/" + removeModId(id) + ".png";
+        return "madsciencemod/images/relics/" + removeModId(id) + ".png";
     }
     public static String relicOutline(String id) {
-        return "img/relics/outline/" + removeModId(id) + ".png";
+        return "madsciencemod/images/relics/outline/" + removeModId(id) + ".png";
     }
     public static String powerImage(String id) {
-        return "img/powers/32/" + removeModId(id) + ".png";
+        return "madsciencemod/images/powers/32/" + removeModId(id) + ".png";
     }
 
     public MadScienceMod() {
@@ -88,7 +88,7 @@ public class MadScienceMod implements
     public void receivePostInitialize() {
         logger.info("initialize mod badge");
         // Mod badge
-        Texture badgeTexture = new Texture("img/MadScienceModBadge.png");
+        Texture badgeTexture = new Texture("madsciencemod/images/MadScienceModBadge.png");
         ModPanel settingsPanel = new ModPanel();
         settingsPanel.addUIElement(new ModLabel("This mod does not have any settings.", 400.0f, 700.0f, settingsPanel, (me) -> {}));
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
@@ -100,26 +100,25 @@ public class MadScienceMod implements
         BaseMod.addColor(
             CardColorEnum.MAD_SCIENCE,
             BRONZE, BRONZE, BRONZE, BRONZE, BRONZE, BRONZE, BRONZE,
-            "img/cardui/512/bg_attack_mad_science.png",
-            "img/cardui/512/bg_skill_mad_science.png",
-            "img/cardui/512/bg_power_mad_science.png",
-            "img/cardui/512/card_mad_science_orb.png",
-            "img/cardui/1024/bg_attack_mad_science.png",
-            "img/cardui/1024/bg_skill_mad_science.png",
-            "img/cardui/1024/bg_power_mad_science.png",
-            "img/cardui/1024/card_mad_science_orb.png",
-            "img/cardui/small_mad_science_orb.png");
+            "madsciencemod/images/cardui/512/bg_attack_mad_science.png",
+            "madsciencemod/images/cardui/512/bg_skill_mad_science.png",
+            "madsciencemod/images/cardui/512/bg_power_mad_science.png",
+            "madsciencemod/images/cardui/512/card_mad_science_orb.png",
+            "madsciencemod/images/cardui/1024/bg_attack_mad_science.png",
+            "madsciencemod/images/cardui/1024/bg_skill_mad_science.png",
+            "madsciencemod/images/cardui/1024/bg_power_mad_science.png",
+            "madsciencemod/images/cardui/1024/card_mad_science_orb.png",
+            "madsciencemod/images/cardui/small_mad_science_orb.png");
         logger.info("done editing colors");
     }
 
     @Override
     public void receiveEditCharacters() {
         logger.info("begin editing characters");
-        BaseMod.loadCustomStrings(CharacterStrings.class, loadJson("localization/eng/madscience-characters.json"));
         BaseMod.addCharacter(
             new MadScientist(CardCrawlGame.playerName),
-            "img/charSelect/MadScientistButton.png",
-            "img/charSelect/MadScientistPortrait.jpg",
+            "madsciencemod/images/charSelect/MadScientistButton.png",
+            "madsciencemod/images/charSelect/MadScientistPortrait.jpg",
             PlayerClassEnum.MAD_SCIENTIST);
         logger.info("done editing characters");
         receiveEditPotions();
@@ -263,7 +262,7 @@ public class MadScienceMod implements
         // use a custom class instead
         Type typeToken = new TypeToken<Map<String, Keyword>>(){}.getType();
         Gson gson = new Gson();
-        String strings = loadJson("localization/eng/madscience-keywords.json");
+        String strings = loadJson("madsciencemod/localization/eng/madscience-keywords.json");
         @SuppressWarnings("unchecked")
         Map<String,Keyword> keywords = (Map<String,Keyword>)gson.fromJson(strings, typeToken);
         for (Keyword kw : keywords.values()) {
@@ -276,10 +275,11 @@ public class MadScienceMod implements
     public void receiveEditStrings() {
         logger.info("begin editing strings");
         // Note: it seems that naming the files localization/eng/relics.json crashes slay the spire on startup
-        BaseMod.loadCustomStrings(RelicStrings.class, loadJson("localization/eng/madscience-relics.json"));
-        BaseMod.loadCustomStrings(CardStrings.class, loadJson("localization/eng/madscience-cards.json"));
-        BaseMod.loadCustomStrings(PowerStrings.class, loadJson("localization/eng/madscience-powers.json"));
-        BaseMod.loadCustomStrings(PotionStrings.class, loadJson("localization/eng/madscience-potions.json"));
+        BaseMod.loadCustomStrings(RelicStrings.class, loadJson("madsciencemod/localization/eng/madscience-relics.json"));
+        BaseMod.loadCustomStrings(CardStrings.class, loadJson("madsciencemod/localization/eng/madscience-cards.json"));
+        BaseMod.loadCustomStrings(PowerStrings.class, loadJson("madsciencemod/localization/eng/madscience-powers.json"));
+        BaseMod.loadCustomStrings(PotionStrings.class, loadJson("madsciencemod/localization/eng/madscience-potions.json"));
+        BaseMod.loadCustomStrings(CharacterStrings.class, loadJson("madsciencemod/localization/eng/madscience-characters.json"));
         logger.info("done editing strings");
     }
     private static String loadJson(String jsonPath) {

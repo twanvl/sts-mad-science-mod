@@ -1,7 +1,7 @@
 # Generate card background images.
 # The images are made with imagemagick, with convert -modulate
 
-JARFILE:=../../../../../../_ModTheSpire/desktop-1.0.jar
+JARFILE:=../../../../../../../_ModTheSpire/desktop-1.0.jar
 TO_RECOLOR:=bg_attack_mad_science.png bg_skill_mad_science.png bg_power_mad_science.png
 FILES:=$(TO_RECOLOR) card_mad_science_orb.png
 TARGETS:=$(addprefix 512/,$(FILES)) $(addprefix 1024/,$(FILES))

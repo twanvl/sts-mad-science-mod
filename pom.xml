@@ -59,17 +59,17 @@
             <exclude>**/*.svg</exclude>
             <exclude>**/Makefile</exclude>
             <exclude>**/.goutputstream</exclude>
-            <exclude>img/cards/large</exclude>
-            <exclude>img/cards/large/**</exclude>
-            <exclude>img/characters/*/orb/new</exclude>
-            <exclude>img/characters/*/orb/new/**</exclude>
-            <exclude>img/characters/*/idle/*.txt</exclude>
-            <exclude>img/characters/*/idle/images</exclude>
-            <exclude>img/characters/*/idle/images/**</exclude>
-            <exclude>img/powers/large</exclude>
-            <exclude>img/powers/large/**</exclude>
-            <exclude>img/relics/large</exclude>
-            <exclude>img/relics/large/**</exclude>
+            <exclude>madsciencemod/images/cards/large</exclude>
+            <exclude>madsciencemod/images/cards/large/**</exclude>
+            <exclude>madsciencemod/images/characters/*/orb/new</exclude>
+            <exclude>madsciencemod/images/characters/*/orb/new/**</exclude>
+            <exclude>madsciencemod/images/characters/*/idle/*.txt</exclude>
+            <exclude>madsciencemod/images/characters/*/idle/images</exclude>
+            <exclude>madsciencemod/images/characters/*/idle/images/**</exclude>
+            <exclude>madsciencemod/images/powers/large</exclude>
+            <exclude>madsciencemod/images/powers/large/**</exclude>
+            <exclude>madsciencemod/images/relics/large</exclude>
+            <exclude>madsciencemod/images/relics/large/**</exclude>
           </excludes>
         </configuration>
       </plugin>

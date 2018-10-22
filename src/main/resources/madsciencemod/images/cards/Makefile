@@ -1,7 +1,7 @@
 # Generate card images
 IMAGES:=$(notdir $(wildcard large/*.png))
 NOT_CARDS:=AbstractMadScienceCard AbstractTrinket
-CARDS:=$(basename $(notdir $(wildcard ../../../java/madsciencemod/cards/*.java)))
+CARDS:=$(basename $(notdir $(wildcard ../../../../java/madsciencemod/cards/*.java)))
 CARDS+=
 MISSING_IMAGES:=$(filter-out $(NOT_CARDS) $(basename $(IMAGES)), $(CARDS))
 EXTRA_IMAGES:=$(filter-out $(CARDS),$(basename $(IMAGES)))
