@@ -1,0 +1,9 @@
+{
+  "pot": true,
+  "filterMin": "Linear",
+  "filterMag": "Linear",
+  "premultiplyAlpha": false,
+  "stripWhitespaceX": true,
+  "stripWhitespaceY": true,
+  "combineSubdirectories": true
+}
