@@ -3,7 +3,7 @@
 
   <groupId>madsciencemod</groupId>
   <artifactId>MadScienceMod</artifactId>
-  <version>0.2.5</version>
+  <version>0.3.0</version>
 
   <name>MadScienceMod</name>
   <description>Adds a new character, The Mad Scientist</description>
@@ -23,14 +23,14 @@
     <dependency>
       <groupId>basemod</groupId>
       <artifactId>BaseMod</artifactId>
-      <version>1.6.5</version>
+      <version>5.0.0</version>
       <scope>system</scope>
       <systemPath>${basedir}/../_ModTheSpire/mods/BaseMod.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>modthespire</groupId>
       <artifactId>ModTheSpire</artifactId>
-      <version>2.4.0</version>
+      <version>3.0.0</version>
       <scope>system</scope>
       <systemPath>${basedir}/../_ModTheSpire/ModTheSpire.jar</systemPath>
     </dependency>
