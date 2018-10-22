@@ -68,6 +68,8 @@
             <exclude>madsciencemod/images/characters/*/idle/images/**</exclude>
             <exclude>madsciencemod/images/powers/large</exclude>
             <exclude>madsciencemod/images/powers/large/**</exclude>
+            <exclude>madsciencemod/images/powers/images/**</exclude>
+            <exclude>madsciencemod/images/powers/*.json</exclude>
             <exclude>madsciencemod/images/relics/large</exclude>
             <exclude>madsciencemod/images/relics/large/**</exclude>
           </excludes>

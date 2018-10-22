@@ -1,6 +1,5 @@
 package madsciencemod;
 
-import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
@@ -68,11 +67,11 @@ public class MadScienceMod implements
     public static String relicImage(String id) {
         return "madsciencemod/images/relics/" + removeModId(id) + ".png";
     }
-    public static String relicOutline(String id) {
-        return "madsciencemod/images/relics/outline/" + removeModId(id) + ".png";
+    public static String relicLargeImage(String id) {
+        return "madsciencemod/images/relics/large/" + removeModId(id) + ".png";
     }
-    public static String powerImage(String id) {
-        return "madsciencemod/images/powers/32/" + removeModId(id) + ".png";
+    public static String relicOutlineImage(String id) {
+        return "madsciencemod/images/relics/outline/" + removeModId(id) + ".png";
     }
 
     public MadScienceMod() {

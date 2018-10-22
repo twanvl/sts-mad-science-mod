@@ -6,24 +6,19 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import madsciencemod.actions.common.SpendFuelAction;
 
-public class JetpackPower extends AbstractPower {
+public class JetpackPower extends AbstractMadSciencePower {
     public static final String POWER_ID = "MadScienceMod:Jetpack";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
     public JetpackPower(AbstractCreature owner, int amount) {
-        this.ID = POWER_ID;
-        this.name = NAME;
-        this.owner = owner;
-        this.amount = amount;
+        super(POWER_ID, NAME, owner, amount);
         this.isTurnBased = true;
         this.updateDescription();
-        this.loadRegion("flight"); // reuse Flight icon
         this.priority = 50;
     }
 
