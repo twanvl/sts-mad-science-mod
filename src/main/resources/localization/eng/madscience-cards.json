@@ -18,7 +18,7 @@
   },
   "Assemble": {
     "NAME": "Assemble",
-    "DESCRIPTION": "Assemble a Trinket out of !M! parts. NL Shuffle X copies of it into your draw pile.",
+    "DESCRIPTION": "Assemble a Trinket out of !M! parts. NL Shuffle X copies of it into your draw pile. NL Exhaust.",
     "EXTENDED_DESCRIPTION": ["Assemble","Select trinket parts to fuse together into a single card."]
   },
   "AssemblyLine": {
