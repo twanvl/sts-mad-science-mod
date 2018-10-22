@@ -16,6 +16,8 @@ src/main/resources/madsciencemod/images/powers/32
 src/main/resources/madsciencemod/images/powers/64
 src/main/resources/madsciencemod/images/powers/large/old
 src/main/resources/madsciencemod/images/powers/images
+src/main/resources/madsciencemod/images/powers/*.atlas
+src/main/resources/madsciencemod/images/powers/powers.png
 src/main/resources/madsciencemod/images/cardui/1024
 src/main/resources/madsciencemod/images/cardui/512
 src/main/resources/madsciencemod/images/cardui/images
