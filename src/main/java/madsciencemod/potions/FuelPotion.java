@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
-import com.megacrit.cardcrawl.potions.EnergyPotion;
 
 import madsciencemod.actions.common.GainFuelAction;
 
@@ -31,7 +30,7 @@ public class FuelPotion extends AbstractPotion {
 
     @Override
     public AbstractPotion makeCopy() {
-        return new EnergyPotion();
+        return new FuelPotion();
     }
 
     @Override

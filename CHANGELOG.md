@@ -1,3 +1,6 @@
+### v0.3.1
+* Fix: FuelPotion.makeCopy() now returns a FuelPotion
+
 ### v0.3.0
 * Prefix all cards, relics, powers and potions with ModID
 * High resolution relic and power images
