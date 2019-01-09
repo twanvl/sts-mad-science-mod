@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 
-import madsciencemod.cards.AbstractTrinket;
+import madsciencemod.patches.CardTagsEnum;
 
 public class MinatureWeaponsAttackPower extends AbstractMadSciencePower {
     public static final String POWER_ID = "MadScienceMod:MinatureWeaponsAttack";
@@ -30,7 +30,7 @@ public class MinatureWeaponsAttackPower extends AbstractMadSciencePower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (card instanceof AbstractTrinket) {
+        if (card.hasTag(CardTagsEnum.TRINKET_TAG)) {
             AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         }
     }

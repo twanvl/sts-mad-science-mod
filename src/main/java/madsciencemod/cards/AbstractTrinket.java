@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
+import madsciencemod.patches.CardTagsEnum;
 import madsciencemod.powers.RecyclingStationPower;
 
 public abstract class AbstractTrinket extends AbstractMadScienceCard {
@@ -16,11 +17,13 @@ public abstract class AbstractTrinket extends AbstractMadScienceCard {
     public AbstractTrinket(String id, String name, String image, int cost, String rawDescription, CardType type, AbstractCard.CardTarget target) {
         super(id, name, image, cost, rawDescription, type, CardColor.COLORLESS, CardRarity.SPECIAL, target);
         this.exhaust = true;
+        this.tags.add(CardTagsEnum.TRINKET_TAG);
     }
 
     public AbstractTrinket(String id, String name, int cost, String rawDescription, CardType type, AbstractCard.CardTarget target) {
         super(id, name, cost, rawDescription, type, CardColor.COLORLESS, CardRarity.SPECIAL, target);
         this.exhaust = true;
+        this.tags.add(CardTagsEnum.TRINKET_TAG);
     }
 
     @Override

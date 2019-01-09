@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 
-import madsciencemod.cards.AbstractTrinket;
+import madsciencemod.patches.CardTagsEnum;
 
 public class MinatureWeaponsBlockPower extends AbstractMadSciencePower {
     public static final String POWER_ID = "MadScienceMod:MinatureWeaponsBlock";
@@ -28,7 +28,7 @@ public class MinatureWeaponsBlockPower extends AbstractMadSciencePower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (card instanceof AbstractTrinket) {
+        if (card.hasTag(CardTagsEnum.TRINKET_TAG)) {
             AbstractDungeon.actionManager.addToBottom(new GainBlockAction(this.owner, this.owner, this.amount));
         }
     }

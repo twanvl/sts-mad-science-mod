@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-import madsciencemod.cards.AbstractTrinket;
+import madsciencemod.patches.CardTagsEnum;
 
 public class AllTrinketsToHandAction extends AbstractGameAction {
     private AbstractPlayer p = AbstractDungeon.player;
@@ -18,7 +18,7 @@ public class AllTrinketsToHandAction extends AbstractGameAction {
     @Override
     public void update() {
         for (AbstractCard card : this.p.drawPile.group) {
-            if (card instanceof AbstractTrinket) {
+            if (card.hasTag(CardTagsEnum.TRINKET_TAG)) {
                 AbstractDungeon.actionManager.addToTop(new DrawPileToHandAction(card, true));
             }
         }

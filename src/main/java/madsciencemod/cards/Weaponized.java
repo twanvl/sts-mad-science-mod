@@ -1,5 +1,6 @@
 package madsciencemod.cards;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import com.badlogic.gdx.Gdx;
@@ -51,6 +52,8 @@ public class Weaponized extends AbstractMadScienceCard {
         if (baseCard instanceof CustomCard) {
             this.textureImg = ((CustomCard)baseCard).textureImg;
         }
+        // Copy tags (important for trinkets)
+        this.tags = new ArrayList<>(baseCard.tags);
     }
 
     private static String newName(String name) {
