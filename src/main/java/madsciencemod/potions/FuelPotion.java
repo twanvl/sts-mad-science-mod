@@ -35,7 +35,7 @@ public class FuelPotion extends AbstractPotion {
 
     @Override
     public int getPotency(int ascensionLevel) {
-        return ascensionLevel < 11 ? 2 : 1;
+        return 2;
     }
 }
 
