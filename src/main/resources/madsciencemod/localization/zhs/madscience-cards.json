@@ -192,7 +192,7 @@
   },
   "MadScienceMod:Grind": {
     "NAME": "采集标本",
-    "DESCRIPTION": "造成 !D! 点伤害。 获得 !M! 层人工制品。"
+    "DESCRIPTION": "造成 !D! 点伤害。 获得 !M! 层 人工制品 。"
   },
   "MadScienceMod:HideBehindJunk": {
     "NAME": "捡垃圾",
@@ -385,7 +385,7 @@
   },
   "MadScienceMod:Sprocket": {
     "NAME": "免疫",
-    "DESCRIPTION": "获得 !M! 层人工制品。消耗。 NL 能被多次升级。"
+    "DESCRIPTION": "获得 !M! 层 人工制品 。消耗。 NL 能被多次升级。"
   },
   "MadScienceMod:StickSharpener": {
     "NAME": "文体两开花",
@@ -453,7 +453,7 @@
   },
   "MadScienceMod:DecorativeTrinket": {
     "NAME": "不锈钢板",
-    "DESCRIPTION": "获得 !M! 层人工制品。 NL 消耗。"
+    "DESCRIPTION": "获得 !M! 层 人工制品 。 NL 消耗。"
   },
   "MadScienceMod:ExplosiveTrinket": {
     "NAME": "三硝基甲苯",
