@@ -1,3 +1,5 @@
+### v0.3.2
+
 ### v0.3.1
 * Fix: FuelPotion.makeCopy() now returns a FuelPotion
 * Fix: Weaponized trinkets now count as trinkets for Minature Weapons and Gather Parts.
