@@ -96,7 +96,7 @@ public class ShuffleTrinketAction extends AbstractGameAction {
 
     private static CardGroup allTrinkets;
     private static CardGroup allUpgradedTrinkets;
-    {
+    static {
         allTrinkets = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         allTrinkets.addToTop(new DecorativeTrinket());
         allTrinkets.addToTop(new ExplosiveTrinket());
