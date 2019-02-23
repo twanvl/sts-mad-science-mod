@@ -1,0 +1,52 @@
+{
+  "FUEL": {
+    "NAMES":[
+      "燃料",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE"
+    ],
+    "DESCRIPTION": "许多卡牌需要燃料来驱动。"
+  },
+  "TRINKET": {
+    "NAMES":[
+      "零件",
+      "零件",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE"
+    ],
+    "DESCRIPTION": "零件牌是一些消耗类的 #b0 费小玩意儿。"
+  },
+  "BOMB": {
+    "NAMES":[
+      "炸弹",
+      "炸弹",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE"
+    ],
+    "DESCRIPTION": "炸弹会在一定回合内爆炸来造成伤害。"
+  },
+  "DETONATE": {
+    "NAMES":[
+      "引爆",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE"
+    ],
+    "DESCRIPTION": "将炸弹直接引爆来造成伤害，爆炸后炸弹会被移除。"
+  },
+  "SLOW": {
+    "NAMES":[
+      "缓慢",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE",
+      "UNUSED_RESERVE"
+    ],
+    "DESCRIPTION": "在本回合中，你每出一张牌，该敌人将会额外受到10%的伤害。"
+  }
+}

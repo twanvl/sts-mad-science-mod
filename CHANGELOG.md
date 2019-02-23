@@ -1,4 +1,6 @@
 ### v0.3.2
+* Added Trinket Potion
+* Simplified Chinese translation, thanks to shp241
 
 ### v0.3.1
 * Fix: FuelPotion.makeCopy() now returns a FuelPotion

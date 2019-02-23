@@ -1,0 +1,51 @@
+{
+  "MadScienceMod:FuelTank": {
+    "NAME": "油箱",
+    "FLAVOR": "谁也不知道这里面究竟装着的是什么化学物质……管他呢！吨吨吨吨吨",
+    "DESCRIPTIONS": [
+      "在每场战斗开始时，获得 #b"," 升 #y燃料。"
+    ]
+  },
+  "MadScienceMod:SignalFlag": {
+    "NAME": "战旗",
+    "FLAVOR": "『打完这场仗，我就回家和我的未婚妻结婚』",
+    "DESCRIPTIONS": [
+      "每当你在一回合中打出 #b3 张攻击牌时，获得1升 #y燃料"
+    ]
+  },
+  "MadScienceMod:Funnel": {
+    "NAME": "漏斗",
+    "FLAVOR": "使用漏斗来减少倒油时的损耗，这不就跟用卷板机降低打板损耗一样嘛，非常合理。",
+    "DESCRIPTIONS": [
+      "每当你获得燃料时，额外获得 #b1 升 #y燃料。"
+    ]
+  },
+  "MadScienceMod:ExhaustVents": {
+    "NAME": "图拉丁风扇",
+    "FLAVOR": "三千预算进图吧，敌人毒爆两开花。",
+    "DESCRIPTIONS": [
+      "每当你消耗 #y燃料 时，给予所有敌人 #b","层 #y中毒。"
+    ]
+  },
+  "MadScienceMod:PolishingWheel": {
+    "NAME": "布莱恩科技航空专用强化胶带FAL84型",
+    "FLAVOR": "一个胶带，解决所有机械问题，妈妈再也不用担心我的维护舱了",
+    "DESCRIPTIONS": [
+      "升级你的 #y零件 牌。"
+    ]
+  },
+  "MadScienceMod:PortablePumpjack": {
+    "NAME": "便携式钻井平台",
+    "FLAVOR": "塔内第三层守护者提醒您：道路千万条， NL 安全第一条。 NL 燃料不规范， NL 亲人两行泪。",
+    "DESCRIPTIONS": [
+      "在你的回合开始时，获得 #b","升 #y燃料。"
+    ]
+  },
+  "MadScienceMod:DoomsdayDevice": {
+    "NAME": "垃圾回收器",
+    "FLAVOR": "自动回收分拣垃圾，等等这有个撞针@￥#@%……@#&……￥&%@%@#",
+    "DESCRIPTIONS": [
+      "在每场战斗开始时，选择至多 #b","张 #y零件 牌并将它们洗入抽牌堆。"
+    ]
+  }
+}

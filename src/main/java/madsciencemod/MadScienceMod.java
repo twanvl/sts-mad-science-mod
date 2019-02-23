@@ -13,6 +13,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
@@ -262,7 +263,8 @@ public class MadScienceMod implements
         // use a custom class instead
         Type typeToken = new TypeToken<Map<String, Keyword>>(){}.getType();
         Gson gson = new Gson();
-        String strings = loadJson("madsciencemod/localization/eng/madscience-keywords.json");
+        String lang = getSupportedLanguage();
+        String strings = loadJson("madsciencemod/localization/"+lang+"/madscience-keywords.json");
         @SuppressWarnings("unchecked")
         Map<String,Keyword> keywords = (Map<String,Keyword>)gson.fromJson(strings, typeToken);
         for (Keyword kw : keywords.values()) {
@@ -274,16 +276,24 @@ public class MadScienceMod implements
     @Override
     public void receiveEditStrings() {
         logger.info("begin editing strings");
-        // Note: it seems that naming the files localization/eng/relics.json crashes slay the spire on startup
-        BaseMod.loadCustomStrings(RelicStrings.class, loadJson("madsciencemod/localization/eng/madscience-relics.json"));
-        BaseMod.loadCustomStrings(CardStrings.class, loadJson("madsciencemod/localization/eng/madscience-cards.json"));
-        BaseMod.loadCustomStrings(PowerStrings.class, loadJson("madsciencemod/localization/eng/madscience-powers.json"));
-        BaseMod.loadCustomStrings(PotionStrings.class, loadJson("madsciencemod/localization/eng/madscience-potions.json"));
-        BaseMod.loadCustomStrings(CharacterStrings.class, loadJson("madsciencemod/localization/eng/madscience-characters.json"));
+        String lang = getSupportedLanguage();
+        BaseMod.loadCustomStrings(RelicStrings.class, loadJson("madsciencemod/localization/"+lang+"/madscience-relics.json"));
+        BaseMod.loadCustomStrings(CardStrings.class, loadJson("madsciencemod/localization/"+lang+"/madscience-cards.json"));
+        BaseMod.loadCustomStrings(PowerStrings.class, loadJson("madsciencemod/localization/"+lang+"/madscience-powers.json"));
+        BaseMod.loadCustomStrings(PotionStrings.class, loadJson("madsciencemod/localization/"+lang+"/madscience-potions.json"));
+        BaseMod.loadCustomStrings(CharacterStrings.class, loadJson("madsciencemod/localization/"+lang+"/madscience-characters.json"));
         logger.info("done editing strings");
     }
     private static String loadJson(String jsonPath) {
         return Gdx.files.internal(jsonPath).readString(String.valueOf(StandardCharsets.UTF_8));
+    }
+    private static String getSupportedLanguage() {
+        switch (Settings.language) {
+            case ZHS:
+                return "zhs";
+            default:
+                return "eng";
+        }
     }
 
     @Override

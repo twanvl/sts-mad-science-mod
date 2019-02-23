@@ -1,0 +1,10 @@
+{
+  "MadScienceMod:FuelPotion": {
+    "NAME": "汽油药水",
+    "DESCRIPTIONS": ["获得 #b"," 升#y燃料。"]
+  },
+  "MadScienceMod:TrinketPotion": {
+    "NAME": "Trinket Potion",
+    "DESCRIPTIONS": ["Add #b"," random #yTrinkets to your hand."]
+  }
+}
