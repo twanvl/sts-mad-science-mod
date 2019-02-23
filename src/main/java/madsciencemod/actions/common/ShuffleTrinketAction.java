@@ -117,12 +117,20 @@ public class ShuffleTrinketAction extends AbstractGameAction {
         }
     }
 
-    private CardGroup allTrinketsToUse() {
-        if (this.upgraded || AbstractDungeon.player.hasRelic(PolishingWheel.ID)) {
+    private static CardGroup allTrinketsToUse(boolean upgraded) {
+        if (upgraded || AbstractDungeon.player.hasRelic(PolishingWheel.ID)) {
             return allUpgradedTrinkets;
         } else {
             return allTrinkets;
         }
+    }
+
+    private CardGroup allTrinketsToUse() {
+        return allTrinketsToUse(this.upgraded);
+    }
+
+    public static AbstractCard getRandomTrinket(boolean upgraded) {
+        return allTrinketsToUse(upgraded).getRandomCard(false);
     }
 
     private AbstractCard getRandomTrinket() {

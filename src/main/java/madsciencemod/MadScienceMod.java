@@ -251,6 +251,7 @@ public class MadScienceMod implements
     public void receiveEditPotions() {
         logger.info("begin editing potions");
         BaseMod.addPotion(FuelPotion.class, new Color(0.3f,0.3f,0.3f,1.0f), new Color(0.1f,0.1f,0.1f,1.0f), new Color(0.5f,0.5f,0.5f,1.0f), FuelPotion.POTION_ID, PlayerClassEnum.MAD_SCIENTIST);
+        BaseMod.addPotion(TrinketPotion.class, BRONZE, BRONZE, BRONZE, TrinketPotion.POTION_ID, PlayerClassEnum.MAD_SCIENTIST);
         logger.info("end editing potions");
     }
 

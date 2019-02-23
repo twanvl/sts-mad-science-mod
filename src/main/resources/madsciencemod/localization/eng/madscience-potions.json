@@ -2,5 +2,9 @@
   "MadScienceMod:FuelPotion": {
     "NAME": "Fuel Potion",
     "DESCRIPTIONS": ["Gain #b"," #yFuel."]
+  },
+  "MadScienceMod:TrinketPotion": {
+    "NAME": "Trinket Potion",
+    "DESCRIPTIONS": ["Add #b"," random #yTrinkets to your hand."]
   }
 }
