@@ -1,3 +1,6 @@
+### v0.3.3
+* Fix issue with Trinkets being permanantly confused (#20)
+
 ### v0.3.2
 * Added Trinket Potion
 * Simplified Chinese translation, thanks to shp241

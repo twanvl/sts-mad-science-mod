@@ -64,8 +64,7 @@ public class ShuffleTrinketAction extends AbstractGameAction {
             } else {
                 // Show a screen to select a number of cards
                 if (AbstractDungeon.cardRewardScreen.codexCard != null) {
-                    AbstractCard c = AbstractDungeon.cardRewardScreen.codexCard.makeStatEquivalentCopy();
-                    cardsToShuffle.add(c);
+                    cardsToShuffle.add(AbstractDungeon.cardRewardScreen.codexCard);
                     AbstractDungeon.cardRewardScreen.codexCard = null;
                 }
                 if (amount > 0) {
@@ -86,9 +85,9 @@ public class ShuffleTrinketAction extends AbstractGameAction {
         for (AbstractCard c : cardsToShuffle) {
             c.unhover();
             if (cardsToShuffle.size() < 6) {
-                AbstractDungeon.effectList.add(new ShowCardAndAddToDrawPileEffect(c, (float)Settings.WIDTH / 2.0f, (float)Settings.HEIGHT / 2.0f, randomSpot, cardOffset));
+                AbstractDungeon.effectList.add(new ShowCardAndAddToDrawPileEffect(c.makeStatEquivalentCopy(), (float)Settings.WIDTH / 2.0f, (float)Settings.HEIGHT / 2.0f, randomSpot, cardOffset));
             } else {
-                AbstractDungeon.effectList.add(new ShowCardAndAddToDrawPileEffect(c, randomSpot, false));
+                AbstractDungeon.effectList.add(new ShowCardAndAddToDrawPileEffect(c.makeStatEquivalentCopy(), randomSpot, false));
             }
         }
         cardsToShuffle.clear();
