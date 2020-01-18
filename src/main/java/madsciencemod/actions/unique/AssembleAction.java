@@ -37,14 +37,14 @@ public class AssembleAction extends AbstractGameAction {
     @Override
     public void update() {
         // a part was selected
-        if (AbstractDungeon.cardRewardScreen.codexCard != null) {
-            FusedTrinket t = (FusedTrinket)AbstractDungeon.cardRewardScreen.codexCard.makeStatEquivalentCopy();
+        if (AbstractDungeon.cardRewardScreen.discoveryCard != null) {
+            FusedTrinket t = (FusedTrinket)AbstractDungeon.cardRewardScreen.discoveryCard.makeStatEquivalentCopy();
             energy += t.energy;
             draw   += t.draw;
             fuel   += t.fuel;
             block  += t.baseBlock;
             damage += t.baseDamage;
-            AbstractDungeon.cardRewardScreen.codexCard = null;
+            AbstractDungeon.cardRewardScreen.discoveryCard = null;
         }
         if (parts > 0) {
             parts--;

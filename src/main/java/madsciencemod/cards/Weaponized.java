@@ -300,13 +300,6 @@ public class Weaponized extends AbstractMadScienceCard {
     }
 
     @Override
-    public void modifyCostForTurn(int amt) {
-        updateBaseCost();
-        baseCard.modifyCostForTurn(amt);
-        initializeProperties();
-    }
-
-    @Override
     public void modifyCostForCombat(int amt) {
         updateBaseCost();
         baseCard.modifyCostForCombat(amt);

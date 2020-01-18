@@ -1,3 +1,6 @@
+### v0.4.0
+* Update after Watcher release
+
 ### v0.3.3
 * Fix issue with Trinkets being permanantly confused (#20)
 

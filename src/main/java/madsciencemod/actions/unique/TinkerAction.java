@@ -25,7 +25,7 @@ public class TinkerAction extends AbstractGameAction {
             card.superFlash();
         }
         if (this.upgraded) {
-            card.modifyCostForTurn(-1);
+            card.setCostForTurn(card.cost-1);
         }
         this.isDone = true;
     }

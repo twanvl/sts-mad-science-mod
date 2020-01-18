@@ -63,9 +63,9 @@ public class ShuffleTrinketAction extends AbstractGameAction {
                 }
             } else {
                 // Show a screen to select a number of cards
-                if (AbstractDungeon.cardRewardScreen.codexCard != null) {
-                    cardsToShuffle.add(AbstractDungeon.cardRewardScreen.codexCard);
-                    AbstractDungeon.cardRewardScreen.codexCard = null;
+                if (AbstractDungeon.cardRewardScreen.discoveryCard != null) {
+                    cardsToShuffle.add(AbstractDungeon.cardRewardScreen.discoveryCard);
+                    AbstractDungeon.cardRewardScreen.discoveryCard = null;
                 }
                 if (amount > 0) {
                     amount--;

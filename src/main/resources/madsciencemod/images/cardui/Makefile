@@ -13,8 +13,9 @@ all: 1024 512 $(TARGETS) small_mad_science_orb.png
 1024 512:
 	mkdir -p $@
 
-images/cardui/%_red.png:
-	jar xvf $(JARFILE) $@
+# Note: no longer separate files, these now have to be extracted from an atlas
+#images/cardui/%_red.png:
+#	jar xvf $(JARFILE) $@
 
 1024/%_mad_science.png: images/cardui/1024/%_red.png
 	convert $< -modulate $(MODULATE) $@

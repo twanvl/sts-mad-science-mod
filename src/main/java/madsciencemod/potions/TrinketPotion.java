@@ -26,7 +26,7 @@ public class TrinketPotion extends AbstractPotion {
 
     @Override
     public void use(AbstractCreature target) {
-        for (int i = 0 ; i < 3 ; ++i) {
+        for (int i = 0 ; i < this.potency ; ++i) {
             AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(ShuffleTrinketAction.getRandomTrinket(false).makeStatEquivalentCopy()));
         }
     }
